@@ -1,0 +1,78 @@
+version: 1.3.5
+cache: true
+
+interface:
+  endpointsMenu: true
+  modelSelect: true
+  parameters: true
+  sidePanel: true
+  presets: false
+  bookmarks: true
+  prompts: true
+  agents:
+    use: true
+    create: true
+    share: true
+  multiConvo: false
+  customWelcome: |
+    Welcome to **Gutenborg** — your semantic citation retrieval companion.
+
+    Ask questions about your research corpus and receive exact quotes with page numbers.
+    Select an agent to query a specific collection, or use the Gutenborg endpoint directly.
+
+endpoints:
+  agents:
+    disableBuilder: false
+    recursionLimit: 25
+    maxRecursionLimit: 50
+    capabilities:
+      - "file_search"
+      - "context"
+      - "web_search"
+      - "artifacts"
+    allowedProviders:
+      - "custom"
+
+  custom:
+    - name: "Gutenborg RAG"
+      apiKey: "not-needed"
+      baseURL: "http://api:8000/v1"
+      models:
+        default: ["gutenberg-rag"]
+        fetch: true
+      titleConvo: true
+      titleModel: "gutenberg-rag"
+      summarize: false
+      forcePrompt: false
+      modelDisplayLabel: "Gutenborg"
+      dropParams:
+        - stop
+        - user
+        - frequency_penalty
+        - presence_penalty
+
+    - name: "Ollama"
+      apiKey: "not-needed"
+      baseURL: "http://host.docker.internal:11434/v1"
+      models:
+        default: ["qwen3:8b"]
+        fetch: true
+      titleConvo: true
+      titleModel: "qwen3:8b"
+      modelDisplayLabel: "Ollama"
+
+    - name: "OpenRouter"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default:
+          - "anthropic/claude-sonnet-4"
+          - "google/gemini-2.5-flash-preview"
+          - "deepseek/deepseek-r1"
+          - "meta-llama/llama-4-scout"
+        fetch: true
+      titleConvo: true
+      titleModel: "anthropic/claude-sonnet-4"
+      dropParams:
+        - stop
+      modelDisplayLabel: "OpenRouter"

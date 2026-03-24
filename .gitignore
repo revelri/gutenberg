@@ -1,0 +1,15 @@
+data/ollama/
+data/chroma/
+data/processing/
+data/processed/
+data/failed/
+data/state/
+data/inbox/*.pdf
+data/inbox/*.docx
+data/mongodb/
+data/meilisearch/
+.env
+__pycache__/
+*.pyc
+.venv/
+.gstack/

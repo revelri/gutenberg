@@ -1,0 +1,85 @@
+services:
+  chromadb:
+    image: chromadb/chroma:0.6.3
+    container_name: gutenberg-chromadb
+    ports:
+      - "8200:8000"
+    volumes:
+      - ./data/chroma:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    restart: unless-stopped
+
+  api:
+    build: ./services/api
+    container_name: gutenberg-api
+    ports:
+      - "8002:8000"
+    env_file: .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - chromadb
+    volumes:
+      - ./data:/data
+    networks:
+      - default
+      - shared
+    restart: unless-stopped
+
+  worker:
+    build: ./services/worker
+    container_name: gutenberg-worker
+    env_file: .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - chromadb
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:8.0
+    container_name: gutenberg-mongodb
+    volumes:
+      - ./data/mongodb:/data/db
+    restart: unless-stopped
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.35
+    container_name: gutenberg-meilisearch
+    environment:
+      - MEILI_NO_ANALYTICS=true
+    volumes:
+      - ./data/meilisearch:/meili_data
+    restart: unless-stopped
+
+  librechat:
+    image: ghcr.io/danny-avila/librechat:latest
+    container_name: gutenberg-librechat
+    ports:
+      - "${LIBRECHAT_PORT:-3080}:3080"
+    env_file: .env
+    environment:
+      - HOST=0.0.0.0
+      - MONGO_URI=mongodb://mongodb:27017/librechat
+      - MEILI_HOST=http://meilisearch:7700
+      - NO_INDEX=true
+    volumes:
+      - ./librechat.yaml:/app/librechat.yaml
+    depends_on:
+      - mongodb
+      - meilisearch
+      - api
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - default
+      - shared
+    restart: unless-stopped
+
+networks:
+  shared:
+    external: true
