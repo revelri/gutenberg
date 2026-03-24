@@ -69,6 +69,8 @@ services:
       - NO_INDEX=true
     volumes:
       - ./librechat.yaml:/app/librechat.yaml
+      - ./librechat-custom.css:/app/client/dist/assets/custom.css:ro
+      - ./librechat-index.html:/app/client/dist/index.html:ro
     depends_on:
       - mongodb
       - meilisearch

@@ -1,0 +1,316 @@
+/*
+ * Gutenborg — LibreChat Custom Theme
+ * Applies DESIGN.md aesthetic: editorial/magazine, monochrome + saddle brown accent
+ * Typography: Instrument Serif (display), Source Sans 3 (body), Geist Mono (data)
+ */
+
+/* === Font imports === */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Geist+Mono:wght@400;500&display=swap');
+
+/* === Root CSS variable overrides (light mode) === */
+:root {
+  /* Primary accent: saddle brown — aged leather, book spines */
+  --primary: 25 76% 31%;                /* #8B4513 in HSL */
+  --primary-foreground: 30 25% 96%;     /* cream text on brown */
+  --ring-primary: #8B4513;
+
+  /* Surfaces: cream/vellum/parchment palette */
+  --background: 36 33% 97%;             /* #FAF7F2 cream */
+  --surface-primary: 0 0% 100%;         /* white cards */
+  --surface-primary-alt: 36 25% 95%;    /* #F5F0E8 vellum */
+  --surface-secondary: 36 25% 95%;
+  --surface-secondary-alt: 36 10% 90%;
+  --surface-tertiary: 36 10% 93%;
+  --surface-tertiary-alt: 0 0% 100%;
+  --surface-chat: 36 33% 97%;           /* cream chat area */
+  --surface-dialog: 0 0% 100%;
+  --header-primary: #FAF7F2;
+  --surface-hover: 36 10% 90%;
+  --surface-hover-alt: 36 10% 87%;
+  --surface-active: 36 10% 90%;
+  --surface-active-alt: 36 10% 87%;
+  --surface-primary-contrast: 36 10% 90%;
+
+  /* Submit/action: saddle brown */
+  --surface-submit: #8B4513;
+  --surface-submit-hover: #A0522D;
+
+  /* Text: ink on cream */
+  --text-primary: #1C1917;              /* ink */
+  --text-secondary: #57534E;            /* stone */
+  --text-secondary-alt: #57534E;
+  --text-tertiary: #A8A29E;             /* ash */
+
+  /* Borders: parchment */
+  --border: #D6D3CD;
+  --border-light: #D6D3CD;
+  --border-medium: #D6D3CD;
+  --border-medium-alt: #D6D3CD;
+  --border-heavy: #A8A29E;
+  --border-xheavy: #57534E;
+
+  /* Accent colors */
+  --accent: 36 25% 95%;
+  --accent-foreground: 24 10% 10%;
+
+  /* Semantic */
+  --surface-destructive: #B93B3B;
+  --surface-destructive-hover: #9B3232;
+  --text-destructive: #B93B3B;
+  --text-warning: #C17D10;
+
+  /* Border radius: DESIGN.md hierarchy, not bubbly */
+  --radius: 0.375rem;                  /* 6px — md */
+}
+
+/* === Dark mode overrides === */
+.dark {
+  --primary: 25 55% 56%;               /* #C4875A warm brown */
+  --primary-foreground: 30 10% 10%;
+  --ring-primary: #C4875A;
+
+  --background: 20 14% 8%;             /* warm near-black */
+  --surface-primary: 20 10% 12%;
+  --surface-primary-alt: 20 10% 10%;
+  --surface-secondary: 20 10% 10%;
+  --surface-secondary-alt: 20 10% 14%;
+  --surface-tertiary: 20 10% 14%;
+  --surface-tertiary-alt: 20 10% 12%;
+  --surface-chat: 20 14% 8%;
+  --surface-dialog: 20 10% 12%;
+  --header-primary: hsl(20, 14%, 8%);
+  --surface-hover: 20 10% 16%;
+  --surface-hover-alt: 20 10% 18%;
+  --surface-active: 20 10% 16%;
+  --surface-active-alt: 20 10% 18%;
+  --surface-primary-contrast: 20 10% 14%;
+
+  --surface-submit: #C4875A;
+  --surface-submit-hover: #D49A6D;
+
+  --text-primary: #E7E5E4;
+  --text-secondary: #A8A29E;
+  --text-secondary-alt: #A8A29E;
+  --text-tertiary: #78716C;
+
+  --border: hsl(20, 8%, 20%);
+  --border-light: hsl(20, 8%, 18%);
+  --border-medium: hsl(20, 8%, 22%);
+  --border-medium-alt: hsl(20, 8%, 22%);
+  --border-heavy: hsl(20, 8%, 30%);
+  --border-xheavy: hsl(20, 8%, 40%);
+
+  --accent: 20 10% 14%;
+  --accent-foreground: 30 10% 90%;
+}
+
+/* === Typography === */
+
+/* Body text: Source Sans 3 */
+body,
+html,
+* {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Display/headings: Instrument Serif */
+h1, h2, h3, h4,
+.text-2xl, .text-3xl, .text-4xl,
+[class*="text-xl"],
+[class*="font-semibold"]:not(button):not([role="button"]) {
+  font-family: 'Instrument Serif', Georgia, serif !important;
+  letter-spacing: -0.01em;
+}
+
+/* Monospace for code and data */
+code, pre, kbd,
+[class*="font-mono"],
+.tabular-nums {
+  font-family: 'Geist Mono', 'JetBrains Mono', monospace !important;
+}
+
+/* Chat message content: ensure Source Sans 3 */
+[class*="markdown"],
+[class*="prose"],
+.text-message {
+  font-family: 'Source Sans 3', sans-serif !important;
+  line-height: 1.6;
+}
+
+/* === Aggressive Tailwind overrides (LibreChat bakes theme at build time) === */
+/* Use html body prefix for maximum specificity */
+
+/* All white backgrounds → cream */
+html body div[class*="bg-token-main-surface-primary"],
+html body div.bg-presentation,
+html body div[class*="bg-white"],
+html body [style*="background-color: rgb(255, 255, 255)"],
+html body [style*="background-color:#fff"],
+html body .bg-white {
+  background-color: #FAF7F2 !important;
+}
+
+/* Catch-all: override all Tailwind bg-white and bg-surface classes */
+html body *[class*="bg-token-main-surface"] {
+  background-color: #FAF7F2 !important;
+}
+html body *[class*="bg-token-sidebar"] {
+  background-color: #F5F0E8 !important;
+}
+
+/* Submit/send button: saddle brown */
+html body button[class*="bg-text-primary"],
+html body [class*="bg-token-text-primary"] {
+  background-color: #8B4513 !important;
+}
+html body button[class*="bg-text-primary"]:hover,
+html body [class*="bg-token-text-primary"]:hover {
+  background-color: #A0522D !important;
+}
+
+/* === Component overrides === */
+
+/* Cards: white surface, parchment border, no shadows */
+[class*="rounded-lg"],
+[class*="rounded-xl"],
+[class*="rounded-2xl"] {
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* Remove all drop shadows on cards/panels */
+[class*="shadow"]:not([class*="shadow-stroke"]) {
+  box-shadow: none !important;
+}
+
+/* Buttons: DESIGN.md style — no gradients, no shadows */
+button[class*="bg-green"],
+button[class*="submit"],
+[class*="surface-submit"] {
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* Input fields: subtle, parchment borders */
+input, textarea, select {
+  border-radius: 3px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #8B4513 !important;
+  box-shadow: 0 0 0 1px rgba(139, 69, 19, 0.3) !important;
+  outline: none !important;
+}
+
+/* Sidebar border */
+nav,
+[class*="sidebar"],
+aside {
+  border-right-color: #D6D3CD !important;
+}
+
+/* Text colors */
+[class*="text-token-text-primary"] {
+  color: #1C1917 !important;
+}
+[class*="text-token-text-secondary"] {
+  color: #57534E !important;
+}
+[class*="text-token-text-tertiary"] {
+  color: #A8A29E !important;
+}
+
+/* Border colors */
+[class*="border-token"],
+[class*="border-border"] {
+  border-color: #D6D3CD !important;
+}
+
+/* === Chat-specific styling === */
+
+/* Blockquotes in chat responses: DESIGN.md pattern */
+blockquote {
+  border-left: 2px solid #8B4513 !important;
+  font-family: 'Instrument Serif', Georgia, serif !important;
+  font-style: italic;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #57534E;
+}
+
+/* Code blocks: primary-faint background */
+pre {
+  background-color: rgba(139, 69, 19, 0.08) !important;
+  border: 1px solid #D6D3CD !important;
+  border-radius: 6px !important;
+}
+
+code:not(pre code) {
+  background-color: rgba(139, 69, 19, 0.08) !important;
+  color: #8B4513 !important;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px !important;
+  font-size: 0.875em;
+}
+
+/* Links: saddle brown */
+a {
+  color: #8B4513 !important;
+}
+a:hover {
+  color: #A0522D !important;
+}
+
+/* Rule lines between sections */
+hr {
+  border-color: #D6D3CD !important;
+}
+
+/* Welcome message area */
+.text-center p,
+[class*="welcome"] {
+  font-family: 'Source Sans 3', sans-serif !important;
+  color: #57534E;
+}
+
+/* Footer styling */
+footer, [class*="footer"] {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 0.8125rem;
+  color: #A8A29E;
+  letter-spacing: 0.02em;
+}
+
+/* === Anti-patterns from DESIGN.md === */
+
+/* No pill shapes — enforce DESIGN.md border-radius hierarchy */
+[class*="rounded-full"] {
+  border-radius: 6px !important;
+}
+
+/* Exception: user avatars can stay circular */
+[class*="rounded-full"] img,
+[class*="avatar"] {
+  border-radius: 50% !important;
+}
+
+/* Scrollbar styling (WebKit) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6D3CD;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+.dark ::-webkit-scrollbar-track {
+  background: hsl(20, 14%, 8%);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(20, 8%, 22%);
+}
