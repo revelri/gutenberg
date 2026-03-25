@@ -1,0 +1,62 @@
+[
+  {
+    "query": "Where does Deleuze distinguish the virtual from the possible in Difference and Repetition?",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 229,
+    "ground_truth": "The only danger in all this is that the virtual could be confused with the possible. The possible is opposed to the real; the process undergone by the possible is therefore a 'realisation'. By contrast, the virtual is not opposed to the real; it possesses a full reality by itself. The process it undergoes is that of actualisation."
+  },
+  {
+    "query": "What does Deleuze say about Hegel and abstract movement in Difference and Repetition?",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 28,
+    "ground_truth": "Hegel is denounced as the one who proposes an abstract movement of concepts instead of a movement of the Physis and the Psyche. Hegel substitutes the abstract relation of the particular to the concept in general for the true relation of the singular and the universal in the Idea."
+  },
+  {
+    "query": "How does Deleuze distinguish repetition from generality at the opening of Difference and Repetition?",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 19,
+    "ground_truth": "Repetition is not generality. Repetition and generality must be distin\u00ad guished in several ways."
+  },
+  {
+    "query": "What do Deleuze and Guattari say about books having no subject in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 24,
+    "ground_truth": "A book has neither object nor subject; it is made of variously formed matters, and very different dates and speeds. To attribute the book to a subject is to overlook this working of matters, and the exteriority of their relations."
+  },
+  {
+    "query": "Find the passage about the rhizome establishing connections between semiotic chains in A Thousand Plateaus.",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 28,
+    "ground_truth": "rhizome ceaselessly establishes connections between semiotic chains, organizations of power, and circumstances relative to the arts, sci- ences, and social struggles."
+  },
+  {
+    "query": "What is the opening passage of Anti-Oedipus about desiring-machines?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 14,
+    "ground_truth": "It is at work everywhere, functioning smoothly at times, at other times in fits and starts. It breathes, it heats, it eats. It shits and fucks. What a mistake to have ever said the id."
+  },
+  {
+    "query": "What does Anti-Oedipus say about the body without organs not being nothingness?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 18,
+    "ground_truth": "body without organs is not the proof of an original nothingness, nor is it what remains of a lost totality. Above all, it is not a projection; it has nothing whatsoever to do with the body itself, or with an image of the body."
+  },
+  {
+    "query": "How do Deleuze and Guattari open What Is Philosophy?",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 6,
+    "ground_truth": "The question what is philosophy? can perhaps be posed only late in life, with the arrival of old age and the time for speaking concretely. In fact, the bibliography on the nature of philosophy is very limited."
+  },
+  {
+    "query": "What does Deleuze say about God and permission in Francis Bacon: The Logic of Sensation?",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "pdf_page": 27,
+    "ground_truth": "with God, everything is permitted. It is with God that everything is permitted, not only morally, since acts of violence and infamies always find a holy justification, but aesthetically, in a much more important manner, because the divine Figures are"
+  },
+  {
+    "query": "What does Deleuze say about the diagram as machine in his book on Foucault?",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "pdf_page": 86,
+    "ground_truth": "This is a different kind of diagram, a different machine, closer to theatre than to the factory; it involves a different relation between forces."
+  }
+]

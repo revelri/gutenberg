@@ -1,0 +1,142 @@
+[
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"It is at work everywhere, functioning smoothly at times\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 14,
+    "ground_truth": "It is at work everywhere, functioning smoothly at times, at other times in fits and starts. It breathes, it heats, it eats. It shits and fucks. What a mistake to have ever said the id.",
+    "label": "Opening line"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"A schizophrenic out for a walk is a better model\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 9,
+    "ground_truth": "a schizophrenic out for a walk is a better model than a neurotic lying on the analyst's couch....",
+    "label": "Schizo walk"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"The body without organs is not the proof of an original noth\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 18,
+    "ground_truth": "The body without organs is not the proof of an original nothingness, nor is it what remains of a lost totality. Above all, it is not a projection; it has nothing whatsoever to do with the body itself, or with an image of the body. It is the body without an image.",
+    "label": "BwO not nothingness"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"Desire does not lack anything\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 27,
+    "ground_truth": "Desire does not lack anything; it does not lack its object. It is, rather, the subject that is missing in desire, or desire that lacks a fixed subject; there is no fixed subject unless there is repression. Desire and its object are one and the same thing: the machine, as a machine of a machine.",
+    "label": "Desire lacks nothing"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"The real is not impossible; it is simply more and more artif\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 31,
+    "ground_truth": "The real is not impossible; it is simply more and more artificial. Marx termed the twofold movement of the tendency to a falling rate of profit, and the increase in the absolute quantity of surplus value, the law of the counteracted tendency.",
+    "label": "Real is artificial"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"every machine has a sort of code built into it\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 33,
+    "ground_truth": "every machine has a sort of code built into it, stored up inside it. This code is inseparable not only from the way in which it is recorded and transmitted to each of the different regions of the body, but also from the way in which the relations of each of the regions with all the others are recorded.",
+    "label": "Machine code"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"The schizophrenic deliberately seeks out the very limit\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 31,
+    "ground_truth": "The schizophrenic deliberately seeks out the very limit of capitalism: he is its inherent tendency brought to fulfillment, its surplus product, its proletariat, and its exterminating angel. He scrambles all the codes and is the transmitter of the decoded flows of desire. The real continues to flow.",
+    "label": "Schizo limit"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"There is no such thing as either man or nature\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 15,
+    "ground_truth": "There is no such thing as either man or nature now, only a process that produces the one within the other and couples the machines together. Producing-machines, desiring-machines everywhere, schizophrenic machines, all of species life: the self and the non-self, outside and inside, no longer have any meaning whatsoever.",
+    "label": "No man or nature"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"desiring-machines make us an organism\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 18,
+    "ground_truth": "Desiring-machines make us an organism; but at the very heart of this production, within the very production of this production, the body suffers from being organized in this way, from not having some other sort of organization, or no organization at all.",
+    "label": "Desiring-machines organism"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"Capital is indeed the body without organs of the capitalist\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 19,
+    "ground_truth": "Capital is indeed the body without organs of the capitalist, or rather of the capitalist being. But as such, it is not only the fluid and petrified substance of money, for it will give to the sterility of money the form whereby money produces money.",
+    "label": "Capital as BwO"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"Oedipus is the figurehead of imperialism\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 11,
+    "ground_truth": "Oedipus is the figurehead of imperialism, \"colonization pursued by other means, it is the interior colony, and we shall see that even here at home ... it is our intimate colonial education.",
+    "label": "Oedipus imperialism"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"the unconscious is an orphan\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 38,
+    "ground_truth": "the unconscious is an orphan, and produces itself within the identity of nature and man.",
+    "label": "Unconscious orphan"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"deterritorialization and reterritorialization\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 143,
+    "ground_truth": "deterritorialization and reterritorialization. An important consequence emerges from the above considerations. The social axiomatic of modern societies is caught between two poles, and is constantly oscillating from one pole to the other.",
+    "label": "Deterritorialization"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"the socius is not a projection of the body without organs\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 153,
+    "ground_truth": "The socius is not a projection of the body without organs; rather, the body without organs is the limit of the socius, its tangent of deterritorialization, the ultimate residue of a deterritorialized socius.",
+    "label": "Socius not projection"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"schizophrenia is like love\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 16,
+    "ground_truth": "Schizophrenia is like love: there is no specifically schizophrenic phenomenon or entity; schizophrenia is the universe of productive and reproductive desiring- machines, universal primary production as \"the essential reality of man and nature.",
+    "label": "Schizo like love"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"the recording surface\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 19,
+    "ground_truth": "the recording surface. Capital is indeed the body without organs of the capitalist, or rather of the capitalist being. But as such, it is not only the fluid and petrified substance of money, for it will give to the sterility of money the form whereby money produces money.",
+    "label": "Recording surface"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"paranoia and schizophrenia\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 5,
+    "ground_truth": "paranoia and schizophrenia. Molar and molecular. 2. The Molecular Unconscious 283 Desire and machine. Beyond vitalism and mechanism. The two states of the machine. Molecular functionalism - The synthe- ses \u2022 The libido, the large aggregates and the micro-multiplicities. The gigantism and the dwarfism of desire.",
+    "label": "Paranoia and schizo"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"the investment of social production\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 4,
+    "ground_truth": "the investment of social production .. From childhood .. The third paralogism of psychoanalysis: Oedipus as a biunivocal \"application\" .. The disgrace of psychoanalysis with regard to history .. Desire and the infrastructure\" Segregation and nomad- ism .. 6.",
+    "label": "Investment of social"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"the family is by nature eccentric\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 62,
+    "ground_truth": "The family is by nature eccentric, decentered. We are told of fusional, divisive, tubular, and foreclosing families.",
+    "label": "Family eccentric"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"an organ-machine is plugged into\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 14,
+    "ground_truth": "An organ-machine is plugged into an energy-source-machine: the one produces a flow that the other inter rupts. The breast is a machine that produces milk, and the mouth ~ machine coupled to it.",
+    "label": "Organ-machine plugged"
+  }
+]
