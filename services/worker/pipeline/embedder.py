@@ -17,9 +17,13 @@ BATCH_SIZE = 8
 _MODEL_MAX_CHARS = {
     "nomic-embed-text": 6000,
     "nomic-embed-text-v2-moe": 6000,
-    "mxbai-embed-large": 1800,  # 512-token context
-    "all-minilm": 1800,         # 512-token context
+    "mxbai-embed-large": 1800,       # 512-token context
+    "all-minilm": 1800,              # 512-token context
     "snowflake-arctic-embed": 1800,
+    "qwen3-embedding": 32000,        # 32K-token context
+    "qwen3-embedding:4b": 32000,
+    "qwen3-embedding:0.6b": 32000,
+    "qwen3-embedding:8b": 32000,
 }
 MAX_CHARS = _MODEL_MAX_CHARS.get(EMBED_MODEL, 6000)
 
