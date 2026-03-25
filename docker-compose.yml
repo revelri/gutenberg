@@ -38,6 +38,13 @@ services:
       - chromadb
     volumes:
       - ./data:/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     restart: unless-stopped
 
   mongodb:

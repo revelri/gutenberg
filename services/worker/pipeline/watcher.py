@@ -13,6 +13,7 @@ from pipeline.detector import classify_document
 from pipeline.extractors import extract_text
 from pipeline.chunker import chunk_text
 from pipeline.embedder import embed_chunks
+from pipeline.ocrmypdf_preprocess import preprocess as ocrmypdf_preprocess, ocrmypdf_available
 from pipeline.store import store_chunks, is_duplicate, record_document
 
 log = logging.getLogger("gutenberg.watcher")
@@ -87,11 +88,26 @@ class InboxWatcher:
                 shutil.move(str(work_path), str(self.processed / fname))
                 return
 
-            # Classify and extract
+            # Classify
             doc_type = classify_document(work_path)
             log.info(f"Classified {fname} as {doc_type}")
 
-            text, metadata, page_segments = extract_text(work_path, doc_type)
+            # For scanned PDFs: OCRmyPDF adds a text layer, then PyMuPDF extracts fast.
+            # Falls back to Docling if OCRmyPDF is not available.
+            extract_path = work_path
+            if doc_type == "pdf_scanned" and ocrmypdf_available():
+                try:
+                    ocr_dir = self.processing / "_ocr_tmp"
+                    ocr_dir.mkdir(exist_ok=True)
+                    extract_path = ocrmypdf_preprocess(work_path, ocr_dir)
+                    doc_type = classify_document(extract_path)
+                    log.info(f"OCRmyPDF preprocessed → reclassified as {doc_type}")
+                except Exception:
+                    log.warning(f"OCRmyPDF failed for {fname}, falling back to Docling")
+                    extract_path = work_path
+
+            text, metadata, page_segments = extract_text(extract_path, doc_type)
+            metadata["source"] = fname  # always use original filename
             if not text.strip():
                 raise ValueError(f"No text extracted from {fname}")
 

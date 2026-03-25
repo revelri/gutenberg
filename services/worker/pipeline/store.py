@@ -15,8 +15,8 @@ CHROMA_HOST = os.environ.get("CHROMA_HOST", "http://chromadb:8000")
 COLLECTION_NAME = os.environ.get("CHROMA_COLLECTION", "gutenberg")
 
 
-def _get_collection():
-    # Parse host and port from URL
+def _get_collection(collection_name: str | None = None):
+    """Get or create a ChromaDB collection."""
     host = CHROMA_HOST.replace("http://", "").replace("https://", "")
     parts = host.split(":")
     hostname = parts[0]
@@ -24,7 +24,7 @@ def _get_collection():
 
     client = chromadb.HttpClient(host=hostname, port=port)
     return client.get_or_create_collection(
-        name=COLLECTION_NAME,
+        name=collection_name or COLLECTION_NAME,
         metadata={"hnsw:space": "cosine"},
     )
 
@@ -53,9 +53,9 @@ def is_duplicate(path: Path, state_file: Path) -> bool:
     return False
 
 
-def store_chunks(chunks: list[dict], embeddings: list[list[float]]):
+def store_chunks(chunks: list[dict], embeddings: list[list[float]], collection_name: str | None = None):
     """Store chunks and embeddings in ChromaDB."""
-    collection = _get_collection()
+    collection = _get_collection(collection_name)
 
     ids = [str(uuid.uuid4()) for _ in chunks]
     documents = [c["text"] for c in chunks]
