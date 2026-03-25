@@ -35,6 +35,15 @@ class Settings(BaseSettings):
     # Beyond this threshold, falls back to ChromaDB where_document search.
     bm25_max_chunks: int = 50_000
 
+    # RRF fusion weights: dense (semantic) vs sparse (keyword) search.
+    # Higher dense weight favors meaning-based retrieval for philosophical text.
+    rrf_dense_weight: float = 0.6
+    rrf_sparse_weight: float = 0.4
+
+    # HyDE: generate a hypothetical answer before embedding the query.
+    # Dramatically improves dense search for queries with no lexical overlap.
+    hyde_enabled: bool = True
+
     class Config:
         env_file = ".env"
 
