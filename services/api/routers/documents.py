@@ -6,7 +6,7 @@ from pathlib import Path
 
 from fastapi import APIRouter
 
-from core.config import settings
+from core.chroma import get_collection
 from core.rag import refresh_bm25_index
 
 log = logging.getLogger("gutenberg.documents")
@@ -32,17 +32,8 @@ async def list_documents():
 @router.delete("/{filename}")
 async def delete_document(filename: str):
     """Delete a document's chunks from ChromaDB."""
-    import chromadb
+    collection = get_collection()
 
-    host = settings.chroma_host.replace("http://", "").replace("https://", "")
-    parts = host.split(":")
-    hostname = parts[0]
-    port = int(parts[1]) if len(parts) > 1 else 8000
-    client = chromadb.HttpClient(host=hostname, port=port)
-
-    collection = client.get_or_create_collection(name=settings.chroma_collection)
-
-    # Find and delete chunks by source filename
     results = collection.get(
         where={"source": filename},
         include=["metadatas"],

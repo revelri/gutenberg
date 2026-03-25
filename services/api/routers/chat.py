@@ -13,6 +13,7 @@ from sse_starlette.sse import EventSourceResponse
 
 from core.config import settings, collection_routes
 from core.rag import retrieve
+from core.verification import extract_quotes, verify_quotes, format_verification_footer
 
 log = logging.getLogger("gutenberg.chat")
 router = APIRouter()
@@ -69,18 +70,19 @@ async def chat_completions(request: ChatRequest):
 
     if request.stream:
         return EventSourceResponse(
-            _stream_response(ollama_messages, request),
+            _stream_response(ollama_messages, request, sources),
             media_type="text/event-stream",
         )
     else:
-        return await _non_stream_response(ollama_messages, request)
+        return await _non_stream_response(ollama_messages, request, sources)
 
 
-async def _stream_response(messages: list[dict], request: ChatRequest):
-    """Stream response from Ollama as SSE events."""
+async def _stream_response(messages: list[dict], request: ChatRequest, sources: list[dict]):
+    """Stream response from Ollama as SSE events, with verification footer."""
     chat_id = f"chatcmpl-{uuid.uuid4().hex[:8]}"
+    accumulated_text = []
 
-    async with httpx.AsyncClient(timeout=120) as client:
+    async with httpx.AsyncClient(timeout=300) as client:
         async with client.stream(
             "POST",
             f"{settings.ollama_host}/api/chat",
@@ -117,6 +119,9 @@ async def _stream_response(messages: list[dict], request: ChatRequest):
                     else:
                         content = ""
 
+                if content:
+                    accumulated_text.append(content)
+
                 chunk = {
                     "id": chat_id,
                     "object": "chat.completion.chunk",
@@ -126,20 +131,55 @@ async def _stream_response(messages: list[dict], request: ChatRequest):
                         {
                             "index": 0,
                             "delta": {"content": content} if content else {},
-                            "finish_reason": "stop" if done else None,
+                            "finish_reason": None,
                         }
                     ],
                 }
                 yield {"data": json.dumps(chunk)}
 
                 if done:
+                    # Run verification on the accumulated response
+                    full_response = "".join(accumulated_text)
+                    footer = _run_verification(full_response, sources)
+
+                    if footer:
+                        footer_chunk = {
+                            "id": chat_id,
+                            "object": "chat.completion.chunk",
+                            "created": int(time.time()),
+                            "model": request.model,
+                            "choices": [
+                                {
+                                    "index": 0,
+                                    "delta": {"content": footer},
+                                    "finish_reason": None,
+                                }
+                            ],
+                        }
+                        yield {"data": json.dumps(footer_chunk)}
+
+                    # Final stop chunk
+                    stop_chunk = {
+                        "id": chat_id,
+                        "object": "chat.completion.chunk",
+                        "created": int(time.time()),
+                        "model": request.model,
+                        "choices": [
+                            {
+                                "index": 0,
+                                "delta": {},
+                                "finish_reason": "stop",
+                            }
+                        ],
+                    }
+                    yield {"data": json.dumps(stop_chunk)}
                     yield {"data": "[DONE]"}
                     return
 
 
-async def _non_stream_response(messages: list[dict], request: ChatRequest) -> dict:
+async def _non_stream_response(messages: list[dict], request: ChatRequest, sources: list[dict]) -> dict:
     """Non-streaming response from Ollama."""
-    async with httpx.AsyncClient(timeout=120) as client:
+    async with httpx.AsyncClient(timeout=300) as client:
         resp = await client.post(
             f"{settings.ollama_host}/api/chat",
             json={
@@ -158,6 +198,11 @@ async def _non_stream_response(messages: list[dict], request: ChatRequest) -> di
     content = data.get("message", {}).get("content", "")
     # Strip qwen3-style <think>...</think> blocks from response
     content = re.sub(r"<think>.*?</think>\s*", "", content, flags=re.DOTALL)
+
+    # Append verification footer
+    footer = _run_verification(content, sources)
+    if footer:
+        content += footer
 
     return {
         "id": f"chatcmpl-{uuid.uuid4().hex[:8]}",
@@ -180,3 +225,19 @@ async def _non_stream_response(messages: list[dict], request: ChatRequest) -> di
             "total_tokens": data.get("prompt_eval_count", 0) + data.get("eval_count", 0),
         },
     }
+
+
+def _run_verification(response_text: str, sources: list[dict]) -> str:
+    """Run quote verification and return a formatted footer (or empty string)."""
+    if not sources:
+        return ""
+
+    try:
+        quotes = extract_quotes(response_text)
+        if not quotes:
+            return ""
+        results = verify_quotes(quotes, sources)
+        return format_verification_footer(results)
+    except Exception:
+        log.exception("Quote verification failed")
+        return ""
