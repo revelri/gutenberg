@@ -1,11 +1,11 @@
 # Gutenborg — TODOs
 
-## Re-ingest corpus after P0 page metadata ships
+## Re-ingest corpus with updated chunker
 **Priority:** High (blocks P4 dogfooding)
-**What:** After the page metadata pipeline (P0) lands, all existing ChromaDB data lacks `page_start`/`page_end` metadata. Need to clear the ChromaDB collection and `documents.jsonl` state file, then re-ingest the test corpus with the new pipeline.
-**Context:** The Deleuze & Guattari corpus (founder's test data) will need fresh ingestion. The existing D&D sourcebooks can optionally be re-ingested or discarded depending on whether they're still useful for testing.
-**Approach:** Either (a) wipe ChromaDB collection + state file and re-drop PDFs into inbox, or (b) build a `scripts/reingest.py` that reads `documents.jsonl`, finds the original files in `/data/processed/`, and re-runs the pipeline.
-**Depends on:** P0 complete.
+**What:** P0 (page metadata) and the citation accuracy pipeline are now shipped. All existing ChromaDB data was chunked with the old pipeline (before char offset tracking fix). Need to re-ingest to get accurate `page_start`/`page_end` metadata.
+**Context:** Run `python scripts/reingest.py` to clear ChromaDB and re-process all documents in `/data/processed/`. The Deleuze & Guattari corpus (founder's test data) should be the primary corpus after re-ingestion. The reingest script already exists.
+**Approach:** `python scripts/reingest.py` — clears collection + state file, re-runs full pipeline on all processed documents.
+**Depends on:** Nothing — ready to run now.
 
 ## Evaluate embedding models for dense philosophical text
 **Priority:** Medium (after baseline accuracy established)
@@ -21,8 +21,5 @@
 **Approach:** SQLite is the path of least resistance — single file, no server, Python stdlib. Add a `data/gutenborg.db` with tables for `documents`, `bibliography`, and `bookmarks`.
 **Depends on:** Multi-tenancy decision.
 
-## BM25 memory scaling guard
-**Priority:** Low (fine at current scale, needed for institutional deployments)
-**What:** The BM25 index in `rag.py:42-62` loads ALL chunks from ChromaDB into memory. At 30 books (~50-100MB) this is fine. At 500+ books it will OOM the API container.
-**Context:** We explicitly chose to leave this as-is for the single-user PoC (eng review Issue 6B). When multi-tenancy or larger corpora arrive, options include: (a) ChromaDB's native `where_document` text search, (b) paginated BM25 loading, (c) external search index (Elasticsearch/Meilisearch). Option (a) is the simplest and avoids a new dependency.
-**Depends on:** Nothing — can be done anytime. Becomes urgent if corpus exceeds ~100 books.
+## ~~BM25 memory scaling guard~~ (DONE)
+**Status:** Implemented in `rag.py:56-62`. BM25 index has a `bm25_max_chunks` threshold (default 50,000). When exceeded, falls back to ChromaDB `where_document` text search. The fallback search quality should be evaluated if corpus exceeds ~100 books at institutional scale.
