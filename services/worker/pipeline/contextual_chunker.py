@@ -17,7 +17,7 @@ log = logging.getLogger("gutenberg.contextual_chunker")
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://ollama:11434")
 CONTEXT_MODEL = os.environ.get("OLLAMA_LLM_MODEL", "qwen3:8b")
-BATCH_SIZE = 5  # chunks per LLM call
+BATCH_SIZE = 15  # chunks per LLM call
 
 
 def add_context_to_chunks(
@@ -35,6 +35,10 @@ def add_context_to_chunks(
 
     Then prepends it to the chunk text before embedding.
     """
+    if os.environ.get("CONTEXTUAL_CHUNKER_ENABLED", "true").lower() != "true":
+        log.info("Contextual chunking disabled, returning chunks unchanged")
+        return chunks
+
     host = ollama_host or OLLAMA_HOST
     mdl = model or CONTEXT_MODEL
 
@@ -52,12 +56,16 @@ def add_context_to_chunks(
             else:
                 enriched_text = chunk["text"]
 
-            enriched.append({
-                "text": enriched_text,
-                "metadata": chunk["metadata"],
-            })
+            enriched.append(
+                {
+                    "text": enriched_text,
+                    "metadata": chunk["metadata"],
+                }
+            )
 
-        log.info(f"  Contextualized {min(batch_start + BATCH_SIZE, len(chunks))}/{len(chunks)} chunks")
+        log.info(
+            f"  Contextualized {min(batch_start + BATCH_SIZE, len(chunks))}/{len(chunks)} chunks"
+        )
 
     return enriched
 
@@ -73,7 +81,7 @@ def _generate_contexts_batch(
         page = chunk["metadata"].get("page_start", "?")
         preview = chunk["text"][:200].replace("\n", " ")
         chunk_descriptions.append(
-            f"CHUNK {i+1} (p. {page}, section: {heading or 'none'}):\n{preview}..."
+            f"CHUNK {i + 1} (p. {page}, section: {heading or 'none'}):\n{preview}..."
         )
 
     chunks_block = "\n\n".join(chunk_descriptions)
@@ -95,7 +103,7 @@ Respond with ONLY the numbered context lines, nothing else:"""
                 "stream": False,
                 "options": {
                     "temperature": 0.1,
-                    "num_predict": 256,
+                    "num_predict": 512,
                 },
             },
             timeout=120,
@@ -123,6 +131,14 @@ def _parse_numbered_contexts(text: str, expected_count: int) -> list[str]:
         match = re.match(r"(?:CHUNK\s+)?(\d+)[.):]\s*(.*)", line.strip())
         if match:
             contexts.append(match.group(2).strip())
+
+    # Log which chunks got empty contexts if padding needed
+    if len(contexts) < expected_count:
+        missing_indices = list(range(len(contexts) + 1, expected_count + 1))
+        log.warning(
+            f"LLM returned {len(contexts)} contexts, expected {expected_count}. "
+            f"Chunks {missing_indices} will have empty contexts"
+        )
 
     # Pad or trim to expected count
     while len(contexts) < expected_count:

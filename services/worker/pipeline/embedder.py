@@ -32,24 +32,15 @@ _embed_dim: int | None = None
 
 
 def _clean_for_embedding(text: str) -> str:
-    """Clean text to reduce token count for embedding models.
+    """Prepare text for embedding: truncate to model context limit.
 
-    BERT-based tokenizers tokenize each punctuation char separately,
-    so repeated dots/dashes in table-of-contents formatting explode
-    token counts.
+    Text normalization (Unicode, hyphenation, punctuation collapse) is now
+    handled upstream by clean_for_ingestion() in extractors.py.
+    This function only handles truncation to the model's max context.
     """
     text = text.strip()
     if not text:
         return "[empty]"
-    # Collapse repeated dots (table of contents: "Chapter 1 ......... 5")
-    text = re.sub(r'\.{3,}', '...', text)
-    # Collapse repeated dashes
-    text = re.sub(r'-{3,}', '---', text)
-    # Collapse repeated underscores
-    text = re.sub(r'_{3,}', '___', text)
-    # Collapse repeated spaces
-    text = re.sub(r' {3,}', '  ', text)
-    # Truncate to safe length
     if len(text) > MAX_CHARS:
         text = text[:MAX_CHARS]
     return text

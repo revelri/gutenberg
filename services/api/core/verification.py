@@ -5,8 +5,11 @@ the retrieved context chunks using exact and fuzzy matching.
 """
 
 import logging
+import os
 import re
 from difflib import SequenceMatcher
+
+from shared.text_normalize import normalize_for_matching
 
 log = logging.getLogger("gutenberg.verification")
 
@@ -91,6 +94,7 @@ def _verify_single_quote(quote: str, chunks: list[dict]) -> dict:
     """Verify a single quote against all chunks."""
     best_match = {
         "quote": quote[:80] + "..." if len(quote) > 80 else quote,
+        "_full_quote": quote,
         "status": "unverified",
         "source": None,
         "page": None,
@@ -113,6 +117,7 @@ def _verify_single_quote(quote: str, chunks: list[dict]) -> dict:
         if quote_normalized in chunk_normalized:
             return {
                 "quote": best_match["quote"],
+                "_full_quote": quote,
                 "status": "verified",
                 "source": meta.get("source"),
                 "page": meta.get("page_start"),
@@ -133,6 +138,25 @@ def _verify_single_quote(quote: str, chunks: list[dict]) -> dict:
                     best_match["status"] = "approximate"
                     best_match["source"] = meta.get("source")
                     best_match["page"] = meta.get("page_start")
+
+    # Third tier: lemma-normalized matching (catches "produces" vs "produced")
+    if best_match["status"] == "unverified":
+        try:
+            from shared.nlp import get_nlp, is_available
+            if is_available():
+                nlp = get_nlp()
+                quote_lemmas = " ".join(t.lemma_ for t in nlp(_normalize(quote)) if t.is_alpha)
+                for chunk in chunks:
+                    chunk_lemmas = " ".join(t.lemma_ for t in nlp(_normalize(chunk.get("text", ""))) if t.is_alpha)
+                    if len(quote_lemmas) > 20 and quote_lemmas[:40] in chunk_lemmas:
+                        meta = chunk.get("metadata", {})
+                        best_match["status"] = "approximate"
+                        best_match["source"] = meta.get("source")
+                        best_match["page"] = meta.get("page_start")
+                        best_match["similarity"] = 0.85
+                        break
+        except ImportError:
+            pass
 
     return best_match
 
@@ -158,12 +182,84 @@ def _best_window_ratio(quote: str, text: str) -> float:
 
 def _normalize(text: str) -> str:
     """Normalize text for comparison: lowercase, strip markdown, collapse whitespace."""
-    text = text.lower()
-    # Strip markdown bold/italic markers
-    text = re.sub(r"\*{1,3}([^*]+)\*{1,3}", r"\1", text)
-    text = re.sub(r"_{1,3}([^_]+)_{1,3}", r"\1", text)
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    return normalize_for_matching(text, strip_markdown=True)
+
+
+def verify_against_source(
+    results: list[dict],
+    pdf_dirs: list[str] | None = None,
+) -> list[dict]:
+    """Cross-check verified quotes against the raw PDF page text.
+
+    For each quote marked 'verified' or 'approximate', attempt to find
+    the source PDF and check the quote against the actual page text.
+    Adds 'source_verified' field: True if found in PDF, False if not, None if PDF unavailable.
+    """
+    if not pdf_dirs:
+        pdf_dirs = []
+        for d in ["data/processed", "data/inbox", "data/surya_corpus"]:
+            if os.path.isdir(d):
+                pdf_dirs.append(d)
+
+    for result in results:
+        result["source_verified"] = None
+        if result["status"] not in ("verified", "approximate"):
+            continue
+        source = result.get("source")
+        page = result.get("page")
+        if not source or not page:
+            continue
+
+        # Find the PDF file
+        pdf_path = _find_pdf(source, pdf_dirs)
+        if not pdf_path:
+            continue
+
+        # Check the quote against the actual page text
+        try:
+            import fitz
+            doc = fitz.open(pdf_path)
+            # Page numbers are 1-indexed in our metadata, 0-indexed in PyMuPDF
+            page_idx = page - 1
+            if 0 <= page_idx < len(doc):
+                page_text = doc[page_idx].get_text()
+                page_normalized = _normalize(page_text)
+                # Extract the original quote from the truncated display
+                quote_text = result.get("_full_quote", result["quote"].rstrip("..."))
+                quote_normalized = _normalize(quote_text)
+                # Check: does the quote appear on this page (or adjacent pages)?
+                found = quote_normalized[:60] in page_normalized
+                if not found and page_idx + 1 < len(doc):
+                    adj_text = doc[page_idx + 1].get_text()
+                    found = quote_normalized[:60] in _normalize(adj_text)
+                if not found and page_idx > 0:
+                    adj_text = doc[page_idx - 1].get_text()
+                    found = quote_normalized[:60] in _normalize(adj_text)
+                result["source_verified"] = found
+            doc.close()
+        except Exception as e:
+            log.warning(f"Source verification failed for '{source}': {e}")
+
+    return results
+
+
+def _find_pdf(source_name: str, pdf_dirs: list[str]) -> str | None:
+    """Find a PDF file matching the source name in the given directories."""
+    import os
+    for d in pdf_dirs:
+        for f in os.listdir(d):
+            if not f.lower().endswith(".pdf"):
+                continue
+            # Match by source name prefix (source names may have year prefix like "1980 A Thousand Plateaus")
+            f_lower = f.lower().replace("_", " ").replace("-", " ")
+            source_lower = source_name.lower()
+            # Try matching the title part (without year)
+            title = re.sub(r"^\d{4}\s+", "", source_lower).strip()
+            if title and title in f_lower:
+                return os.path.join(d, f)
+            if source_lower in f_lower:
+                return os.path.join(d, f)
+    return None
 
 
 def format_verification_footer(results: list[dict]) -> str:
@@ -190,11 +286,21 @@ def format_verification_footer(results: list[dict]) -> str:
     if unverified:
         lines[0] += f", {unverified} unverified"
 
+    # Count source-verified results
+    source_checked = [r for r in meaningful if r.get("source_verified") is not None]
+    if source_checked:
+        src_ok = sum(1 for r in source_checked if r["source_verified"])
+        lines[0] += f" | {src_ok}/{len(source_checked)} source-confirmed"
+
     # Detail lines for non-verified quotes
     for r in meaningful:
-        if r["status"] == "verified":
+        if r["status"] == "verified" and r.get("source_verified") is not False:
             continue
-        tag = "\u2248" if r["status"] == "approximate" else "\u2717"
-        lines.append(f"- {tag} \"{r['quote']}\" — {r['status']} (similarity: {r['similarity']:.0%})")
+        if r["status"] == "verified" and r.get("source_verified") is False:
+            tag = "\u26a0"
+            lines.append(f"- {tag} \"{r['quote']}\" — verified in chunk but NOT found on cited page")
+        elif r["status"] != "verified":
+            tag = "\u2248" if r["status"] == "approximate" else "\u2717"
+            lines.append(f"- {tag} \"{r['quote']}\" — {r['status']} (similarity: {r['similarity']:.0%})")
 
     return "\n".join(lines)

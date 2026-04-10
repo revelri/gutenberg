@@ -8,8 +8,12 @@ import tiktoken
 
 log = logging.getLogger("gutenberg.chunker")
 
-CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "512"))
-CHUNK_OVERLAP = int(os.environ.get("CHUNK_OVERLAP", "50"))
+CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "384"))
+CHUNK_OVERLAP = int(os.environ.get("CHUNK_OVERLAP", "96"))
+CONTEXT_TOKEN_BUDGET = int(os.environ.get("CONTEXT_TOKEN_BUDGET", "80"))
+
+# Sentinel for sentence-level splitting in the separator list
+_SENTENCE_SEP = "__SENTENCE__"
 
 # Tokenizer for counting tokens
 _enc = tiktoken.get_encoding("cl100k_base")
@@ -17,6 +21,25 @@ _enc = tiktoken.get_encoding("cl100k_base")
 
 def _token_count(text: str) -> int:
     return len(_enc.encode(text))
+
+
+# Sentence-ending punctuation followed by space — lightweight heuristic
+_SENT_END_RE = re.compile(r"(?<=[.!?])\s+")
+
+
+def _trim_to_sentence_start(text: str) -> str:
+    """Trim overlap text to start at the nearest sentence boundary.
+
+    Finds the first sentence-ending punctuation (. ! ?) followed by whitespace
+    and returns everything after it. Falls back to the full text if no boundary
+    is found (short overlaps may be a single sentence fragment).
+    """
+    m = _SENT_END_RE.search(text)
+    if m:
+        trimmed = text[m.end():]
+        if trimmed.strip():
+            return trimmed.strip()
+    return text.strip()
 
 
 def _split_by_headers(text: str) -> list[dict]:
@@ -64,11 +87,22 @@ def _recursive_split(text: str, max_tokens: int, overlap_tokens: int) -> list[tu
     if _token_count(text) <= max_tokens:
         return [(text, 0, len(text))] if text.strip() else []
 
-    # Try splitting by progressively finer separators
-    separators = ["\n\n", "\n", ". ", " "]
+    # Try splitting by progressively finer separators.
+    # Sentence splitting via SpaCy replaces the brittle ". " separator
+    # which incorrectly breaks on "Dr. Smith", "e.g. the", "p. 47".
+    separators = ["\n\n", "\n", _SENTENCE_SEP, " "]
 
     for sep in separators:
-        parts = text.split(sep)
+        # Sentence splitting: use SpaCy instead of regex split
+        if sep == _SENTENCE_SEP:
+            try:
+                from shared.nlp import sentencize
+                parts = sentencize(text)
+            except ImportError:
+                parts = text.split(". ")  # fallback
+        else:
+            parts = text.split(sep)
+
         if len(parts) <= 1:
             continue
 
@@ -80,7 +114,9 @@ def _recursive_split(text: str, max_tokens: int, overlap_tokens: int) -> list[tu
 
         char_pos = 0
         for i, part in enumerate(parts):
-            candidate = f"{current}{sep}{part}" if current else part
+            # For sentence splits, join with space; for delimiter splits, join with the delimiter
+            joiner = " " if sep == _SENTENCE_SEP else sep
+            candidate = f"{current}{joiner}{part}" if current else part
             if _token_count(candidate) > max_tokens and current:
                 segments.append((current.strip(), current_offset))
                 current = part
@@ -89,7 +125,16 @@ def _recursive_split(text: str, max_tokens: int, overlap_tokens: int) -> list[tu
                 if not current:
                     current_offset = char_pos
                 current = candidate
-            char_pos += len(part) + (len(sep) if i < len(parts) - 1 else 0)
+            # Sentences are contiguous in the original text, so offset advances by part length
+            if sep == _SENTENCE_SEP:
+                # Find where this sentence starts in the original text
+                idx = text.find(part.strip(), char_pos)
+                if idx >= 0:
+                    char_pos = idx + len(part.strip())
+                else:
+                    char_pos += len(part)
+            else:
+                char_pos += len(part) + (len(sep) if i < len(parts) - 1 else 0)
 
         if current.strip():
             segments.append((current.strip(), current_offset))
@@ -110,6 +155,7 @@ def _recursive_split(text: str, max_tokens: int, overlap_tokens: int) -> list[tu
         # Apply overlap between consecutive chunks.
         # The overlap prefix is prepended to the chunk text, but the
         # content_offset and new_content_length track only the NEW content.
+        # Overlap is trimmed to start at a sentence boundary when possible.
         if overlap_tokens > 0 and len(final_chunks) > 1:
             overlapped: list[tuple[str, int, int]] = [final_chunks[0]]
             for i in range(1, len(final_chunks)):
@@ -118,7 +164,12 @@ def _recursive_split(text: str, max_tokens: int, overlap_tokens: int) -> list[tu
                 prev_tokens = _enc.encode(prev_text)
                 overlap_text = _enc.decode(prev_tokens[-overlap_tokens:]) if len(prev_tokens) > overlap_tokens else ""
                 if overlap_text.strip():
-                    overlapped.append((f"{overlap_text.strip()} {chunk_text}", chunk_offset, chunk_new_len))
+                    # Trim to nearest sentence boundary so overlap starts cleanly
+                    overlap_text = _trim_to_sentence_start(overlap_text)
+                    if overlap_text:
+                        overlapped.append((f"{overlap_text} {chunk_text}", chunk_offset, chunk_new_len))
+                    else:
+                        overlapped.append((chunk_text, chunk_offset, chunk_new_len))
                 else:
                     overlapped.append((chunk_text, chunk_offset, chunk_new_len))
             return overlapped
@@ -182,12 +233,23 @@ def _pages_for_offset(start_offset: int, length: int, breakpoints: list[tuple[in
     return (page_start, page_end)
 
 
-def chunk_text(text: str, metadata: dict, page_segments: list[dict] | None = None) -> list[dict]:
+def chunk_text(
+    text: str,
+    metadata: dict,
+    page_segments: list[dict] | None = None,
+    max_tokens: int | None = None,
+) -> list[dict]:
     """Split text into chunks with metadata.
+
+    Args:
+        max_tokens: Override for CHUNK_SIZE. When contextual chunking is enabled,
+            pass CHUNK_SIZE - CONTEXT_TOKEN_BUDGET to reserve space for the
+            context prefix.
 
     Returns list of dicts with keys: text, metadata (source, heading, chunk_index,
     page_start, page_end).
     """
+    effective_size = max_tokens if max_tokens is not None else CHUNK_SIZE
     breakpoints = _build_char_to_page(text, page_segments or [])
     sections = _split_by_headers(text)
     all_chunks = []
@@ -195,7 +257,7 @@ def chunk_text(text: str, metadata: dict, page_segments: list[dict] | None = Non
 
     for section in sections:
         section_offset = section["offset"]
-        pieces = _recursive_split(section["text"], CHUNK_SIZE, CHUNK_OVERLAP)
+        pieces = _recursive_split(section["text"], effective_size, CHUNK_OVERLAP)
         for piece_text, piece_offset, new_content_len in pieces:
             # piece_offset is relative to the section text;
             # add section_offset to get position in the full document.

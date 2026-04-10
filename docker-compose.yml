@@ -1,94 +1,49 @@
 services:
   chromadb:
     image: chromadb/chroma:0.6.3
-    container_name: gutenberg-chromadb
     ports:
-      - "8200:8000"
+      - "8001:8000"
     volumes:
-      - ./data/chroma:/chroma/chroma
+      - chroma-data:/chroma/chroma
     environment:
       - IS_PERSISTENT=TRUE
       - ANONYMIZED_TELEMETRY=FALSE
-    restart: unless-stopped
 
   api:
-    build: ./services/api
-    container_name: gutenberg-api
+    build: .
     ports:
-      - "8002:8000"
-    env_file: .env
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    depends_on:
-      - chromadb
+      - "8000:8000"
     volumes:
       - ./data:/data
-    networks:
-      - default
-      - shared
-    restart: unless-stopped
+    environment:
+      - DATABASE_PATH=/data/gutenborg.db
+      - CHROMA_HOST=http://chromadb:8000
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    depends_on:
+      chromadb:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/api/health', timeout=5)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
 
   worker:
-    build: ./services/worker
-    container_name: gutenberg-worker
-    env_file: .env
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    depends_on:
-      - chromadb
+    build: .
     volumes:
       - ./data:/data
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
-    restart: unless-stopped
-
-  mongodb:
-    image: mongo:8.0
-    container_name: gutenberg-mongodb
-    volumes:
-      - ./data/mongodb:/data/db
-    restart: unless-stopped
-
-  meilisearch:
-    image: getmeili/meilisearch:v1.35
-    container_name: gutenberg-meilisearch
     environment:
-      - MEILI_NO_ANALYTICS=true
-    volumes:
-      - ./data/meilisearch:/meili_data
-    restart: unless-stopped
-
-  librechat:
-    image: ghcr.io/danny-avila/librechat:latest
-    container_name: gutenberg-librechat
-    ports:
-      - "${LIBRECHAT_PORT:-3080}:3080"
-    env_file: .env
-    environment:
-      - HOST=0.0.0.0
-      - MONGO_URI=mongodb://mongodb:27017/librechat
-      - MEILI_HOST=http://meilisearch:7700
-      - NO_INDEX=true
-    volumes:
-      - ./librechat.yaml:/app/librechat.yaml
-      - ./librechat-custom.css:/app/client/dist/assets/custom.css:ro
-      - ./librechat-index.html:/app/client/dist/index.html:ro
+      - DATABASE_PATH=/data/gutenborg.db
+      - CHROMA_HOST=http://chromadb:8000
+      - INBOX_DIR=/data/inbox
+      - PROCESSING_DIR=/data/processing
+      - PROCESSED_DIR=/data/processed
+      - FAILED_DIR=/data/failed
     depends_on:
-      - mongodb
-      - meilisearch
-      - api
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    networks:
-      - default
-      - shared
-    restart: unless-stopped
+      chromadb:
+        condition: service_started
+    command: python -m pipeline.watcher
 
-networks:
-  shared:
-    external: true
+volumes:
+  chroma-data:

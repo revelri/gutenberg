@@ -5,6 +5,7 @@ and PyMuPDF extracts text in milliseconds. 10-50x faster than Docling.
 """
 
 import logging
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -33,15 +34,20 @@ def preprocess(input_path: Path, output_dir: Path) -> Path:
     output_path = output_dir / input_path.name
 
     log.info(f"OCRmyPDF preprocessing: {input_path.name}")
+    cmd = [
+        "ocrmypdf",
+        "--force-ocr",         # OCR all pages (for scanned PDFs)
+        "--optimize", "1",     # Light optimization
+        "--jobs", "4",         # Parallel page processing
+        "--deskew",            # Correct scanned page rotation
+        "--clean",             # Remove scan artifacts (requires unpaper)
+    ]
+    if os.environ.get("OCR_REMOVE_BG", "").lower() == "true":
+        cmd.append("--remove-background")
+    cmd.extend([str(input_path), str(output_path)])
+
     result = subprocess.run(
-        [
-            "ocrmypdf",
-            "--force-ocr",         # OCR all pages (for scanned PDFs)
-            "--optimize", "1",     # Light optimization
-            "--jobs", "4",         # Parallel page processing
-            str(input_path),
-            str(output_path),
-        ],
+        cmd,
         capture_output=True,
         text=True,
         timeout=600,  # 10 min timeout per document

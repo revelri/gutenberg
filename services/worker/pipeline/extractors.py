@@ -9,6 +9,8 @@ from pathlib import Path
 import fitz  # PyMuPDF
 from docx import Document as DocxDocument
 
+from shared.text_normalize import clean_for_ingestion, strip_headers_footers
+
 log = logging.getLogger("gutenberg.extractors")
 
 
@@ -32,6 +34,9 @@ def extract_text(path: Path, doc_type: str, strategy: str = "default") -> tuple[
         return _extract_pdf_scanned(path, metadata, strategy=strategy)
     elif doc_type == "docx":
         return _extract_docx(path, metadata)
+    elif doc_type == "epub":
+        from pipeline.epub_extractor import extract_epub
+        return extract_epub(path)
     else:
         raise ValueError(f"Unknown doc_type: {doc_type}")
 
@@ -43,9 +48,10 @@ def _extract_pdf_digital(path: Path, metadata: dict) -> tuple[str, dict, list[di
     for i, page in enumerate(doc):
         text = page.get_text("text")
         if text.strip():
-            pages.append({"page": i + 1, "text": text})
+            pages.append({"page": i + 1, "text": clean_for_ingestion(text)})
     doc.close()
 
+    pages = strip_headers_footers(pages)
     metadata["total_pages"] = len(pages)
     full_text = "\n\n".join(p["text"] for p in pages)
     return full_text, metadata, pages
@@ -97,7 +103,7 @@ def _extract_pdf_scanned(path: Path, metadata: dict, strategy: str = "default") 
             for page_no in sorted(doc.pages.keys()):
                 page_text = doc.export_to_markdown(page_no=page_no)
                 if page_text.strip():
-                    pages.append({"page": page_no, "text": page_text})
+                    pages.append({"page": page_no, "text": clean_for_ingestion(page_text)})
             log.info(f"Docling per-page extraction: {len(pages)} pages with text out of {num_pages}")
     except (TypeError, AttributeError) as e:
         log.warning(f"Docling per-page extraction failed, falling back to full export: {e}")
@@ -105,13 +111,14 @@ def _extract_pdf_scanned(path: Path, metadata: dict, strategy: str = "default") 
 
     # Fallback: single-page segment from full markdown export
     if not pages:
-        md_text = doc.export_to_markdown()
+        md_text = clean_for_ingestion(doc.export_to_markdown())
         total = len(doc.pages) if hasattr(doc, "pages") and doc.pages else 0
         metadata["total_pages"] = total
         metadata["ocr"] = True
         page_segments = [{"page": 1, "text": md_text}] if md_text.strip() else []
         return md_text, metadata, page_segments
 
+    pages = strip_headers_footers(pages)
     metadata["total_pages"] = len(pages)
     metadata["ocr"] = True
 
@@ -123,22 +130,44 @@ def _extract_pdf_scanned(path: Path, metadata: dict, strategy: str = "default") 
 
 
 def _check_ocr_quality(pages: list[dict], metadata: dict):
-    """Warn if OCR quality appears low (high ratio of non-dictionary words)."""
-    import re
+    """Warn if OCR quality appears low using SpaCy POS tagging.
 
-    sample_text = " ".join(p["text"] for p in pages[:5])  # sample first 5 pages
+    Tokens tagged as X (unknown POS) by SpaCy are likely OCR garbage.
+    Falls back to regex heuristic if SpaCy is unavailable.
+    """
+    sample_text = " ".join(p["text"] for p in pages[:5])[:10000]
+    if not sample_text.strip():
+        return
+
+    try:
+        from shared.nlp import get_nlp, is_available
+        if is_available():
+            nlp = get_nlp()
+            doc = nlp(sample_text)
+            total = sum(1 for t in doc if t.is_alpha)
+            garbage = sum(1 for t in doc if t.is_alpha and t.pos_ == "X")
+            ratio = garbage / total if total > 0 else 0
+            if ratio > 0.15:
+                log.warning(
+                    f"Low OCR quality for {metadata.get('source', 'unknown')}: "
+                    f"{ratio:.0%} unrecognized tokens (SpaCy POS=X)"
+                )
+                metadata["ocr_quality"] = "low"
+            return
+    except ImportError:
+        pass
+
+    # Fallback: regex heuristic
+    import re
     words = re.findall(r"[a-zA-Z]{3,}", sample_text)
     if not words:
         return
-
-    # Simple heuristic: words with >50% non-alpha chars or very short garbled tokens
     garbled = sum(1 for w in words if len(w) <= 2 or not w.isascii())
     ratio = garbled / len(words) if words else 0
-
     if ratio > 0.20:
         log.warning(
-            f"Low OCR quality detected for {metadata.get('source', 'unknown')}: "
-            f"{ratio:.0%} potentially garbled words. Citations may be less reliable."
+            f"Low OCR quality for {metadata.get('source', 'unknown')}: "
+            f"{ratio:.0%} potentially garbled words"
         )
 
 
@@ -170,5 +199,5 @@ def _extract_docx(path: Path, metadata: dict) -> tuple[str, dict, list[dict]]:
             paragraphs.append("\n".join(rows))
 
     metadata["total_pages"] = 0  # DOCX doesn't have page numbers
-    full_text = "\n\n".join(paragraphs)
+    full_text = clean_for_ingestion("\n\n".join(paragraphs))
     return full_text, metadata, []  # no page segments for DOCX

@@ -13,7 +13,7 @@ from sse_starlette.sse import EventSourceResponse
 
 from core.config import settings, collection_routes
 from core.rag import retrieve
-from core.verification import extract_quotes, verify_quotes, format_verification_footer
+from core.verification import extract_quotes, verify_quotes, verify_against_source, format_verification_footer
 
 log = logging.getLogger("gutenberg.chat")
 router = APIRouter()
@@ -22,6 +22,11 @@ router = APIRouter()
 class Message(BaseModel):
     role: str
     content: str
+
+
+def _estimate_tokens(text: str) -> int:
+    """Estimate token count using ~4 chars per token heuristic."""
+    return len(text) // 4
 
 
 class ChatRequest(BaseModel):
@@ -64,9 +69,24 @@ async def chat_completions(request: ChatRequest):
     # Build messages for Ollama
     ollama_messages = [{"role": "system", "content": system_prompt}]
 
-    # Include conversation history (last few turns for context)
-    for msg in request.messages[-6:]:
+    # Include conversation history with token budget
+    max_tokens = settings.max_history_tokens
+    history = []
+    total_tokens = 0
+    for msg in reversed(request.messages[:-1]):
+        msg_tokens = _estimate_tokens(msg.content)
+        if total_tokens + msg_tokens > max_tokens and history:
+            break
+        history.insert(0, msg)
+        total_tokens += msg_tokens
+
+    for msg in history:
         ollama_messages.append({"role": msg.role, "content": msg.content})
+
+    # Always include the latest user message
+    ollama_messages.append(
+        {"role": request.messages[-1].role, "content": request.messages[-1].content}
+    )
 
     if request.stream:
         return EventSourceResponse(
@@ -77,7 +97,9 @@ async def chat_completions(request: ChatRequest):
         return await _non_stream_response(ollama_messages, request, sources)
 
 
-async def _stream_response(messages: list[dict], request: ChatRequest, sources: list[dict]):
+async def _stream_response(
+    messages: list[dict], request: ChatRequest, sources: list[dict]
+):
     """Stream response from Ollama as SSE events, with verification footer."""
     chat_id = f"chatcmpl-{uuid.uuid4().hex[:8]}"
     accumulated_text = []
@@ -177,7 +199,9 @@ async def _stream_response(messages: list[dict], request: ChatRequest, sources: 
                     return
 
 
-async def _non_stream_response(messages: list[dict], request: ChatRequest, sources: list[dict]) -> dict:
+async def _non_stream_response(
+    messages: list[dict], request: ChatRequest, sources: list[dict]
+) -> dict:
     """Non-streaming response from Ollama."""
     async with httpx.AsyncClient(timeout=300) as client:
         resp = await client.post(
@@ -222,7 +246,8 @@ async def _non_stream_response(messages: list[dict], request: ChatRequest, sourc
         "usage": {
             "prompt_tokens": data.get("prompt_eval_count", 0),
             "completion_tokens": data.get("eval_count", 0),
-            "total_tokens": data.get("prompt_eval_count", 0) + data.get("eval_count", 0),
+            "total_tokens": data.get("prompt_eval_count", 0)
+            + data.get("eval_count", 0),
         },
     }
 
@@ -237,6 +262,7 @@ def _run_verification(response_text: str, sources: list[dict]) -> str:
         if not quotes:
             return ""
         results = verify_quotes(quotes, sources)
+        results = verify_against_source(results)
         return format_verification_footer(results)
     except Exception:
         log.exception("Quote verification failed")

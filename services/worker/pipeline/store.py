@@ -1,5 +1,6 @@
 """ChromaDB storage and dedup tracking."""
 
+import fcntl
 import hashlib
 import json
 import logging
@@ -7,7 +8,7 @@ import os
 import uuid
 from pathlib import Path
 
-import chromadb
+from shared.chroma import get_collection as _shared_get_collection
 
 log = logging.getLogger("gutenberg.store")
 
@@ -16,17 +17,8 @@ COLLECTION_NAME = os.environ.get("CHROMA_COLLECTION", "gutenberg")
 
 
 def _get_collection(collection_name: str | None = None):
-    """Get or create a ChromaDB collection."""
-    host = CHROMA_HOST.replace("http://", "").replace("https://", "")
-    parts = host.split(":")
-    hostname = parts[0]
-    port = int(parts[1]) if len(parts) > 1 else 8000
-
-    client = chromadb.HttpClient(host=hostname, port=port)
-    return client.get_or_create_collection(
-        name=collection_name or COLLECTION_NAME,
-        metadata={"hnsw:space": "cosine"},
-    )
+    """Get or create a ChromaDB collection using the shared client."""
+    return _shared_get_collection(CHROMA_HOST, collection_name or COLLECTION_NAME)
 
 
 def _file_sha256(path: Path) -> str:
@@ -43,17 +35,69 @@ def is_duplicate(path: Path, state_file: Path) -> bool:
     if not state_file.exists():
         return False
     with open(state_file) as f:
-        for line in f:
-            try:
-                record = json.loads(line)
-                if record.get("sha256") == sha:
-                    return True
-            except json.JSONDecodeError:
-                continue
+        fcntl.flock(f, fcntl.LOCK_SH)
+        try:
+            for line in f:
+                try:
+                    record = json.loads(line)
+                    if record.get("sha256") == sha:
+                        return True
+                except json.JSONDecodeError:
+                    continue
+        finally:
+            fcntl.flock(f, fcntl.LOCK_UN)
     return False
 
 
-def store_chunks(chunks: list[dict], embeddings: list[list[float]], collection_name: str | None = None):
+def write_pending_marker(filename: str, state_dir: Path) -> Path:
+    """Write a pending marker before starting ingestion.
+
+    The marker file contains chunk IDs so partial ingestion can be cleaned up.
+    Returns the marker file path.
+    """
+    marker = state_dir / f".pending-{filename}"
+    marker.write_text(json.dumps({"filename": filename, "chunk_ids": [], "status": "pending"}))
+    return marker
+
+
+def update_pending_marker(marker: Path, chunk_ids: list[str]):
+    """Update pending marker with stored chunk IDs."""
+    data = json.loads(marker.read_text())
+    data["chunk_ids"].extend(chunk_ids)
+    marker.write_text(json.dumps(data))
+
+
+def remove_pending_marker(marker: Path):
+    """Remove pending marker after successful ingestion."""
+    if marker.exists():
+        marker.unlink()
+
+
+def cleanup_partial_ingestion(state_dir: Path, collection_name: str | None = None):
+    """On startup, find pending markers and clean up partial ChromaDB entries."""
+    if not state_dir.exists():
+        return
+    for marker in state_dir.glob(".pending-*"):
+        try:
+            data = json.loads(marker.read_text())
+            chunk_ids = data.get("chunk_ids", [])
+            filename = data.get("filename", "unknown")
+            if chunk_ids:
+                collection = _get_collection(collection_name)
+                collection.delete(ids=chunk_ids)
+                log.info(f"Cleaned up {len(chunk_ids)} partial chunks for '{filename}'")
+            marker.unlink()
+            log.info(f"Removed pending marker for '{filename}'")
+        except Exception as e:
+            log.warning(f"Failed to clean up pending marker {marker}: {e}")
+
+
+def store_chunks(
+    chunks: list[dict],
+    embeddings: list[list[float]],
+    collection_name: str | None = None,
+    pending_marker: Path | None = None,
+):
     """Store chunks and embeddings in ChromaDB."""
     collection = _get_collection(collection_name)
 
@@ -71,10 +115,13 @@ def store_chunks(chunks: list[dict], embeddings: list[list[float]], collection_n
             documents=documents[i:end],
             metadatas=metadatas[i:end],
         )
+        # Track stored IDs in pending marker for crash recovery
+        if pending_marker and pending_marker.exists():
+            update_pending_marker(pending_marker, ids[i:end])
 
 
 def record_document(path: Path, chunk_count: int, state_file: Path):
-    """Append document record to state file."""
+    """Append document record to state file with exclusive lock."""
     import datetime
 
     record = {
@@ -84,4 +131,8 @@ def record_document(path: Path, chunk_count: int, state_file: Path):
         "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
     }
     with open(state_file, "a") as f:
-        f.write(json.dumps(record) + "\n")
+        fcntl.flock(f, fcntl.LOCK_EX)
+        try:
+            f.write(json.dumps(record) + "\n")
+        finally:
+            fcntl.flock(f, fcntl.LOCK_UN)

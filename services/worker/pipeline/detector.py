@@ -18,6 +18,9 @@ def classify_document(path: Path) -> str:
     if ext == ".docx":
         return "docx"
 
+    if ext == ".epub":
+        return "epub"
+
     if ext != ".pdf":
         raise ValueError(f"Unsupported file type: {ext}")
 
