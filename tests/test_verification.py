@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "services" / "api"))
+sys.path.insert(0, str(Path(__file__).parent.parent / "services"))
 
 from core.verification import extract_quotes, verify_quotes, format_verification_footer
 
