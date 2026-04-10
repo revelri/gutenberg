@@ -2,7 +2,7 @@
 """End-to-end citation accuracy test.
 
 For each test case:
-  1. Sends a query to the Gutenborg API
+  1. Sends a query to the Gutenberg API
   2. Extracts quoted text and cited page numbers from the LLM response
   3. Retrieves the cited page from the source PDF via PyMuPDF (CPU)
   4. Checks: does the quoted text actually appear on the cited page?

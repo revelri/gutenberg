@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Retrieval evaluation framework for Gutenborg.
+"""Retrieval evaluation framework for Gutenberg.
 
 Runs gold-standard queries against ChromaDB, measures retrieval quality
 with precision@k, MRR, and NDCG@k, and outputs a comparison table.

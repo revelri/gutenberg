@@ -1,4 +1,4 @@
-"""Gutenborg API — RAG citation retrieval with multi-corpus support."""
+"""Gutenberg API — RAG citation retrieval with multi-corpus support."""
 
 import logging
 import os
@@ -27,11 +27,11 @@ async def lifespan(app: FastAPI):
     set_db_path(settings.database_path)
     await init_db()
     await auto_populate_exemplar(settings.chroma_host)
-    log.info("Gutenborg API ready")
+    log.info("Gutenberg API ready")
     yield
 
 
-app = FastAPI(title="Gutenborg API", version="0.2.0", lifespan=lifespan)
+app = FastAPI(title="Gutenberg API", version="0.2.0", lifespan=lifespan)
 
 _cors_origins = os.environ.get("CORS_ORIGINS", "").strip()
 _allowed_origins = (

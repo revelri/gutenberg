@@ -52,8 +52,8 @@ class TestCollectionRouting:
         """Verify that 'gutenberg-rag/macy' maps through collection_routes."""
         model = "gutenberg-rag/macy"
         _, slug = model.split("/", 1)
-        routes = {"macy": "gutenborg-macy-collection"}
-        assert routes.get(slug) == "gutenborg-macy-collection"
+        routes = {"macy": "gutenberg-macy-collection"}
+        assert routes.get(slug) == "gutenberg-macy-collection"
 
     def test_model_without_slash_has_no_collection(self):
         model = "gutenberg-rag"

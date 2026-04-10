@@ -405,7 +405,7 @@ class InboxWatcher:
         """Poll SQLite for pending corpus ingestion jobs."""
         import sqlite3
 
-        db_path = os.environ.get("DATABASE_PATH", "/data/gutenborg.db")
+        db_path = os.environ.get("DATABASE_PATH", "/data/gutenberg.db")
         try:
             conn = sqlite3.connect(db_path)
             conn.row_factory = sqlite3.Row

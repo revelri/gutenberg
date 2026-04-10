@@ -1,4 +1,4 @@
-# Gutenborg — TODOs
+# Gutenberg — TODOs
 
 ## Re-ingest corpus with updated chunker
 **Priority:** High (blocks P4 dogfooding)
@@ -18,7 +18,7 @@
 **Priority:** P3 (not needed until multi-tenancy)
 **What:** `data/bibliography.jsonl`, `data/bookmarks.jsonl`, and `data/state/documents.jsonl` are flat files. They work for single-user but don't support concurrent access, querying by field, or user isolation.
 **Context:** Deliberate simplicity for the PoC (CEO review decision). When multi-tenancy arrives, migrate to SQLite (for self-hosted) or Postgres (for cloud SaaS). The bookmark CRUD endpoints (`/api/bookmarks`) and corpus stats endpoint (`/api/corpus/stats`) will need to swap their file I/O for DB queries.
-**Approach:** SQLite is the path of least resistance — single file, no server, Python stdlib. Add a `data/gutenborg.db` with tables for `documents`, `bibliography`, and `bookmarks`.
+**Approach:** SQLite is the path of least resistance — single file, no server, Python stdlib. Add a `data/gutenberg.db` with tables for `documents`, `bibliography`, and `bookmarks`.
 **Depends on:** Multi-tenancy decision.
 
 ## Add Docker resource limits for worker and API containers

@@ -91,7 +91,7 @@ class Settings(BaseSettings):
     splade_model: str = "naver/splade-v3"
 
     # Database
-    database_path: str = "/data/gutenborg.db"
+    database_path: str = "/data/gutenberg.db"
 
     # Cloud fallback
     openrouter_api_key: str = ""

@@ -1,4 +1,4 @@
-# Design System — Gutenborg
+# Design System — Gutenberg
 
 ## Product Context
 - **What this is:** A semantic citation retrieval tool that ingests academic corpora and returns exact quotes with page numbers — "NVivo for the LLM era"
@@ -10,7 +10,7 @@
 - **Direction:** Editorial/Magazine — strong typographic hierarchy, the feeling of a beautifully typeset academic text
 - **Decoration level:** Intentional — thin rule lines between sections (like chapter dividers), cream paper-toned surfaces. Not flat-white sterile, not ornate.
 - **Mood:** A scholarly instrument built by someone who reads. Warm, authoritative, precise. The interface should feel like opening a well-made book, not opening a chatbot. Humanities researchers should feel "this was built for me."
-- **Reference sites:** Elicit (warm tones, verification badges), Connected Papers (clean minimalism), Semantic Scholar (data-forward) — Gutenborg deliberately breaks from all of these with serif typography and a monochrome palette where they use sans-serif + blue.
+- **Reference sites:** Elicit (warm tones, verification badges), Connected Papers (clean minimalism), Semantic Scholar (data-forward) — Gutenberg deliberately breaks from all of these with serif typography and a monochrome palette where they use sans-serif + blue.
 
 ## Typography
 - **Display/Hero:** Instrument Serif — A modern serif with warmth and character. Says "scholarship" without saying "law firm." The biggest departure from every competitor in the space, which all use sans-serif. Humanities = books = serifs.

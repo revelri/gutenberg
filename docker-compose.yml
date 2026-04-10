@@ -16,7 +16,7 @@ services:
     volumes:
       - ./data:/data
     environment:
-      - DATABASE_PATH=/data/gutenborg.db
+      - DATABASE_PATH=/data/gutenberg.db
       - CHROMA_HOST=http://chromadb:8000
       - OLLAMA_HOST=http://host.docker.internal:11434
     depends_on:
@@ -34,7 +34,7 @@ services:
     volumes:
       - ./data:/data
     environment:
-      - DATABASE_PATH=/data/gutenborg.db
+      - DATABASE_PATH=/data/gutenberg.db
       - CHROMA_HOST=http://chromadb:8000
       - INBOX_DIR=/data/inbox
       - PROCESSING_DIR=/data/processing

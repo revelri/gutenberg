@@ -15,10 +15,10 @@ interface:
     share: true
   multiConvo: false
   customWelcome: |
-    Welcome to **Gutenborg** — your semantic citation retrieval companion.
+    Welcome to **Gutenberg** — your semantic citation retrieval companion.
 
     Ask questions about your research corpus and receive exact quotes with page numbers.
-    Select an agent to query a specific collection, or use the Gutenborg endpoint directly.
+    Select an agent to query a specific collection, or use the Gutenberg endpoint directly.
 
 endpoints:
   agents:
@@ -34,7 +34,7 @@ endpoints:
       - "custom"
 
   custom:
-    - name: "Gutenborg RAG"
+    - name: "Gutenberg RAG"
       apiKey: "not-needed"
       baseURL: "http://api:8000/v1"
       models:
@@ -44,7 +44,7 @@ endpoints:
       titleModel: "gutenberg-rag"
       summarize: false
       forcePrompt: false
-      modelDisplayLabel: "Gutenborg"
+      modelDisplayLabel: "Gutenberg"
       dropParams:
         - stop
         - user
