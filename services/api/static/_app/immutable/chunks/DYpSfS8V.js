@@ -1,0 +1,1 @@
+import{X as e}from"./0mAPWelb.js";import"./Dd7CDyWN.js";var t=e([]),n=e(null),r=e([]),i=e(null),a=e([]),o=e(``),s=e(!1),c=e(typeof window<`u`&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`);export{s as a,c,t as i,n,a as o,r,o as s,i as t};

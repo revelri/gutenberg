@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PDF Viewer</title>
+  <link rel="stylesheet" href="pdf_viewer.css">
+</head>
+<body>
+  <div id="viewerContainer">
+    <div id="viewer" class="pdfViewer"></div>
+  </div>
+  <script type="module" src="pdf_viewer.min.mjs"></script>
+  <script>
+    const url = new URLSearchParams(window.location.search).get('file') || '';
+    if (url) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = '../build/pdf.worker.min.mjs';
+      const viewer = new pdfjsViewer.PDFViewer({
+        container: document.getElementById('viewerContainer'),
+      });
+      viewer.onePageRendered = () => {
+        document.title = viewer.pagesCount + ' pages';
+      };
+      pdfjsLib.getDocument(url).promise.then(doc => {
+        viewer.setDocument(doc);
+      });
+    }
+  </script>
+</body>
+</html>

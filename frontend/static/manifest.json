@@ -1,0 +1,10 @@
+{
+  "name": "Gutenberg",
+  "short_name": "Gutenberg",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#4a6fa5",
+  "description": "Semantic citation retrieval for scholarly corpora",
+  "icons": []
+}
