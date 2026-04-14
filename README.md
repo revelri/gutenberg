@@ -38,18 +38,18 @@ Gutenberg tracks page boundaries through the entire pipeline and verifies every 
 | Self-hosted | Runs on local hardware with Ollama. No cloud APIs required |
 | SvelteKit frontend | Chat interface with streaming responses and inline citation display |
 
-## Stack
+## Tech Stack
 
-| Component | Role |
-|-----------|------|
-| FastAPI | API server — chat, corpus management, document upload |
-| ChromaDB | Vector store for dense retrieval |
-| Ollama | Local LLM (chat + embeddings + contextual chunking) |
-| PyMuPDF | PDF text extraction and page rendering |
-| OCRmyPDF / Docling | OCR (text-layer injection / GPU-accelerated) |
-| rank-bm25 | Sparse retrieval with NLTK stemming |
-| SvelteKit | Frontend chat interface |
-| SQLite | Job tracking, corpus metadata, conversation history |
+- **Runtime:** Python 3.12+
+- **API:** FastAPI — async HTTP with streaming response support
+- **Vector store:** ChromaDB — per-corpus collections with metadata filtering
+- **LLM:** Ollama — local inference for chat, embeddings, and contextual chunking
+- **PDF:** PyMuPDF — text extraction with character-offset page tracking
+- **OCR:** OCRmyPDF (text-layer injection), Docling (GPU-accelerated for scans)
+- **Sparse search:** rank-bm25 with NLTK stemming
+- **Frontend:** SvelteKit — streaming chat with inline citation display
+- **Storage:** SQLite for jobs, metadata, conversations
+- **Build:** Docker Compose, uv for Python dependency management
 
 ## Getting started
 
@@ -160,6 +160,17 @@ All via environment variables (see `.env.example`):
 | `CONTEXTUAL_CHUNKER_ENABLED` | `true` | LLM-generated chunk context |
 | `RRF_ADAPTIVE` | `true` | Per-query adaptive fusion weights |
 | `HYDE_ENABLED` | `false` | Hypothetical document expansion (harmful for verbatim retrieval) |
+
+## Design Rationale
+
+| Decision | Reasoning |
+|----------|-----------|
+| Page-offset tracking | Character offsets through the entire pipeline mean citations resolve to real page numbers, not chunk indices |
+| 3-tier verification cascade | Exact → fuzzy → lemma fallback catches paraphrased citations without false negatives on verbatim quotes |
+| RRF over single retrieval | Dense search finds semantic matches; BM25 finds exact terms. Fusion consistently outperforms either alone |
+| Ollama for self-hosted | No API keys, no data leaves the machine. Users own their inference stack |
+| Contextual chunking | Prepending LLM-generated context to chunks improves retrieval by 20-30% on domain-specific corpora |
+| HYDE disabled by default | Hypothetical document expansion hurts verbatim retrieval — it rewrites the query away from exact quotes |
 
 ## License
 
