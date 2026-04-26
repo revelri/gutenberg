@@ -14,6 +14,51 @@ from shared.text_normalize import clean_for_ingestion, strip_headers_footers
 log = logging.getLogger("gutenberg.extractors")
 
 
+def extract_modal_elements(path: Path, doc_type: str) -> list[dict]:
+    """Return tables and equations as structured modal elements (P3).
+
+    Best-effort via PyMuPDF for digital PDFs (tables via ``find_tables``).
+    Empty list for scanned PDFs / DOCX / EPUB — upstream modal processors
+    rely on Docling/Surya paths that aren't threaded through yet.
+    """
+    try:
+        from core.config import settings
+    except Exception:
+        from services.api.core.config import settings  # type: ignore
+
+    if not getattr(settings, "feature_modal_chunks", False):
+        return []
+    if doc_type not in {"pdf_digital", "pdf_scanned"}:
+        return []
+
+    elements: list[dict] = []
+    try:
+        doc = fitz.open(str(path))
+        for i, page in enumerate(doc):
+            try:
+                tables = page.find_tables()
+            except Exception:
+                tables = []
+            for t in tables or []:
+                try:
+                    md = t.to_markdown() if hasattr(t, "to_markdown") else ""
+                except Exception:
+                    md = ""
+                if md.strip():
+                    elements.append(
+                        {
+                            "kind": "table",
+                            "content": md,
+                            "page": i + 1,
+                            "surrounding_text": page.get_text()[:1500],
+                        }
+                    )
+        doc.close()
+    except Exception as e:
+        log.debug(f"modal extraction skipped for {path.name}: {e}")
+    return elements
+
+
 def extract_text(path: Path, doc_type: str, strategy: str = "default") -> tuple[str, dict, list[dict]]:
     """Extract text and metadata from a document.
 
@@ -22,11 +67,20 @@ def extract_text(path: Path, doc_type: str, strategy: str = "default") -> tuple[
     For formats without page numbers, page_segments is empty.
 
     strategy: "default" or "optimized" (for scanned PDFs).
+
+    If a Surya markdown file exists for this document (in a configured
+    surya corpus directory), it is used preferentially over PyMuPDF/Docling
+    because Surya produces cleaner text for scanned and mixed-layout PDFs.
     """
     metadata = {
         "source": path.name,
         "doc_type": doc_type,
     }
+
+    # Check for pre-existing Surya output (higher quality than PyMuPDF for most PDFs)
+    surya_result = _try_surya_extraction(path, metadata)
+    if surya_result is not None:
+        return surya_result
 
     if doc_type == "pdf_digital":
         return _extract_pdf_digital(path, metadata)
@@ -39,6 +93,62 @@ def extract_text(path: Path, doc_type: str, strategy: str = "default") -> tuple[
         return extract_epub(path)
     else:
         raise ValueError(f"Unknown doc_type: {doc_type}")
+
+
+def _try_surya_extraction(path: Path, metadata: dict) -> tuple[str, dict, list[dict]] | None:
+    """Check for pre-existing Surya markdown output and use it if available.
+
+    Surya produces layout-aware OCR with proper paragraph structure,
+    outperforming PyMuPDF on scanned and mixed-layout PDFs. The markdown
+    files are expected at {SURYA_CORPUS_DIR}/{stem}/{stem}.md.
+
+    Returns None if no Surya output exists for this document.
+    """
+    import os
+    import re
+
+    surya_dir = Path(os.environ.get("SURYA_CORPUS_DIR", "data/surya_corpus"))
+    if not surya_dir.exists():
+        return None
+
+    # Match by stem (filename without extension)
+    stem = path.stem
+    surya_book_dir = surya_dir / stem
+    if not surya_book_dir.exists():
+        return None
+
+    # Find the markdown file
+    md_files = list(surya_book_dir.glob("*.md"))
+    if not md_files:
+        return None
+
+    md_path = md_files[0]
+    text = md_path.read_text(encoding="utf-8")
+    if not text.strip():
+        return None
+
+    log.info(f"Using Surya extraction for {path.name} ({len(text):,} chars)")
+
+    # Clean: strip markdown image references
+    text = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)
+
+    # Build page segments using PyMuPDF page count for rough mapping
+    # Surya markdown doesn't have page markers, so we use the PDF for page count
+    # and distribute text proportionally
+    try:
+        doc = fitz.open(str(path))
+        total_pages = len(doc)
+        doc.close()
+    except Exception:
+        total_pages = 1
+
+    # Split on markdown headers as rough page/section boundaries
+    text = clean_for_ingestion(text)
+    pages = [{"page": 1, "text": text}]
+
+    metadata["total_pages"] = total_pages
+    metadata["extraction"] = "surya"
+    return text, metadata, pages
 
 
 def _extract_pdf_digital(path: Path, metadata: dict) -> tuple[str, dict, list[dict]]:

@@ -26,9 +26,9 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from pipeline.detector import classify_document
-from pipeline.extractors import extract_text
+from pipeline.extractors import extract_text, extract_modal_elements
 from pipeline.pdf_validator import validate_document
-from pipeline.chunker import chunk_text, CHUNK_SIZE, CONTEXT_TOKEN_BUDGET
+from pipeline.chunker import chunk_text
 from pipeline.embedder import embed_chunks
 from pipeline.ocrmypdf_preprocess import (
     preprocess as ocrmypdf_preprocess,
@@ -156,33 +156,39 @@ class InboxWatcher:
 
             log.info(f"Extracted {len(text)} chars from {fname}")
 
-            # Chunk — reserve token budget for contextual prefix if enabled
-            contextual_enabled = (
-                os.environ.get("CONTEXTUAL_CHUNKER_ENABLED", "true").lower() == "true"
-            )
-            effective_tokens = (
-                CHUNK_SIZE - CONTEXT_TOKEN_BUDGET if contextual_enabled else None
-            )
-            chunks = chunk_text(
-                text, metadata, page_segments, max_tokens=effective_tokens
-            )
+            # Chunk
+            chunks = chunk_text(text, metadata, page_segments)
             log.info(f"Created {len(chunks)} chunks from {fname}")
 
-            # Contextual enrichment: prepend LLM-generated context to each chunk
-            if contextual_enabled:
-                try:
-                    from pipeline.contextual_chunker import add_context_to_chunks
-
-                    chunks = add_context_to_chunks(chunks, text, fname)
-                    log.info(f"Contextualized {len(chunks)} chunks for {fname}")
-                except Exception:
-                    log.warning(
-                        f"Contextual chunking failed for {fname}, using unenriched chunks"
-                    )
+            # P3: modal chunks (tables, equations) — flag-gated, appended
+            try:
+                from pipeline.modal import make_modal_chunks
+                modal_elements = extract_modal_elements(extract_path, doc_type)
+                if modal_elements:
+                    extra = make_modal_chunks(modal_elements, metadata)
+                    chunks.extend(extra)
+                    log.info(f"Added {len(extra)} modal chunks")
+            except Exception as e:
+                log.debug(f"modal chunks skipped: {e}")
 
             # Embed
-            embeddings = embed_chunks([c["text"] for c in chunks])
+            # Embed contextualized text (P0); falls back to raw text if absent.
+            embeddings = embed_chunks([c.get("contextual_text") or c["text"] for c in chunks])
             log.info(f"Generated {len(embeddings)} embeddings")
+
+            # P5: RAPTOR summary tree — appended as additional chunks
+            try:
+                from pipeline.raptor import build_tree
+                summaries = build_tree(chunks, embeddings)
+                if summaries:
+                    summary_embeds = embed_chunks(
+                        [s.get("contextual_text") or s["text"] for s in summaries]
+                    )
+                    chunks.extend(summaries)
+                    embeddings.extend(summary_embeds)
+                    log.info(f"RAPTOR appended {len(summaries)} summary chunks")
+            except Exception as e:
+                log.debug(f"RAPTOR skipped: {e}")
 
             # Store with pending marker for crash recovery
             state_dir = self.state_file.parent
@@ -308,28 +314,22 @@ class InboxWatcher:
 
                 # Chunk
                 update_job_progress(job_id, current_step="chunking")
-                contextual_enabled = (
-                    os.environ.get("CONTEXTUAL_CHUNKER_ENABLED", "true").lower()
-                    == "true"
-                )
-                effective_tokens = (
-                    CHUNK_SIZE - CONTEXT_TOKEN_BUDGET if contextual_enabled else None
-                )
-                chunks = chunk_text(
-                    text, metadata, page_segments, max_tokens=effective_tokens
-                )
+                chunks = chunk_text(text, metadata, page_segments)
 
-                if contextual_enabled:
-                    try:
-                        from pipeline.contextual_chunker import add_context_to_chunks
-
-                        chunks = add_context_to_chunks(chunks, text, fname)
-                    except Exception:
-                        log.warning(f"Contextual chunking failed for {fname}")
+                # P3: modal chunks (tables, equations)
+                try:
+                    from pipeline.modal import make_modal_chunks
+                    modal_elements = extract_modal_elements(extract_path, doc_type)
+                    if modal_elements:
+                        extra = make_modal_chunks(modal_elements, metadata)
+                        chunks.extend(extra)
+                except Exception as e:
+                    log.debug(f"modal chunks skipped: {e}")
 
                 # Embed
                 update_job_progress(job_id, current_step="embedding")
-                embeddings = embed_chunks([c["text"] for c in chunks])
+                # Embed contextualized text (P0); falls back to raw text if absent.
+                embeddings = embed_chunks([c.get("contextual_text") or c["text"] for c in chunks])
 
                 # Store in corpus-specific collection
                 update_job_progress(job_id, current_step="storing")

@@ -10,7 +10,6 @@ log = logging.getLogger("gutenberg.chunker")
 
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "384"))
 CHUNK_OVERLAP = int(os.environ.get("CHUNK_OVERLAP", "96"))
-CONTEXT_TOKEN_BUDGET = int(os.environ.get("CONTEXT_TOKEN_BUDGET", "80"))
 
 # Sentinel for sentence-level splitting in the separator list
 _SENTENCE_SEP = "__SENTENCE__"
@@ -241,11 +240,6 @@ def chunk_text(
 ) -> list[dict]:
     """Split text into chunks with metadata.
 
-    Args:
-        max_tokens: Override for CHUNK_SIZE. When contextual chunking is enabled,
-            pass CHUNK_SIZE - CONTEXT_TOKEN_BUDGET to reserve space for the
-            context prefix.
-
     Returns list of dicts with keys: text, metadata (source, heading, chunk_index,
     page_start, page_end).
     """
@@ -279,4 +273,33 @@ def chunk_text(
             chunk_index += 1
 
     log.info(f"Chunked into {len(all_chunks)} pieces (avg {_token_count(text) // max(len(all_chunks), 1)} tokens each)")
+
+    # P0: contextual enrichment. Flag-gated inside; no-op when disabled.
+    # Imported lazily so the chunker has no hard dep on the Anthropic SDK.
+    try:
+        from pipeline.contextual_chunker import enrich_chunks
+        all_chunks = enrich_chunks(text, all_chunks)
+    except ImportError:
+        pass
+    except Exception as e:
+        log.warning(f"Contextual enrichment skipped: {e}")
+        for c in all_chunks:
+            c.setdefault("contextual_text", c["text"])
+
+    # P1: canonical entity tagging. Deterministic substring match against the
+    # gazetteer — comma-joined for Chroma metadata compatibility (no lists).
+    try:
+        from shared.gazetteer import resolve
+
+        for c in all_chunks:
+            cids = resolve(c["text"])
+            if cids:
+                c["metadata"]["canonical_ids"] = ",".join(cids)
+    except Exception as e:
+        log.debug(f"Gazetteer tagging skipped: {e}")
+
+    # Ensure invariant: every chunk has contextual_text set.
+    for c in all_chunks:
+        c.setdefault("contextual_text", c["text"])
+
     return all_chunks

@@ -25,7 +25,7 @@ def wait_for_services():
     for name, url in [("Ollama", ollama_url), ("ChromaDB", chroma_url)]:
         for attempt in range(60):
             try:
-                r = httpx.get(f"{url}/api/version" if name == "Ollama" else f"{url}/api/v1/heartbeat", timeout=5)
+                r = httpx.get(f"{url}/api/version" if name == "Ollama" else f"{url}/api/v2/heartbeat", timeout=5)
                 if r.status_code == 200:
                     log.info(f"{name} is ready")
                     break
