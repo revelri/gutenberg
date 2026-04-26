@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "gutenborg": {
+      "command": "uv",
+      "args": ["run", "python", "services/mcp_server/server.py"],
+      "cwd": "/home/revelri/Dev/Pipeline/Building/gutenborg",
+      "env": {
+        "CHROMA_HOST": "http://localhost:8001",
+        "DATABASE_PATH": "data/gutenberg.db",
+        "EMBED_MODEL": "nomic-ai/nomic-embed-text-v1.5"
+      }
+    }
+  }
+}
