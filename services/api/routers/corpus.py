@@ -57,6 +57,20 @@ def _get_chroma_client():
     )
 
 
+def _invalidate_retrieval_cache(collection_name: str) -> None:
+    """Clear BM25/query caches so next retrieval re-reads ChromaDB.
+
+    Called after ingest/reingest so newly ingested chunks aren't hidden
+    behind the stale in-memory BM25 index. Cheap: no eager rebuild.
+    """
+    try:
+        from core.rag import invalidate_bm25_cache
+
+        invalidate_bm25_cache(collection_name)
+    except Exception as e:
+        log.warning(f"Could not invalidate retrieval cache for {collection_name}: {e}")
+
+
 @router.post("")
 async def create_corpus(name: str = Form(...), tags: str = Form("")):
     """Create a new corpus project with an empty ChromaDB collection."""
@@ -91,12 +105,18 @@ async def create_corpus(name: str = Form(...), tags: str = Form("")):
 
 @router.get("")
 async def list_corpora():
-    """List all corpus projects with document and chunk counts."""
+    """List all corpus projects with document and chunk counts.
+
+    Chunk count is aggregated from document.chunks (populated by the worker
+    on ingest) rather than round-tripping to ChromaDB per corpus — avoids
+    O(N) HTTP calls when listing many corpora.
+    """
     db = await get_db()
     try:
         cursor = await db.execute("""
             SELECT c.id, c.name, c.tags, c.collection_name, c.status, c.created_at,
-                   COUNT(d.id) as document_count
+                   COUNT(d.id) as document_count,
+                   COALESCE(SUM(CASE WHEN d.status = 'done' THEN d.chunks ELSE 0 END), 0) as chunk_count
             FROM corpus c
             LEFT JOIN document d ON d.corpus_id = c.id AND d.status = 'done'
             GROUP BY c.id
@@ -106,30 +126,19 @@ async def list_corpora():
     finally:
         await db.close()
 
-    client = _get_chroma_client()
-    results = []
-    for row in rows:
-        chunk_count = 0
-        try:
-            col = client.get_collection(row["collection_name"])
-            chunk_count = col.count()
-        except Exception:
-            pass
-
-        results.append(
-            {
-                "id": row["id"],
-                "name": row["name"],
-                "tags": row["tags"],
-                "collection_name": row["collection_name"],
-                "status": row["status"],
-                "document_count": row["document_count"],
-                "chunk_count": chunk_count,
-                "created_at": row["created_at"],
-            }
-        )
-
-    return results
+    return [
+        {
+            "id": row["id"],
+            "name": row["name"],
+            "tags": row["tags"],
+            "collection_name": row["collection_name"],
+            "status": row["status"],
+            "document_count": row["document_count"],
+            "chunk_count": row["chunk_count"],
+            "created_at": row["created_at"],
+        }
+        for row in rows
+    ]
 
 
 @router.get("/{corpus_id}")
@@ -150,13 +159,7 @@ async def get_corpus(corpus_id: str):
     finally:
         await db.close()
 
-    chunk_count = 0
-    try:
-        client = _get_chroma_client()
-        col = client.get_collection(corpus["collection_name"])
-        chunk_count = col.count()
-    except Exception:
-        pass
+    chunk_count = sum(d["chunks"] for d in docs if d["status"] == "done")
 
     return {
         "id": corpus["id"],
@@ -201,6 +204,108 @@ async def delete_corpus(corpus_id: str):
         shutil.rmtree(inbox, ignore_errors=True)
 
     return {"deleted": True}
+
+
+@router.delete("/{corpus_id}/documents/{doc_id}")
+async def delete_document(corpus_id: str, doc_id: str):
+    """Remove a document from corpus: delete chunks from ChromaDB + DB record."""
+    db = await get_db()
+    try:
+        cursor = await db.execute(
+            "SELECT d.filename, c.collection_name FROM document d "
+            "JOIN corpus c ON d.corpus_id = c.id "
+            "WHERE d.id = ? AND d.corpus_id = ?",
+            (doc_id, corpus_id),
+        )
+        row = await cursor.fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail="Document not found")
+
+        filename = row["filename"]
+        collection_name = row["collection_name"]
+
+        # Delete chunks from ChromaDB by source metadata
+        try:
+            client = _get_chroma_client()
+            col = client.get_collection(collection_name)
+            # ChromaDB where filter on metadata
+            results = col.get(where={"source": filename}, include=[])
+            if results["ids"]:
+                col.delete(ids=results["ids"])
+                log.info(f"Deleted {len(results['ids'])} chunks for {filename}")
+        except Exception as e:
+            log.warning(f"Could not delete chunks from ChromaDB: {e}")
+
+        # Delete DB record
+        await db.execute("DELETE FROM document WHERE id = ?", (doc_id,))
+        await db.commit()
+    finally:
+        await db.close()
+
+    return {"deleted": True, "filename": filename}
+
+
+@router.post("/{corpus_id}/documents/{doc_id}/reingest")
+async def reingest_document(corpus_id: str, doc_id: str):
+    """Re-process a document: delete existing chunks and create a new ingestion job."""
+    db = await get_db()
+    try:
+        cursor = await db.execute(
+            "SELECT d.filename, c.collection_name FROM document d "
+            "JOIN corpus c ON d.corpus_id = c.id "
+            "WHERE d.id = ? AND d.corpus_id = ?",
+            (doc_id, corpus_id),
+        )
+        row = await cursor.fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail="Document not found")
+
+        filename = row["filename"]
+        collection_name = row["collection_name"]
+
+        # Delete existing chunks from ChromaDB
+        try:
+            client = _get_chroma_client()
+            col = client.get_collection(collection_name)
+            results = col.get(where={"source": filename}, include=[])
+            if results["ids"]:
+                col.delete(ids=results["ids"])
+        except Exception as e:
+            log.warning(f"Could not delete existing chunks: {e}")
+
+        # Reset document status
+        await db.execute(
+            "UPDATE document SET status = 'pending', chunks = 0, error = NULL WHERE id = ?",
+            (doc_id,),
+        )
+
+        # Ensure file exists in inbox for worker to pick up
+        processed_file = Path(f"/data/processed/{filename}")
+        if not processed_file.exists():
+            raise HTTPException(
+                status_code=404,
+                detail=f"Original file not found: {filename}",
+            )
+        inbox_dir = Path(f"/data/inbox/{corpus_id}")
+        inbox_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(str(processed_file), str(inbox_dir / filename))
+
+        # Create ingestion job
+        job_id = str(uuid.uuid4())
+        await db.execute(
+            "INSERT INTO ingestion_job (id, corpus_id, total_files, status) VALUES (?, ?, 1, 'pending')",
+            (job_id, corpus_id),
+        )
+        await db.execute(
+            "UPDATE corpus SET status = 'ingesting' WHERE id = ?", (corpus_id,)
+        )
+        await db.commit()
+    finally:
+        await db.close()
+
+    _invalidate_retrieval_cache(collection_name)
+
+    return {"job_id": job_id, "filename": filename}
 
 
 @router.post("/{corpus_id}/ingest")
@@ -264,6 +369,8 @@ async def upload_documents(corpus_id: str, files: list[UploadFile] = File(...)):
         await db.commit()
     finally:
         await db.close()
+
+    _invalidate_retrieval_cache(corpus["collection_name"])
 
     return {"job_id": job_id, "files": saved_files, "total": len(saved_files)}
 

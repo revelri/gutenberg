@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import re
@@ -9,10 +10,28 @@ import uuid
 
 import httpx
 from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel, Field
 from sse_starlette.sse import EventSourceResponse
 
 from core.config import settings
 from core.database import get_db
+
+
+# ── Request models ──────────────────────────────────────────────────
+
+class CreateConversationRequest(BaseModel):
+    mode: str = Field(default="general", pattern="^(exact|general|exhaustive|precis)$")
+    citation_style: str = Field(default="chicago", pattern="^(mla|apa|chicago|harvard|asa|sage)$")
+    title: str | None = None
+
+
+class SendMessageRequest(BaseModel):
+    content: str = Field(..., min_length=1, max_length=10000)
+    term: str = ""
+
+
+class UpdateConversationRequest(BaseModel):
+    title: str = Field(..., min_length=1, max_length=200)
 from core.modes import (
     build_exact_prompt,
     build_general_prompt,
@@ -43,34 +62,28 @@ async def list_conversations(corpus_id: str):
 
 
 @router.post("/api/corpus/{corpus_id}/conversations")
-async def create_conversation(corpus_id: str, body: dict):
+async def create_conversation(corpus_id: str, body: CreateConversationRequest):
     db = await get_db()
     try:
-        # Verify corpus exists
         cursor = await db.execute("SELECT id FROM corpus WHERE id = ?", (corpus_id,))
         if not await cursor.fetchone():
             raise HTTPException(status_code=404, detail="Corpus not found")
 
         conv_id = str(uuid.uuid4())
-        mode = body.get("mode", "general")
-        citation_style = body.get("citation_style", "chicago")
-        title = body.get("title")
 
         await db.execute(
             """INSERT INTO conversation (id, corpus_id, title, mode, citation_style)
                VALUES (?, ?, ?, ?, ?)""",
-            (conv_id, corpus_id, title, mode, citation_style),
+            (conv_id, corpus_id, body.title, body.mode, body.citation_style),
         )
         await db.commit()
+
+        cursor = await db.execute("SELECT * FROM conversation WHERE id = ?", (conv_id,))
+        row = await cursor.fetchone()
     finally:
         await db.close()
 
-    return {
-        "id": conv_id,
-        "corpus_id": corpus_id,
-        "mode": mode,
-        "citation_style": citation_style,
-    }
+    return dict(row)
 
 
 @router.get("/api/conversations/{conv_id}")
@@ -104,19 +117,38 @@ async def delete_conversation(conv_id: str):
     return {"deleted": True}
 
 
+@router.patch("/api/conversations/{conv_id}")
+async def update_conversation(conv_id: str, body: UpdateConversationRequest):
+    """Update conversation title."""
+    db = await get_db()
+    try:
+        cursor = await db.execute(
+            "SELECT id FROM conversation WHERE id = ?", (conv_id,)
+        )
+        if not await cursor.fetchone():
+            raise HTTPException(status_code=404, detail="Conversation not found")
+
+        await db.execute(
+            "UPDATE conversation SET title = ?, updated_at = datetime('now') WHERE id = ?",
+            (body.title, conv_id),
+        )
+        await db.commit()
+
+        cursor = await db.execute("SELECT * FROM conversation WHERE id = ?", (conv_id,))
+        row = await cursor.fetchone()
+    finally:
+        await db.close()
+
+    return dict(row)
+
+
 # ── Chat (mode-aware RAG) ───────────────────────────────────────────
 
 
 @router.post("/api/conversations/{conv_id}/messages")
-async def send_message(conv_id: str, body: dict):
+async def send_message(conv_id: str, body: SendMessageRequest):
     """Send a message → RAG retrieve → LLM stream → persist."""
-    content = body.get("content", "").strip()
-    if not content:
-        raise HTTPException(status_code=400, detail="Empty message")
-    if len(content) > 10000:
-        raise HTTPException(
-            status_code=400, detail="Message too long (max 10,000 characters)"
-        )
+    content = body.content.strip()
 
     db = await get_db()
     try:
@@ -150,16 +182,22 @@ async def send_message(conv_id: str, body: dict):
 
     mode = conv["mode"]
     collection_name = conv["collection_name"]
-    term = body.get("term", "")
+    term = body.term
 
-    # Retrieve chunks via the existing RAG pipeline
+    # Retrieve chunks via the existing RAG pipeline. Offload to a thread
+    # because retrieve() is synchronous and performs blocking network I/O
+    # (ChromaDB, Ollama, sentence-transformers).
+    retrieval_error: str | None = None
     try:
         from core.rag import retrieve
 
-        system_prompt_unused, chunks = retrieve(content, collection=collection_name)
+        system_prompt_unused, chunks = await asyncio.to_thread(
+            retrieve, content, collection=collection_name
+        )
     except Exception as e:
-        log.error(f"Retrieval failed: {e}")
+        log.exception("Retrieval failed")
         chunks = []
+        retrieval_error = str(e) or e.__class__.__name__
 
     # Build mode-specific prompt
     citation_style = conv["citation_style"]
@@ -182,7 +220,19 @@ async def send_message(conv_id: str, body: dict):
 
     # Stream LLM response
     async def stream_and_persist():
-        if not chunks:
+        if retrieval_error:
+            yield {
+                "event": "warning",
+                "data": json.dumps(
+                    {
+                        "message": (
+                            "Source retrieval failed — answering without corpus context. "
+                            f"({retrieval_error})"
+                        )
+                    }
+                ),
+            }
+        elif not chunks:
             yield {
                 "event": "warning",
                 "data": json.dumps(
