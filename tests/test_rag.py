@@ -119,6 +119,35 @@ class TestPassageScore:
 
 
 # ---------------------------------------------------------------------------
+# spaCy query expansion + entity-anchored rerank
+# ---------------------------------------------------------------------------
+
+from core.rag import _expand_query_for_bm25, _spacy_query_signals
+from core.config import settings as _rag_settings
+
+
+class TestSpacyQueryExpansion:
+    def test_expansion_is_superset_of_original(self, monkeypatch):
+        monkeypatch.setattr(_rag_settings, "enable_spacy_query_expand", True)
+        q = "How does Deleuze develop assemblage in A Thousand Plateaus?"
+        expanded = _expand_query_for_bm25(q)
+        # Expansion is a no-op if spaCy isn't installed — that's fine, we just
+        # assert the contract: the original query is always a prefix.
+        assert expanded.startswith(q)
+
+    def test_disabled_is_noop(self, monkeypatch):
+        monkeypatch.setattr(_rag_settings, "enable_spacy_query_expand", False)
+        q = "what is desire"
+        assert _expand_query_for_bm25(q) == q
+
+    def test_signals_shape(self):
+        sig = _spacy_query_signals("simple query")
+        assert "entities" in sig and "noun_lemmas" in sig
+        assert isinstance(sig["entities"], list)
+        assert isinstance(sig["noun_lemmas"], list)
+
+
+# ---------------------------------------------------------------------------
 # _filter_by_source
 # ---------------------------------------------------------------------------
 
@@ -283,47 +312,43 @@ class TestQueryCache:
 from core.rag import _embed_query, _embed_cache
 
 
+def _mock_shared_embedder(return_value):
+    """Create a mock shared.embedder module and inject it into sys.modules."""
+    mock_mod = MagicMock()
+    mock_mod.embed_query = MagicMock(return_value=return_value)
+    return mock_mod
+
+
 class TestEmbedQuery:
     def setup_method(self):
         _embed_cache.clear()
 
-    @patch("core.rag._retry_ollama")
-    def test_cache_miss_calls_ollama(self, mock_retry):
-        mock_resp = MagicMock()
-        mock_resp.json.return_value = {"embeddings": [[0.1, 0.2, 0.3]]}
-        mock_retry.return_value = mock_resp
+    def test_cache_miss_calls_embedder(self):
+        mock_mod = _mock_shared_embedder([0.1, 0.2, 0.3])
+        with patch.dict("sys.modules", {"shared": MagicMock(), "shared.embedder": mock_mod}):
+            result = _embed_query("test embedding")
+            assert result == [0.1, 0.2, 0.3]
+            mock_mod.embed_query.assert_called_once()
 
-        result = _embed_query("test embedding")
-        assert result == [0.1, 0.2, 0.3]
-        mock_retry.assert_called_once()
-
-    @patch("core.rag._retry_ollama")
-    def test_cache_hit_skips_ollama(self, mock_retry):
-        mock_resp = MagicMock()
-        mock_resp.json.return_value = {"embeddings": [[1.0, 2.0]]}
-        mock_retry.return_value = mock_resp
-
-        _embed_query("same query")
-        _embed_query("same query")
-        # Only one actual call despite two invocations
-        assert mock_retry.call_count == 1
+    def test_cache_hit_skips_embedder(self):
+        mock_mod = _mock_shared_embedder([1.0, 2.0])
+        with patch.dict("sys.modules", {"shared": MagicMock(), "shared.embedder": mock_mod}):
+            _embed_query("same query")
+            _embed_query("same query")
+            # Only one actual call despite two invocations
+            assert mock_mod.embed_query.call_count == 1
 
     @patch("core.rag.settings")
-    @patch("core.rag._retry_ollama")
-    def test_lru_eviction(self, mock_retry, mock_settings):
+    def test_lru_eviction(self, mock_settings):
         mock_settings.embed_cache_max_size = 2
-        mock_settings.ollama_host = "http://localhost:11434"
-        mock_settings.ollama_embed_model = "test"
-        mock_resp = MagicMock()
-        mock_resp.json.return_value = {"embeddings": [[0.0]]}
-        mock_retry.return_value = mock_resp
-
-        _embed_query("q1")
-        _embed_query("q2")
-        _embed_query("q3")
-        # q1 should have been evicted from cache
-        from core.rag import _clean_query
-        assert _clean_query("q1") not in _embed_cache
+        mock_mod = _mock_shared_embedder([0.0])
+        with patch.dict("sys.modules", {"shared": MagicMock(), "shared.embedder": mock_mod}):
+            _embed_query("q1")
+            _embed_query("q2")
+            _embed_query("q3")
+            # q1 should have been evicted from cache
+            from core.rag import _clean_query
+            assert _clean_query("q1") not in _embed_cache
 
 
 # ---------------------------------------------------------------------------
