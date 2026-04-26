@@ -1,11 +1,12 @@
-import httpx, json, re, subprocess, sys
+import httpx, json, os, re, subprocess, sys
 from difflib import SequenceMatcher
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "services"))
 from shared.text_normalize import normalize_for_comparison, strip_markdown_formatting
 
-API_URL = "http://localhost:8002"
+API_URL = os.environ.get("API_URL", "http://localhost:8002")
+MODEL = os.environ.get("EVAL_MODEL", "gutenberg-rag")
 PROCESSED_DIR = "data/processed"
 
 
@@ -147,7 +148,7 @@ for i, tc in enumerate(test_cases):
         resp = httpx.post(
             f"{API_URL}/v1/chat/completions",
             json={
-                "model": "gutenberg-rag",
+                "model": MODEL,
                 "messages": [{"role": "user", "content": query}],
                 "stream": False,
                 "temperature": 0.1,

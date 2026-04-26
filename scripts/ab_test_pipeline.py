@@ -8,12 +8,10 @@ Strategies:
   A — Current Docling (full, GPU)
   B — Optimized Docling (tables/pictures/formulas OFF, batch processing)
   C — OCRmyPDF preprocessing → PyMuPDF (Tesseract OCR, 10-50x faster)
-  D — Contextual chunking (LLM prepends context to each chunk)
 
 Usage:
     python scripts/ab_test_pipeline.py --strategies A,B
     python scripts/ab_test_pipeline.py --strategies A,B,C --corpus data/processed
-    python scripts/ab_test_pipeline.py --strategies D --base-strategy A
 """
 
 import argparse
@@ -146,9 +144,6 @@ def run_strategy(
                 extracted = process_file_strategy_b(path)
             elif strategy == "C":
                 extracted = process_file_strategy_c(path, tmp_dir)
-            elif strategy == "D":
-                # Strategy D uses base strategy for extraction, then adds context
-                extracted = process_file_strategy_a(path)
             else:
                 raise ValueError(f"Unknown strategy: {strategy}")
 
@@ -162,16 +157,6 @@ def run_strategy(
             chunk_time = time.time() - t0
             file_result["chunk_count"] = len(chunks)
             file_result["chunk_time"] = round(chunk_time, 2)
-
-            # Strategy D: add contextual prefixes
-            if strategy == "D":
-                from pipeline.contextual_chunker import add_context_to_chunks
-                t0 = time.time()
-                chunks = add_context_to_chunks(
-                    chunks, extracted["text"], extracted["metadata"]["source"]
-                )
-                context_time = time.time() - t0
-                file_result["context_time"] = round(context_time, 2)
 
             # Embed
             t0 = time.time()
@@ -187,7 +172,7 @@ def run_strategy(
 
             file_result["total_time"] = round(
                 extracted["extract_time"] + chunk_time + embed_time + store_time
-                + file_result.get("context_time", 0), 2
+                , 2
             )
             file_result["status"] = "OK"
 
