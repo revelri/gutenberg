@@ -1,41 +1,88 @@
 services:
-  chromadb:
-    image: chromadb/chroma:0.6.3
+  postgres:
+    image: postgres:16-alpine
     ports:
-      - "8001:8000"
+      - "127.0.0.1:5432:5432"
     volumes:
-      - chroma-data:/chroma/chroma
+      - ./data/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=gutenberg
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-gutenberg_dev}
+      - POSTGRES_DB=gutenberg
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gutenberg"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    mem_limit: 1g
+
+  chromadb:
+    image: chromadb/chroma:1.5.5
+    ports:
+      - "127.0.0.1:8001:8000"
+    volumes:
+      - ./data/chroma:/data
     environment:
       - IS_PERSISTENT=TRUE
       - ANONYMIZED_TELEMETRY=FALSE
+    mem_limit: 2g
 
   api:
     build: .
-    ports:
-      - "8000:8000"
+    # Host networking — so the container reaches host-bound services
+    # (Ollama on 127.0.0.1:11434, ChromaDB publishing on 127.0.0.1:8001)
+    # without requiring Ollama to bind 0.0.0.0. Tradeoff: ports/expose
+    # directives are ignored; uvicorn listens on host 127.0.0.1:8000 directly.
+    network_mode: host
     volumes:
       - ./data:/data
     environment:
       - DATABASE_PATH=/data/gutenberg.db
-      - CHROMA_HOST=http://chromadb:8000
-      - OLLAMA_HOST=http://host.docker.internal:11434
+      - DB_BACKEND=${DB_BACKEND:-sqlite}
+      - DATABASE_URL=postgresql+asyncpg://gutenberg:${POSTGRES_PASSWORD:-gutenberg_dev}@127.0.0.1:5432/gutenberg
+      - CHROMA_HOST=http://127.0.0.1:8001
+      - OLLAMA_HOST=http://127.0.0.1:11434
+      # nomic-embed-text-v1.5 is the .env.example default (768-dim).
+      # gte-large-en-v1.5 triggers an upstream modeling.py bug with
+      # sentence-transformers 5.x (rope_cos size mismatch vs token IDs).
+      - EMBED_MODEL=nomic-ai/nomic-embed-text-v1.5
+      # qwen3:8b handles [Source: X, p. N] structured citations more reliably
+      # than llama3.1:8b-instruct-q4_K_M, per AO benchmark (0/13 page-exact).
+      - OLLAMA_LLM_MODEL=qwen3:8b
+      # Cross-encoder reranker after RRF fusion. gte = 149MB ModernBERT,
+      # Apache 2.0, matches 1.2B rerankers on Hit@1 per 2026 benchmarks.
+      - RERANKER_BACKEND=gte
+      # Route slugged model names (e.g. "gutenberg-rag/ao") to per-corpus
+      # collections. Extend when adding new benchmark/dogfood corpora.
+      - COLLECTION_ROUTES=ao:gutenberg-anti-oedipus,deleuze:gutenberg-deleuze-corpus
     depends_on:
       chromadb:
         condition: service_started
+      postgres:
+        condition: service_healthy
     healthcheck:
-      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/api/health', timeout=5)"]
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://127.0.0.1:8000/api/health', timeout=5)"]
       interval: 30s
       timeout: 5s
       retries: 3
       start_period: 10s
+    mem_limit: 2g
+    # Explicit bind: listen only on loopback — matches the security
+    # posture Phase A established (no public exposure).
+    command: uvicorn main:app --host 127.0.0.1 --port 8000
 
   worker:
     build: .
+    network_mode: host
     volumes:
       - ./data:/data
     environment:
       - DATABASE_PATH=/data/gutenberg.db
-      - CHROMA_HOST=http://chromadb:8000
+      - DB_BACKEND=${DB_BACKEND:-sqlite}
+      - DATABASE_URL=postgresql+asyncpg://gutenberg:${POSTGRES_PASSWORD:-gutenberg_dev}@127.0.0.1:5432/gutenberg
+      - CHROMA_HOST=http://127.0.0.1:8001
+      - OLLAMA_HOST=http://127.0.0.1:11434
+      - EMBED_MODEL=nomic-ai/nomic-embed-text-v1.5
       - INBOX_DIR=/data/inbox
       - PROCESSING_DIR=/data/processing
       - PROCESSED_DIR=/data/processed
@@ -43,7 +90,11 @@ services:
     depends_on:
       chromadb:
         condition: service_started
-    command: python -m pipeline.watcher
+      postgres:
+        condition: service_healthy
+    working_dir: /app/worker
+    command: python -u main.py
+    mem_limit: 4g
 
 volumes:
   chroma-data:
