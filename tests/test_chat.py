@@ -11,13 +11,6 @@ SERVICES_PATH = str(Path(__file__).resolve().parent.parent / "services")
 sys.path.insert(0, API_PATH)
 sys.path.insert(0, SERVICES_PATH)
 
-# Stub heavy dependencies before importing chat module
-sys.modules.setdefault("shared", MagicMock())
-sys.modules.setdefault("shared.chroma", MagicMock())
-sys.modules.setdefault("shared.nlp", MagicMock())
-sys.modules.setdefault("shared.embeddings", MagicMock())
-sys.modules.setdefault("shared.text_normalize", MagicMock())
-
 from routers.chat import _estimate_tokens, _run_verification, Message, ChatRequest
 
 
@@ -134,7 +127,7 @@ class TestThinkTokenFiltering:
 
 class TestRunVerification:
     def test_empty_sources_returns_empty(self):
-        assert _run_verification("some response", []) == ""
+        assert _run_verification("some response", []) == ("some response", "")
 
     @patch("routers.chat.format_verification_footer")
     @patch("routers.chat.verify_against_source")
@@ -147,27 +140,32 @@ class TestRunVerification:
         mock_footer.return_value = "\n\n---\nVerification: 1/1 verified"
 
         sources = [{"text": "some source chunk", "metadata": {}}]
-        result = _run_verification("She said \"quoted text\" in her paper.", sources)
+        text, footer = _run_verification(
+            "She said \"quoted text\" in her paper.", sources
+        )
 
         mock_extract.assert_called_once()
         mock_verify.assert_called_once_with(['"quoted text"'], sources)
         mock_against.assert_called_once()
         mock_footer.assert_called_once()
-        assert result == "\n\n---\nVerification: 1/1 verified"
+        assert footer == "\n\n---\nVerification: 1/1 verified"
+        assert "quoted text" in text
 
     @patch("routers.chat.extract_quotes")
     def test_no_quotes_returns_empty(self, mock_extract):
         mock_extract.return_value = []
         sources = [{"text": "chunk"}]
-        result = _run_verification("No quotes here.", sources)
-        assert result == ""
+        text, footer = _run_verification("No quotes here.", sources)
+        assert footer == ""
+        assert text == "No quotes here."
 
     @patch("routers.chat.extract_quotes")
     def test_exception_returns_empty(self, mock_extract):
         mock_extract.side_effect = RuntimeError("boom")
         sources = [{"text": "chunk"}]
-        result = _run_verification("text", sources)
-        assert result == ""
+        text, footer = _run_verification("text", sources)
+        assert footer == ""
+        assert text == "text"
 
 
 # ---------------------------------------------------------------------------

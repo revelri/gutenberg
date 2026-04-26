@@ -26,10 +26,8 @@ def _mock_chroma_client(*a, **kw):
 
 
 @pytest.fixture
-def client(tmp_path):
-    import os
-
-    os.environ["DATABASE_PATH"] = str(tmp_path / "test.db")
+def client(tmp_path, monkeypatch):
+    monkeypatch.setenv("DATABASE_PATH", str(tmp_path / "test.db"))
 
     from core.database import set_db_path, init_db
     from core import config
@@ -43,16 +41,16 @@ def client(tmp_path):
 
     spec = importlib.util.spec_from_file_location("api_main", f"{API_PATH}/main.py")
     api_main = importlib.util.module_from_spec(spec)
-    sys.modules["shared"] = MagicMock()
-    sys.modules["shared.chroma"] = MagicMock()
-    sys.modules["shared.nlp"] = MagicMock()
-    sys.modules["shared.embeddings"] = MagicMock()
-    sys.modules["pipeline"] = MagicMock()
-    sys.modules["pipeline.progress"] = MagicMock()
+    monkeypatch.setitem(sys.modules, "shared", MagicMock())
+    monkeypatch.setitem(sys.modules, "shared.chroma", MagicMock())
+    monkeypatch.setitem(sys.modules, "shared.nlp", MagicMock())
+    monkeypatch.setitem(sys.modules, "shared.embeddings", MagicMock())
+    monkeypatch.setitem(sys.modules, "pipeline", MagicMock())
+    monkeypatch.setitem(sys.modules, "pipeline.progress", MagicMock())
     spec.loader.exec_module(api_main)
     api_main.auto_populate_exemplar = _noop
-    sys.modules["routers.corpus"]._get_chroma_client = _mock_chroma_client
-    sys.modules["routers.corpus"].chromadb = MagicMock()
+    monkeypatch.setattr(sys.modules["routers.corpus"], "_get_chroma_client", _mock_chroma_client)
+    monkeypatch.setattr(sys.modules["routers.corpus"], "chromadb", MagicMock())
 
     with TestClient(api_main.app) as c:
         yield c
