@@ -14,6 +14,10 @@ data/graph/
 data/split_pages/
 data/ocr_processed/
 data/surya_all_input/
+data/surya_corpus/
+data/surya_output/
+data/surya_split_output/
+data/telemetry/
 data/bm25_index.json
 data/bm25_index.pkl
 data/*.db
