@@ -199,6 +199,7 @@ hr {
   transition: background var(--duration-micro) ease-out;
 }
 .btn-primary:hover { background: var(--color-primary-light); }
+.btn-primary:active { background: #6d3410; }
 
 .btn-secondary {
   background: transparent;
@@ -209,7 +210,10 @@ hr {
   font-family: var(--font-body);
   font-size: 14px;
   cursor: pointer;
+  transition: background var(--duration-micro) ease-out;
 }
+.btn-secondary:hover { background: var(--color-vellum); }
+.btn-secondary:active { background: var(--color-parchment); }
 
 .btn-ghost {
   background: transparent;
@@ -219,6 +223,19 @@ hr {
   font-family: var(--font-body);
   font-size: 14px;
   cursor: pointer;
+  transition: color var(--duration-micro) ease-out;
+}
+.btn-ghost:hover { color: var(--color-primary-light); }
+
+/* Disabled and focus states */
+button:disabled, .btn-primary:disabled, .btn-secondary:disabled, .btn-ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* Cards */
@@ -271,35 +288,137 @@ textarea {
 .status-approximate { color: var(--color-warning); }
 .status-unverified { color: var(--color-error); }
 
+/* Shared loading indicators (used across components) */
+.loading-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-ash);
+  font-size: 13px;
+  padding: var(--space-md);
+  justify-content: center;
+}
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-parchment);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Citation-related CSS: rendered via {@html} from MessageThread, so must be
+ * global (Svelte scoped styles do not apply to injected HTML). */
+.citation-badge {
+  cursor: pointer;
+  color: var(--color-primary);
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+.citation-verify {
+  display: inline-block;
+  font-family: var(--font-data);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  vertical-align: baseline;
+  cursor: help;
+}
+.citation-verify.verified { color: var(--color-success); background: color-mix(in srgb, var(--color-success) 12%, transparent); }
+.citation-verify.approximate { color: var(--color-warning); background: color-mix(in srgb, var(--color-warning) 14%, transparent); }
+.citation-verify.unverified { color: var(--color-error); background: color-mix(in srgb, var(--color-error) 12%, transparent); }
+.view-pdf-btn {
+  font-size: 11px;
+  padding: 1px 6px;
+  margin-left: 4px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bookmark-btn {
+  font-size: 13px;
+  padding: 0 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bookmark-btn:hover { color: var(--color-primary); }
+
 /* Scrollbar styling */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--color-parchment); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-ash); }
 
+/* Mobile menu toggle */
+.mobile-menu-btn {
+  display: none;
+  font-size: 20px;
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
+}
+
 /* Mobile responsive: single-pane mode */
 @media (max-width: 767px) {
   .app-shell {
     grid-template-columns: 1fr;
-    grid-template-rows: 48px 1fr;
+    grid-template-rows: 48px 1fr auto;
   }
   .topbar {
     flex-wrap: wrap;
     gap: var(--space-xs);
   }
-  .left-pane,
-  .center-pane,
-  .right-pane {
+  /* Hide sidebar by default, show center pane */
+  .left-pane {
+    display: none;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: var(--color-surface);
+    border: none;
+  }
+  .left-pane.mobile-open {
+    display: block;
+  }
+  .center-pane {
     grid-column: 1;
     grid-row: 2;
     width: 100% !important;
     min-width: 0 !important;
     border: none;
+    padding-bottom: 140px; /* room for fixed input */
+  }
+  /* Input pane fixed to bottom */
+  .right-pane {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100% !important;
+    min-width: 0 !important;
+    border: none;
+    border-top: 1px solid var(--color-parchment);
+    max-height: 140px;
+    overflow-y: auto;
+  }
+  .mobile-menu-btn {
+    display: block;
   }
   .mobile-hidden {
     display: none !important;
   }
   .resize-handle {
     display: none !important;
+  }
+  .modal-content {
+    width: 90vw !important;
+    max-width: 520px;
+    max-height: 85vh;
+    overflow-y: auto;
   }
 }

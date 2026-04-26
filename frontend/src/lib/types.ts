@@ -59,3 +59,18 @@ export interface IngestionStatus {
   status: 'pending' | 'running' | 'done' | 'failed';
   error: string | null;
 }
+
+export interface CitationVerification {
+  quote: string;
+  status: 'verified' | 'approximate' | 'unverified' | 'too_short';
+  source: string | null;
+  page: number | null;
+  similarity: number;
+}
+
+export type StreamEvent =
+  | { type: 'content'; data: string }
+  | { type: 'warning'; data: string }
+  | { type: 'verification'; data: CitationVerification[] }
+  | { type: 'done'; data: { message_id: string } }
+  | { type: 'error'; data: string };

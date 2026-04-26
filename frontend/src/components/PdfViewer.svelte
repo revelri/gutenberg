@@ -9,10 +9,10 @@
 	let currentPage = $state(page);
 	let zoomLevel = $state(100);
 	let iframeEl: HTMLIFrameElement | undefined = $state(undefined);
+	let loading = $state(true);
+	let error = $state(false);
 
-	const MAX_PAGE = 20;
-
-	const searchText = quote.slice(0, 60);
+	const searchText = quote.slice(0, 120);
 
 	function buildViewerUrl(pg: number): string {
 		return `/pdfjs/web/viewer.html?file=/api/pdf/${encodeURIComponent(source)}#page=${pg}&search=${encodeURIComponent(searchText)}`;
@@ -21,50 +21,59 @@
 	let viewerUrl = $state(buildViewerUrl(currentPage));
 
 	function goToPage(pg: number) {
-		if (pg < 1 || pg > MAX_PAGE) return;
+		if (pg < 1) return;
 		currentPage = pg;
+		loading = true;
+		error = false;
 		viewerUrl = buildViewerUrl(pg);
 	}
 
 	function prevPage() { goToPage(currentPage - 1); }
 	function nextPage() { goToPage(currentPage + 1); }
 
-	function zoomIn() {
-		zoomLevel = Math.min(zoomLevel + 25, 300);
-	}
+	function zoomIn() { zoomLevel = Math.min(zoomLevel + 25, 300); }
+	function zoomOut() { zoomLevel = Math.max(zoomLevel - 25, 25); }
+	function resetZoom() { zoomLevel = 100; }
 
-	function zoomOut() {
-		zoomLevel = Math.max(zoomLevel - 25, 25);
-	}
-
-	function resetZoom() {
-		zoomLevel = 100;
-	}
-
-	let iframeTransform = $derived(`scale(${zoomLevel / 100})`);
+	function onIframeLoad() { loading = false; }
+	function onIframeError() { loading = false; error = true; }
 </script>
 
 <svelte:window onkeydown={(e) => e.key === 'Escape' && onclose()} />
 
-<div class="pdf-modal-overlay" role="dialog" onclick={onclose}>
+<div class="pdf-modal-overlay" role="dialog" aria-modal="true" aria-label="PDF Viewer: {source}" onclick={onclose}>
 	<div class="pdf-modal" onclick={(e) => e.stopPropagation()}>
 		<div class="pdf-header">
 			<div class="pdf-nav-controls">
-				<button class="btn-ghost pdf-btn" onclick={prevPage} disabled={currentPage <= 1}>&#8249;</button>
+				<button class="btn-ghost pdf-btn" onclick={prevPage} disabled={currentPage <= 1} aria-label="Previous page">&#8249;</button>
 				<span class="pdf-page-indicator">p. {currentPage}</span>
-				<button class="btn-ghost pdf-btn" onclick={nextPage} disabled={currentPage >= MAX_PAGE}>&#8250;</button>
+				<button class="btn-ghost pdf-btn" onclick={nextPage} aria-label="Next page">&#8250;</button>
 			</div>
 			<span class="pdf-title">{source}</span>
 			<div class="pdf-zoom-controls">
-				<button class="btn-ghost pdf-btn" onclick={zoomOut} disabled={zoomLevel <= 25}>&minus;</button>
+				<button class="btn-ghost pdf-btn" onclick={zoomOut} disabled={zoomLevel <= 25} aria-label="Zoom out">&minus;</button>
 				<span class="pdf-zoom-indicator">{zoomLevel}%</span>
-				<button class="btn-ghost pdf-btn" onclick={zoomIn} disabled={zoomLevel >= 300}>+</button>
-				<button class="btn-ghost pdf-btn" onclick={resetZoom}>Reset</button>
+				<button class="btn-ghost pdf-btn" onclick={zoomIn} disabled={zoomLevel >= 300} aria-label="Zoom in">+</button>
+				<button class="btn-ghost pdf-btn" onclick={resetZoom} aria-label="Reset zoom">Reset</button>
 			</div>
-			<button class="btn-ghost" onclick={onclose}>&#x2715;</button>
+			<button class="btn-ghost" onclick={onclose} aria-label="Close PDF viewer">&#x2715;</button>
 		</div>
 		<div class="pdf-iframe-wrapper">
-			<iframe bind:this={iframeEl} src={viewerUrl} title="PDF viewer" style="transform: {iframeTransform}; transform-origin: top left;"></iframe>
+			{#if loading}
+				<div class="pdf-loading" role="status">Loading PDF...</div>
+			{/if}
+			{#if error}
+				<div class="pdf-error">PDF could not be loaded. The file may not be available.</div>
+			{:else}
+				<iframe
+					bind:this={iframeEl}
+					src={viewerUrl}
+					title="PDF viewer for {source}"
+					style="transform: scale({zoomLevel / 100}); transform-origin: top left;"
+					onload={onIframeLoad}
+					onerror={onIframeError}
+				></iframe>
+			{/if}
 		</div>
 	</div>
 </div>
@@ -118,17 +127,12 @@
 	}
 
 	.pdf-btn {
-		padding: 2px 8px;
+		padding: var(--space-xs) var(--space-sm);
 		text-decoration: none;
 		font-size: 16px;
 		line-height: 1;
 		min-width: 28px;
 		text-align: center;
-	}
-
-	.pdf-btn:disabled {
-		opacity: 0.3;
-		cursor: default;
 	}
 
 	.pdf-page-indicator,
@@ -148,14 +152,21 @@
 
 	.pdf-iframe-wrapper iframe {
 		border: none;
-		width: calc(100% / (var(--zoom-factor, 1)));
-		height: calc(100% / (var(--zoom-factor, 1)));
-		min-width: 100%;
-		min-height: 100%;
+		width: 100%;
+		height: 100%;
 	}
 
-	iframe {
-		border: none;
-		width: 100%;
+	.pdf-loading, .pdf-error {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		font-family: var(--font-body);
+		font-size: 14px;
+		color: var(--color-stone);
+	}
+
+	.pdf-error {
+		color: var(--color-error);
 	}
 </style>

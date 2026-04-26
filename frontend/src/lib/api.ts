@@ -1,10 +1,13 @@
-import type { Corpus, Conversation, ConversationDetail, IngestionStatus, Mode, CitationStyle } from './types';
+import type { Corpus, Conversation, ConversationDetail, Document, IngestionStatus, Mode, CitationStyle, StreamEvent } from './types';
 
 const BASE = '/api';
 
 async function json<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, init);
-  if (!res.ok) throw new Error(`${res.status}: ${await res.text()}`);
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`${res.status}: ${text}`);
+  }
   return res.json();
 }
 
@@ -14,7 +17,7 @@ export async function listCorpora(): Promise<Corpus[]> {
   return json('/corpus');
 }
 
-export async function getCorpus(id: string): Promise<Corpus & { documents: any[] }> {
+export async function getCorpus(id: string): Promise<Corpus & { documents: Document[] }> {
   return json(`/corpus/${id}`);
 }
 
@@ -91,7 +94,7 @@ export async function* streamMessage(
   content: string,
   term?: string,
   signal?: AbortSignal
-): AsyncGenerator<string> {
+): AsyncGenerator<StreamEvent> {
   const res = await fetch(`${BASE}/conversations/${conversationId}/messages`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -104,6 +107,7 @@ export async function* streamMessage(
   const reader = res.body.getReader();
   const decoder = new TextDecoder();
   let buffer = '';
+  let currentEvent = 'message';
 
   while (true) {
     const { done, value } = await reader.read();
@@ -114,11 +118,32 @@ export async function* streamMessage(
     buffer = lines.pop() || '';
 
     for (const line of lines) {
+      if (line.startsWith('event: ')) {
+        currentEvent = line.slice(7).trim();
+        continue;
+      }
       if (line.startsWith('data: ')) {
         try {
           const data = JSON.parse(line.slice(6));
-          if (data.content) yield data.content;
-        } catch { /* skip non-JSON lines */ }
+          switch (currentEvent) {
+            case 'message':
+              if (data.content) yield { type: 'content', data: data.content };
+              break;
+            case 'warning':
+              yield { type: 'warning', data: data.message || data.error || 'Unknown warning' };
+              break;
+            case 'verification':
+              yield { type: 'verification', data: data.citations || [] };
+              break;
+            case 'done':
+              yield { type: 'done', data: { message_id: data.message_id } };
+              break;
+            case 'error':
+              yield { type: 'error', data: data.error || 'Unknown error' };
+              break;
+          }
+        } catch { /* skip malformed JSON lines */ }
+        currentEvent = 'message'; // reset after data line
       }
     }
   }
