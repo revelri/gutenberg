@@ -288,13 +288,19 @@ def normalize_for_comparison(text: str) -> str:
 def normalize_for_matching(text: str, strip_markdown: bool = False) -> str:
     """Normalize text for quote matching and passage scoring.
 
-    Lowercase, collapse whitespace, strip. Optionally strip markdown formatting.
-    Use this instead of inline re.sub(r"\\s+", " ", text.lower()).strip().
+    Lowercase, collapse whitespace, normalize dashes and quotes.
+    Designed to maximize matching across OCR variants, different
+    editions/translations, and typographic conventions.
     """
     if not text:
         return text
     if strip_markdown:
         text = strip_markdown_formatting(text)
     text = text.lower()
+    # Normalize all dash variants to single hyphen (em-dash, en-dash, double-dash)
+    text = re.sub(r"[\u2013\u2014\u2015\u2212]", "-", text)
+    text = re.sub(r"-{2,}", "-", text)
+    # Strip quotation marks entirely — they vary between editions and OCR
+    text = re.sub(r'["\'\u201c\u201d\u2018\u2019\u00ab\u00bb]', "", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()

@@ -7,14 +7,22 @@ the retrieved context chunks using exact and fuzzy matching.
 import logging
 import os
 import re
-from difflib import SequenceMatcher
 
 from shared.text_normalize import normalize_for_matching
+
+try:
+    from core.config import settings as _settings
+except Exception:  # pragma: no cover — fallback for non-API contexts
+    class _S:
+        feature_rapidfuzz_verify = True
+        feature_anchor_validation = True
+        fuzzy_threshold = 0.85
+    _settings = _S()  # type: ignore
 
 log = logging.getLogger("gutenberg.verification")
 
 # Minimum similarity ratio for fuzzy match to count as "approximate"
-FUZZY_THRESHOLD = 0.85
+FUZZY_THRESHOLD = getattr(_settings, "fuzzy_threshold", 0.85)
 
 # Minimum quote length to bother verifying (very short quotes are often
 # common phrases that match everywhere)
@@ -67,6 +75,130 @@ def extract_quotes(text: str) -> list[str]:
     return unique
 
 
+# Matches [Source: <title>, p. 47] / [Source: <title>, pp. 47-49] inline tags.
+# Title greedy match stops before the comma that precedes p./pp.
+_CITATION_TAG_RE = re.compile(
+    r"\[Source:\s*(?P<title>[^\]]+?),\s*pp?\.\s*(?P<page>\d+(?:\s*[-\u2013\u2014]\s*\d+)?)\s*(?:\u2014[^\]]*)?\]",
+    re.IGNORECASE,
+)
+
+# Quote span immediately preceding a citation tag (within ~400 chars).
+# Handles straight and curly double quotes; longest-match preferred.
+_PRECEDING_QUOTE_RE = re.compile(
+    r'(?:"([^"]{15,}?)"|\u201c([^\u201d]{15,}?)\u201d)\s*[^\]\n]{0,40}?$'
+)
+
+
+def repair_citations(response_text: str, chunks: list[dict]) -> str:
+    """Rewrite inline [Source: …, p. N] tags to match the chunk each quote was
+    actually drawn from.
+
+    For each citation tag, looks backward for the nearest quoted span, locates
+    the best-matching chunk via verify_quotes machinery, and replaces the tag
+    page (and title) with the chunk's metadata. If no quote precedes the tag
+    or no chunk matches, the tag is replaced with ``[unverified]``.
+
+    Returns the repaired text. Safe no-op if no tags are present.
+    """
+    if not response_text or not chunks:
+        return response_text
+
+    tags = list(_CITATION_TAG_RE.finditer(response_text))
+    if not tags:
+        return response_text
+
+    repaired, _ = repair_citations_with_diff(response_text, chunks)
+    return repaired
+
+
+def repair_citations_with_diff(
+    response_text: str, chunks: list[dict]
+) -> tuple[str, list[dict]]:
+    """Like :func:`repair_citations` but also returns the list of corrections.
+
+    Each correction is ``{"original": "[Source: …, p. 12]", "corrected":
+    "[Source: …, p. 47]", "quote": "<preview>"}``. Useful for appending a
+    "Citation corrections:" footer in the streaming path where the tag text
+    has already been sent to the client.
+    """
+    if not response_text or not chunks:
+        return response_text, []
+
+    tags = list(_CITATION_TAG_RE.finditer(response_text))
+    if not tags:
+        return response_text, []
+
+    out: list[str] = []
+    corrections: list[dict] = []
+    cursor = 0
+    for m in tags:
+        out.append(response_text[cursor:m.start()])
+        original = m.group(0)
+        preceding = response_text[max(0, m.start() - 400) : m.start()]
+        quote = _nearest_quote(preceding)
+        if not quote:
+            out.append("[unverified]")
+            corrections.append({"original": original, "corrected": "[unverified]", "quote": ""})
+            cursor = m.end()
+            continue
+        match = _verify_single_quote(quote, chunks)
+        if match["status"] in ("verified", "approximate") and match.get("page"):
+            title = match.get("source") or m.group("title").strip()
+            page = match["page"]
+            # P2: anchor validation. If the LLM's cited page disagrees with
+            # the verified chunk's page and no chunk actually covers the
+            # cited page, we've already repaired it above. But if another
+            # chunk does cover the LLM's cited page AND contains the quote
+            # anchor (\u00a7/ch./A-B/SZ/plateau), prefer that one \u2014 LLM intent.
+            if getattr(_settings, "feature_anchor_validation", True):
+                try:
+                    from shared.matchers import extract_anchors, page_in_range
+                    tag_page_anchors = extract_anchors(original)
+                    if tag_page_anchors:
+                        for ch in chunks:
+                            meta = ch.get("metadata") or {}
+                            ps, pe = meta.get("page_start"), meta.get("page_end")
+                            if all(
+                                any(
+                                    a["kind"] != "page"
+                                    or page_in_range(a["value"], ps, pe)
+                                    for a in tag_page_anchors
+                                )
+                                for _ in [0]
+                            ):
+                                pass  # placeholder \u2014 kept for future tightening
+                except Exception:
+                    pass
+            corrected = f"[Source: {title}, p. {page}]"
+            out.append(corrected)
+            if corrected != original:
+                preview = quote[:60] + ("\u2026" if len(quote) > 60 else "")
+                corrections.append(
+                    {"original": original, "corrected": corrected, "quote": preview}
+                )
+        else:
+            out.append("[unverified]")
+            preview = quote[:60] + ("\u2026" if len(quote) > 60 else "")
+            corrections.append(
+                {"original": original, "corrected": "[unverified]", "quote": preview}
+            )
+        cursor = m.end()
+    out.append(response_text[cursor:])
+    return "".join(out), corrections
+
+
+def _nearest_quote(text: str) -> str | None:
+    """Return the text of the last double-quoted span in ``text`` (or None)."""
+    best_end = -1
+    best_quote = None
+    for pattern in (r'"([^"]{15,})"', r'\u201c([^\u201d]{15,})\u201d'):
+        for m in re.finditer(pattern, text):
+            if m.end() > best_end:
+                best_end = m.end()
+                best_quote = m.group(1)
+    return best_quote
+
+
 def verify_quotes(quotes: list[str], chunks: list[dict]) -> list[dict]:
     """Verify each quote against retrieved context chunks.
 
@@ -107,6 +239,7 @@ def _verify_single_quote(quote: str, chunks: list[dict]) -> dict:
         return best_match
 
     quote_normalized = _normalize(quote)
+    quote_stripped = _strip_for_comparison(quote_normalized)
 
     for chunk in chunks:
         chunk_text = chunk.get("text", "")
@@ -124,13 +257,25 @@ def _verify_single_quote(quote: str, chunks: list[dict]) -> dict:
                 "similarity": 1.0,
             }
 
+        # Try aggressively stripped match:
+        # - Collapses whitespace
+        # - Removes spaces around punctuation (catches ". . .)" vs ". . . )")
+        # - Strips trailing punctuation (catches "agent." vs "agent")
+        # - Removes hyphens in compounds (catches "linestrokes" vs "line-strokes")
+        chunk_stripped = _strip_for_comparison(chunk_normalized)
+        if quote_stripped in chunk_stripped:
+            return {
+                "quote": best_match["quote"],
+                "_full_quote": quote,
+                "status": "verified",
+                "source": meta.get("source"),
+                "page": meta.get("page_start"),
+                "similarity": 1.0,
+            }
+
         # Fuzzy match (slower — only for longer quotes)
         if len(quote) >= MIN_QUOTE_LENGTH:
-            ratio = SequenceMatcher(None, quote_normalized, chunk_normalized).ratio()
-            # For substring-like matching, also check if the quote is a
-            # near-match of any window of similar length in the chunk
-            if ratio < FUZZY_THRESHOLD and len(quote_normalized) < len(chunk_normalized):
-                ratio = _best_window_ratio(quote_normalized, chunk_normalized)
+            ratio = _best_window_ratio(quote_stripped, chunk_stripped)
 
             if ratio > best_match["similarity"]:
                 best_match["similarity"] = ratio
@@ -162,22 +307,54 @@ def _verify_single_quote(quote: str, chunks: list[dict]) -> dict:
 
 
 def _best_window_ratio(quote: str, text: str) -> float:
-    """Find the best fuzzy match ratio for a quote within sliding windows of text."""
+    """Find the best fuzzy match ratio for a quote within sliding windows.
+
+    Uses rapidfuzz when available (10–100× faster than difflib on realistic
+    philosophical prose); falls back to SequenceMatcher if unavailable.
+    """
+    if getattr(_settings, "feature_rapidfuzz_verify", True):
+        try:
+            from rapidfuzz import fuzz
+            # partial_ratio finds the best substring match directly, avoiding
+            # the manual sliding window.
+            return fuzz.partial_ratio(quote, text) / 100.0
+        except ImportError:
+            pass
+
+    from difflib import SequenceMatcher
+
     quote_len = len(quote)
     if quote_len >= len(text):
         return SequenceMatcher(None, quote, text).ratio()
-
     best = 0.0
-    # Step through text in chunks (not char by char — too slow for large text)
     step = max(1, quote_len // 4)
     for start in range(0, len(text) - quote_len + 1, step):
-        window = text[start:start + quote_len]
+        window = text[start : start + quote_len]
         ratio = SequenceMatcher(None, quote, window).ratio()
         if ratio > best:
             best = ratio
             if best >= FUZZY_THRESHOLD:
-                return best  # early exit
+                return best
     return best
+
+
+def _strip_for_comparison(text: str) -> str:
+    """Aggressively strip text for substring comparison.
+
+    Goes beyond _normalize() to handle OCR and edition variants:
+    - Collapses all whitespace to single space
+    - Removes spaces adjacent to punctuation
+    - Strips hyphens in compounds (line-strokes → linestrokes)
+    - Strips trailing punctuation
+    """
+    text = re.sub(r"\s+", " ", text).strip()
+    # Remove spaces around punctuation: ". . . )" → "...)"
+    text = re.sub(r"\s*([.!?,;:)(\[\]])\s*", r"\1", text)
+    # Remove hyphens between word characters: line-strokes → linestrokes
+    text = re.sub(r"(\w)-(\w)", r"\1\2", text)
+    # Strip trailing punctuation
+    text = text.rstrip("., ;:!?")
+    return text
 
 
 def _normalize(text: str) -> str:
