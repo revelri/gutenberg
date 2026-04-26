@@ -1,0 +1,22 @@
+{
+  "eval": "data/eval/multi_entity_queries.json",
+  "collection": "gutenberg-deleuze-corpus",
+  "n_samples": 8,
+  "off": {
+    "entity_recall_at_k": 1.0,
+    "co_occurrence_recall_at_k": 1.0,
+    "errors": 0,
+    "mean_latency_ms": 982.4
+  },
+  "on": {
+    "entity_recall_at_k": 1.0,
+    "co_occurrence_recall_at_k": 1.0,
+    "errors": 0,
+    "mean_latency_ms": 140.8
+  },
+  "on_minus_off": {
+    "co_occurrence_recall_at_k": 0.0,
+    "mean_latency_ms": -841.6,
+    "entity_recall_at_k": 0.0
+  }
+}

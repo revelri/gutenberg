@@ -1,0 +1,118 @@
+[
+  {
+    "query": "Find every instance where Deleuze discusses the 'body without organs' (BwO) across all works, with full citations for each occurrence.",
+    "term": "body without organs",
+    "expected_sources": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1969 The Logic of Sense - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 5,
+    "expected_terms": ["BwO", "body without organs", "Artaud"],
+    "label": "BwO exhaustive"
+  },
+  {
+    "query": "Retrieve all passages where Deleuze uses the concept of 'deterritorialization' with page citations.",
+    "term": "deterritorialization",
+    "expected_sources": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 4,
+    "expected_terms": ["deterritorialization", "reterritorialization", "territory"],
+    "label": "Deterritorialization exhaustive"
+  },
+  {
+    "query": "Find every passage across the Deleuze corpus that discusses 'multiplicity' as a philosophical concept, citing each occurrence.",
+    "term": "multiplicity",
+    "expected_sources": [
+      "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 4,
+    "expected_terms": ["multiplicity", "multiplicities", "manifold"],
+    "label": "Multiplicity exhaustive"
+  },
+  {
+    "query": "Collect all passages where Deleuze discusses 'the virtual' and 'the actual' with citations.",
+    "term": "virtual",
+    "expected_sources": [
+      "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 4,
+    "expected_terms": ["virtual", "actual", "actualization", "differentiation"],
+    "label": "Virtual/actual exhaustive"
+  },
+  {
+    "query": "Find all occurrences of the concept of 'rhizome' across Deleuze's works with exact citations.",
+    "term": "rhizome",
+    "expected_sources": [
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 3,
+    "expected_terms": ["rhizome", "rhizomatic", "tree", "arborescent"],
+    "label": "Rhizome exhaustive"
+  },
+  {
+    "query": "Retrieve every passage where Deleuze discusses 'sensation' as a philosophical and aesthetic concept, with citations.",
+    "term": "sensation",
+    "expected_sources": [
+      "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 3,
+    "expected_terms": ["sensation", "percept", "affect", "Figure"],
+    "label": "Sensation exhaustive"
+  },
+  {
+    "query": "Find all passages about 'the fold' as a concept across Deleuze's works.",
+    "term": "fold",
+    "expected_sources": [
+      "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+      "1988 Foucault - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 3,
+    "expected_terms": ["fold", "folding", "unfolding", "Leibniz", "monad"],
+    "label": "Fold exhaustive"
+  },
+  {
+    "query": "Collect every instance of 'eternal return' in Deleuze's writings with full citations.",
+    "term": "eternal return",
+    "expected_sources": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 3,
+    "expected_terms": ["eternal return", "repetition", "Nietzsche", "will to power"],
+    "label": "Eternal return exhaustive"
+  },
+  {
+    "query": "Find all passages where Deleuze discusses 'the diagram' as a concept, with citations from each work.",
+    "term": "diagram",
+    "expected_sources": [
+      "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "1988 Foucault - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 3,
+    "expected_terms": ["diagram", "abstract machine", "Foucault", "Bacon"],
+    "label": "Diagram exhaustive"
+  },
+  {
+    "query": "Retrieve all occurrences of 'assemblage' (agencement) as a concept across Deleuze's corpus with citations.",
+    "term": "assemblage",
+    "expected_sources": [
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf"
+    ],
+    "min_citations": 4,
+    "expected_terms": ["assemblage", "agencement", "machinic", "collective"],
+    "label": "Assemblage exhaustive"
+  }
+]

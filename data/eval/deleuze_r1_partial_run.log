@@ -1,0 +1,775 @@
+2026-04-06 22:33:42,087 [INFO] Models: ['deepseek-r1']
+2026-04-06 22:33:42,087 [INFO] Queries: 50 exact + 50 general
+2026-04-06 22:33:42,087 [INFO] Collection: deleuze-full
+2026-04-06 22:33:42,155 [INFO] HTTP Request: GET http://localhost:8200/api/v2/auth/identity "HTTP/1.1 200 OK"
+2026-04-06 22:33:42,160 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant "HTTP/1.1 200 OK"
+2026-04-06 22:33:42,160 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database "HTTP/1.1 200 OK"
+2026-04-06 22:33:42,162 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:42,251 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/get "HTTP/1.1 200 OK"
+2026-04-06 22:33:42,549 [INFO] BM25 index: 4995 docs
+2026-04-06 22:33:42,557 [INFO] Pre-computing retrieval for all queries...
+2026-04-06 22:33:43,396 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,397 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,401 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,402 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,404 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,450 [INFO]   Retrieved 10 chunks for: np_genealogy_famous
+2026-04-06 22:33:43,536 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,537 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,539 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,541 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,544 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,589 [INFO]   Retrieved 10 chunks for: np_sense_force_famous
+2026-04-06 22:33:43,670 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,672 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,673 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,675 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,677 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,722 [INFO]   Retrieved 10 chunks for: np_pluralism_conceptual
+2026-04-06 22:33:43,797 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,799 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,801 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,802 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,805 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,849 [INFO]   Retrieved 10 chunks for: np_will_complex_conceptual
+2026-04-06 22:33:43,925 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,926 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,927 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,928 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,930 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:43,971 [INFO]   Retrieved 10 chunks for: ps_signs_learning_famous
+2026-04-06 22:33:44,053 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,054 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,055 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,056 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,058 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,110 [INFO]   Retrieved 10 chunks for: ps_vocation_signs_conceptual
+2026-04-06 22:33:44,181 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,183 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,184 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,185 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,192 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,229 [INFO]   Retrieved 10 chunks for: ps_art_convergence_thematic
+2026-04-06 22:33:44,306 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,308 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,309 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,310 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,311 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,331 [INFO]   Retrieved 0 chunks for: berg_inhuman_famous
+2026-04-06 22:33:44,409 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,410 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,411 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,412 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,414 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,430 [INFO]   Retrieved 0 chunks for: berg_perception_minus_conceptual
+2026-04-06 22:33:44,506 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,508 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,509 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,510 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,511 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,532 [INFO]   Retrieved 0 chunks for: berg_contemporaneous_past_famous
+2026-04-06 22:33:44,608 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,611 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,614 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,618 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,620 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,676 [INFO]   Retrieved 10 chunks for: dr_opening_famous
+2026-04-06 22:33:44,748 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,750 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,752 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,753 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,755 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,816 [INFO]   Retrieved 10 chunks for: dr_theft_gift_famous
+2026-04-06 22:33:44,894 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,895 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,897 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,898 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,899 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:44,964 [INFO]   Retrieved 10 chunks for: dr_repress_repeat_conceptual
+2026-04-06 22:33:45,046 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,048 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,049 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,051 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,053 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,123 [INFO]   Retrieved 10 chunks for: dr_individuation_ground_niche
+2026-04-06 22:33:45,201 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,202 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,204 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,205 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,218 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,430 [INFO]   Retrieved 10 chunks for: ls_incorporeal_events_famous
+2026-04-06 22:33:45,513 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,515 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,517 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,519 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,527 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,727 [INFO]   Retrieved 10 chunks for: ls_pure_becoming_conceptual
+2026-04-06 22:33:45,800 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,802 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,803 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,805 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:45,815 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,022 [INFO]   Retrieved 10 chunks for: ls_artaud_jabberwocky_niche
+2026-04-06 22:33:46,103 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,105 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,107 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,108 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,111 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,129 [INFO]   Retrieved 0 chunks for: sp_confidence_life_famous
+2026-04-06 22:33:46,200 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,201 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,203 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,204 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,206 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,227 [INFO]   Retrieved 0 chunks for: sp_joy_sadness_famous
+2026-04-06 22:33:46,304 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,306 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,308 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,309 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,312 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,331 [INFO]   Retrieved 0 chunks for: sp_law_knowledge_conceptual
+2026-04-06 22:33:46,405 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,407 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,410 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,412 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,415 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,475 [INFO]   Retrieved 10 chunks for: ao_opening_famous
+2026-04-06 22:33:46,547 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,549 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,550 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,551 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,553 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,612 [INFO]   Retrieved 10 chunks for: ao_schizo_walk_famous
+2026-04-06 22:33:46,686 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,688 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,689 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,690 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,692 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,752 [INFO]   Retrieved 10 chunks for: ao_man_nature_process_conceptual
+2026-04-06 22:33:46,825 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,826 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,827 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,829 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,831 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,893 [INFO]   Retrieved 10 chunks for: ao_free_syntheses_niche
+2026-04-06 22:33:46,969 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,971 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,972 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,974 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,976 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:46,998 [INFO]   Retrieved 0 chunks for: dial_lines_famous
+2026-04-06 22:33:47,076 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,078 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,081 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,082 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,084 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,100 [INFO]   Retrieved 0 chunks for: dial_deserts_tribes_famous
+2026-04-06 22:33:47,177 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,178 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,181 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,183 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,185 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,200 [INFO]   Retrieved 0 chunks for: dial_minority_writing_conceptual
+2026-04-06 22:33:47,274 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,275 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,277 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,279 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,281 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,362 [INFO]   Retrieved 10 chunks for: atp_opening_famous
+2026-04-06 22:33:47,437 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,439 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,440 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,442 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,445 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,531 [INFO]   Retrieved 10 chunks for: atp_book_no_subject_famous
+2026-04-06 22:33:47,608 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,610 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,612 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,613 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,616 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,696 [INFO]   Retrieved 10 chunks for: atp_bwo_famous
+2026-04-06 22:33:47,778 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,780 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,782 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,783 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,786 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,871 [INFO]   Retrieved 10 chunks for: atp_war_machine_axiom_famous
+2026-04-06 22:33:47,945 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,948 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,950 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,952 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:47,954 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,033 [INFO]   Retrieved 10 chunks for: atp_book_functions_conceptual
+2026-04-06 22:33:48,108 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,109 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,112 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,113 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,114 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,156 [INFO]   Retrieved 10 chunks for: fb_figure_figurative_famous
+2026-04-06 22:33:48,234 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,236 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,237 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,239 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,240 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,284 [INFO]   Retrieved 10 chunks for: fb_diagram_conceptual
+2026-04-06 22:33:48,364 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,365 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,367 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,368 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,370 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,411 [INFO]   Retrieved 10 chunks for: fb_screaming_mouth_thematic
+2026-04-06 22:33:48,489 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,491 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,492 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,494 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,496 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,516 [INFO]   Retrieved 0 chunks for: c1_movement_image_famous
+2026-04-06 22:33:48,590 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,592 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,593 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,594 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,596 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,615 [INFO]   Retrieved 0 chunks for: c1_cinema_bergson_lineage_niche
+2026-04-06 22:33:48,690 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,691 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,693 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,694 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,697 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,720 [INFO]   Retrieved 0 chunks for: c1_any_instant_whatever_conceptual
+2026-04-06 22:33:48,797 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,798 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,800 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,801 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,803 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,842 [INFO]   Retrieved 10 chunks for: fouc_new_archivist_famous
+2026-04-06 22:33:48,916 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,918 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,919 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,920 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,921 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:48,962 [INFO]   Retrieved 10 chunks for: fouc_disjunction_seeing_saying_conceptual
+2026-04-06 22:33:49,039 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,040 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,043 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,046 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,049 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,090 [INFO]   Retrieved 10 chunks for: fouc_confinement_secondary_niche
+2026-04-06 22:33:49,164 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,166 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,167 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,169 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,170 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,196 [INFO]   Retrieved 0 chunks for: fold_baroque_function_famous
+2026-04-06 22:33:49,272 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,274 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,283 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,284 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,287 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,315 [INFO]   Retrieved 0 chunks for: fold_closure_finite_infinite_conceptual
+2026-04-06 22:33:49,390 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,392 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,394 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,395 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,397 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,416 [INFO]   Retrieved 0 chunks for: fold_chaos_screen_niche
+2026-04-06 22:33:49,495 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,496 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,498 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,499 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,501 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,520 [INFO]   Retrieved 0 chunks for: c2_neo_realism_optical_famous
+2026-04-06 22:33:49,596 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,597 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,599 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,600 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,601 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,618 [INFO]   Retrieved 0 chunks for: c2_character_viewer_conceptual
+2026-04-06 22:33:49,695 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,696 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,697 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,698 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,700 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,723 [INFO]   Retrieved 0 chunks for: c2_seer_not_agent_thematic
+2026-04-06 22:33:49,799 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,801 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,802 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,803 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,804 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,855 [INFO]   Retrieved 10 chunks for: wip_forming_concepts_famous
+2026-04-06 22:33:49,932 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,934 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,935 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,936 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,938 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:49,983 [INFO]   Retrieved 10 chunks for: wip_concepts_created_famous
+2026-04-06 22:33:50,058 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,059 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,061 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,063 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,065 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,115 [INFO]   Retrieved 10 chunks for: wip_chaos_speed_conceptual
+2026-04-06 22:33:50,190 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,191 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,193 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,194 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,205 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,242 [INFO]   Retrieved 10 chunks for: np_genealogy_broad
+2026-04-06 22:33:50,319 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,321 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,322 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,324 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,325 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,353 [INFO]   Retrieved 10 chunks for: np_active_reactive_specific
+2026-04-06 22:33:50,435 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,436 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,438 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,439 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,448 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,485 [INFO]   Retrieved 10 chunks for: np_will_to_power_broad
+2026-04-06 22:33:50,564 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,565 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,567 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,568 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,576 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,608 [INFO]   Retrieved 10 chunks for: ps_types_signs_broad
+2026-04-06 22:33:50,685 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,687 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,689 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,690 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,692 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,722 [INFO]   Retrieved 10 chunks for: ps_memory_art_specific
+2026-04-06 22:33:50,795 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,796 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,798 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,799 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,801 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,832 [INFO]   Retrieved 10 chunks for: ps_disappointment_niche
+2026-04-06 22:33:50,907 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,908 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,909 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,912 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,920 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:50,950 [INFO]   Retrieved 10 chunks for: berg_intuition_method_broad
+2026-04-06 22:33:51,022 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,023 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,025 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,028 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,030 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,044 [INFO]   Retrieved 0 chunks for: berg_past_present_specific
+2026-04-06 22:33:51,116 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,117 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,119 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,120 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,127 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,160 [INFO]   Retrieved 10 chunks for: dr_repetition_difference_broad
+2026-04-06 22:33:51,233 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,234 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,236 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,237 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,239 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,268 [INFO]   Retrieved 10 chunks for: dr_critique_representation_specific
+2026-04-06 22:33:51,342 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,343 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,345 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,346 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,350 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,377 [INFO]   Retrieved 10 chunks for: dr_individuation_niche
+2026-04-06 22:33:51,452 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,453 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,455 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,456 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,464 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,501 [INFO]   Retrieved 10 chunks for: ls_stoic_events_broad
+2026-04-06 22:33:51,576 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,579 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,580 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,581 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,589 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,619 [INFO]   Retrieved 10 chunks for: ls_carroll_artaud_specific
+2026-04-06 22:33:51,688 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,690 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,692 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,693 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,695 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,707 [INFO]   Retrieved 0 chunks for: sp_ethics_morality_broad
+2026-04-06 22:33:51,783 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,784 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,786 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,787 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,789 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,802 [INFO]   Retrieved 0 chunks for: sp_affects_specific
+2026-04-06 22:33:51,874 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,875 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,878 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,880 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,891 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,918 [INFO]   Retrieved 10 chunks for: sp_sad_passions_niche
+2026-04-06 22:33:51,990 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,991 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,993 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,995 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:51,997 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,021 [INFO]   Retrieved 10 chunks for: ao_desiring_production_broad
+2026-04-06 22:33:52,095 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,097 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,099 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,100 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,102 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,126 [INFO]   Retrieved 10 chunks for: ao_critique_oedipus_specific
+2026-04-06 22:33:52,201 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,203 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,204 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,205 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,207 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,235 [INFO]   Retrieved 10 chunks for: ao_bwo_niche
+2026-04-06 22:33:52,307 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,309 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,310 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,311 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,322 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,351 [INFO]   Retrieved 10 chunks for: dial_lines_broad
+2026-04-06 22:33:52,432 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,433 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,435 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,436 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,438 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,455 [INFO]   Retrieved 0 chunks for: dial_history_philosophy_specific
+2026-04-06 22:33:52,545 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,546 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,547 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,548 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,550 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,559 [INFO]   Retrieved 0 chunks for: dial_becoming_niche
+2026-04-06 22:33:52,629 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,631 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,633 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,634 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,636 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,664 [INFO]   Retrieved 10 chunks for: atp_rhizome_broad
+2026-04-06 22:33:52,743 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,745 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,748 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,749 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,751 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,777 [INFO]   Retrieved 10 chunks for: atp_bwo_broad
+2026-04-06 22:33:52,856 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,858 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,859 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,860 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,868 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,907 [INFO]   Retrieved 10 chunks for: atp_war_machine_specific
+2026-04-06 22:33:52,987 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,989 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,990 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,992 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:52,994 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,024 [INFO]   Retrieved 10 chunks for: atp_micropolitics_niche
+2026-04-06 22:33:53,096 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,098 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,100 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,102 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,104 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,137 [INFO]   Retrieved 10 chunks for: fb_sensation_broad
+2026-04-06 22:33:53,217 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,219 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,221 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,222 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,229 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,263 [INFO]   Retrieved 10 chunks for: fb_diagram_specific
+2026-04-06 22:33:53,338 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,340 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,342 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,344 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,355 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,386 [INFO]   Retrieved 10 chunks for: c1_bergson_theses_broad
+2026-04-06 22:33:53,464 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,466 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,468 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,470 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,472 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,494 [INFO]   Retrieved 0 chunks for: c1_ancient_modern_movement_specific
+2026-04-06 22:33:53,573 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,574 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,576 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,577 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,588 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,620 [INFO]   Retrieved 10 chunks for: fouc_archivist_broad
+2026-04-06 22:33:53,694 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,695 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,697 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,698 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,699 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,726 [INFO]   Retrieved 10 chunks for: fouc_seeing_speaking_specific
+2026-04-06 22:33:53,806 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,807 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,809 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,810 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,821 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,851 [INFO]   Retrieved 10 chunks for: fold_concept_broad
+2026-04-06 22:33:53,927 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,928 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,930 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,932 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,934 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:53,953 [INFO]   Retrieved 0 chunks for: fold_monad_expression_specific
+2026-04-06 22:33:54,043 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,044 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,046 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,047 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,049 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,061 [INFO]   Retrieved 0 chunks for: c2_optical_situation_broad
+2026-04-06 22:33:54,140 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,141 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,143 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,144 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,145 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,160 [INFO]   Retrieved 0 chunks for: c2_crisis_action_image_specific
+2026-04-06 22:33:54,234 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,235 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,236 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,238 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,245 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,281 [INFO]   Retrieved 10 chunks for: wip_concept_broad
+2026-04-06 22:33:54,352 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,354 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,356 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,357 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,359 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,384 [INFO]   Retrieved 10 chunks for: wip_plane_immanence_specific
+2026-04-06 22:33:54,462 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,463 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,464 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,465 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,467 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,497 [INFO]   Retrieved 10 chunks for: wip_philosophy_science_broad
+2026-04-06 22:33:54,576 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,577 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,579 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,580 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,589 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,627 [INFO]   Retrieved 10 chunks for: cross_becoming_ls_atp_comparative
+2026-04-06 22:33:54,701 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,703 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,704 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,705 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,713 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,747 [INFO]   Retrieved 10 chunks for: cross_forces_np_sp_comparative
+2026-04-06 22:33:54,822 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,823 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,825 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,827 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,835 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,917 [INFO]   Retrieved 10 chunks for: cross_diagram_fouc_fb_comparative
+2026-04-06 22:33:54,994 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,996 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,997 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:54,999 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,006 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,045 [INFO]   Retrieved 10 chunks for: cross_virtual_berg_dr_comparative
+2026-04-06 22:33:55,119 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,121 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,122 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,123 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,125 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,143 [INFO]   Retrieved 0 chunks for: cross_movement_c1_berg_comparative
+2026-04-06 22:33:55,226 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,227 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,228 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,229 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,237 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,274 [INFO]   Retrieved 10 chunks for: cross_deterrit_ao_atp_comparative
+2026-04-06 22:33:55,351 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,354 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,356 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,357 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,365 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,403 [INFO]   Retrieved 10 chunks for: cross_event_ls_wip_comparative
+2026-04-06 22:33:55,485 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,488 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,492 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,494 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,496 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,507 [INFO]   Retrieved 0 chunks for: c2_rossellini_niche
+2026-04-06 22:33:55,582 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,584 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,587 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,590 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,598 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,630 [INFO]   Retrieved 10 chunks for: fb_scream_niche
+2026-04-06 22:33:55,702 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,704 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,705 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,706 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,713 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,747 [INFO]   Retrieved 10 chunks for: fouc_power_confinement_niche
+2026-04-06 22:33:55,820 [INFO] HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,821 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,822 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,824 [INFO] HTTP Request: GET http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/count?read_level=index_and_wal "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,832 [INFO] HTTP Request: POST http://localhost:8200/api/v2/tenants/default_tenant/databases/default_database/collections/40370b5c-5e24-4da0-9694-6ca2def0eddf/query "HTTP/1.1 200 OK"
+2026-04-06 22:33:55,864 [INFO]   Retrieved 10 chunks for: fold_baroque_significance_niche
+2026-04-06 22:33:55,864 [INFO] 
+============================================================
+  MODEL: deepseek-r1
+============================================================
+2026-04-06 22:33:57,944 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:34:06,716 [INFO]   [E1] + @40 | np_genealogy_famous
+2026-04-06 22:34:08,950 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:34:18,160 [INFO]   [E2] + @80 | np_sense_force_famous
+2026-04-06 22:34:20,281 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:34:29,073 [INFO]   [E3] + @80 | np_pluralism_conceptual
+2026-04-06 22:34:31,202 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:34:39,335 [INFO]   [E4] + @80 | np_will_complex_conceptual
+2026-04-06 22:34:41,517 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:34:50,089 [INFO]   [E5] + @40 | ps_signs_learning_famous
+2026-04-06 22:34:52,096 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:35:01,780 [INFO]   [E6] + @50 | ps_vocation_signs_conceptual
+2026-04-06 22:35:03,636 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:35:16,495 [INFO]   [E7] + @80 | ps_art_convergence_thematic
+2026-04-06 22:35:18,129 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:35:26,564 [INFO]   [E8] + @80 | berg_inhuman_famous
+2026-04-06 22:35:28,097 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:35:35,557 [INFO]   [E9] + @80 | berg_perception_minus_conceptual
+2026-04-06 22:35:37,441 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:35:47,829 [INFO]   [E10] + @80 | berg_contemporaneous_past_famous
+2026-04-06 22:40:47,998 [WARNING] LLM call failed (attempt 1/3): The read operation timed out, retrying in 5s
+2026-04-06 22:40:54,743 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:41:07,358 [INFO]   [E11] + @80 | dr_opening_famous
+2026-04-06 22:41:10,180 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:41:18,985 [INFO]   [E12] + @80 | dr_theft_gift_famous
+2026-04-06 22:41:21,129 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:41:30,859 [INFO]   [E13] + @80 | dr_repress_repeat_conceptual
+2026-04-06 22:41:33,511 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:41:45,125 [INFO]   [E14] + @80 | dr_individuation_ground_niche
+2026-04-06 22:41:46,709 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:41:56,045 [INFO]   [E15] - r=0% | ls_incorporeal_events_famous
+2026-04-06 22:41:58,122 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:42:10,487 [INFO]   [E16] - r=0% | ls_pure_becoming_conceptual
+2026-04-06 22:42:12,853 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:42:21,505 [INFO]   [E17] - r=0% | ls_artaud_jabberwocky_niche
+2026-04-06 22:42:22,992 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:42:32,453 [INFO]   [E18] + @30 | sp_confidence_life_famous
+2026-04-06 22:42:34,039 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:42:42,890 [INFO]   [E19] + @50 | sp_joy_sadness_famous
+2026-04-06 22:42:44,497 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:42:59,157 [INFO]   [E20] - r=0% | sp_law_knowledge_conceptual
+2026-04-06 22:43:01,139 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:43:10,354 [INFO]   [E21] + @80 | ao_opening_famous
+2026-04-06 22:43:12,350 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:43:22,409 [INFO]   [E22] + @80 | ao_schizo_walk_famous
+2026-04-06 22:43:24,655 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:43:34,523 [INFO]   [E23] + @80 | ao_man_nature_process_conceptual
+2026-04-06 22:43:36,631 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:44:09,309 [INFO]   [E24] + alt-p162 | ao_free_syntheses_niche
+2026-04-06 22:44:11,611 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:44:19,735 [INFO]   [E25] + @50 | dial_lines_famous
+2026-04-06 22:44:21,672 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:44:29,923 [INFO]   [E26] + @50 | dial_deserts_tribes_famous
+2026-04-06 22:44:32,241 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:44:38,691 [INFO]   [E27] - r=36% | dial_minority_writing_conceptual
+2026-04-06 22:44:40,851 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:44:50,509 [INFO]   [E28] + @80 | atp_opening_famous
+2026-04-06 22:44:52,372 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:45:01,388 [INFO]   [E29] + @80 | atp_book_no_subject_famous
+2026-04-06 22:45:03,828 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:45:11,995 [INFO]   [E30] + @80 | atp_bwo_famous
+2026-04-06 22:45:14,312 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:45:24,223 [INFO]   [E31] + @50 | atp_war_machine_axiom_famous
+2026-04-06 22:45:26,684 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:45:36,692 [INFO]   [E32] + @80 | atp_book_functions_conceptual
+2026-04-06 22:45:38,507 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:45:47,226 [INFO]   [E33] + @50 | fb_figure_figurative_famous
+2026-04-06 22:45:49,608 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:46:01,874 [INFO]   [E34] + @80 | fb_diagram_conceptual
+2026-04-06 22:46:03,847 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:46:15,501 [INFO]   [E35] + @50 | fb_screaming_mouth_thematic
+2026-04-06 22:46:17,254 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:46:26,396 [INFO]   [E36] + @80 | c1_movement_image_famous
+2026-04-06 22:46:32,793 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:46:37,758 [INFO]   [E37] + @50 | c1_cinema_bergson_lineage_niche
+2026-04-06 22:46:39,811 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:46:49,724 [INFO]   [E38] + @80 | c1_any_instant_whatever_conceptual
+2026-04-06 22:46:51,698 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:47:02,835 [INFO]   [E39] + @30 | fouc_new_archivist_famous
+2026-04-06 22:47:05,587 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:47:16,432 [INFO]   [E40] + @80 | fouc_disjunction_seeing_saying_conceptual
+2026-04-06 22:47:18,753 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:47:27,950 [INFO]   [E41] + @80 | fouc_confinement_secondary_niche
+2026-04-06 22:47:29,749 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:47:37,777 [INFO]   [E42] + @50 | fold_baroque_function_famous
+2026-04-06 22:47:39,400 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:47:48,512 [INFO]   [E43] + @50 | fold_closure_finite_infinite_conceptual
+2026-04-06 22:47:52,452 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:48:02,708 [INFO]   [E44] + @80 | fold_chaos_screen_niche
+2026-04-06 22:48:04,803 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:48:14,232 [INFO]   [E45] + @80 | c2_neo_realism_optical_famous
+2026-04-06 22:48:15,990 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:48:23,402 [INFO]   [E46] + @40 | c2_character_viewer_conceptual
+2026-04-06 22:48:25,282 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:48:34,034 [INFO]   [E47] + @50 | c2_seer_not_agent_thematic
+2026-04-06 22:48:35,837 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:48:44,398 [INFO]   [E48] + @50 | wip_forming_concepts_famous
+2026-04-06 22:48:47,959 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:48:56,382 [INFO]   [E49] + @50 | wip_concepts_created_famous
+2026-04-06 22:49:03,164 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:49:13,076 [INFO]   [E50] + @80 | wip_chaos_speed_conceptual
+2026-04-06 22:49:15,322 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:49:24,201 [INFO]   [G1] q=1 v=1 pg=0% c=0% | np_genealogy_broad
+2026-04-06 22:49:26,434 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:49:46,755 [INFO]   [G2] q=5 v=5 pg=25% c=60% | np_active_reactive_specific
+2026-04-06 22:49:48,705 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:50:05,022 [INFO]   [G3] q=5 v=5 pg=0% c=80% | np_will_to_power_broad
+2026-04-06 22:50:09,171 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:50:25,668 [INFO]   [G4] q=6 v=3 pg=40% c=80% | ps_types_signs_broad
+2026-04-06 22:50:27,711 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:50:53,008 [INFO]   [G5] q=7 v=7 pg=33% c=80% | ps_memory_art_specific
+2026-04-06 22:50:56,397 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:51:16,984 [INFO]   [G6] q=2 v=2 pg=0% c=20% | ps_disappointment_niche
+2026-04-06 22:51:18,693 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:51:30,353 [INFO]   [G7] q=0 v=0 pg=0% c=0% | berg_intuition_method_broad
+2026-04-06 22:51:32,216 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:51:41,379 [INFO]   [G8] q=1 v=0 pg=0% c=0% | berg_past_present_specific
+2026-04-06 22:51:43,475 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:52:06,403 [INFO]   [G9] q=6 v=6 pg=0% c=60% | dr_repetition_difference_broad
+2026-04-06 22:52:08,512 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:52:26,727 [INFO]   [G10] q=5 v=5 pg=0% c=40% | dr_critique_representation_specific
+2026-04-06 22:52:29,778 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:52:52,715 [INFO]   [G11] q=2 v=2 pg=0% c=0% | dr_individuation_niche
+2026-04-06 22:52:55,247 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:53:04,649 [INFO]   [G12] q=0 v=0 pg=0% c=0% | ls_stoic_events_broad
+2026-04-06 22:53:09,786 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:53:22,683 [INFO]   [G13] q=0 v=0 pg=0% c=0% | ls_carroll_artaud_specific
+2026-04-06 22:53:24,403 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:53:35,992 [INFO]   [G14] q=2 v=0 pg=0% c=50% | sp_ethics_morality_broad
+2026-04-06 22:53:37,529 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:53:59,897 [INFO]   [G15] q=5 v=0 pg=0% c=50% | sp_affects_specific
+2026-04-06 22:54:01,989 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:54:13,978 [INFO]   [G16] q=0 v=0 pg=0% c=0% | sp_sad_passions_niche
+2026-04-06 22:54:16,254 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:54:36,976 [INFO]   [G17] q=4 v=4 pg=0% c=20% | ao_desiring_production_broad
+2026-04-06 22:54:39,417 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:54:57,012 [INFO]   [G18] q=4 v=4 pg=0% c=80% | ao_critique_oedipus_specific
+2026-04-06 22:54:59,205 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:55:25,644 [INFO]   [G19] q=11 v=11 pg=17% c=60% | ao_bwo_niche
+2026-04-06 22:55:27,746 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:55:49,443 [INFO]   [G20] q=4 v=4 pg=0% c=60% | dial_lines_broad
+2026-04-06 22:55:51,591 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:56:01,258 [INFO]   [G21] q=2 v=0 pg=100% c=40% | dial_history_philosophy_specific
+2026-04-06 22:56:03,399 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:56:23,852 [INFO]   [G22] q=3 v=0 pg=0% c=40% | dial_becoming_niche
+2026-04-06 22:56:26,006 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:56:47,184 [INFO]   [G23] q=5 v=4 pg=0% c=40% | atp_rhizome_broad
+2026-04-06 22:56:49,099 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:57:25,249 [INFO]   [G24] q=13 v=13 pg=0% c=67% | atp_bwo_broad
+2026-04-06 22:57:27,317 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:57:38,641 [INFO]   [G25] q=2 v=2 pg=0% c=40% | atp_war_machine_specific
+2026-04-06 22:57:40,792 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:57:55,848 [INFO]   [G26] q=4 v=4 pg=0% c=50% | atp_micropolitics_niche
+2026-04-06 22:57:58,822 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:58:23,297 [INFO]   [G27] q=7 v=7 pg=0% c=20% | fb_sensation_broad
+2026-04-06 22:58:25,593 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:58:47,344 [INFO]   [G28] q=6 v=6 pg=0% c=40% | fb_diagram_specific
+2026-04-06 22:58:50,910 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:59:01,476 [INFO]   [G29] q=0 v=0 pg=0% c=0% | c1_bergson_theses_broad
+2026-04-06 22:59:03,658 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 22:59:25,195 [INFO]   [G30] q=4 v=0 pg=0% c=20% | c1_ancient_modern_movement_specific

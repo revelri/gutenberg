@@ -1,0 +1,181 @@
+{
+  "summary": {
+    "threshold": 0.5,
+    "total_sentences": 14,
+    "total_citations": 14,
+    "citation_recall": 0.9285714285714286,
+    "citation_precision": 0.9285714285714286,
+    "model": "cross-encoder/nli-deberta-v3-base"
+  },
+  "samples": [
+    {
+      "query": "Trace the evolution of the concept 'body without organs' from Anti-Oedipus (1972) through A Thousand Plateaus (1980), showing how its meaning shifts from a psychoanalytic critique to a practical ethics. Cite specific passages from each work.",
+      "sentences": []
+    },
+    {
+      "query": "Show how Deleuze's treatment of 'repetition' develops from Difference and Repetition through to the cinema books. How does the concept change when applied to film? Provide cited passages demonstrating the shift.",
+      "sentences": []
+    },
+    {
+      "query": "Trace how the concept of 'deterritorialization' shifts between Anti-Oedipus and A Thousand Plateaus. In AO it relates to capitalism's decoded flows; in ATP it becomes a general principle of transformation. Cite specific passages showing this drift.",
+      "sentences": [
+        {
+          "sentence": "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 137].\n\n",
+          "tags": [
+            [
+              "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 137]",
+              0.9674500226974487
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 173].\n\n",
+          "tags": [
+            [
+              "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 173]",
+              0.9892547130584717
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 24].",
+          "tags": [
+            [
+              "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 24]",
+              0.9978818297386169
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 24].",
+          "tags": [
+            [
+              "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 24]",
+              0.9978818297386169
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 474].",
+          "tags": [
+            [
+              "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 474]",
+              0.991457998752594
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 12].",
+          "tags": [
+            [
+              "[Source: 1980 A Thousand Plateaus - Deleuze, Gilles.pdf, p. 12]",
+              0.9946178793907166
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Document the evolution of Deleuze's concept of 'the virtual' from Bergsonism through Difference and Repetition to Cinema 2. Show with citations how the virtual moves from Bergsonian duration to ontological principle to cinematic time.",
+      "sentences": []
+    },
+    {
+      "query": "Show how Deleuze's engagement with Nietzsche's 'will to power' in Nietzsche and Philosophy (1962) transforms into the concept of 'desire' in Anti-Oedipus (1972). Cite passages from both works demonstrating the conceptual lineage.",
+      "sentences": [
+        {
+          "sentence": "[Source: 1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf, p. 48]",
+          "tags": [
+            [
+              "[Source: 1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf, p. 48]",
+              0.9994571805000305
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 12] They further elaborate on the transformative and liberating potential of desire, linking it to Nietzsche's vision of redemption: \"Anti-Oedipus is an individual or a group that no longer functions in terms of beliefs and that comes to redeem mankind, as Nietzsche foresaw, not only from the ideals that weighed it down, 'but also from that which was bound to grow out of it, the great nausea, the will to nothingness, nihilism; this bel1-stroke of noon and of the great decision that liberates the will again and restores its goal to the earth and his hope to man; this AntiChrist and antinihilist.",
+          "tags": [
+            [
+              "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 12]",
+              0.9871761202812195
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 12]",
+          "tags": [
+            [
+              "[Source: 1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf, p. 12]",
+              0.9928463101387024
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Trace the concept of 'the diagram' across Francis Bacon (1981), Foucault (1988), and A Thousand Plateaus (1980). Show how the same term operates differently in painting, power relations, and semiotics. Cite each usage.",
+      "sentences": []
+    },
+    {
+      "query": "Document how the concept of 'sense' (sens) develops from The Logic of Sense to What Is Philosophy?. In the former it operates at the surface between propositions and things; in the latter it becomes the event of the concept. Cite passages from both.",
+      "sentences": []
+    },
+    {
+      "query": "Show the evolution of Deleuze's concept of 'immanence' from Spinoza: Practical Philosophy through What Is Philosophy?. Trace how the plane of immanence shifts from an ethical ontology to a philosophical method. Cite both works.",
+      "sentences": []
+    },
+    {
+      "query": "Trace how 'the fold' operates across The Fold (1988) and the Foucault book (1988). In one it describes Leibnizian metaphysics; in the other it describes subjectivation. Show with citations how the same figure does different philosophical work.",
+      "sentences": [
+        {
+          "sentence": "[Source: 1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf, p. 14]\n\nFor Leibniz, and in the Baroque, folds are always full.",
+          "tags": [
+            [
+              "[Source: 1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf, p. 14]",
+              0.9922214150428772
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf, p. 30]\n\nIn *Foucault*, the fold is employed to explain Foucault's concept of subjectivation, particularly how the outside is internalized to form subjectivity, and how this process relates to power and knowledge.\n\n",
+          "tags": [
+            [
+              "[Source: 1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf, p. 30]",
+              0.01096826046705246
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1988 Foucault - Deleuze, Gilles.pdf, p. 148]\n\nThe fold therefore seems unfolded, and the subjectivation of the free man is transformed into subjection: on the one hand it involves being 'subject to someone else by control and dependence', with all the processes of individuation and modulation which power installs, acting on the daily life and the interiority of those it calls its subjects; on the other it makes the subject 'tied to his own identity by a conscience or self-knowledge', through all the techniques of moral and human sciences that go to make up a knowledge of the subject.",
+          "tags": [
+            [
+              "[Source: 1988 Foucault - Deleuze, Gilles.pdf, p. 148]",
+              0.6299762725830078
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1988 Foucault - Deleuze, Gilles.pdf, p. 153]\n\n",
+          "tags": [
+            [
+              "[Source: 1988 Foucault - Deleuze, Gilles.pdf, p. 153]",
+              0.9801628589630127
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1988 Foucault - Deleuze, Gilles.pdf, p. 157]",
+          "tags": [
+            [
+              "[Source: 1988 Foucault - Deleuze, Gilles.pdf, p. 157]",
+              0.9913259148597717
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Document how Deleuze's concept of 'signs' changes from Proust and Signs (1964) to A Thousand Plateaus (1980). In the earlier work signs are objects of an apprenticeship; in the later they become components of regimes. Cite passages showing the transformation.",
+      "sentences": []
+    }
+  ]
+}

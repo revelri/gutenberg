@@ -1,0 +1,70 @@
+{
+  "collection": "gutenberg-deleuze-corpus",
+  "exact": {
+    "n_samples": 50,
+    "full": {
+      "source_p_1": 1.0,
+      "source_p_5": 1.0,
+      "source_p_10": 1.0,
+      "page_hit_1": 0.86,
+      "page_hit_5": 0.94,
+      "page_hit_10": 0.94,
+      "quote_hit_5": 0.86,
+      "quote_hit_10": 0.86,
+      "mrr": 0.8943,
+      "summary_contribution_at_k": 0.044,
+      "errors": 0,
+      "mean_latency_ms": 946.9
+    },
+    "leaves_only": {
+      "source_p_1": 1.0,
+      "source_p_5": 1.0,
+      "source_p_10": 1.0,
+      "page_hit_1": 0.88,
+      "page_hit_5": 0.92,
+      "page_hit_10": 0.92,
+      "quote_hit_5": 0.88,
+      "quote_hit_10": 0.88,
+      "mrr": 0.9026,
+      "summary_contribution_at_k": 0.0,
+      "errors": 0,
+      "mean_latency_ms": 582.8
+    },
+    "full_minus_leaves": {
+      "page_hit_1": -0.02,
+      "mrr": -0.0083,
+      "source_p_1": 0.0,
+      "page_hit_10": 0.02,
+      "mean_latency_ms": 364.1,
+      "page_hit_5": 0.02,
+      "source_p_10": 0.0,
+      "quote_hit_5": -0.02,
+      "summary_contribution_at_k": 0.044,
+      "quote_hit_10": -0.02,
+      "source_p_5": 0.0
+    }
+  },
+  "abstractive": {
+    "n_samples": 22,
+    "full": {
+      "entity_recall_at_k": 0.7193,
+      "concept_span_recall_at_k": 0.6818,
+      "summary_contribution_at_k": 0.0364,
+      "errors": 0,
+      "mean_latency_ms": 117.3
+    },
+    "leaves_only": {
+      "entity_recall_at_k": 0.7588,
+      "concept_span_recall_at_k": 0.6182,
+      "summary_contribution_at_k": 0.0,
+      "errors": 0,
+      "mean_latency_ms": 96.6
+    },
+    "full_minus_leaves": {
+      "concept_span_recall_at_k": 0.0636,
+      "mean_latency_ms": 20.7,
+      "entity_recall_at_k": -0.0395,
+      "summary_contribution_at_k": 0.0364
+    }
+  }
+}

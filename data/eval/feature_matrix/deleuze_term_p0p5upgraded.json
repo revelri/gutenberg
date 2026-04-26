@@ -1,0 +1,150 @@
+{
+  "eval": "deleuze_term_exhaustive.json",
+  "n_samples": 10,
+  "results": [
+    {
+      "id": "baseline",
+      "label": "baseline (no flags)",
+      "overrides": {},
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 1247.0
+      }
+    },
+    {
+      "id": "P1",
+      "label": "P1 only \u2014 SpaCy gazetteer + alias map",
+      "overrides": {
+        "feature_entity_gazetteer": true
+      },
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 155.7
+      }
+    },
+    {
+      "id": "P2",
+      "label": "P2 only \u2014 rapidfuzz + anchor validation",
+      "overrides": {
+        "feature_rapidfuzz_verify": true
+      },
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 142.9
+      }
+    },
+    {
+      "id": "P7",
+      "label": "P7 only \u2014 Graph-lite entity neighborhood",
+      "overrides": {
+        "feature_graph_boost": true
+      },
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 138.0
+      }
+    },
+    {
+      "id": "P9",
+      "label": "P9 only \u2014 CRAG-lite gate + rewrite",
+      "overrides": {
+        "feature_crag": true
+      },
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 309.6
+      }
+    },
+    {
+      "id": "all-retrieval",
+      "label": "all retrieval-time flags on",
+      "overrides": {
+        "feature_entity_gazetteer": true,
+        "feature_rapidfuzz_verify": true,
+        "feature_graph_boost": true,
+        "feature_crag": true
+      },
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 323.5
+      }
+    },
+    {
+      "id": "all-on",
+      "label": "all flags on",
+      "overrides": {
+        "feature_entity_gazetteer": true,
+        "feature_rapidfuzz_verify": true,
+        "feature_graph_boost": true,
+        "feature_crag": true
+      },
+      "metrics": {
+        "source_p_1": 0.0,
+        "source_p_5": 0.0,
+        "source_p_10": 0.0,
+        "page_hit_1": 0.0,
+        "page_hit_5": 0.0,
+        "page_hit_10": 0.0,
+        "quote_hit_5": 0.0,
+        "quote_hit_10": 0.0,
+        "mrr": 0.0,
+        "errors": 0,
+        "mean_latency_ms": 325.8
+      }
+    }
+  ]
+}

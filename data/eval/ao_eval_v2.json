@@ -1,0 +1,122 @@
+[
+  {
+    "query": "How do Deleuze and Guattari describe the fascism that exists within all of us, not just historical fascism?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 7,
+    "ground_truth": "And not only historical fascism, the fascism of Hitler and Mussolini-which was able to mobilize and use the desire of the masses so effectively-but also the fascism in us all, in our heads and in our everyday behavior, the fascism that causes us to love power, to desire the very thing that dominates and exploits us."
+  },
+  {
+    "query": "How does Anti-Oedipus relate to ethics, and what does Foucault's preface say about living counter to fascism?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 7,
+    "ground_truth": "I would say that Anti-Oedipus (may its authors forgive me) is a book of ethics, the first book of ethics to be written in France in quite a long time (perhaps that explains why its success was not limited to a particular \"readership\": being anti-oedipal has become a life style, a way of thinking and living). How does one keep from being fascist, even (especially) when one believes oneself to be a revolutionary militant?"
+  },
+  {
+    "query": "How do Deleuze and Guattari use Beckett's Molloy to illustrate the Oedipal questioning of psychoanalysis?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 21,
+    "ground_truth": "In the course of his exercises in desiring-production, Beckett's Molloy is cross-examined by a policeman: \"Your name is Molloy, said the sergeant. Yes, I said, now I remember. And your mother? said the sergeant. I didn't follow. Is your mother's name Molloy too? said the sergeant. I thought it over. Your mother, said the sergeant, is your mother's- Let me think! I cried. At least I imagine that's how it was. Take your time, said the sergeant. Was mother's name Molloy? Very likely. Her name must be Molloy too, I said. They took me away, to the guardroom I suppose, and there I was told to sit down. I must have tried to explain.\""
+  },
+  {
+    "query": "How does Anti-Oedipus describe the schizophrenic's relationship to codes and genealogical explanations?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 21,
+    "ground_truth": "The code of delirium or of desire proves to have an extraordinary fluidity. It might be said that the schizophrenic passes from one code to the other, that he deliberately scrambles all the codes, by quickly shifting from one to another, according to the questions asked him, never giving the same explanation from one day to the next, never invoking the same genealogy, never recording the same event in the same way."
+  },
+  {
+    "query": "What is Deleuze and Guattari's critique of the idea that fragments can be reassembled into an original unity?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 35,
+    "ground_truth": "We no longer believe in the myth of the existence of fragments that, like pieces of an antique statue, are merely waiting for the last one to be turned up, so that they may all be glued back together to create a unity that is precisely the same as the original unity. We no longer believe in a primordial totality that once existed, or in a final totality that awaits us at some future date."
+  },
+  {
+    "query": "How does Anti-Oedipus describe the body without organs using Proust's concept of the Whole as a part alongside other parts?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 35,
+    "ground_truth": "Hence Proust maintained that the Whole itself is a product, produced as nothing more than a part alongside other parts, which it neither unifies nor totalizes, though it has an effect on these other parts simply because it establishes aberrant paths of communication between noncommunicating vessels, transverse unities between elements that retain all their differences within their own particular boundaries."
+  },
+  {
+    "query": "What does Anti-Oedipus say about psychoanalysts being the carriers of Oedipus and agents of antiproduction?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 42,
+    "ground_truth": "Then Oedipus fell back on and appropriated desiring-production as if all the productive forces emanated from Oedipus itself. The psychoanalyst became the carrier of Oedipus, the great agent of antiproduction in desire. The same history as that of Capital, with its enchanted, \"miraculated\" world."
+  },
+  {
+    "query": "What is the true difference in nature that Anti-Oedipus identifies, as opposed to the difference between the Symbolic and the Imaginary?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 55,
+    "ground_truth": "The true difference in nature is not between the Symbolic and the Imaginary, but between the real machinic element, which constitutes desiring-production, and the structural whole of the Imaginary and the Symbolic, which merely forms a myth and its variants. The difference is not between two uses of Oedipus, but between the anoedipal use of the inclusive, nonrestrictive disjunctions, and the Oedipal use of exclusive disjunctions."
+  },
+  {
+    "query": "How does Anti-Oedipus define the question that desire poses, as opposed to questions of meaning?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 68,
+    "ground_truth": "The unconscious poses no problem of meaning, solely problems of use. The question posed by desire is not \"What does it mean?\" but rather \"How does it work?\" How do these machines, these desiring-machines, work-yours and mine? With what sort of breakdowns as a part of their functioning? It represents nothing, but it produces. It means nothing, but it works."
+  },
+  {
+    "query": "What does Anti-Oedipus say about Artaud's relationship to literature and schizophrenia?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 80,
+    "ground_truth": "Artaud makes a shambles of psychiatry, precisely because he is schizophrenic and not because he is not. Artaud is the fulfillment of literature, precisely because he is schizophrenic and not because he is not. It has been a long time since he broke down the wall of the signifier: Artaud the Schizo."
+  },
+  {
+    "query": "How does Anti-Oedipus describe the relationship between alliance, filiation, and primary homosexuality in primitive societies?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 95,
+    "ground_truth": "Alliance can never be deduced from the lines of filiation through the intermediary of Oedipus; on the contrary, alliance articulates them, impelled by the action of the local lines and their non-oedipal primary homosexuality. And if it is true that there exists an Oedipal or filiative homosexuality, this should be understood merely as a secondary reaction to this group homosexuality, non-oedipal at first."
+  },
+  {
+    "query": "How does Anti-Oedipus describe the transformation of the magic triangle of territorial representation under the despotic machine?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 115,
+    "ground_truth": "Then there occurs a crushing of the magic triangle: the voice no longer sings but dictates, decrees; the graphy no longer dances, it ceases to animate bodies, but is set into writing on tablets, stones, and books; the eye sets itself to reading. The triangle has become the base for a pyramid, all of whose sides cause the vocal, the graphic, and the visual to converge toward the eminent unity of the despot."
+  },
+  {
+    "query": "What does Anti-Oedipus say about capitalism's ability to produce lack where there is always too much?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 130,
+    "ground_truth": "it alone is capable of realizing capitalism's supreme goal, which is to produce lack in the large aggregates, to introduce lack where there is always too much, by effecting the absorption of overabundant resources. On the other hand, it alone doubles the capital and the flow of knowledge with a capital and an equivalent flow of stupidity that also effects an absorption and a realization."
+  },
+  {
+    "query": "How does Anti-Oedipus describe Freud's achievement as analogous to Luther and Adam Smith?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 148,
+    "ground_truth": "Freud is the Luther and the Adam Smith of psychiatry. He mobilizes all the resources of myth, of tragedy, of dreams, in order to re-enslave desire, this time from within: an intimate theater. Yes, Oedipus is nevertheless the universal of desire, the product of universal history-but on one condition, which is not met by Freud: that Oedipus be capable, at least to a certain point, of conducting its autocritique."
+  },
+  {
+    "query": "What does Anti-Oedipus identify as the task of schizoanalysis in relation to the theater of representation?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 148,
+    "ground_truth": "To substitute, for the private subject of castration, split into a subject of enunciation and a subject of the statement relating only to the two orders of personal images, the collective agents of enunciation that for their part refer to machinic arrangements. To overturn the theater of representation into the order of desiring-production: this is the whole task of schizoanalysis."
+  },
+  {
+    "query": "How does Anti-Oedipus characterize the relationship between psychoanalysis, political economy, and the privatized family?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 165,
+    "ground_truth": "abstract Labor as represented in private property has, as its correlate, subjective abstract Desire as represented in the privatized family. Psychoanalysis undertakes the analysis of this second term, as political economy analyzes the first. Psychoanalysis is the technique of application, for which political economy is the axiomatic."
+  },
+  {
+    "query": "What does Anti-Oedipus say about the death instinct and its relationship to capitalism's absorption of surplus value?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 180,
+    "ground_truth": "The death enterprise is one of the principal and specific forms of the absorption of surplus value in capitalism. It is this itinerary that psychoanalysis rediscovers and retraces with the death instinct: the death instinct is now only pure silence in its transcendent distinction from life, but it effuses all the more, throughout all the immanent combinations it forms with this same life."
+  },
+  {
+    "query": "How does Anti-Oedipus describe the zombie as the only modern myth?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 180,
+    "ground_truth": "The only modern myth is the myth of zombies-mortified schizos, good for work, brought back to reason. In this sense the primitive and the barbarian, with their ways of coding death, are children in comparison to modern man and his axiomatic."
+  },
+  {
+    "query": "How does Anti-Oedipus describe the paranoiac investment and its relationship to social machines and the socius?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 195,
+    "ground_truth": "The paranoiac engineers masses, and is continually forming large aggregates, inventing heavy apparatuses for the regimentation and the repression of the desiring-machines. Doubtless it is not hard for him to appear reasonable, by appealing to collective interests and goals, reforms to be brought about, sometimes even revolutions to be made. But madness breaks through, beneath the reformist investments, or the reactionary and fascist investments."
+  },
+  {
+    "query": "What does Anti-Oedipus say about there being no revolutionary or reactionary loves?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 195,
+    "ground_truth": "As machines of subjugation, the social machines give rise to incomparable loves, which are not explained by their interests, since interests derive from them instead. At the deepest level of society there is delirium, because delirium is the investment-of a socius as such, beyond goals. There are no revolutionary or reactionary loves, which is to say that loves are not defined by their objects, any more than by the sources and aims of the desires and the drives."
+  }
+]

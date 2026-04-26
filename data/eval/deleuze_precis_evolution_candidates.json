@@ -1,0 +1,1427 @@
+[
+  {
+    "query": "Show how 'body without organs' is reworked between Anti-Oedipus Capitalism and Schizophr and A Thousand Plateaus. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "body without organs",
+    "concept_id": "body_without_organs",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "body without organs AO\u2192ATP",
+    "expected_entities": [
+      "body_without_organs",
+      "anti_oedipus",
+      "desiring_machines",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "gilles_deleuze",
+      "deterritorialization",
+      "multiplicity"
+    ],
+    "expected_concept_spans": [
+      "the body",
+      "the end",
+      "a body",
+      "a full body",
+      "a process",
+      "a thousand plateaus",
+      "the fact",
+      "the other hand",
+      "the process",
+      "the earth"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show how 'assemblage' is reworked between Dialogues and A Thousand Plateaus. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "assemblage",
+    "concept_id": "assemblage",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "assemblage Dial\u2192ATP",
+    "expected_entities": [
+      "assemblage",
+      "felix_guattari",
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "becoming",
+      "multiplicity",
+      "plane_of_immanence",
+      "baruch_spinoza",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the assemblage",
+      "a thousand plateaus",
+      "an assemblage",
+      "the problem",
+      "brian massumi",
+      "other words",
+      "the difference",
+      "the same time",
+      "a distance",
+      "a territory"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the development of 'becoming' across Nietzsche and Philosophy (1962), Dialogues (1977), and A Thousand Plateaus (1980). Show how the concept's role changes through the sequence. Cite specific passages from each work.",
+    "concept": "becoming",
+    "concept_id": "becoming",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "becoming NP\u2192Dial\u2192ATP",
+    "expected_entities": [
+      "becoming",
+      "gilles_deleuze",
+      "felix_guattari",
+      "a_thousand_plateaus",
+      "anti_oedipus",
+      "baruch_spinoza",
+      "multiplicity"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "the eternal return",
+      "the university",
+      "the being",
+      "kant's critical philosophy",
+      "the heart",
+      "the one",
+      "the overman",
+      "the whole",
+      "the world"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the evolution of 'becoming' from Nietzsche and Philosophy (1962) to Anti-Oedipus Capitalism and Schizophr (1972). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "becoming",
+    "concept_id": "becoming",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "becoming NP\u2192AO",
+    "expected_entities": [
+      "becoming",
+      "anti_oedipus",
+      "gilles_deleuze",
+      "felix_guattari",
+      "deterritorialization",
+      "multiplicity",
+      "a_thousand_plateaus",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "bad conscience",
+      "the difference",
+      "a code",
+      "a thousand plateaus",
+      "an axiomatic",
+      "felix guattari",
+      "the flows",
+      "the philosopher",
+      "the social field",
+      "240 its elements"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'becoming' in Nietzsche and Philosophy (1962) with its treatment in Difference and repetition (1968). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "becoming",
+    "concept_id": "becoming",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "becoming NP\u2192DR",
+    "expected_entities": [
+      "difference_and_repetition",
+      "multiplicity",
+      "becoming",
+      "gilles_deleuze",
+      "baruch_spinoza",
+      "felix_guattari"
+    ],
+    "expected_concept_spans": [
+      "the eternal return",
+      "eternal return",
+      "a philosophy",
+      "the basis",
+      "the contrary",
+      "the philosophy",
+      "the repetition",
+      "the will",
+      "the world",
+      "this book"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show how 'becoming' is reworked between Nietzsche and Philosophy and The Logic of Sense. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "becoming",
+    "concept_id": "becoming",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1969 The Logic of Sense - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "becoming NP\u2192LS",
+    "expected_entities": [
+      "becoming",
+      "multiplicity",
+      "baruch_spinoza",
+      "difference_and_repetition",
+      "felix_guattari",
+      "a_thousand_plateaus",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "reactive forces",
+      "the eternal return",
+      "the whole",
+      "the will",
+      "active forces",
+      "bad conscience",
+      "the being",
+      "the contrary",
+      "a relation",
+      "a type"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the development of 'multiplicity' across Difference and repetition (1968), Anti-Oedipus Capitalism and Schizophr (1972), and A Thousand Plateaus (1980). Show how the concept's role changes through the sequence. Cite specific passages from each work.",
+    "concept": "multiplicity",
+    "concept_id": "multiplicity",
+    "works_required": [
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "multiplicity DR\u2192AO\u2192ATP",
+    "expected_entities": [
+      "difference_and_repetition",
+      "multiplicity",
+      "anti_oedipus",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "gilles_deleuze",
+      "becoming",
+      "baruch_spinoza",
+      "rhizome",
+      "virtual_actual"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "a multiplicity",
+      "f\u00e9lix guattari",
+      "gilles deleuze",
+      "the idea",
+      "the others",
+      "\"a thousand plateaus",
+      "a complex philosophical work",
+      "brian massumi",
+      "eternal return"
+    ],
+    "min_level_mix": {
+      "L0": 16,
+      "L1+": 4
+    }
+  },
+  {
+    "query": "Show how 'deterritorialization' is reworked between Anti-Oedipus Capitalism and Schizophr and What Is Philosophy. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "deterritorialization",
+    "concept_id": "deterritorialization",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "deterritorialization AO\u2192WIP",
+    "expected_entities": [
+      "deterritorialization",
+      "anti_oedipus",
+      "a_thousand_plateaus",
+      "plane_of_immanence",
+      "gilles_deleuze",
+      "felix_guattari",
+      "multiplicity",
+      "becoming",
+      "body_without_organs"
+    ],
+    "expected_concept_spans": [
+      "the flows",
+      "an axiomatic",
+      "the concept",
+      "the decoding",
+      "the falling tendency",
+      "the greek city",
+      "each case",
+      "its highest point",
+      "the contrary",
+      "the difference"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the development of 'deterritorialization' across Anti-Oedipus Capitalism and Schizophr (1972), A Thousand Plateaus (1980), and What Is Philosophy (1991). Show how the concept's role changes through the sequence. Cite specific passages from each work.",
+    "concept": "deterritorialization",
+    "concept_id": "deterritorialization",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "deterritorialization AO\u2192ATP\u2192WIP",
+    "expected_entities": [
+      "a_thousand_plateaus",
+      "anti_oedipus",
+      "felix_guattari",
+      "gilles_deleuze",
+      "deterritorialization",
+      "becoming",
+      "baruch_spinoza",
+      "rhizome"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "gilles deleuze",
+      "f\u00e9lix guattari",
+      "\"a thousand plateaus",
+      "brian massumi",
+      "minnesota press",
+      "this book",
+      "this page",
+      "a complex philosophical work",
+      "a minor literature"
+    ],
+    "min_level_mix": {
+      "L0": 16,
+      "L1+": 4
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'the virtual' in Difference and repetition (1968) with its treatment in Cinema 2 The Time-Image (1989). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "the virtual",
+    "concept_id": "virtual_actual",
+    "works_required": [
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "the virtual DR\u2192C2",
+    "expected_entities": [
+      "difference_and_repetition",
+      "virtual_actual",
+      "multiplicity",
+      "gilles_deleuze",
+      "baruch_spinoza",
+      "a_thousand_plateaus",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "the point",
+      "the form",
+      "the basis",
+      "the concept",
+      "the extent",
+      "the idea",
+      "the past",
+      "a problem",
+      "a space",
+      "eternal return"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Show how 'multiplicity' is reworked between Nietzsche and Philosophy and Bergsonism. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "multiplicity",
+    "concept_id": "multiplicity",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1966 Bergsonism - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "multiplicity NP\u2192B",
+    "expected_entities": [
+      "multiplicity",
+      "becoming",
+      "baruch_spinoza",
+      "plane_of_immanence"
+    ],
+    "expected_concept_spans": [
+      "bad conscience",
+      "the eternal return",
+      "the concept",
+      "the dialectic",
+      "the dicethrow",
+      "the role",
+      "the unity",
+      "the will",
+      "a will",
+      "the dice"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the evolution of 'multiplicity' from Nietzsche and Philosophy (1962) to Difference and repetition (1968). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "multiplicity",
+    "concept_id": "multiplicity",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "multiplicity NP\u2192DR",
+    "expected_entities": [
+      "multiplicity",
+      "difference_and_repetition",
+      "becoming",
+      "virtual_actual",
+      "felix_guattari",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "the concept",
+      "a multiplicity",
+      "the elements",
+      "the level",
+      "this sense",
+      "a concept",
+      "a result",
+      "eternal return",
+      "the difference",
+      "the form"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the evolution of 'deterritorialization' from Anti-Oedipus Capitalism and Schizophr (1972) to Dialogues (1977). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "deterritorialization",
+    "concept_id": "deterritorialization",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "deterritorialization AO\u2192Dial",
+    "expected_entities": [
+      "deterritorialization",
+      "anti_oedipus",
+      "multiplicity",
+      "becoming",
+      "a_thousand_plateaus",
+      "desiring_machines",
+      "body_without_organs",
+      "felix_guattari",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "the flows",
+      "the decoding",
+      "the difference",
+      "the law",
+      "the relationship",
+      "capitalist representation",
+      "its relationship",
+      "machinic surplus value",
+      "the despot",
+      "the deterritorialization"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Trace the evolution of 'deterritorialization' from Dialogues (1977) to A Thousand Plateaus (1980). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "deterritorialization",
+    "concept_id": "deterritorialization",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "deterritorialization Dial\u2192ATP",
+    "expected_entities": [
+      "deterritorialization",
+      "a_thousand_plateaus",
+      "becoming",
+      "felix_guattari",
+      "gilles_deleuze",
+      "rhizome",
+      "anti_oedipus",
+      "assemblage",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "the lines",
+      "this way",
+      "a set",
+      "the body",
+      "the concepts",
+      "the level",
+      "the line",
+      "the others",
+      "the world"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Show how 'the virtual' is reworked between Difference and repetition and What Is Philosophy. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "the virtual",
+    "concept_id": "virtual_actual",
+    "works_required": [
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "the virtual DR\u2192WIP",
+    "expected_entities": [
+      "difference_and_repetition",
+      "virtual_actual",
+      "multiplicity",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "the concept",
+      "the point",
+      "the idea",
+      "the repetition",
+      "a difference",
+      "the identity",
+      "the problem",
+      "eternal return",
+      "other words",
+      "the basis"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "How does 'the virtual' shift across Difference and repetition, Cinema 2 The Time-Image, and What Is Philosophy? Quote passages from each that capture the difference in how the concept is mobilised.",
+    "concept": "the virtual",
+    "concept_id": "virtual_actual",
+    "works_required": [
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "the virtual DR\u2192C2\u2192WIP",
+    "expected_entities": [
+      "difference_and_repetition",
+      "virtual_actual",
+      "multiplicity",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "the concept",
+      "the idea",
+      "the point",
+      "the repetition",
+      "a difference",
+      "the form",
+      "the identity",
+      "eternal return",
+      "the contrary",
+      "the difference"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "How does 'Spinoza's affect' shift across Spinoza Practical Philosophy, Dialogues, and A Thousand Plateaus? Quote passages from each that capture the difference in how the concept is mobilised.",
+    "concept": "Spinoza's affect",
+    "concept_id": "baruch_spinoza",
+    "works_required": [
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "Spinoza's affect SPP\u2192Dial\u2192ATP",
+    "expected_entities": [
+      "baruch_spinoza",
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "felix_guattari"
+    ],
+    "expected_concept_spans": [
+      "the difference",
+      "the body",
+      "the ethics",
+      "the mind",
+      "the passage",
+      "a being",
+      "a model",
+      "an idea",
+      "another nature",
+      "the common notions"
+    ],
+    "min_level_mix": {
+      "L0": 17,
+      "L1+": 3
+    }
+  },
+  {
+    "query": "Trace the evolution of 'body without organs' from Anti-Oedipus Capitalism and Schizophr (1972) to Francis Bacon The Logic of Sensation (1981). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "body without organs",
+    "concept_id": "body_without_organs",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "body without organs AO\u2192FB",
+    "expected_entities": [
+      "body_without_organs",
+      "anti_oedipus",
+      "desiring_machines",
+      "gilles_deleuze",
+      "deterritorialization",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "the body",
+      "francis bacon",
+      "a body",
+      "the end",
+      "the limit",
+      "the logic",
+      "the same time",
+      "the contrary",
+      "the eye",
+      "the figure"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'body without organs' in A Thousand Plateaus (1980) with its treatment in Francis Bacon The Logic of Sensation (1981). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "body without organs",
+    "concept_id": "body_without_organs",
+    "works_required": [
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "body without organs ATP\u2192FB",
+    "expected_entities": [
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "body_without_organs",
+      "anti_oedipus",
+      "baruch_spinoza",
+      "rhizome"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "francis bacon",
+      "the body",
+      "a body",
+      "the logic",
+      "the passage",
+      "bacon's paintings",
+      "the figure",
+      "the organism",
+      "the university"
+    ],
+    "min_level_mix": {
+      "L0": 16,
+      "L1+": 4
+    }
+  },
+  {
+    "query": "How does 'body without organs' shift across Anti-Oedipus Capitalism and Schizophr, A Thousand Plateaus, and Francis Bacon The Logic of Sensation? Quote passages from each that capture the difference in how the concept is mobilised.",
+    "concept": "body without organs",
+    "concept_id": "body_without_organs",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "body without organs AO\u2192ATP\u2192FB",
+    "expected_entities": [
+      "body_without_organs",
+      "gilles_deleuze",
+      "anti_oedipus",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "desiring_machines"
+    ],
+    "expected_concept_spans": [
+      "the body",
+      "the passage",
+      "francis bacon",
+      "the figure",
+      "a body",
+      "the eye",
+      "the organism",
+      "a thousand plateaus",
+      "an organism",
+      "the same time"
+    ],
+    "min_level_mix": {
+      "L0": 15,
+      "L1+": 5
+    }
+  },
+  {
+    "query": "Trace the evolution of 'rhizome' from Dialogues (1977) to A Thousand Plateaus (1980). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "rhizome",
+    "concept_id": "rhizome",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "rhizome Dial\u2192ATP",
+    "expected_entities": [
+      "rhizome",
+      "felix_guattari",
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "anti_oedipus",
+      "becoming",
+      "multiplicity",
+      "deterritorialization",
+      "baruch_spinoza",
+      "body_without_organs",
+      "assemblage"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "this book",
+      "the multiple",
+      "the rhizome",
+      "brian massumi",
+      "felix guattari",
+      "the body",
+      "the concepts",
+      "the line",
+      "the tree"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'assemblage' in Dialogues (1977) with its treatment in Foucault (1988). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "assemblage",
+    "concept_id": "assemblage",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1988 Foucault - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "assemblage Dial\u2192Fou",
+    "expected_entities": [
+      "gilles_deleuze",
+      "assemblage",
+      "becoming",
+      "multiplicity",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the assemblage",
+      "the state",
+      "a way",
+      "foucault's work",
+      "gilles deleuze",
+      "the future",
+      "the matter",
+      "the realm",
+      "a centre",
+      "a merely formal statement"
+    ],
+    "min_level_mix": {
+      "L0": 18,
+      "L1+": 2
+    }
+  },
+  {
+    "query": "How does 'assemblage' shift across Dialogues, A Thousand Plateaus, and Foucault? Quote passages from each that capture the difference in how the concept is mobilised.",
+    "concept": "assemblage",
+    "concept_id": "assemblage",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1988 Foucault - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "assemblage Dial\u2192ATP\u2192Fou",
+    "expected_entities": [
+      "assemblage",
+      "felix_guattari",
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "becoming",
+      "anti_oedipus",
+      "multiplicity",
+      "rhizome"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "brian massumi",
+      "the assemblage",
+      "a multiplicity",
+      "a way",
+      "other words",
+      "the difference",
+      "the passage",
+      "the problem",
+      "the start"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Trace the evolution of 'assemblage' from Dialogues (1977) to Cinema 1 The Movement-Image (1986). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "assemblage",
+    "concept_id": "assemblage",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "assemblage Dial\u2192C1",
+    "expected_entities": [
+      "assemblage",
+      "gilles_deleuze",
+      "becoming",
+      "deterritorialization",
+      "plane_of_immanence"
+    ],
+    "expected_concept_spans": [
+      "the image",
+      "the movement-image",
+      "the cinema",
+      "the evolution",
+      "the direct time-image",
+      "the whole",
+      "a kind",
+      "a whole",
+      "an image",
+      "marguerite duras"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Trace the evolution of 'the virtual' from Difference and repetition (1968) to Cinema 1 The Movement-Image (1986). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "the virtual",
+    "concept_id": "virtual_actual",
+    "works_required": [
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "the virtual DR\u2192C1",
+    "expected_entities": [
+      "difference_and_repetition",
+      "virtual_actual",
+      "multiplicity",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "the form",
+      "the point",
+      "the repetition",
+      "the elements",
+      "the problem",
+      "a difference",
+      "a repetition",
+      "the case",
+      "the concept",
+      "the displacement"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the evolution of 'the virtual' from Cinema 1 The Movement-Image (1986) to Cinema 2 The Time-Image (1989). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "the virtual",
+    "concept_id": "virtual_actual",
+    "works_required": [
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "the virtual C1\u2192C2",
+    "expected_entities": [
+      "virtual_actual",
+      "becoming",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "the movement-image",
+      "the image",
+      "the cinema",
+      "the time-image",
+      "the whole",
+      "the actual image",
+      "the evolution",
+      "the film",
+      "the frame",
+      "the crystal-image"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show how 'Spinoza's affect' is reworked between Nietzsche and Philosophy and Difference and repetition. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "Spinoza's affect",
+    "concept_id": "baruch_spinoza",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Spinoza's affect NP\u2192DR",
+    "expected_entities": [
+      "baruch_spinoza",
+      "difference_and_repetition",
+      "multiplicity",
+      "becoming",
+      "felix_guattari"
+    ],
+    "expected_concept_spans": [
+      "the concept",
+      "the eternal return",
+      "a philosophy",
+      "the passage",
+      "these concepts",
+      "a body",
+      "duns scotus",
+      "eternal return",
+      "the concepts",
+      "the difference"
+    ],
+    "min_level_mix": {
+      "L0": 16,
+      "L1+": 4
+    }
+  },
+  {
+    "query": "Trace the evolution of 'Spinoza's affect' from Nietzsche and Philosophy (1962) to Spinoza Practical Philosophy (1970). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "Spinoza's affect",
+    "concept_id": "baruch_spinoza",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Spinoza's affect NP\u2192SPP",
+    "expected_entities": [
+      "baruch_spinoza",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "the ethics",
+      "the contrary",
+      ": practical philosophy",
+      "common notions",
+      "the idea",
+      "this sense",
+      "the body",
+      "the composition",
+      "the effect",
+      "the intellect"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show how 'Spinoza's affect' is reworked between Nietzsche and Philosophy and Dialogues. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "Spinoza's affect",
+    "concept_id": "baruch_spinoza",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1977 Dialogues - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Spinoza's affect NP\u2192Dial",
+    "expected_entities": [
+      "baruch_spinoza",
+      "becoming",
+      "multiplicity"
+    ],
+    "expected_concept_spans": [
+      "the overman",
+      "vp ii",
+      "a body",
+      "the conception",
+      "the dialectic",
+      "the difference",
+      "the eternal return",
+      "the idea",
+      "the role",
+      "the same time"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'multiplicity' in Nietzsche and Philosophy (1962) with its treatment in The Logic of Sense (1969). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "multiplicity",
+    "concept_id": "multiplicity",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1969 The Logic of Sense - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "multiplicity NP\u2192LS",
+    "expected_entities": [
+      "multiplicity",
+      "gilles_deleuze",
+      "becoming",
+      "anti_oedipus",
+      "felix_guattari",
+      "baruch_spinoza",
+      "difference_and_repetition",
+      "a_thousand_plateaus"
+    ],
+    "expected_concept_spans": [
+      "the eternal return",
+      "the dice",
+      "the dicethrow",
+      "the unity",
+      "the will",
+      "bad conscience",
+      "such a way",
+      "the negative",
+      "the number",
+      "the spirit"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the evolution of 'becoming' from Nietzsche and Philosophy (1962) to Bergsonism (1966). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "becoming",
+    "concept_id": "becoming",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1966 Bergsonism - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "becoming NP\u2192B",
+    "expected_entities": [
+      "becoming",
+      "multiplicity",
+      "gilles_deleuze",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "the eternal return",
+      "the idea",
+      "the whole",
+      "the will",
+      "a moment",
+      "the differences",
+      "the negative",
+      "the overman",
+      "the past",
+      "the point"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'plane of immanence' in Spinoza Practical Philosophy (1970) with its treatment in A Thousand Plateaus (1980). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "plane of immanence",
+    "concept_id": "plane_of_immanence",
+    "works_required": [
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "plane of immanence SPP\u2192ATP",
+    "expected_entities": [
+      "baruch_spinoza",
+      "gilles_deleuze",
+      "plane_of_immanence",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "anti_oedipus",
+      "rhizome",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "a plane",
+      "the plane",
+      "a thousand plateaus",
+      "the contrary",
+      "a body",
+      "a form",
+      "a plan",
+      "a subject",
+      "this plane",
+      "a closed book"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace the evolution of 'plane of immanence' from Spinoza Practical Philosophy (1970) to What Is Philosophy (1991). Show how the concept's function or scope shifts between the two works. Cite specific passages from each.",
+    "concept": "plane of immanence",
+    "concept_id": "plane_of_immanence",
+    "works_required": [
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "plane of immanence SPP\u2192WIP",
+    "expected_entities": [
+      "plane_of_immanence",
+      "baruch_spinoza",
+      "becoming",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "the plane",
+      "a plane",
+      "the concept",
+      "the contrary",
+      "a subject",
+      "philosophical concepts",
+      "the event",
+      "the movement",
+      "the subject",
+      "a substance"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "How does 'plane of immanence' shift across Spinoza Practical Philosophy, A Thousand Plateaus, and What Is Philosophy? Quote passages from each that capture the difference in how the concept is mobilised.",
+    "concept": "plane of immanence",
+    "concept_id": "plane_of_immanence",
+    "works_required": [
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 3,
+    "min_quotes": 3,
+    "label": "plane of immanence SPP\u2192ATP\u2192WIP",
+    "expected_entities": [
+      "plane_of_immanence",
+      "baruch_spinoza",
+      "gilles_deleuze",
+      "becoming",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "virtual_actual"
+    ],
+    "expected_concept_spans": [
+      "the plane",
+      "a plane",
+      "the concept",
+      "a concept",
+      "the way",
+      "each thing",
+      "human beings",
+      "one concept",
+      "the construction",
+      "the creation"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'Spinoza's affect' in Nietzsche and Philosophy (1962) with its treatment in Anti-Oedipus Capitalism and Schizophr (1972). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "Spinoza's affect",
+    "concept_id": "baruch_spinoza",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Spinoza's affect NP\u2192AO",
+    "expected_entities": [
+      "gilles_deleuze",
+      "baruch_spinoza",
+      "felix_guattari",
+      "anti_oedipus",
+      "a_thousand_plateaus",
+      "multiplicity",
+      "difference_and_repetition",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "the eternal return",
+      "the university",
+      "a body",
+      "a philosophy",
+      "felix guattari",
+      "kant's critical philosophy",
+      "the book",
+      "the doctrine",
+      "the faculties"
+    ],
+    "min_level_mix": {
+      "L0": 19,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'multiplicity' in Nietzsche and Philosophy (1962) with its treatment in Proust and Signs (1964). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "multiplicity",
+    "concept_id": "multiplicity",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1964 Proust and Signs - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "multiplicity NP\u2192PS",
+    "expected_entities": [
+      "multiplicity",
+      "gilles_deleuze",
+      "becoming",
+      "felix_guattari",
+      "baruch_spinoza",
+      "anti_oedipus",
+      "difference_and_repetition",
+      "a_thousand_plateaus"
+    ],
+    "expected_concept_spans": [
+      "the eternal return",
+      "the dicethrow",
+      "the unity",
+      "the will",
+      "bad conscience",
+      "such a way",
+      "the being",
+      "the book",
+      "the dice",
+      "the negative"
+    ],
+    "min_level_mix": {
+      "L0": 18,
+      "L1+": 2
+    }
+  },
+  {
+    "query": "Show how 'assemblage' is reworked between Dialogues and Cinema 2 The Time-Image. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "assemblage",
+    "concept_id": "assemblage",
+    "works_required": [
+      "1977 Dialogues - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "assemblage Dial\u2192C2",
+    "expected_entities": [
+      "assemblage",
+      "becoming",
+      "multiplicity",
+      "gilles_deleuze",
+      "plane_of_immanence"
+    ],
+    "expected_concept_spans": [
+      "the assemblage",
+      "an assemblage",
+      "the contrary",
+      "the plane",
+      "the point",
+      "the problem",
+      "a distance",
+      "a kind",
+      "a machine",
+      "a new type"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Show how 'plane of immanence' is reworked between Spinoza Practical Philosophy and Cinema 1 The Movement-Image. What problem is each work using the concept to solve? Cite passages from both.",
+    "concept": "plane of immanence",
+    "concept_id": "plane_of_immanence",
+    "works_required": [
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "plane of immanence SPP\u2192C1",
+    "expected_entities": [
+      "plane_of_immanence",
+      "baruch_spinoza",
+      "becoming",
+      "virtual_actual"
+    ],
+    "expected_concept_spans": [
+      "the plane",
+      "a plane",
+      "the concept",
+      "the contrary",
+      "a concept",
+      "conceptual personae",
+      "the event",
+      "the figure",
+      "the same time",
+      "a problem"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Compare Deleuze's treatment of 'plane of immanence' in A Thousand Plateaus (1980) with its treatment in Cinema 1 The Movement-Image (1986). Identify points of continuity and divergence and quote passages that exhibit the shift.",
+    "concept": "plane of immanence",
+    "concept_id": "plane_of_immanence",
+    "works_required": [
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "plane of immanence ATP\u2192C1",
+    "expected_entities": [
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "plane_of_immanence",
+      "anti_oedipus",
+      "baruch_spinoza",
+      "rhizome"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "the plane",
+      "the university",
+      "this book",
+      "a minor literature",
+      "brian massumi",
+      "felix guattari",
+      "gilles deleuze",
+      "kant's critical philosophy",
+      "the sense"
+    ],
+    "min_level_mix": {
+      "L0": 20,
+      "L1+": 0
+    }
+  }
+]

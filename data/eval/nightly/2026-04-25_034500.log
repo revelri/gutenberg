@@ -1,0 +1,114 @@
+STAMP=2026-04-25_034500
+=== [1/4] feature_matrix --ablate P0,P5,P7 (deleuze_exact) ===
+2026-04-25 03:55:08,642 INFO retrieval_metrics phase=rerank ms=16.3
+2026-04-25 03:55:08,823 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:55:08,823 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:55:08,823 INFO retrieval_metrics phase=dense_search ms=14.2
+2026-04-25 03:55:08,823 INFO retrieval_metrics phase=bm25_search ms=146.3
+2026-04-25 03:55:08,823 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:55:08,823 INFO retrieval_metrics phase=rerank ms=19.2
+2026-04-25 03:55:09,001 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:55:09,001 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:55:09,001 INFO retrieval_metrics phase=dense_search ms=11.5
+2026-04-25 03:55:09,001 INFO retrieval_metrics phase=bm25_search ms=148.0
+2026-04-25 03:55:09,001 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:55:09,001 INFO retrieval_metrics phase=rerank ms=18.0
+2026-04-25 03:55:09,132 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:55:09,132 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:55:09,132 INFO retrieval_metrics phase=dense_search ms=12.4
+2026-04-25 03:55:09,132 INFO retrieval_metrics phase=bm25_search ms=102.1
+2026-04-25 03:55:09,132 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:55:09,132 INFO retrieval_metrics phase=rerank ms=15.9
+2026-04-25 03:55:09,233 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:55:09,233 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:55:09,233 INFO retrieval_metrics phase=dense_search ms=10.2
+2026-04-25 03:55:09,233 INFO retrieval_metrics phase=bm25_search ms=73.5
+2026-04-25 03:55:09,233 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:55:09,233 INFO retrieval_metrics phase=rerank ms=16.3
+2026-04-25 03:55:09,356 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:55:09,356 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:55:09,356 INFO retrieval_metrics phase=dense_search ms=14.6
+2026-04-25 03:55:09,356 INFO retrieval_metrics phase=bm25_search ms=90.7
+2026-04-25 03:55:09,356 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:55:09,356 INFO retrieval_metrics phase=rerank ms=16.7
+2026-04-25 03:55:09,518 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:55:09,518 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:55:09,518 INFO retrieval_metrics phase=dense_search ms=14.1
+2026-04-25 03:55:09,519 INFO retrieval_metrics phase=bm25_search ms=129.6
+2026-04-25 03:55:09,519 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:55:09,519 INFO retrieval_metrics phase=rerank ms=18.1
+2026-04-25 03:55:09,519 INFO Wrote /app/data/eval/graph_ablation.json
+2026-04-25 03:55:09,519 INFO Δ entity_recall@10=+0.000  Δ co_occurrence_recall@10=+0.000
+2026-04-25 03:55:10,300 INFO Wrote data/eval/nightly/2026-04-25_034500_matrix.md and data/eval/nightly/2026-04-25_034500_matrix.json
+
+=== [2/4] eval_contextual_ablation ===
+2026-04-25 03:56:16,350 INFO retrieval_metrics phase=dense_search ms=14.5
+2026-04-25 03:56:16,350 INFO retrieval_metrics phase=bm25_search ms=89.0
+2026-04-25 03:56:16,350 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:56:16,350 INFO retrieval_metrics phase=rerank ms=32.5
+2026-04-25 03:56:17,085 INFO Phrase search for 'Concepts are not waiting for u...' found 1 matches via 'waiting for us'
+2026-04-25 03:56:17,107 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:56:17,107 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:56:17,107 INFO retrieval_metrics phase=dense_search ms=12.7
+2026-04-25 03:56:17,107 INFO retrieval_metrics phase=bm25_search ms=60.8
+2026-04-25 03:56:17,107 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:56:17,107 INFO retrieval_metrics phase=rerank ms=21.5
+2026-04-25 03:56:18,095 INFO Phrase search for 'Chaos is defined not so much b...' found 1 matches via 'so much by'
+2026-04-25 03:56:18,120 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:56:18,121 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:56:18,121 INFO retrieval_metrics phase=dense_search ms=12.0
+2026-04-25 03:56:18,121 INFO retrieval_metrics phase=bm25_search ms=66.2
+2026-04-25 03:56:18,121 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:56:18,121 INFO retrieval_metrics phase=rerank ms=25.0
+2026-04-25 03:56:18,132 INFO Wrote data/eval/ablations/contextual.json
+2026-04-25 03:56:18,132 INFO Δ MRR=+0.001  Δ page_hit@5=+0.020  Δ source_p@1=+0.000
+
+=== [3/4] eval_raptor_ablation ===
+2026-04-25 03:57:30,293 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:30,293 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:30,293 INFO retrieval_metrics phase=dense_search ms=14.7
+2026-04-25 03:57:30,293 INFO retrieval_metrics phase=bm25_search ms=64.5
+2026-04-25 03:57:30,293 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:30,293 INFO retrieval_metrics phase=rerank ms=16.9
+2026-04-25 03:57:30,371 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:30,371 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:30,371 INFO retrieval_metrics phase=dense_search ms=13.5
+2026-04-25 03:57:30,371 INFO retrieval_metrics phase=bm25_search ms=48.4
+2026-04-25 03:57:30,371 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:30,371 INFO retrieval_metrics phase=rerank ms=15.0
+2026-04-25 03:57:30,490 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:30,490 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:30,490 INFO retrieval_metrics phase=dense_search ms=14.9
+2026-04-25 03:57:30,490 INFO retrieval_metrics phase=bm25_search ms=84.0
+2026-04-25 03:57:30,490 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:30,490 INFO retrieval_metrics phase=rerank ms=19.1
+2026-04-25 03:57:30,565 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:30,565 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:30,565 INFO retrieval_metrics phase=dense_search ms=14.2
+2026-04-25 03:57:30,565 INFO retrieval_metrics phase=bm25_search ms=43.5
+2026-04-25 03:57:30,565 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:30,565 INFO retrieval_metrics phase=rerank ms=15.7
+2026-04-25 03:57:30,566 INFO Wrote data/eval/ablations/raptor.json
+
+=== [4/4] eval_graph_ablation ===
+2026-04-25 03:57:40,616 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:40,616 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:40,616 INFO retrieval_metrics phase=dense_search ms=11.0
+2026-04-25 03:57:40,616 INFO retrieval_metrics phase=bm25_search ms=65.8
+2026-04-25 03:57:40,616 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:40,616 INFO retrieval_metrics phase=rerank ms=15.6
+2026-04-25 03:57:40,737 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:40,737 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:40,737 INFO retrieval_metrics phase=dense_search ms=11.5
+2026-04-25 03:57:40,737 INFO retrieval_metrics phase=bm25_search ms=92.1
+2026-04-25 03:57:40,737 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:40,737 INFO retrieval_metrics phase=rerank ms=16.2
+2026-04-25 03:57:40,878 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:57:40,878 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:57:40,878 INFO retrieval_metrics phase=dense_search ms=10.5
+2026-04-25 03:57:40,879 INFO retrieval_metrics phase=bm25_search ms=112.5
+2026-04-25 03:57:40,879 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:57:40,879 INFO retrieval_metrics phase=rerank ms=17.8
+2026-04-25 03:57:40,879 INFO Wrote data/eval/ablations/graph.json
+2026-04-25 03:57:40,879 INFO Δ entity_recall@10=+0.000  Δ co_occurrence_recall@10=+0.000
+=== DONE ===

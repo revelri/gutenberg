@@ -1,0 +1,76 @@
+# Seed gazetteer for Deleuze & Guattari. Add more authors as sibling files
+# (e.g., kant.yml, heidegger.yml). Each entry:
+#   canonical_id: stable snake-case identifier (used across indices and graph)
+#   label: canonical display form
+#   aliases: surface forms to match (case-insensitive, whole-word)
+#   type: PERSON | WORK | CONCEPT | TECHNICAL_TERM
+persons:
+  - canonical_id: gilles_deleuze
+    label: Gilles Deleuze
+    type: PERSON
+    aliases: ["Gilles Deleuze", "Deleuze"]
+  - canonical_id: felix_guattari
+    label: Félix Guattari
+    type: PERSON
+    aliases: ["Félix Guattari", "Felix Guattari", "Guattari"]
+  - canonical_id: baruch_spinoza
+    label: Baruch Spinoza
+    type: PERSON
+    aliases: ["Baruch Spinoza", "Spinoza"]
+
+works:
+  - canonical_id: anti_oedipus
+    label: Anti-Oedipus
+    type: WORK
+    aliases: ["Anti-Oedipus", "Anti Oedipus", "L'Anti-Œdipe", "L'Anti-Oedipe"]
+  - canonical_id: a_thousand_plateaus
+    label: A Thousand Plateaus
+    type: WORK
+    aliases: ["A Thousand Plateaus", "Mille Plateaux", "Thousand Plateaus", "ATP"]
+  - canonical_id: difference_and_repetition
+    label: Difference and Repetition
+    type: WORK
+    aliases: ["Difference and Repetition", "Différence et Répétition"]
+
+concepts:
+  - canonical_id: plane_of_immanence
+    label: plane of immanence
+    type: CONCEPT
+    aliases:
+      - "plane of immanence"
+      - "plan d'immanence"
+      - "plan of immanence"
+      - "plane of consistency"
+      - "plan de consistance"
+  - canonical_id: body_without_organs
+    label: body without organs
+    type: CONCEPT
+    aliases: ["body without organs", "BwO", "corps sans organes", "CsO"]
+  - canonical_id: rhizome
+    label: rhizome
+    type: CONCEPT
+    aliases: ["rhizome", "rhizomatic", "rhizomatique"]
+  - canonical_id: deterritorialization
+    label: deterritorialization
+    type: CONCEPT
+    aliases: ["deterritorialization", "deterritorialisation", "déterritorialisation"]
+  - canonical_id: virtual_actual
+    label: the virtual
+    type: CONCEPT
+    aliases: ["the virtual", "virtual/actual", "virtuel", "virtualité"]
+  - canonical_id: assemblage
+    label: assemblage
+    type: CONCEPT
+    aliases: ["assemblage", "agencement", "agencements"]
+  - canonical_id: multiplicity
+    label: multiplicity
+    type: CONCEPT
+    aliases: ["multiplicity", "multiplicité", "multiplicities"]
+  - canonical_id: becoming
+    label: becoming
+    type: CONCEPT
+    aliases: ["becoming", "devenir", "becomings", "becoming-animal", "becoming-woman"]
+  - canonical_id: desiring_machines
+    label: desiring-machines
+    type: CONCEPT
+    aliases: ["desiring-machines", "desiring machines", "machines désirantes"]

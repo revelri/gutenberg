@@ -1,0 +1,287 @@
+{
+  "_schema": "Gold metadata for Donut vs. baselines benchmark. Each entry describes what the specific PDF page contains. Fields not present on that page are null. Matching is normalized (lowercase, strip punctuation, collapse whitespace, optional leading-article strip).",
+  "_fields": ["title", "author", "translator", "publisher", "year", "isbn"],
+  "_notes": "Page numbers are 1-indexed PDF pages. Several scanned PDFs use 2-up spreads; the page image therefore contains two book pages side-by-side — this is part of the real corpus and is evaluated as-is, not split.",
+  "pages": [
+    {
+      "doc": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Nietzsche and Philosophy",
+        "author": "Gilles Deleuze",
+        "translator": "Hugh Tomlinson",
+        "publisher": "Columbia University Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Nietzsche and Philosophy",
+        "author": "Gilles Deleuze",
+        "translator": null,
+        "publisher": "Presses Universitaires de France",
+        "year": "1962",
+        "isbn": "0-231-05668-0"
+      }
+    },
+    {
+      "doc": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Proust and Signs",
+        "author": "Gilles Deleuze",
+        "translator": "Richard Howard",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Proust and Signs",
+        "author": "Gilles Deleuze",
+        "translator": "Richard Howard",
+        "publisher": "University of Minnesota Press",
+        "year": "2000",
+        "isbn": "0-8166-3257-X"
+      }
+    },
+    {
+      "doc": "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "page": 4,
+      "type": "title",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "Bergsonism",
+        "author": "Gilles Deleuze",
+        "translator": "Hugh Tomlinson and Barbara Habberjam",
+        "publisher": "Zone Books",
+        "year": "1991",
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "page": 5,
+      "type": "copyright",
+      "scan_layout": "2up",
+      "gold": {
+        "title": null,
+        "author": null,
+        "translator": null,
+        "publisher": "Zone Books",
+        "year": "1988",
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Difference and Repetition",
+        "author": "Gilles Deleuze",
+        "translator": "Paul Patton",
+        "publisher": "Columbia University Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Difference and Repetition",
+        "author": "Gilles Deleuze",
+        "translator": "Paul Patton",
+        "publisher": "Columbia University Press",
+        "year": "1994",
+        "isbn": "0-231-08158-8"
+      }
+    },
+    {
+      "doc": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "The Logic of Sense",
+        "author": "Gilles Deleuze",
+        "translator": "Mark Lester",
+        "publisher": "The Athlone Press",
+        "year": "1990",
+        "isbn": "0-485-30063-X"
+      }
+    },
+    {
+      "doc": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Anti-Oedipus: Capitalism and Schizophrenia",
+        "author": "Gilles Deleuze and Felix Guattari",
+        "translator": "Robert Hurley, Mark Seem, and Helen R. Lane",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Anti-Oedipus",
+        "author": "Gilles Deleuze",
+        "translator": null,
+        "publisher": "University of Minnesota Press",
+        "year": "1983",
+        "isbn": "0-8166-1225-0"
+      }
+    },
+    {
+      "doc": "1977 Dialogues - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "title",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "Dialogues",
+        "author": "Gilles Deleuze and Claire Parnet",
+        "translator": "Hugh Tomlinson and Barbara Habberjam",
+        "publisher": null,
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "page": 4,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "A Thousand Plateaus: Capitalism and Schizophrenia",
+        "author": "Gilles Deleuze, Felix Guattari",
+        "translator": "Brian Massumi",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "page": 5,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "A Thousand Plateaus",
+        "author": "Gilles Deleuze",
+        "translator": "Brian Massumi",
+        "publisher": "University of Minnesota Press",
+        "year": "1987",
+        "isbn": "0-8166-1401-6"
+      }
+    },
+    {
+      "doc": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Francis Bacon: the logic of sensation",
+        "author": "Gilles Deleuze",
+        "translator": "Daniel W. Smith",
+        "publisher": "Continuum",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Francis Bacon: Logique de la Sensation",
+        "author": null,
+        "translator": null,
+        "publisher": "Continuum",
+        "year": "2003",
+        "isbn": "0-8264-6647-8"
+      }
+    },
+    {
+      "doc": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+      "page": 1,
+      "type": "title",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "Cinema 1: The Movement-Image",
+        "author": "Gilles Deleuze",
+        "translator": "Hugh Tomlinson and Barbara Habberjam",
+        "publisher": "The Athlone Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1988 Foucault - Deleuze, Gilles.pdf",
+      "page": 4,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Foucault",
+        "author": "Gilles Deleuze",
+        "translator": "Sean Hand",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      }
+    },
+    {
+      "doc": "1988 Foucault - Deleuze, Gilles.pdf",
+      "page": 5,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Foucault",
+        "author": "Gilles Deleuze",
+        "translator": "Sean Hand",
+        "publisher": "University of Minnesota Press",
+        "year": "1988",
+        "isbn": "0-8166-1674-4"
+      }
+    },
+    {
+      "doc": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "combined",
+      "scan_layout": "single",
+      "gold": {
+        "title": "What Is Philosophy?",
+        "author": "Gilles Deleuze and Felix Guattari",
+        "translator": "Hugh Tomlinson and Graham Burchell",
+        "publisher": "Columbia University Press",
+        "year": "1994",
+        "isbn": "0-231-07988-5"
+      }
+    }
+  ]
+}

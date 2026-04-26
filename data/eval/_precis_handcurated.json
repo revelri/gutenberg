@@ -1,0 +1,14 @@
+[
+  {
+    "query": "Trace how Deleuze moves from the movement-image (Cinema 1, 1986) to the time-image (Cinema 2, 1989). What break occurs after WWII in Deleuze's reading, and how does the time-image rework the movement-image's coordinates? Cite passages from each book.",
+    "concept": "movement-image to time-image",
+    "concept_id": "cinema_movement_time",
+    "works_required": [
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Movement-image → time-image C1→C2"
+  }
+]

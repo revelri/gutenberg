@@ -1,0 +1,75 @@
+{
+  "collection": "gutenberg-qwen3-v2",
+  "total_chunks": 5552,
+  "ground_truth": "ao_ground_truth_cleaned.json",
+  "n_queries": 20,
+  "date": "2026-04-05",
+  "configs": {
+    "dense_only": {
+      "gt_at_5": 4,
+      "avg_overlap": 0.55,
+      "components": {
+        "dense": true,
+        "bm25": false,
+        "reranker": false
+      }
+    },
+    "bm25_only": {
+      "gt_at_5": 7,
+      "avg_overlap": 0.64,
+      "components": {
+        "dense": false,
+        "bm25": true,
+        "reranker": false
+      }
+    },
+    "hybrid_no_rerank": {
+      "gt_at_5": 10,
+      "avg_overlap": 0.73,
+      "components": {
+        "dense": true,
+        "bm25": true,
+        "reranker": false
+      }
+    },
+    "dense_rerank": {
+      "gt_at_5": 10,
+      "avg_overlap": 0.73,
+      "components": {
+        "dense": true,
+        "bm25": false,
+        "reranker": true
+      }
+    },
+    "bm25_rerank": {
+      "gt_at_5": 9,
+      "avg_overlap": 0.71,
+      "components": {
+        "dense": false,
+        "bm25": true,
+        "reranker": true
+      }
+    },
+    "full_pipeline": {
+      "gt_at_5": 10,
+      "avg_overlap": 0.75,
+      "components": {
+        "dense": true,
+        "bm25": true,
+        "reranker": true
+      }
+    }
+  },
+  "analysis": {
+    "best_config": "full_pipeline / hybrid_no_rerank / dense_rerank (tied at 10/20)",
+    "dense_contribution": "4/20 alone, but essential for hybrid fusion",
+    "bm25_contribution": "7/20 alone, keyword matching stronger than dense for exact passages",
+    "reranker_contribution": "+6 to dense alone, +2 to BM25, +0 to hybrid (ceiling effect)",
+    "fusion_value": "hybrid without reranker matches full pipeline (10/20)",
+    "bottleneck": "10/20 queries consistently miss across all configs - likely GT passages that span chunk boundaries or have OCR variations"
+  },
+  "previous_baseline": {
+    "dense_only_ao_only": "30% GT@5 (6/20)",
+    "note": "Previous was AO-only collection (486 chunks). Now 5552 chunks across 16 books - more candidates means more noise for exact passage retrieval."
+  }
+}

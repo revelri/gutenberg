@@ -1,0 +1,521 @@
+[
+  {
+    "query": "How does Deleuze characterize the body without organs across his work?",
+    "label": "bwo_across_oeuvre",
+    "expected_entities": [
+      "body_without_organs",
+      "felix_guattari",
+      "gilles_deleuze",
+      "becoming",
+      "anti_oedipus",
+      "multiplicity",
+      "desiring_machines",
+      "plane_of_immanence",
+      "a_thousand_plateaus"
+    ],
+    "expected_concept_spans": [
+      "the body",
+      "a body",
+      "the organs",
+      "the contrary",
+      "the organism",
+      "a projection",
+      "an organism",
+      "partial objects",
+      "the fact",
+      "the full body"
+    ]
+  },
+  {
+    "query": "What is Deleuze's account of difference in itself?",
+    "label": "difference_in_itself",
+    "expected_entities": [
+      "gilles_deleuze",
+      "difference_and_repetition",
+      "felix_guattari",
+      "anti_oedipus",
+      "a_thousand_plateaus",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "the concept",
+      "other words",
+      "the identity",
+      "the object",
+      "the philosophy",
+      "the extent",
+      "the passage",
+      "the relationship",
+      "the requirements",
+      "a critique"
+    ]
+  },
+  {
+    "query": "How does Deleuze understand the relation between the virtual and the actual?",
+    "label": "virtual_actual",
+    "expected_entities": [
+      "virtual_actual",
+      "multiplicity",
+      "gilles_deleuze",
+      "difference_and_repetition",
+      "felix_guattari",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the real",
+      "the idea",
+      "the concept",
+      "the point",
+      "the process",
+      "the reality",
+      "the relations",
+      "a problem",
+      "the actualisation",
+      "the image"
+    ]
+  },
+  {
+    "query": "What does Deleuze mean by a line of flight?",
+    "label": "line_of_flight",
+    "expected_entities": [
+      "deterritorialization",
+      "gilles_deleuze",
+      "rhizome",
+      "body_without_organs",
+      "baruch_spinoza",
+      "plane_of_immanence",
+      "a_thousand_plateaus",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "a line",
+      "the line",
+      "the lines",
+      "three novellas",
+      "a kind",
+      "the desert",
+      "the world",
+      "a flight",
+      "a society",
+      "a sort"
+    ]
+  },
+  {
+    "query": "How does Deleuze conceive of immanence?",
+    "label": "immanence",
+    "expected_entities": [
+      "gilles_deleuze",
+      "felix_guattari",
+      "baruch_spinoza",
+      "plane_of_immanence",
+      "deterritorialization",
+      "multiplicity"
+    ],
+    "expected_concept_spans": [
+      "the world",
+      "the fold",
+      "a plane",
+      "the author",
+      "the reader",
+      "the state",
+      "the work",
+      "a creation",
+      "a form",
+      "a philosophy"
+    ]
+  },
+  {
+    "query": "How does Deleuze read Spinoza's ethics of affect?",
+    "label": "spinoza_affect",
+    "expected_entities": [
+      "gilles_deleuze",
+      "baruch_spinoza",
+      "plane_of_immanence"
+    ],
+    "expected_concept_spans": [
+      "the ethics",
+      "the way",
+      "a body",
+      "a mode",
+      "a philosophy",
+      "the author",
+      "the body",
+      "the intellect",
+      "the reader",
+      "the treatise"
+    ]
+  },
+  {
+    "query": "What is the role of intensity in Deleuze's ontology?",
+    "label": "intensity",
+    "expected_entities": [
+      "gilles_deleuze",
+      "multiplicity",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "the role",
+      "other words",
+      "the form",
+      "the passage",
+      "the possibility",
+      "this sense",
+      "\" \"voisinage",
+      "a balance",
+      "a difference",
+      "a process"
+    ]
+  },
+  {
+    "query": "How does Deleuze describe the rhizome versus the tree?",
+    "label": "rhizome_vs_tree",
+    "expected_entities": [
+      "rhizome",
+      "gilles_deleuze",
+      "felix_guattari",
+      "becoming",
+      "baruch_spinoza",
+      "multiplicity",
+      "plane_of_immanence",
+      "deterritorialization",
+      "difference_and_repetition"
+    ],
+    "expected_concept_spans": [
+      "the rhizome",
+      "the tree",
+      "a rhizome",
+      "the book",
+      "the line",
+      "a plane",
+      "a relation",
+      "multiple entryways",
+      "the basis",
+      "the east"
+    ]
+  },
+  {
+    "query": "How does Deleuze treat the eternal return in Nietzsche?",
+    "label": "eternal_return",
+    "expected_entities": [
+      "becoming",
+      "gilles_deleuze",
+      "multiplicity",
+      "baruch_spinoza"
+    ],
+    "expected_concept_spans": [
+      "the eternal return",
+      "the contrary",
+      "the will",
+      "eternal return",
+      "the return",
+      "vp ii",
+      "the being",
+      "the negative",
+      "the present",
+      "such a way"
+    ]
+  },
+  {
+    "query": "What is the function of the refrain in A Thousand Plateaus?",
+    "label": "refrain",
+    "expected_entities": [
+      "a_thousand_plateaus",
+      "gilles_deleuze",
+      "felix_guattari",
+      "becoming",
+      "baruch_spinoza",
+      "anti_oedipus",
+      "rhizome",
+      "assemblage"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "the refrain",
+      "the world",
+      "this book",
+      "brian massumi",
+      "felix guattari",
+      "the basis",
+      "the extent",
+      "a continuing collaboration",
+      "a kind"
+    ]
+  },
+  {
+    "query": "How does Deleuze distinguish molar and molecular?",
+    "label": "molar_molecular",
+    "expected_entities": [
+      "gilles_deleuze",
+      "deterritorialization",
+      "multiplicity",
+      "assemblage"
+    ],
+    "expected_concept_spans": [
+      "other words",
+      "the case",
+      "the contrary",
+      "the direction",
+      "the distinction",
+      "the fold",
+      "the molar",
+      "the nature",
+      "the poles",
+      "the relations"
+    ]
+  },
+  {
+    "query": "What does Deleuze mean by the plane of consistency?",
+    "label": "plane_of_consistency",
+    "expected_entities": [
+      "plane_of_immanence",
+      "deterritorialization",
+      "assemblage",
+      "becoming",
+      "multiplicity",
+      "body_without_organs",
+      "gilles_deleuze",
+      "baruch_spinoza",
+      "rhizome",
+      "virtual_actual",
+      "felix_guattari"
+    ],
+    "expected_concept_spans": [
+      "the plane",
+      "a plane",
+      "a body",
+      "the abstract machine",
+      "the distinction",
+      "the strata",
+      "the subject",
+      "a form",
+      "a supplementary dimension",
+      "other words"
+    ]
+  },
+  {
+    "query": "How does Deleuze characterize the crystal-image in cinema?",
+    "label": "crystal_image",
+    "expected_entities": [
+      "gilles_deleuze",
+      "becoming",
+      "virtual_actual",
+      "assemblage"
+    ],
+    "expected_concept_spans": [
+      "the crystal-image",
+      "the cinema",
+      "the image",
+      "the film",
+      "the actual image",
+      "the crystal",
+      "the other hand",
+      "the past",
+      "the present",
+      "the same time"
+    ]
+  },
+  {
+    "query": "What is Deleuze's concept of assemblage?",
+    "label": "assemblage",
+    "expected_entities": [
+      "gilles_deleuze",
+      "assemblage"
+    ],
+    "expected_concept_spans": [
+      "the passage",
+      "the book",
+      "a theory",
+      "deleuze's concept",
+      "foucault's work",
+      "particularly his concept",
+      "the concept",
+      "the importance",
+      "the possibility",
+      "a child"
+    ]
+  },
+  {
+    "query": "How does Deleuze treat the relation between desire and production?",
+    "label": "desire_production",
+    "expected_entities": [
+      "anti_oedipus",
+      "gilles_deleuze",
+      "desiring_machines",
+      "felix_guattari",
+      "deterritorialization",
+      "body_without_organs"
+    ],
+    "expected_concept_spans": [
+      "the relationship",
+      "social production",
+      "the point",
+      "a way",
+      "the body",
+      "the fact",
+      "the relations",
+      "the same time",
+      "the social field",
+      "the unconscious"
+    ]
+  },
+  {
+    "query": "What does Deleuze mean by smooth versus striated space?",
+    "label": "smooth_striated",
+    "expected_entities": [
+      "gilles_deleuze",
+      "multiplicity",
+      "felix_guattari",
+      "becoming",
+      "rhizome"
+    ],
+    "expected_concept_spans": [
+      "the smooth",
+      "a smooth space",
+      "smooth space",
+      "striated space",
+      "a striated space",
+      "the distinction",
+      "the smooth space",
+      "the striated",
+      "the way",
+      "this kind"
+    ]
+  },
+  {
+    "query": "How does Deleuze characterize the event?",
+    "label": "event",
+    "expected_entities": [
+      "gilles_deleuze",
+      "felix_guattari",
+      "multiplicity",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the fold",
+      "the state",
+      "the text",
+      "the use",
+      "the work",
+      "the world",
+      "this book",
+      "a new mode",
+      "a philosophy",
+      "a style"
+    ]
+  },
+  {
+    "query": "How does Deleuze treat the disjunctive synthesis?",
+    "label": "disjunctive_synthesis",
+    "expected_entities": [
+      "gilles_deleuze",
+      "body_without_organs",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the body",
+      "the disjunctive synthesis",
+      "a matter",
+      "the connective synthesis",
+      "the process",
+      "(albert desire",
+      "a disjunction",
+      "a single series",
+      "a style",
+      "an entire network"
+    ]
+  },
+  {
+    "query": "What role does Bergson's duration play in Deleuze's philosophy?",
+    "label": "bergson_duration",
+    "expected_entities": [
+      "gilles_deleuze",
+      "multiplicity",
+      "a_thousand_plateaus",
+      "difference_and_repetition"
+    ],
+    "expected_concept_spans": [
+      "the cinema",
+      "the movement",
+      "the whole",
+      "this book",
+      "\" the growing list",
+      "a book",
+      "a change",
+      "a connection",
+      "a frequently occurring word",
+      "a further difficulty"
+    ]
+  },
+  {
+    "query": "How does Deleuze read Kant's transcendental aesthetic?",
+    "label": "kant_aesthetic",
+    "expected_entities": [
+      "gilles_deleuze",
+      "felix_guattari",
+      "difference_and_repetition",
+      "baruch_spinoza",
+      "a_thousand_plateaus",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the university",
+      "cinema i",
+      "kant's critical philosophy",
+      "such a way",
+      "the book",
+      "the history",
+      "1988 0485 11335 x",
+      "a critique",
+      "a third logical value",
+      "a way"
+    ]
+  },
+  {
+    "query": "What is the abstract machine in Deleuze and Guattari?",
+    "label": "abstract_machine",
+    "expected_entities": [
+      "felix_guattari",
+      "gilles_deleuze",
+      "anti_oedipus",
+      "assemblage",
+      "a_thousand_plateaus",
+      "desiring_machines",
+      "plane_of_immanence",
+      "becoming",
+      "deterritorialization"
+    ],
+    "expected_concept_spans": [
+      "mark seem",
+      "a way",
+      "brian massumi",
+      "gilles deleuze",
+      "the book",
+      "a combination",
+      "a form",
+      "abstract machines",
+      "claire parnet",
+      "felix guattari"
+    ]
+  },
+  {
+    "query": "How does Deleuze understand the simulacrum?",
+    "label": "simulacrum",
+    "expected_entities": [
+      "gilles_deleuze",
+      "felix_guattari",
+      "multiplicity"
+    ],
+    "expected_concept_spans": [
+      "gilles deleuze",
+      "the fold",
+      "the world",
+      "atomic theory",
+      "such a way",
+      "the notion",
+      "the source",
+      "the state",
+      "the work",
+      "a new mode"
+    ]
+  }
+]

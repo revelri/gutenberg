@@ -1,0 +1,179 @@
+{
+  "summary": {
+    "n_samples": 10,
+    "with_answer": true,
+    "weights": {
+      "works": 0.35,
+      "spans": 0.35,
+      "entities": 0.2,
+      "alce": 0.1
+    },
+    "mean_composite": 0.8223,
+    "mean_concept_span_hit_rate": 0.95,
+    "mean_entity_coverage": 0.8157,
+    "mean_works_cited_coverage_retrieval": 0.9167,
+    "mean_works_cited_coverage": 0.9333
+  },
+  "results": [
+    {
+      "query": "Trace the evolution of the concept 'body without organs' from Anti-Oedipus (1972) through A Thousand Plateaus (1980), showing how its meaning shifts from a psychoanalytic critique to a practical ethics. Cite specific passages from each work.",
+      "label": "BwO evolution AO\u2192ATP",
+      "metrics": {
+        "concept_span_hit_rate": 0.9,
+        "entity_coverage": 1.0,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1715,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 0.5,
+        "unverified_quotes_n": 0,
+        "composite": 0.865,
+        "retrieve_ms": 134153.4
+      }
+    },
+    {
+      "query": "Show how Deleuze's treatment of 'repetition' develops from Difference and Repetition through to the cinema books. How does the concept change when applied to film? Provide cited passages demonstrating the shift.",
+      "label": "Repetition DR\u2192Cinema",
+      "metrics": {
+        "concept_span_hit_rate": 1.0,
+        "entity_coverage": 1.0,
+        "works_cited_coverage_retrieval": 0.6667,
+        "works_cited_coverage": 0.6667,
+        "answer_length": 2048,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 1.0,
+        "unverified_quotes_n": 0,
+        "composite": 0.7833,
+        "retrieve_ms": 288.8
+      }
+    },
+    {
+      "query": "Trace how the concept of 'deterritorialization' shifts between Anti-Oedipus and A Thousand Plateaus. In AO it relates to capitalism's decoded flows; in ATP it becomes a general principle of transformation. Cite specific passages showing this drift.",
+      "label": "Deterritorialization AO\u2192ATP",
+      "metrics": {
+        "concept_span_hit_rate": 0.8,
+        "entity_coverage": 0.8571,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1423,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 0.5,
+        "unverified_quotes_n": 0,
+        "composite": 0.8014,
+        "retrieve_ms": 340.9
+      }
+    },
+    {
+      "query": "Document the evolution of Deleuze's concept of 'the virtual' from Bergsonism through Difference and Repetition to Cinema 2. Show with citations how the virtual moves from Bergsonian duration to ontological principle to cinematic time.",
+      "label": "Virtual Berg\u2192DR\u2192C2",
+      "metrics": {
+        "concept_span_hit_rate": 1.0,
+        "entity_coverage": 1.0,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1683,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 0.6667,
+        "unverified_quotes_n": 0,
+        "composite": 0.9,
+        "retrieve_ms": 330.9
+      }
+    },
+    {
+      "query": "Show how Deleuze's engagement with Nietzsche's 'will to power' in Nietzsche and Philosophy (1962) transforms into the concept of 'desire' in Anti-Oedipus (1972). Cite passages from both works demonstrating the conceptual lineage.",
+      "label": "Will to power \u2192 Desire NP\u2192AO",
+      "metrics": {
+        "concept_span_hit_rate": 1.0,
+        "entity_coverage": 0.8,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1388,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 0.5,
+        "unverified_quotes_n": 0,
+        "composite": 0.86,
+        "retrieve_ms": 298.8
+      }
+    },
+    {
+      "query": "Trace the concept of 'the diagram' across Francis Bacon (1981), Foucault (1988), and A Thousand Plateaus (1980). Show how the same term operates differently in painting, power relations, and semiotics. Cite each usage.",
+      "label": "Diagram FB\u2192Foucault\u2192ATP",
+      "metrics": {
+        "concept_span_hit_rate": 1.0,
+        "entity_coverage": 1.0,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 0.6667,
+        "answer_length": 1714,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 0.6667,
+        "unverified_quotes_n": 0,
+        "composite": 0.7833,
+        "retrieve_ms": 300.2
+      }
+    },
+    {
+      "query": "Document how the concept of 'sense' (sens) develops from The Logic of Sense to What Is Philosophy?. In the former it operates at the surface between propositions and things; in the latter it becomes the event of the concept. Cite passages from both.",
+      "label": "Sense LS\u2192WIP",
+      "metrics": {
+        "concept_span_hit_rate": 1.0,
+        "entity_coverage": 0.0,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1392,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 1.0,
+        "unverified_quotes_n": 0,
+        "composite": 0.7,
+        "retrieve_ms": 326.2
+      }
+    },
+    {
+      "query": "Show the evolution of Deleuze's concept of 'immanence' from Spinoza: Practical Philosophy through What Is Philosophy?. Trace how the plane of immanence shifts from an ethical ontology to a philosophical method. Cite both works.",
+      "label": "Immanence Spinoza\u2192WIP",
+      "metrics": {
+        "concept_span_hit_rate": 0.9,
+        "entity_coverage": 1.0,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1574,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 1.0,
+        "unverified_quotes_n": 0,
+        "composite": 0.865,
+        "retrieve_ms": 346.3
+      }
+    },
+    {
+      "query": "Trace how 'the fold' operates across The Fold (1988) and the Foucault book (1988). In one it describes Leibnizian metaphysics; in the other it describes subjectivation. Show with citations how the same figure does different philosophical work.",
+      "label": "Fold: Leibniz vs Foucault",
+      "metrics": {
+        "concept_span_hit_rate": 1.0,
+        "entity_coverage": 0.5,
+        "works_cited_coverage_retrieval": 1.0,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1340,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 0.5,
+        "unverified_quotes_n": 0,
+        "composite": 0.8,
+        "retrieve_ms": 261.5
+      }
+    },
+    {
+      "query": "Document how Deleuze's concept of 'signs' changes from Proust and Signs (1964) to A Thousand Plateaus (1980). In the earlier work signs are objects of an apprenticeship; in the later they become components of regimes. Cite passages showing the transformation.",
+      "label": "Signs PS\u2192ATP",
+      "metrics": {
+        "concept_span_hit_rate": 0.9,
+        "entity_coverage": 1.0,
+        "works_cited_coverage_retrieval": 0.5,
+        "works_cited_coverage": 1.0,
+        "answer_length": 1623,
+        "per_work_coverage": 1.0,
+        "synthesis_coverage": 1.0,
+        "unverified_quotes_n": 0,
+        "composite": 0.865,
+        "retrieve_ms": 316.7
+      }
+    }
+  ]
+}

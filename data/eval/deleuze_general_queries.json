@@ -1,0 +1,1079 @@
+[
+  {
+    "query": "What is the concept of genealogy according to Deleuze's reading of Nietzsche?",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      10,
+      11,
+      12
+    ],
+    "expected_concepts": [
+      "genealogy",
+      "value of origin",
+      "origin of values",
+      "differential element",
+      "forces"
+    ],
+    "expected_quotes": [
+      "Nietzsche creates the new concept of genealogy",
+      "the value of origin and the origin of values",
+      "the differential element of values from which their value itself derives"
+    ],
+    "label": "np_genealogy_broad"
+  },
+  {
+    "query": "How does Deleuze distinguish active and reactive forces in Nietzsche and Philosophy?",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      11,
+      13,
+      39
+    ],
+    "expected_concepts": [
+      "active forces",
+      "reactive forces",
+      "will to power",
+      "domination",
+      "plural forces"
+    ],
+    "expected_quotes": [
+      "A force is domination, but also the object on which domination is exercised",
+      "The being of force is plural",
+      "Pluralism is the properly philosophical way of thinking"
+    ],
+    "label": "np_active_reactive_specific"
+  },
+  {
+    "query": "What is the role of the will to power in Nietzsche's philosophy as interpreted by Deleuze?",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      13,
+      55,
+      46
+    ],
+    "expected_concepts": [
+      "will to power",
+      "differential element",
+      "commanding and obeying",
+      "creative",
+      "giving"
+    ],
+    "expected_quotes": [
+      "the will is not exercised mysteriously on muscles or nerves",
+      "the real problem is not that of the relation of will to the involuntary",
+      "Their knowing is creating, their creating is a law-giving"
+    ],
+    "label": "np_will_to_power_broad"
+  },
+  {
+    "query": "What are the different types of signs in Proust's work according to Deleuze?",
+    "source": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      10,
+      15
+    ],
+    "expected_concepts": [
+      "worldly signs",
+      "signs of love",
+      "sensuous signs",
+      "signs of art",
+      "apprenticeship"
+    ],
+    "expected_quotes": [
+      "Learning is essentially concerned with signs",
+      "signs are the object of a temporal apprenticeship",
+      "all the signs converge upon art"
+    ],
+    "label": "ps_types_signs_broad"
+  },
+  {
+    "query": "How does Deleuze connect involuntary memory to art in Proust and Signs?",
+    "source": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      15,
+      40,
+      25
+    ],
+    "expected_concepts": [
+      "involuntary memory",
+      "essence",
+      "art",
+      "signs",
+      "truth"
+    ],
+    "expected_quotes": [
+      "all apprenticeships are already unconscious apprenticeships to art itself",
+      "an essence is incarnated in involuntary memory",
+      "the essential is in the signs of art"
+    ],
+    "label": "ps_memory_art_specific"
+  },
+  {
+    "query": "How does Deleuze describe the role of disappointment in learning in Proust and Signs?",
+    "source": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      25,
+      10
+    ],
+    "expected_concepts": [
+      "disappointment",
+      "apprenticeship",
+      "signs",
+      "first time",
+      "inexperience"
+    ],
+    "expected_quotes": [
+      "Disappointment is a fundamental moment of search or of apprenticeship",
+      "the first time is the time of inexperience",
+      "the object interposes and confuses the signs"
+    ],
+    "label": "ps_disappointment_niche"
+  },
+  {
+    "query": "What is Bergson's method of intuition as described by Deleuze?",
+    "source": "1966 Bergsonism - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      13,
+      14,
+      15
+    ],
+    "expected_concepts": [
+      "intuition",
+      "differences in kind",
+      "method of division",
+      "duration",
+      "composites"
+    ],
+    "expected_quotes": [
+      "perception is not the object plus something but the object minus something",
+      "conditions of real experience",
+      "To open us up to the inhuman and the superhuman"
+    ],
+    "label": "berg_intuition_method_broad"
+  },
+  {
+    "query": "How does Deleuze explain the contemporaneity of past and present in Bergsonism?",
+    "source": "1966 Bergsonism - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      30,
+      38
+    ],
+    "expected_concepts": [
+      "contemporaneous past",
+      "virtual",
+      "coexistence",
+      "levels of contraction",
+      "pure memory"
+    ],
+    "expected_quotes": [
+      "How would a new present come about if the old present did not pass",
+      "The past would never be constituted if it had not been constituted first of all",
+      "the present itself is only the most contracted level of the past"
+    ],
+    "label": "berg_past_present_specific"
+  },
+  {
+    "query": "What is the relationship between repetition and difference according to Deleuze?",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      15,
+      19,
+      36
+    ],
+    "expected_concepts": [
+      "repetition",
+      "difference",
+      "generality",
+      "singularity",
+      "simulacra"
+    ],
+    "expected_quotes": [
+      "Repetition is not generality",
+      "If exchange is the criterion of generality, theft and gift are those of repetition",
+      "The modern world is one of simulacra"
+    ],
+    "label": "dr_repetition_difference_broad"
+  },
+  {
+    "query": "How does Deleuze critique the philosophy of representation in Difference and Repetition?",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      15,
+      45,
+      285
+    ],
+    "expected_concepts": [
+      "representation",
+      "identity",
+      "negative",
+      "difference in itself",
+      "simulacra"
+    ],
+    "expected_quotes": [
+      "The primacy of identity defines the world of representation",
+      "difference and repetition have taken the place of the identical and the negative",
+      "Problems-Ideas are positive multiplicities"
+    ],
+    "label": "dr_critique_representation_specific"
+  },
+  {
+    "query": "What is the concept of individuation in Difference and Repetition?",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      170,
+      285
+    ],
+    "expected_concepts": [
+      "individuation",
+      "intensity",
+      "ground",
+      "pre-individual",
+      "singularities"
+    ],
+    "expected_quotes": [
+      "Individuation as such operates beneath all forms",
+      "inseparable from a pure ground that it brings to the surface",
+      "fields of fluid intensive factors"
+    ],
+    "label": "dr_individuation_niche"
+  },
+  {
+    "query": "What is the Stoic theory of sense and events as presented in The Logic of Sense?",
+    "source": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      10,
+      9
+    ],
+    "expected_concepts": [
+      "incorporeals",
+      "events",
+      "bodies",
+      "sense",
+      "Stoics",
+      "surface effects"
+    ],
+    "expected_quotes": [
+      "They are not things or facts, but events",
+      "causes of certain things of an entirely different nature",
+      "the paradox of infinite identity"
+    ],
+    "label": "ls_stoic_events_broad"
+  },
+  {
+    "query": "How does Deleuze contrast Carroll and Artaud in The Logic of Sense?",
+    "source": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      50,
+      30,
+      40
+    ],
+    "expected_concepts": [
+      "surface",
+      "depth",
+      "portmanteau words",
+      "schizophrenia",
+      "nonsense"
+    ],
+    "expected_quotes": [
+      "I have not produced a translation of Jabberwocky",
+      "the distance separating Carroll and Artaud",
+      "an affected infantilism"
+    ],
+    "label": "ls_carroll_artaud_specific"
+  },
+  {
+    "query": "How does Deleuze distinguish ethics from morality in Spinoza: Practical Philosophy?",
+    "source": "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      17,
+      11
+    ],
+    "expected_concepts": [
+      "ethics",
+      "morality",
+      "law",
+      "knowledge",
+      "immanence",
+      "transcendence"
+    ],
+    "expected_quotes": [
+      "Law does not provide us with any knowledge",
+      "the immanent power that determines the qualitative difference of modes of existence",
+      "In a world consumed by the negative"
+    ],
+    "label": "sp_ethics_morality_broad"
+  },
+  {
+    "query": "What is the role of affects in Spinoza's philosophy according to Deleuze?",
+    "source": "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      30,
+      25,
+      35
+    ],
+    "expected_concepts": [
+      "affects",
+      "joy",
+      "sadness",
+      "power of acting",
+      "conatus",
+      "passions"
+    ],
+    "expected_quotes": [
+      "the passage to a greater perfection is called joy",
+      "the power of acting varies according to external causes",
+      "a diminution of the power of acting is called sadness"
+    ],
+    "label": "sp_affects_specific"
+  },
+  {
+    "query": "How does Deleuze characterize Spinoza's critique of sad passions?",
+    "source": "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      17,
+      11
+    ],
+    "expected_concepts": [
+      "sad passions",
+      "tyrant",
+      "slave",
+      "priest",
+      "resentment",
+      "superstition"
+    ],
+    "expected_quotes": [
+      "The slave, the tyrant, and the priest",
+      "the moralist trinity",
+      "sad spirits need a tyrant in order to be content"
+    ],
+    "label": "sp_sad_passions_niche"
+  },
+  {
+    "query": "What is the concept of desiring-production in Anti-Oedipus?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      14,
+      15,
+      16
+    ],
+    "expected_concepts": [
+      "desiring-machines",
+      "production",
+      "flows",
+      "partial objects",
+      "connections"
+    ],
+    "expected_quotes": [
+      "It is at work everywhere, functioning smoothly at times",
+      "Everywhere it is machines-real ones, not figurative ones",
+      "a process that produces the one within the other"
+    ],
+    "label": "ao_desiring_production_broad"
+  },
+  {
+    "query": "How do Deleuze and Guattari critique Oedipus in Anti-Oedipus?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      41,
+      55
+    ],
+    "expected_concepts": [
+      "Oedipus",
+      "repression",
+      "desire",
+      "unconscious",
+      "free syntheses"
+    ],
+    "expected_quotes": [
+      "the domain of free syntheses where everything is possible",
+      "the whole of desiring-production is crushed",
+      "the reproduction of desire gives way to a simple representation"
+    ],
+    "label": "ao_critique_oedipus_specific"
+  },
+  {
+    "query": "How do Deleuze and Guattari describe the body without organs in Anti-Oedipus?",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      18,
+      19,
+      24
+    ],
+    "expected_concepts": [
+      "body without organs",
+      "desiring-machines",
+      "repulsion",
+      "attraction",
+      "celibate machine"
+    ],
+    "expected_quotes": [
+      "a pure fluid in a free state",
+      "the body without organs exerts later on in the uninterrupted process",
+      "the body without organs that has become a dead thing"
+    ],
+    "label": "ao_bwo_niche"
+  },
+  {
+    "query": "What is the concept of lines in Deleuze's Dialogues?",
+    "source": "1977 Dialogues - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      70,
+      80
+    ],
+    "expected_concepts": [
+      "lines of flight",
+      "rigid segmentarity",
+      "supple lines",
+      "molecular",
+      "molar"
+    ],
+    "expected_quotes": [
+      "we are made up of lines and these lines are very varied in nature",
+      "lines of flight, where the fluxes are combined",
+      "family-profession; job-holiday"
+    ],
+    "label": "dial_lines_broad"
+  },
+  {
+    "query": "How does Deleuze describe the history of philosophy as a form of repression in Dialogues?",
+    "source": "1977 Dialogues - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      14,
+      13
+    ],
+    "expected_concepts": [
+      "history of philosophy",
+      "State philosophy",
+      "intimidation",
+      "thought",
+      "image of thought"
+    ],
+    "expected_quotes": [
+      "A formidable school of intimidation",
+      "The exercise of thought thus conforms to the goals of the real State",
+      "Sartre was our Outside"
+    ],
+    "label": "dial_history_philosophy_specific"
+  },
+  {
+    "query": "What does Deleuze mean by becoming in Dialogues?",
+    "source": "1977 Dialogues - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      30,
+      40,
+      60
+    ],
+    "expected_concepts": [
+      "becoming",
+      "becoming-animal",
+      "minoritarian",
+      "writing",
+      "encounter"
+    ],
+    "expected_quotes": [
+      "writing always encounters a minority which does not write",
+      "animal-becomings in literature which do not consist in talking of one's dog or cat",
+      "an encounter between two reigns, a short-circuit"
+    ],
+    "label": "dial_becoming_niche"
+  },
+  {
+    "query": "What is the rhizome concept as introduced in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      24,
+      25
+    ],
+    "expected_concepts": [
+      "rhizome",
+      "multiplicity",
+      "assemblage",
+      "lines of flight",
+      "deterritorialization"
+    ],
+    "expected_quotes": [
+      "A book has neither object nor subject",
+      "lines of articulation or segmentarity, strata and territories",
+      "There is no difference between what a book talks about and how it is made"
+    ],
+    "label": "atp_rhizome_broad"
+  },
+  {
+    "query": "What is the Body without Organs in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      171,
+      25
+    ],
+    "expected_concepts": [
+      "Body without Organs",
+      "BwO",
+      "intensity",
+      "organs",
+      "plane of consistency",
+      "Artaud"
+    ],
+    "expected_quotes": [
+      "You never reach the Body without Organs",
+      "you are forever attaining it, it is a limit",
+      "there is nothing more useless than an organ"
+    ],
+    "label": "atp_bwo_broad"
+  },
+  {
+    "query": "How do Deleuze and Guattari define the war machine?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      373,
+      244
+    ],
+    "expected_concepts": [
+      "war machine",
+      "State apparatus",
+      "nomad",
+      "exteriority",
+      "Dumezil"
+    ],
+    "expected_quotes": [
+      "The war machine is exterior to the State apparatus",
+      "two heads: the magician-king and the jurist-priest",
+      "A State becomes totalitarian"
+    ],
+    "label": "atp_war_machine_specific"
+  },
+  {
+    "query": "What is micropolitics according to Deleuze and Guattari in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      244,
+      171
+    ],
+    "expected_concepts": [
+      "micropolitics",
+      "segmentarity",
+      "molar",
+      "molecular",
+      "abstract machine",
+      "fascism"
+    ],
+    "expected_quotes": [
+      "A State becomes totalitarian",
+      "simultaneous states of the abstract Machine",
+      "the three lines do not only coexist but transform themselves into one another"
+    ],
+    "label": "atp_micropolitics_niche"
+  },
+  {
+    "query": "What is the concept of sensation in Francis Bacon: The Logic of Sensation?",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      16,
+      25,
+      45
+    ],
+    "expected_concepts": [
+      "sensation",
+      "Figure",
+      "diagram",
+      "haptic",
+      "rhythm"
+    ],
+    "expected_quotes": [
+      "one discovers rhythm as the essence of painting",
+      "Painting has to extract the Figure from the figurative",
+      "The entire body escapes through the screaming mouth"
+    ],
+    "label": "fb_sensation_broad"
+  },
+  {
+    "query": "What is the role of the diagram in Bacon's painting according to Deleuze?",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      118,
+      25
+    ],
+    "expected_concepts": [
+      "diagram",
+      "figuration",
+      "catastrophe",
+      "manual marks",
+      "possibilities of fact"
+    ],
+    "expected_quotes": [
+      "the operative set of asignifying and nonrepresentative lines and zones",
+      "its function is to be suggestive",
+      "introduce possibilities of fact"
+    ],
+    "label": "fb_diagram_specific"
+  },
+  {
+    "query": "What is Bergson's first thesis on movement according to Cinema 1?",
+    "source": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      8,
+      9
+    ],
+    "expected_concepts": [
+      "movement-image",
+      "immobile sections",
+      "any-instant-whatever",
+      "privileged instants",
+      "duration"
+    ],
+    "expected_quotes": [
+      "Cinema does not give us an image to which movement is added",
+      "it immediately gives us a movement-image",
+      "relating movement not to privileged instants but to any-instant-whatever"
+    ],
+    "label": "c1_bergson_theses_broad"
+  },
+  {
+    "query": "How does Deleuze distinguish ancient and modern conceptions of movement in Cinema 1?",
+    "source": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      9,
+      8
+    ],
+    "expected_concepts": [
+      "privileged instants",
+      "any-instant-whatever",
+      "poses",
+      "sections",
+      "dialectic"
+    ],
+    "expected_quotes": [
+      "movement refers to intelligible elements, Forms or Ideas",
+      "the modern scientific revolution has consisted in relating movement",
+      "from formal transcendental elements to immanent material elements"
+    ],
+    "label": "c1_ancient_modern_movement_specific"
+  },
+  {
+    "query": "What is the concept of the new archivist in Deleuze's Foucault?",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      52,
+      93
+    ],
+    "expected_concepts": [
+      "archivist",
+      "statements",
+      "archive",
+      "propositions",
+      "Archaeology of Knowledge"
+    ],
+    "expected_quotes": [
+      "A new archivist has been appointed",
+      "he will deal only with statements",
+      "skimming along in a kind of diagonal line"
+    ],
+    "label": "fouc_archivist_broad"
+  },
+  {
+    "query": "How does Deleuze characterize the relationship between seeing and speaking in Foucault?",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      115,
+      93
+    ],
+    "expected_concepts": [
+      "visible",
+      "articulable",
+      "disjunction",
+      "knowledge",
+      "strata"
+    ],
+    "expected_quotes": [
+      "There is a disjunction between speaking and seeing",
+      "what we see never lies in what we say",
+      "Truth is defined neither by conformity nor common form"
+    ],
+    "label": "fouc_seeing_speaking_specific"
+  },
+  {
+    "query": "What does the fold signify in Deleuze's reading of Leibniz?",
+    "source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      13,
+      14,
+      25
+    ],
+    "expected_concepts": [
+      "fold",
+      "Baroque",
+      "monad",
+      "pleats of matter",
+      "folds in the soul"
+    ],
+    "expected_quotes": [
+      "The Baroque refers not to an essence but rather to an operative function",
+      "the Baroque fold unfurls all the way to infinity",
+      "The condition of closure holds for the infinite opening of the finite"
+    ],
+    "label": "fold_concept_broad"
+  },
+  {
+    "query": "How does Deleuze connect Leibniz's monads to the concept of expression in The Fold?",
+    "source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      25,
+      14
+    ],
+    "expected_concepts": [
+      "monad",
+      "expression",
+      "world",
+      "soul",
+      "closure",
+      "virtuality"
+    ],
+    "expected_quotes": [
+      "the soul is the expression of the world",
+      "the world must be placed in the subject",
+      "This is the torsion that constitutes the fold of the world and of the soul"
+    ],
+    "label": "fold_monad_expression_specific"
+  },
+  {
+    "query": "What is the pure optical situation in Cinema 2?",
+    "source": "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      11,
+      13
+    ],
+    "expected_concepts": [
+      "optical situation",
+      "time-image",
+      "neo-realism",
+      "seer",
+      "sensory-motor"
+    ],
+    "expected_quotes": [
+      "What defines neo-realism is this build-up of purely optical situations",
+      "This is a cinema of the seer and no longer of the agent",
+      "He records rather than reacts"
+    ],
+    "label": "c2_optical_situation_broad"
+  },
+  {
+    "query": "How does Deleuze characterize the crisis of the action-image in Cinema 2?",
+    "source": "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      11,
+      13
+    ],
+    "expected_concepts": [
+      "action-image",
+      "crisis",
+      "opsigns",
+      "sonsigns",
+      "sensory-motor connections"
+    ],
+    "expected_quotes": [
+      "the character has become a kind of viewer",
+      "the slackening of the sensory-motor connections",
+      "opsigns and sonsigns"
+    ],
+    "label": "c2_crisis_action_image_specific"
+  },
+  {
+    "query": "What is the concept in philosophy according to What Is Philosophy?",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      7,
+      12,
+      15
+    ],
+    "expected_concepts": [
+      "concept",
+      "creation",
+      "fabrication",
+      "philosophical personae",
+      "plane of immanence"
+    ],
+    "expected_quotes": [
+      "philosophy is the art of forming, inventing, and fabricating concepts",
+      "Concepts are not waiting for us ready-made",
+      "the concept has nothing whatever to do with a general or abstract idea"
+    ],
+    "label": "wip_concept_broad"
+  },
+  {
+    "query": "What is the plane of immanence in What Is Philosophy?",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      25,
+      50
+    ],
+    "expected_concepts": [
+      "plane of immanence",
+      "infinite movement",
+      "Thought",
+      "Nature",
+      "chaos"
+    ],
+    "expected_quotes": [
+      "The plane of immanence has two facets as Thought and as Nature",
+      "thinking and being are said to be one and the same",
+      "a gigantic shuttle"
+    ],
+    "label": "wip_plane_immanence_specific"
+  },
+  {
+    "query": "How do Deleuze and Guattari distinguish philosophy from science in What Is Philosophy?",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      65,
+      85
+    ],
+    "expected_concepts": [
+      "chaos",
+      "concepts",
+      "functions",
+      "plane of immanence",
+      "plane of reference",
+      "virtual"
+    ],
+    "expected_quotes": [
+      "Chaos is defined not so much by its disorder as by the infinite speed",
+      "philosophy gives consistency to the virtual through concepts",
+      "science gives a reference to the virtual which actualizes it through functions"
+    ],
+    "label": "wip_philosophy_science_broad"
+  },
+  {
+    "query": "How does the concept of becoming differ between The Logic of Sense and A Thousand Plateaus?",
+    "source": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      9,
+      10
+    ],
+    "expected_concepts": [
+      "pure becoming",
+      "becoming-animal",
+      "surface",
+      "simulacrum",
+      "unlimited"
+    ],
+    "expected_quotes": [
+      "the paradox of this pure becoming with its capacity to elude the present",
+      "the younger becoming older than the older",
+      "You never reach the Body without Organs"
+    ],
+    "label": "cross_becoming_ls_atp_comparative"
+  },
+  {
+    "query": "How does Deleuze's treatment of forces connect Nietzsche and Philosophy to Spinoza: Practical Philosophy?",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      11,
+      13
+    ],
+    "expected_concepts": [
+      "active forces",
+      "reactive forces",
+      "power of acting",
+      "affects",
+      "joy",
+      "sadness"
+    ],
+    "expected_quotes": [
+      "The being of force is plural",
+      "the passage to a greater perfection is called joy",
+      "confidence in life, in the power of life"
+    ],
+    "label": "cross_forces_np_sp_comparative"
+  },
+  {
+    "query": "How does the concept of the diagram function across Foucault and Francis Bacon?",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      93,
+      52
+    ],
+    "expected_concepts": [
+      "diagram",
+      "abstract machine",
+      "power",
+      "painting",
+      "asignifying"
+    ],
+    "expected_quotes": [
+      "the operative set of asignifying and nonrepresentative lines",
+      "A new archivist has been appointed",
+      "confinement a secondary element"
+    ],
+    "label": "cross_diagram_fouc_fb_comparative"
+  },
+  {
+    "query": "How does Deleuze's concept of the virtual evolve from Bergsonism to Difference and Repetition?",
+    "source": "1966 Bergsonism - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      50,
+      42
+    ],
+    "expected_concepts": [
+      "virtual",
+      "actual",
+      "possible",
+      "real",
+      "differentiation",
+      "multiplicity"
+    ],
+    "expected_quotes": [
+      "The possible is a false notion",
+      "it is not the real that resembles the possible",
+      "All identities are only simulated"
+    ],
+    "label": "cross_virtual_berg_dr_comparative"
+  },
+  {
+    "query": "How does the concept of the movement-image in Cinema 1 relate to Bergsonism?",
+    "source": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      8,
+      9
+    ],
+    "expected_concepts": [
+      "movement-image",
+      "duration",
+      "mobile sections",
+      "Bergson",
+      "any-instant-whatever"
+    ],
+    "expected_quotes": [
+      "Cinema does not give us an image to which movement is added",
+      "Cinema seems to be the last descendant of this lineage which Bergson traced",
+      "the discovery of the movement-image"
+    ],
+    "label": "cross_movement_c1_berg_comparative"
+  },
+  {
+    "query": "How do Deleuze and Guattari's concepts of deterritorialization develop from Anti-Oedipus to A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      24,
+      244,
+      373
+    ],
+    "expected_concepts": [
+      "deterritorialization",
+      "reterritorialization",
+      "lines of flight",
+      "coding",
+      "decoding"
+    ],
+    "expected_quotes": [
+      "lines of flight, movements of deterritorialization and destratification",
+      "A State becomes totalitarian",
+      "The war machine is exterior to the State apparatus"
+    ],
+    "label": "cross_deterrit_ao_atp_comparative"
+  },
+  {
+    "query": "What is the event according to Deleuze across The Logic of Sense and What Is Philosophy?",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      85,
+      65
+    ],
+    "expected_concepts": [
+      "event",
+      "virtual",
+      "actual",
+      "state of affairs",
+      "pure immanence"
+    ],
+    "expected_quotes": [
+      "The event is not the state of affairs",
+      "a virtual that is real without being actual, ideal without being abstract",
+      "They are not things or facts, but events"
+    ],
+    "label": "cross_event_ls_wip_comparative"
+  },
+  {
+    "query": "How does Deleuze characterize Rossellini's films in Cinema 2?",
+    "source": "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      11
+    ],
+    "expected_concepts": [
+      "neo-realism",
+      "pure optical situation",
+      "Rossellini",
+      "Europe 51",
+      "Stromboli"
+    ],
+    "expected_quotes": [
+      "Rossellini's great quartet",
+      "Germany Year 0 presents a child who visits a foreign country",
+      "she sees, she has learnt to see"
+    ],
+    "label": "c2_rossellini_niche"
+  },
+  {
+    "query": "What role does the scream play in Bacon's paintings according to Deleuze?",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      45,
+      16
+    ],
+    "expected_concepts": [
+      "scream",
+      "smile",
+      "mouth",
+      "body",
+      "disappearance",
+      "hysteria"
+    ],
+    "expected_quotes": [
+      "The entire body escapes through the screaming mouth",
+      "beyond the scream there is the smile",
+      "the hysterical smile"
+    ],
+    "label": "fb_scream_niche"
+  },
+  {
+    "query": "How does Deleuze explain Foucault's analysis of power as distinct from confinement?",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      93,
+      115
+    ],
+    "expected_concepts": [
+      "power",
+      "confinement",
+      "diagram",
+      "discipline",
+      "assemblage"
+    ],
+    "expected_quotes": [
+      "Foucault has always considered confinement a secondary element",
+      "the problem is not one of confinement but concerns the highways",
+      "gauging the degree to which the disciplinary diagram was fulfilled"
+    ],
+    "label": "fouc_power_confinement_niche"
+  },
+  {
+    "query": "What is the significance of the Baroque fold for Deleuze's philosophy?",
+    "source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+    "expected_pages": [
+      13,
+      15,
+      30
+    ],
+    "expected_concepts": [
+      "fold",
+      "Baroque",
+      "pleats of matter",
+      "infinity",
+      "operative function"
+    ],
+    "expected_quotes": [
+      "The Baroque refers not to an essence but rather to an operative function",
+      "the Baroque fold unfurls all the way to infinity",
+      "a flexible or an elastic body still has cohering parts"
+    ],
+    "label": "fold_baroque_significance_niche"
+  }
+]

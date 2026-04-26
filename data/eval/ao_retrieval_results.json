@@ -1,0 +1,213 @@
+{
+  "model": "qwen3-embedding:4b",
+  "top_k": 5,
+  "num_queries": 20,
+  "aggregate": {
+    "mean_precision_at_k": 0.51,
+    "mean_mrr": 0.699,
+    "mean_ndcg_at_k": 0.737,
+    "mean_term_coverage": 0.433
+  },
+  "per_query": [
+    {
+      "query": "How do Deleuze and Guattari describe the fascism that exists within all of us, not just historical fascism?",
+      "precision_at_k": 0.8,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.733,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "7-7",
+      "top_preview": "is more of a\ntactical engagement). And not only historical fascism, the fascism of\nHitler and Mussolini-which was able t"
+    },
+    {
+      "query": "How does Anti-Oedipus relate to ethics, and what does Foucault's preface say about living counter to fascism?",
+      "precision_at_k": 0.8,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.7,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "7-7",
+      "top_preview": "is more of a\ntactical engagement). And not only historical fascism, the fascism of\nHitler and Mussolini-which was able t"
+    },
+    {
+      "query": "How do Deleuze and Guattari use Beckett's Molloy to illustrate the Oedipal questioning of psychoanalysis?",
+      "precision_at_k": 0.4,
+      "mrr": 0.25,
+      "ndcg_at_k": 0.501,
+      "term_coverage": 0.5,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "206-206",
+      "top_preview": "perdu, Bibliothque de la Pleiade (Paris: Gallimard, 1954), Vol. 2, 622\n(emphasis added). (Translators' revised note.)\n16"
+    },
+    {
+      "query": "How does Anti-Oedipus describe the schizophrenic's relationship to codes and genealogical explanations?",
+      "precision_at_k": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.467,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "21-21",
+      "top_preview": "of rejecting\nany attempt to impose on it any sort of triangulation implying that it was\nproduced by parents. How could t"
+    },
+    {
+      "query": "What is Deleuze and Guattari's critique of the idea that fragments can be reassembled into an original unity?",
+      "precision_at_k": 0.2,
+      "mrr": 0.2,
+      "ndcg_at_k": 0.387,
+      "term_coverage": 0.2,
+      "top_source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+      "top_pages": "8-9",
+      "top_preview": "xiv \nTRANSLATOR'\u2019S FOREWORD. \nGuattari), The Fold joins philosophy to the ecology of hypothetical experience. \nIn his st"
+    },
+    {
+      "query": "How does Anti-Oedipus describe the body without organs using Proust's concept of the Whole as a part alongside other parts?",
+      "precision_at_k": 0.8,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.956,
+      "term_coverage": 0.367,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "175-176",
+      "top_preview": "Dicu Mozart et Ie monde des oiseaux (Paris:\nGallirnard, 1971), p. 124: \"Having come of age, he found the means of concea"
+    },
+    {
+      "query": "What does Anti-Oedipus say about psychoanalysts being the carriers of Oedipus and agents of antiproduction?",
+      "precision_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.8,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "74-74",
+      "top_preview": ", this being\na function delegated to the family or one to which the family is\ndelegated.\n(Psychoanalysis has clearly dem"
+    },
+    {
+      "query": "What is the true difference in nature that Anti-Oedipus identifies, as opposed to the difference between the Symbolic and the Imaginary?",
+      "precision_at_k": 0.8,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.633,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "55-55",
+      "top_preview": "of living the Oedipus complex: one that consists in living it, and the other\nthat consists in living according to the st"
+    },
+    {
+      "query": "How does Anti-Oedipus define the question that desire poses, as opposed to questions of meaning?",
+      "precision_at_k": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.4,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "68-68",
+      "top_preview": ", the reform psychoanalyst\nobsessed with the triangle, who wraps the splendid gifts of civilization in\nOedipus-identity,"
+    },
+    {
+      "query": "What does Anti-Oedipus say about Artaud's relationship to literature and schizophrenia?",
+      "precision_at_k": 0.8,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.633,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "80-80",
+      "top_preview": "-OEDIPUS\nliterature. A shrewd critic writes: one need understand nothing of th,e\nconcept of the signifier \"in order to d"
+    },
+    {
+      "query": "How does Anti-Oedipus describe the relationship between alliance, filiation, and primary homosexuality in primitive societies?",
+      "precision_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.7,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "95-95",
+      "top_preview": "of a primary homosexuality between local groups,\nbetween brothers-in-law, co-husbands, childhood partners.\nUnderlining t"
+    },
+    {
+      "query": "How does Anti-Oedipus describe the transformation of the magic triangle of territorial representation under the despotic machine?",
+      "precision_at_k": 0.4,
+      "mrr": 0.333,
+      "ndcg_at_k": 0.571,
+      "term_coverage": 0.467,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "4-5",
+      "top_preview": "\" In what sense capitalism is universal .. The\nsocial machine .. The problem of the socius, coding the flows .. Not\nexch"
+    },
+    {
+      "query": "What does Anti-Oedipus say about capitalism's ability to produce lack where there is always too much?",
+      "precision_at_k": 0.2,
+      "mrr": 0.2,
+      "ndcg_at_k": 0.387,
+      "term_coverage": 0.067,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "5-5",
+      "top_preview": "Human surplus value\nand machinic surplus value. Anti-production. The various aspects of\nthe capitalist immanence \u2022 The f"
+    },
+    {
+      "query": "How does Anti-Oedipus describe Freud's achievement as analogous to Luther and Adam Smith?",
+      "precision_at_k": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_k": 0.0,
+      "term_coverage": 0.1,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "6-7",
+      "top_preview": "At\nthe gates of our world, there was Vietnam, of course, and the first major\nblow to the powers that be. But here, insid"
+    },
+    {
+      "query": "What does Anti-Oedipus identify as the task of schizoanalysis in relation to the theater of representation?",
+      "precision_at_k": 0.8,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.4,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "169-170",
+      "top_preview": "(le deplacanti, the signifier-but none of\nthat constitutes an unconscious material, nor does any of it concern the\nprodu"
+    },
+    {
+      "query": "How does Anti-Oedipus characterize the relationship between psychoanalysis, political economy, and the privatized family?",
+      "precision_at_k": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_k": 0.0,
+      "term_coverage": 0.0,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "65-65",
+      "top_preview": "century Church to twentieth-century capitalist power), if only to see in\nthem parental images of yet another order, asso"
+    },
+    {
+      "query": "What does Anti-Oedipus say about the death instinct and its relationship to capitalism's absorption of surplus value?",
+      "precision_at_k": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.467,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "180-180",
+      "top_preview": ". And we claim the right to a\nradical laxity, a radical incompetence-the right to enter the analyst's\noffice and say it "
+    },
+    {
+      "query": "How does Anti-Oedipus describe the zombie as the only modern myth?",
+      "precision_at_k": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_k": 0.0,
+      "term_coverage": 0.167,
+      "top_source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "top_pages": "447-447",
+      "top_preview": "ielike. \nThe myth of the zombie, of the living dead, is a work myth and not a war \nmyth. Mutilation is a consequence of "
+    },
+    {
+      "query": "How does Anti-Oedipus describe the paranoiac investment and its relationship to social machines and the socius?",
+      "precision_at_k": 0.6,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.947,
+      "term_coverage": 0.533,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "194-195",
+      "top_preview": ", since it is against\nschizophrenia that everything is measured; its peculiar trajectory, its\nneurotic arrests, its perv"
+    },
+    {
+      "query": "What does Anti-Oedipus say about there being no revolutionary or reactionary loves?",
+      "precision_at_k": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "term_coverage": 0.333,
+      "top_source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "top_pages": "195-196",
+      "top_preview": "an index in their\nsocial scope itself. Which does not mean, of course, that one need only\ninvest the poor woman, the mai"
+    }
+  ]
+}

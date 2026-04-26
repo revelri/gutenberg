@@ -1,0 +1,122 @@
+[
+  {
+    "query": "What is a rhizome according to Deleuze and Guattari, and how does it differ from a tree?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [27, 28, 29, 30, 31, 32, 33],
+    "expected_concepts": ["connection", "heterogeneity", "multiplicity", "asignifying rupture", "cartography", "decalcomania", "no unity", "no pivot"],
+    "expected_quotes": ["any point of a rhizome can be connected to anything other", "A rhizome has no beginning or end", "The rhizome is altogether different, a map and not a tracing"],
+    "label": "Rhizome definition"
+  },
+  {
+    "query": "What is the Body without Organs (BwO) and how do you make yourself one?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [170, 171, 172, 173, 174, 175],
+    "expected_concepts": ["limit", "experimentation", "caution", "desire", "intensities", "practice not concept", "Artaud", "dismantling"],
+    "expected_quotes": ["You never reach the Body without Organs", "The BwO is what remains when you take everything away", "it is a limit"],
+    "label": "BwO explanation"
+  },
+  {
+    "query": "How do Deleuze and Guattari distinguish between smooth space and striated space?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [14, 483, 484, 485, 486, 487, 488, 489, 490],
+    "expected_concepts": ["nomad", "State", "gridded", "open-ended", "nomos", "logos", "horizontal plane", "rise up at any point"],
+    "expected_quotes": ["State space is striated, or gridded", "Nomad space is smooth, or open-ended"],
+    "label": "Smooth vs striated"
+  },
+  {
+    "query": "What is the relationship between the orchid and the wasp in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [31],
+    "expected_concepts": ["deterritorialization", "reterritorialization", "becoming", "aparallel evolution", "capture of code", "not imitation"],
+    "expected_quotes": ["The orchid deterritorializes by forming an image", "a becoming-wasp of the orchid and a becoming-orchid of the wasp", "aparallel evolution of two beings that have absolutely nothing to do with each other"],
+    "label": "Orchid and wasp"
+  },
+  {
+    "query": "What does A Thousand Plateaus say about the nature of books and writing?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [24, 25, 26, 32],
+    "expected_concepts": ["assemblage", "no object no subject", "multiplicities", "lines of flight", "rhizome", "not image of world"],
+    "expected_quotes": ["A book has neither object nor subject", "All we talk about are multiplicities, lines, strata and segmentarities", "the book is not an image of the world"],
+    "label": "Nature of books"
+  },
+  {
+    "query": "How does the concept of the war machine relate to the State apparatus in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [351, 352, 353, 387, 388, 389, 390],
+    "expected_concepts": ["exteriority", "irreducibility", "nomad", "smooth space", "Royal science", "minor science", "Archimedes", "Desargues"],
+    "expected_quotes": ["The war machine-book against the State apparatus-book"],
+    "label": "War machine vs State"
+  },
+  {
+    "query": "What is the principle of multiplicity in A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [29, 30],
+    "expected_concepts": ["n-1", "subtracted", "flat", "plane of consistency", "no subject no object", "determinations magnitudes dimensions", "laws of combination"],
+    "expected_quotes": ["Multiplicities are defined by the outside", "always n - 1", "A multiplicity has neither subject nor object"],
+    "label": "Multiplicity principle"
+  },
+  {
+    "query": "What is nomad thought and how does it differ from State philosophy?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [12, 13, 14],
+    "expected_concepts": ["representational thinking", "identity", "difference", "exteriority", "affirmation", "force vs power", "brick vs courthouse"],
+    "expected_quotes": ["Nomad thought does not immure itself in the edifice", "A concept is a brick", "Force arrives from outside to break constraints"],
+    "label": "Nomad thought"
+  },
+  {
+    "query": "How do Deleuze and Guattari use the concept of the refrain (ritournelle)?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [310, 311, 312, 353, 354],
+    "expected_concepts": ["territory", "milieu", "rhythm", "bird song", "deterritorialization", "natal", "assemblage", "cosmic"],
+    "expected_quotes": ["the consistency of a refrain"],
+    "label": "Refrain concept"
+  },
+  {
+    "query": "What is the role of Artaud in Deleuze and Guattari's concept of the Body without Organs?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [170, 171, 172],
+    "expected_concepts": ["judgment of God", "organs", "experimentation", "November 28 1947", "censorship", "repression"],
+    "expected_quotes": ["Artaud declares war on the organs", "there is nothing more useless than an organ"],
+    "label": "Artaud and BwO"
+  },
+  {
+    "query": "What does A Thousand Plateaus say about segmentarity, both rigid and supple?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [232, 233],
+    "expected_concepts": ["molar", "molecular", "binary", "circular", "linear", "concentric", "resonance", "overcoding", "arborescent"],
+    "expected_quotes": ["the segmentarity becomes rigid", "There are no longer n eyes in the sky"],
+    "label": "Segmentarity"
+  },
+  {
+    "query": "How do Deleuze and Guattari describe the relationship between deterritorialization and reterritorialization?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [31, 32],
+    "expected_concepts": ["orchid wasp", "aparallel evolution", "rhizome", "line of flight", "capture of code", "becoming"],
+    "expected_quotes": ["The orchid deterritorializes by forming an image", "the book assures the deterritorialization of the world"],
+    "label": "De/reterritorialization"
+  },
+  {
+    "query": "What is pragmatics or schizoanalysis according to A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [165, 166, 167],
+    "expected_concepts": ["four components", "generative", "transformational", "diagrammatic", "machinic", "abstract machines", "assemblages"],
+    "expected_quotes": ["pragmatics (or schizoanalysis) can be represented by four circular components"],
+    "label": "Pragmatics schizoanalysis"
+  },
+  {
+    "query": "What does Massumi's translator foreword say about how to read A Thousand Plateaus?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [14, 15, 16],
+    "expected_concepts": ["record", "plateau", "open system", "Gregory Bateson", "style", "consistency", "play"],
+    "expected_quotes": ["The question is not: is it true? But: does it work?", "A Thousand Plateaus is conceived as an open system"],
+    "label": "How to read ATP"
+  },
+  {
+    "query": "How do Deleuze and Guattari critique Chomsky's linguistics in the Rhizome chapter?",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "expected_pages": [28, 33],
+    "expected_concepts": ["tree", "dichotomy", "S symbol", "grammaticality", "power marker", "abstract machine", "rhizome vs tree"],
+    "expected_quotes": ["Chomsky's grammaticality, the categorical S symbol that dominates every sentence, is more fundamentally a marker of power than a syntactic marker", "not abstract enough"],
+    "label": "Chomsky critique"
+  }
+]

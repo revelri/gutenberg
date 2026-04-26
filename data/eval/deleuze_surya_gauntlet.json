@@ -1,0 +1,1084 @@
+{
+  "deepseek-r1": {
+    "exact": [
+      {
+        "label": "np_genealogy_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 40,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "np_sense_force_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "np_pluralism_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "np_will_complex_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ps_signs_learning_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 30,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ps_vocation_signs_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ps_art_convergence_thematic",
+        "verbatim": false,
+        "any_passage": false,
+        "pass": false,
+        "match_len": 0,
+        "best_ratio": 0.8,
+        "fuzzy": 0
+      },
+      {
+        "label": "berg_inhuman_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "berg_perception_minus_conceptual",
+        "verbatim": false,
+        "any_passage": false,
+        "pass": false,
+        "match_len": 0,
+        "best_ratio": 0.9,
+        "fuzzy": 0
+      },
+      {
+        "label": "berg_contemporaneous_past_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "dr_opening_famous",
+        "verbatim": false,
+        "any_passage": false,
+        "pass": false,
+        "match_len": 0,
+        "best_ratio": 0.49,
+        "fuzzy": 0
+      },
+      {
+        "label": "dr_theft_gift_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "dr_repress_repeat_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "dr_individuation_ground_niche",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ls_incorporeal_events_famous",
+        "verbatim": false,
+        "any_passage": false,
+        "pass": false,
+        "match_len": 0,
+        "best_ratio": 0.0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ls_pure_becoming_conceptual",
+        "verbatim": false,
+        "any_passage": false,
+        "pass": false,
+        "match_len": 0,
+        "best_ratio": 0.66,
+        "fuzzy": 0
+      },
+      {
+        "label": "ls_artaud_jabberwocky_niche",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 30,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "sp_confidence_life_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "sp_joy_sadness_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "sp_law_knowledge_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ao_opening_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ao_schizo_walk_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ao_man_nature_process_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "ao_free_syntheses_niche",
+        "verbatim": false,
+        "any_passage": true,
+        "pass": true,
+        "match_len": 0,
+        "best_ratio": 0.62,
+        "fuzzy": 0
+      },
+      {
+        "label": "dial_lines_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "dial_deserts_tribes_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "dial_minority_writing_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "atp_opening_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 0,
+        "best_ratio": 0,
+        "fuzzy": 0.97
+      },
+      {
+        "label": "atp_book_no_subject_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "atp_bwo_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "atp_war_machine_axiom_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 0,
+        "best_ratio": 0,
+        "fuzzy": 0.967
+      },
+      {
+        "label": "atp_book_functions_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fb_figure_figurative_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fb_diagram_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fb_screaming_mouth_thematic",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "c1_movement_image_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "c1_cinema_bergson_lineage_niche",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "c1_any_instant_whatever_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fouc_new_archivist_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 30,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fouc_disjunction_seeing_saying_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fouc_confinement_secondary_niche",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fold_baroque_function_famous",
+        "verbatim": false,
+        "any_passage": false,
+        "pass": false,
+        "match_len": 0,
+        "best_ratio": 0.94,
+        "fuzzy": 0
+      },
+      {
+        "label": "fold_closure_finite_infinite_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "fold_chaos_screen_niche",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "c2_neo_realism_optical_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 80,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "c2_character_viewer_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "c2_seer_not_agent_thematic",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "wip_forming_concepts_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "wip_concepts_created_famous",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 50,
+        "best_ratio": 0,
+        "fuzzy": 0
+      },
+      {
+        "label": "wip_chaos_speed_conceptual",
+        "verbatim": true,
+        "any_passage": false,
+        "pass": true,
+        "match_len": 40,
+        "best_ratio": 0,
+        "fuzzy": 0
+      }
+    ],
+    "general": [
+      {
+        "label": "np_genealogy_broad",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "np_active_reactive_specific",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "np_will_to_power_broad",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.25,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "ps_types_signs_broad",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "ps_memory_art_specific",
+        "quotes": 9,
+        "verified": 4,
+        "vrfy_rate": 0.444,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "ps_disappointment_niche",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "berg_intuition_method_broad",
+        "quotes": 8,
+        "verified": 8,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.6,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "berg_past_present_specific",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "dr_repetition_difference_broad",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.4
+      },
+      {
+        "label": "dr_critique_representation_specific",
+        "quotes": 7,
+        "verified": 7,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "dr_individuation_niche",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "ls_stoic_events_broad",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.667
+      },
+      {
+        "label": "ls_carroll_artaud_specific",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.4
+      },
+      {
+        "label": "sp_ethics_morality_broad",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.333
+      },
+      {
+        "label": "sp_affects_specific",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.5
+      },
+      {
+        "label": "sp_sad_passions_niche",
+        "quotes": 8,
+        "verified": 8,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.5
+      },
+      {
+        "label": "ao_desiring_production_broad",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "ao_critique_oedipus_specific",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "ao_bwo_niche",
+        "quotes": 9,
+        "verified": 9,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.4
+      },
+      {
+        "label": "dial_lines_broad",
+        "quotes": 7,
+        "verified": 7,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "dial_history_philosophy_specific",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "dial_becoming_niche",
+        "quotes": 11,
+        "verified": 11,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.4
+      },
+      {
+        "label": "atp_rhizome_broad",
+        "quotes": 10,
+        "verified": 10,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "atp_bwo_broad",
+        "quotes": 8,
+        "verified": 8,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.667
+      },
+      {
+        "label": "atp_war_machine_specific",
+        "quotes": 3,
+        "verified": 2,
+        "vrfy_rate": 0.667,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "atp_micropolitics_niche",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.333
+      },
+      {
+        "label": "fb_sensation_broad",
+        "quotes": 9,
+        "verified": 9,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "fb_diagram_specific",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "c1_bergson_theses_broad",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "c1_ancient_modern_movement_specific",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "fouc_archivist_broad",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "fouc_seeing_speaking_specific",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 1.0
+      },
+      {
+        "label": "fold_concept_broad",
+        "quotes": 6,
+        "verified": 6,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "fold_monad_expression_specific",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.667
+      },
+      {
+        "label": "c2_optical_situation_broad",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "c2_crisis_action_image_specific",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 1.0
+      },
+      {
+        "label": "wip_concept_broad",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "wip_plane_immanence_specific",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "wip_philosophy_science_broad",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.167
+      },
+      {
+        "label": "cross_becoming_ls_atp_comparative",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "cross_forces_np_sp_comparative",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.333
+      },
+      {
+        "label": "cross_diagram_fouc_fb_comparative",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.6
+      },
+      {
+        "label": "cross_virtual_berg_dr_comparative",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.25,
+        "concept_cov": 0.667
+      },
+      {
+        "label": "cross_movement_c1_berg_comparative",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.4
+      },
+      {
+        "label": "cross_deterrit_ao_atp_comparative",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "cross_event_ls_wip_comparative",
+        "quotes": 6,
+        "verified": 6,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.8
+      },
+      {
+        "label": "c2_rossellini_niche",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "fb_scream_niche",
+        "quotes": 3,
+        "verified": 2,
+        "vrfy_rate": 0.667,
+        "page_acc": 0.0,
+        "concept_cov": 0.5
+      },
+      {
+        "label": "fouc_power_confinement_niche",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.2
+      },
+      {
+        "label": "fold_baroque_significance_niche",
+        "quotes": 8,
+        "verified": 8,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 1.0
+      }
+    ],
+    "exhaustive": [
+      {
+        "label": "BwO exhaustive",
+        "quotes": 21,
+        "verified": 15,
+        "vrfy_rate": 0.714,
+        "source_coverage": 0.333,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 5
+      },
+      {
+        "label": "Deterritorialization exhaustive",
+        "quotes": 24,
+        "verified": 24,
+        "vrfy_rate": 1.0,
+        "source_coverage": 0.333,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Multiplicity exhaustive",
+        "quotes": 28,
+        "verified": 28,
+        "vrfy_rate": 1.0,
+        "source_coverage": 0.667,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Virtual/actual exhaustive",
+        "quotes": 24,
+        "verified": 24,
+        "vrfy_rate": 1.0,
+        "source_coverage": 0.667,
+        "term_coverage": 0.75,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Rhizome exhaustive",
+        "quotes": 29,
+        "verified": 20,
+        "vrfy_rate": 0.69,
+        "source_coverage": 0.5,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Sensation exhaustive",
+        "quotes": 26,
+        "verified": 25,
+        "vrfy_rate": 0.962,
+        "source_coverage": 0.5,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Fold exhaustive",
+        "quotes": 27,
+        "verified": 12,
+        "vrfy_rate": 0.444,
+        "source_coverage": 0.5,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Eternal return exhaustive",
+        "quotes": 29,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Diagram exhaustive",
+        "quotes": 22,
+        "verified": 21,
+        "vrfy_rate": 0.955,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Assemblage exhaustive",
+        "quotes": 23,
+        "verified": 11,
+        "vrfy_rate": 0.478,
+        "source_coverage": 0.667,
+        "term_coverage": 0.75,
+        "meets_minimum": true,
+        "min_required": 4
+      }
+    ],
+    "precis": [
+      {
+        "label": "BwO evolution AO\u2192ATP",
+        "quotes": 15,
+        "verified": 13,
+        "vrfy_rate": 0.867,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Repetition DR\u2192Cinema",
+        "quotes": 20,
+        "verified": 2,
+        "vrfy_rate": 0.1,
+        "works_cited": 3,
+        "works_required": 3,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Deterritorialization AO\u2192ATP",
+        "quotes": 13,
+        "verified": 2,
+        "vrfy_rate": 0.154,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Virtual Berg\u2192DR\u2192C2",
+        "quotes": 10,
+        "verified": 10,
+        "vrfy_rate": 1.0,
+        "works_cited": 3,
+        "works_required": 3,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.667,
+        "meets_quotes": true
+      },
+      {
+        "label": "Will to power \u2192 Desire NP\u2192AO",
+        "quotes": 21,
+        "verified": 1,
+        "vrfy_rate": 0.048,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Diagram FB\u2192Foucault\u2192ATP",
+        "quotes": 9,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "works_cited": 3,
+        "works_required": 3,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Sense LS\u2192WIP",
+        "quotes": 6,
+        "verified": 3,
+        "vrfy_rate": 0.5,
+        "works_cited": 0,
+        "works_required": 2,
+        "meets_works": false,
+        "has_drift": true,
+        "stage_coverage": 0.5,
+        "meets_quotes": true
+      },
+      {
+        "label": "Immanence Spinoza\u2192WIP",
+        "quotes": 7,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Fold: Leibniz vs Foucault",
+        "quotes": 12,
+        "verified": 4,
+        "vrfy_rate": 0.333,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 1.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Signs PS\u2192ATP",
+        "quotes": 12,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.5,
+        "meets_quotes": true
+      }
+    ],
+    "elapsed": 3198.9,
+    "cost": 0.603
+  }
+}

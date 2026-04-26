@@ -1,0 +1,86 @@
+=== [1/4] feature_matrix --ablate P0,P5,P7 (deleuze_exact) ===
+2026-04-25 03:43:50,333 INFO Phrase search for 'Concepts are not waiting for u...' found 1 matches via 'waiting for us'
+2026-04-25 03:43:50,362 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:43:50,362 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:43:50,362 INFO retrieval_metrics phase=dense_search ms=12.7
+2026-04-25 03:43:50,362 INFO retrieval_metrics phase=bm25_search ms=82.8
+2026-04-25 03:43:50,362 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:43:50,362 INFO retrieval_metrics phase=rerank ms=22.1
+2026-04-25 03:43:51,396 INFO Phrase search for 'Chaos is defined not so much b...' found 1 matches via 'so much by'
+2026-04-25 03:43:51,430 INFO retrieval_metrics phase=multi_query ms=0.0
+2026-04-25 03:43:51,430 INFO retrieval_metrics phase=embed ms=0.0
+2026-04-25 03:43:51,430 INFO retrieval_metrics phase=dense_search ms=11.0
+2026-04-25 03:43:51,430 INFO retrieval_metrics phase=bm25_search ms=80.9
+2026-04-25 03:43:51,430 INFO retrieval_metrics phase=rrf_merge ms=0.2
+2026-04-25 03:43:51,430 INFO retrieval_metrics phase=rerank ms=25.2
+2026-04-25 03:43:51,432 INFO   all-on          page_hit@5=0.940  source_p@5=1.000  MRR=0.894  lat=636.1ms
+2026-04-25 03:43:51,432 INFO ablation P0: /usr/local/bin/python /app/scripts/eval_contextual_ablation.py --ctx-collection gutenberg-deleuze-corpus --output-json /app/data/eval/contextual_ablation.json
+Traceback (most recent call last):
+  File "/app/scripts/eval_contextual_ablation.py", line 113, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/app/scripts/eval_contextual_ablation.py", line 75, in main
+    from scripts.eval_feature_matrix import load_eval  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+2026-04-25 03:43:51,468 WARNING ablation P0 failed: Command '['/usr/local/bin/python', '/app/scripts/eval_contextual_ablation.py', '--ctx-collection', 'gutenberg-deleuze-corpus', '--output-json', '/app/data/eval/contextual_ablation.json']' returned non-zero exit status 1.
+2026-04-25 03:43:51,468 INFO ablation P5: /usr/local/bin/python /app/scripts/eval_raptor_ablation.py --output-json /app/data/eval/raptor_ablation.json --collection gutenberg-deleuze-corpus
+Traceback (most recent call last):
+  File "/app/scripts/eval_raptor_ablation.py", line 199, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/app/scripts/eval_raptor_ablation.py", line 159, in main
+    from scripts.eval_feature_matrix import load_eval  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+2026-04-25 03:43:51,514 WARNING ablation P5 failed: Command '['/usr/local/bin/python', '/app/scripts/eval_raptor_ablation.py', '--output-json', '/app/data/eval/raptor_ablation.json', '--collection', 'gutenberg-deleuze-corpus']' returned non-zero exit status 1.
+2026-04-25 03:43:51,514 INFO ablation P7: /usr/local/bin/python /app/scripts/eval_graph_ablation.py --output-json /app/data/eval/graph_ablation.json --collection gutenberg-deleuze-corpus
+2026-04-25 03:43:51,538 INFO Loaded 8 multi-entity queries from data/eval/multi_entity_queries.json
+2026-04-25 03:43:51,538 INFO → arm off (graph_boost=False)
+Traceback (most recent call last):
+  File "/app/scripts/eval_graph_ablation.py", line 161, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/app/scripts/eval_graph_ablation.py", line 132, in main
+    off = _run_arm(samples, args.collection, graph_on=False)
+  File "/app/scripts/eval_graph_ablation.py", line 87, in _run_arm
+    from scripts.eval_feature_matrix import override_flags  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+2026-04-25 03:43:51,545 WARNING ablation P7 failed: Command '['/usr/local/bin/python', '/app/scripts/eval_graph_ablation.py', '--output-json', '/app/data/eval/graph_ablation.json', '--collection', 'gutenberg-deleuze-corpus']' returned non-zero exit status 1.
+2026-04-25 03:43:51,546 INFO Wrote data/eval/nightly/2026-04-25_033818_matrix.md and data/eval/nightly/2026-04-25_033818_matrix.json
+
+=== [2/4] eval_contextual_ablation (deleuze_exact ctx vs noctx) ===
+Traceback (most recent call last):
+  File "/app/scripts/eval_contextual_ablation.py", line 113, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/app/scripts/eval_contextual_ablation.py", line 75, in main
+    from scripts.eval_feature_matrix import load_eval  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+
+=== [3/4] eval_raptor_ablation (deleuze_exact + abstractive) ===
+Traceback (most recent call last):
+  File "/app/scripts/eval_raptor_ablation.py", line 199, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/app/scripts/eval_raptor_ablation.py", line 159, in main
+    from scripts.eval_feature_matrix import load_eval  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+
+=== [4/4] eval_graph_ablation (multi_entity_queries) ===
+2026-04-25 03:43:54,261 INFO Loaded 8 multi-entity queries from data/eval/multi_entity_queries.json
+2026-04-25 03:43:54,261 INFO → arm off (graph_boost=False)
+Traceback (most recent call last):
+  File "/app/scripts/eval_graph_ablation.py", line 161, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/app/scripts/eval_graph_ablation.py", line 132, in main
+    off = _run_arm(samples, args.collection, graph_on=False)
+  File "/app/scripts/eval_graph_ablation.py", line 87, in _run_arm
+    from scripts.eval_feature_matrix import override_flags  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+=== DONE ===

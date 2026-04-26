@@ -1,0 +1,232 @@
+{
+  "deepseek-r1": {
+    "exact": [],
+    "general": [],
+    "exhaustive": [
+      {
+        "label": "BwO exhaustive",
+        "quotes": 28,
+        "verified": 27,
+        "vrfy_rate": 0.964,
+        "source_coverage": 0.667,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 5
+      },
+      {
+        "label": "Deterritorialization exhaustive",
+        "quotes": 16,
+        "verified": 16,
+        "vrfy_rate": 1.0,
+        "source_coverage": 1.0,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Multiplicity exhaustive",
+        "quotes": 26,
+        "verified": 16,
+        "vrfy_rate": 0.615,
+        "source_coverage": 1.0,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Virtual/actual exhaustive",
+        "quotes": 22,
+        "verified": 21,
+        "vrfy_rate": 0.955,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Rhizome exhaustive",
+        "quotes": 23,
+        "verified": 2,
+        "vrfy_rate": 0.087,
+        "source_coverage": 1.0,
+        "term_coverage": 0.75,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Sensation exhaustive",
+        "quotes": 28,
+        "verified": 12,
+        "vrfy_rate": 0.429,
+        "source_coverage": 0.5,
+        "term_coverage": 0.75,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Fold exhaustive",
+        "quotes": 22,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "source_coverage": 1.0,
+        "term_coverage": 0.8,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Eternal return exhaustive",
+        "quotes": 32,
+        "verified": 8,
+        "vrfy_rate": 0.25,
+        "source_coverage": 0.5,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Diagram exhaustive",
+        "quotes": 33,
+        "verified": 10,
+        "vrfy_rate": 0.303,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Assemblage exhaustive",
+        "quotes": 27,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "source_coverage": 0.667,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4
+      }
+    ],
+    "precis": [
+      {
+        "label": "BwO evolution AO\u2192ATP",
+        "quotes": 15,
+        "verified": 1,
+        "vrfy_rate": 0.067,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Repetition DR\u2192Cinema",
+        "quotes": 19,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "works_cited": 3,
+        "works_required": 3,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.333,
+        "meets_quotes": true
+      },
+      {
+        "label": "Deterritorialization AO\u2192ATP",
+        "quotes": 16,
+        "verified": 13,
+        "vrfy_rate": 0.812,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.5,
+        "meets_quotes": true
+      },
+      {
+        "label": "Virtual Berg\u2192DR\u2192C2",
+        "quotes": 13,
+        "verified": 2,
+        "vrfy_rate": 0.154,
+        "works_cited": 3,
+        "works_required": 3,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.667,
+        "meets_quotes": true
+      },
+      {
+        "label": "Will to power \u2192 Desire NP\u2192AO",
+        "quotes": 15,
+        "verified": 10,
+        "vrfy_rate": 0.667,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.5,
+        "meets_quotes": true
+      },
+      {
+        "label": "Diagram FB\u2192Foucault\u2192ATP",
+        "quotes": 16,
+        "verified": 2,
+        "vrfy_rate": 0.125,
+        "works_cited": 3,
+        "works_required": 3,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Sense LS\u2192WIP",
+        "quotes": 10,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 1.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Immanence Spinoza\u2192WIP",
+        "quotes": 12,
+        "verified": 3,
+        "vrfy_rate": 0.25,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.0,
+        "meets_quotes": true
+      },
+      {
+        "label": "Fold: Leibniz vs Foucault",
+        "quotes": 12,
+        "verified": 2,
+        "vrfy_rate": 0.167,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 0.5,
+        "meets_quotes": true
+      },
+      {
+        "label": "Signs PS\u2192ATP",
+        "quotes": 16,
+        "verified": 2,
+        "vrfy_rate": 0.125,
+        "works_cited": 2,
+        "works_required": 2,
+        "meets_works": true,
+        "has_drift": true,
+        "stage_coverage": 1.0,
+        "meets_quotes": true
+      }
+    ],
+    "elapsed": 1330.1,
+    "cost": 0.1985
+  }
+}

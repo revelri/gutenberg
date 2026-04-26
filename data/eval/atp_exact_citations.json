@@ -1,0 +1,142 @@
+[
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"The two of us wrote Anti-Oedipus together. Since each of us was several\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 24,
+    "ground_truth": "The two of us wrote Anti-Oedipus together. Since each of us was several, there was already quite a crowd. Here we have made use of everything that came within range, what was closest as well as farthest away.",
+    "label": "Opening line"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"A book has neither object nor subject\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 24,
+    "ground_truth": "A book has neither object nor subject; it is made of variously formed matters, and very different dates and speeds. To attribute the book to a subject is to overlook this working of matters, and the exteriority of their relations.",
+    "label": "Book no subject"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"A rhizome ceaselessly establishes connections between semiotic chains\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 28,
+    "ground_truth": "A rhizome ceaselessly establishes connections between semiotic chains, organizations of power, and circumstances relative to the arts, sciences, and social struggles.",
+    "label": "Rhizome connections"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"The rhizome is altogether different, a map and not a tracing\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 33,
+    "ground_truth": "The rhizome is altogether different, a map and not a tracing. Make a map, not a tracing. The orchid does not reproduce the tracing of the wasp; it forms a map with the wasp, in a rhizome.",
+    "label": "Map not tracing"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"any point of a rhizome can be connected to anything other, and must be\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 28,
+    "ground_truth": "Principles of connection and heterogeneity: any point of a rhizome can be connected to anything other, and must be. This is very different from the tree or root, which plots a point, fixes an order.",
+    "label": "Connection heterogeneity"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"A rhizome may be broken, shattered at a given spot\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 30,
+    "ground_truth": "A rhizome may be broken, shattered at a given spot, but it will start up again on one of its old lines, or on new lines. You can never get rid of ants because they form an animal rhizome that can rebound time and again after most of it has been destroyed.",
+    "label": "Asignifying rupture"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"The orchid deterritorializes by forming an image, a tracing of a wasp\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 31,
+    "ground_truth": "The orchid deterritorializes by forming an image, a tracing of a wasp; but the wasp reterritorializes on that image. The wasp is nevertheless deterritorialized, becoming a piece in the orchid's reproductive apparatus.",
+    "label": "Orchid wasp"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"You never reach the Body without Organs, you can't reach it\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 171,
+    "ground_truth": "You never reach the Body without Organs, you can't reach it, you are forever attaining it, it is a limit. People ask, So what is this BwO?--But you're already on it, scurrying like a vermin, groping like a blind person, or running like a lunatic: desert traveler and nomad of the steppes.",
+    "label": "BwO limit"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"Where psychoanalysis says, Stop, find your self again\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 172,
+    "ground_truth": "Where psychoanalysis says, \"Stop, find your self again,\" we should say instead, \"Let's go further still, we haven't found our BwO yet, we haven't sufficiently dismantled our self.\"",
+    "label": "BwO vs psychoanalysis"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"The BwO is what remains when you take everything away\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 172,
+    "ground_truth": "The BwO is what remains when you take everything away. What you take away is precisely the phantasy, and signifiances and subjectifications as a whole.",
+    "label": "BwO remains"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"Artaud declares war on the organs\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 171,
+    "ground_truth": "On November 28,1947, Artaud declares war on the organs: To be done with the judgment of God, \"for you can tie me up if you wish, but there is nothing more useless than an organ.\"",
+    "label": "Artaud war on organs"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"There is no language in itself, nor are there any linguistic universals\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 28,
+    "ground_truth": "there is no language in itself, nor are there any linguistic universals, only a throng of dialects, patois, slangs, and specialized languages. There is no ideal speaker-listener, any more than there is a homogeneous linguistic community.",
+    "label": "No language in itself"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"Multiplicities are defined by the outside\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 30,
+    "ground_truth": "Multiplicities are defined by the outside: by the abstract line, the line of flight or deterritorialization according to which they change in nature and connect with other multiplicities.",
+    "label": "Multiplicities outside"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"Nomad thought does not immure itself in the edifice\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 13,
+    "ground_truth": "\"Nomad thought\" does not immure itself in the edifice of an ordered interiority; it moves freely in an element of exteriority. It does not repose on identity; it rides difference.",
+    "label": "Nomad thought"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"The question is not: is it true? But: does it work?\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 16,
+    "ground_truth": "The question is not: is it true? But: does it work? What new thoughts does it make it possible to think? What new emotions does it make it possible to feel? What new sensations and perceptions does it open in the body?",
+    "label": "Does it work"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"A concept is a brick. It can be used to build the courthouse of reason\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 13,
+    "ground_truth": "A concept is a brick. It can be used to build the courthouse of reason. Or it can be thrown through the window.",
+    "label": "Concept brick"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"the space of nomad thought is qualitatively different from State space\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 14,
+    "ground_truth": "The space of nomad thought is qualitatively different from State space. Air against earth. State space is \"striated,\" or gridded. Movement in it is confined as by gravity to a horizontal plane",
+    "label": "Nomad vs State space"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"Write, form a rhizome, increase your territory\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 32,
+    "ground_truth": "Conjugate deterritorialized flows. Follow the plants: you start by delimiting a first line consisting of circles of convergence around successive singularities",
+    "label": "Follow the plants"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"Why not walk on your head, sing with your sinuses\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 172,
+    "ground_truth": "Why not walk on your head, sing with your sinuses, see through your skin, breathe with your belly: the simple Thing, the Entity, the full Body, the stationary Voyage, Anorexia, cutaneous Vision, Yoga, Krishna, Love, Experimentation.",
+    "label": "Walk on head"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"the book is not an image of the world. It forms a rhizome with the world\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 32,
+    "ground_truth": "the book is not an image of the world. It forms a rhizome with the world, there is an aparallel evolution of the book and the world; the book assures the deterritorialization of the world, but the world effects a reterritorialization of the book",
+    "label": "Book rhizome world"
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "deepseek-r1": {
+    "exact": [],
+    "general": [],
+    "exhaustive": [
+      {
+        "label": "BwO exhaustive",
+        "quotes": 20,
+        "verified": 4,
+        "vrfy_rate": 0.2,
+        "source_coverage": 0.667,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 5
+      },
+      {
+        "label": "Deterritorialization exhaustive",
+        "quotes": 25,
+        "verified": 25,
+        "vrfy_rate": 1.0,
+        "source_coverage": 0.333,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Multiplicity exhaustive",
+        "quotes": 28,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "source_coverage": 0.667,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Virtual/actual exhaustive",
+        "quotes": 20,
+        "verified": 1,
+        "vrfy_rate": 0.05,
+        "source_coverage": 0.667,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4
+      },
+      {
+        "label": "Rhizome exhaustive",
+        "quotes": 33,
+        "verified": 32,
+        "vrfy_rate": 0.97,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Sensation exhaustive",
+        "quotes": 18,
+        "verified": 17,
+        "vrfy_rate": 0.944,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Fold exhaustive",
+        "quotes": 29,
+        "verified": 29,
+        "vrfy_rate": 1.0,
+        "source_coverage": 0.5,
+        "term_coverage": 0.4,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Eternal return exhaustive",
+        "quotes": 33,
+        "verified": 11,
+        "vrfy_rate": 0.333,
+        "source_coverage": 0.5,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Diagram exhaustive",
+        "quotes": 24,
+        "verified": 6,
+        "vrfy_rate": 0.25,
+        "source_coverage": 0.667,
+        "term_coverage": 0.75,
+        "meets_minimum": true,
+        "min_required": 3
+      },
+      {
+        "label": "Assemblage exhaustive",
+        "quotes": 27,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "source_coverage": 0.333,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4
+      }
+    ],
+    "precis": [],
+    "elapsed": 871.8,
+    "cost": 0.1762
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "single_author": {
+    "mla": {
+      "inline": "(Deleuze 1)",
+      "bibliography": "Deleuze, Gilles. *Difference and Repetition*. Columbia University Press, 1968."
+    },
+    "apa": {
+      "inline": "(Deleuze, 1968, p. 1)",
+      "bibliography": "Deleuze, G. (1968). *Difference and Repetition*. Columbia University Press."
+    },
+    "chicago": {
+      "inline": "Gilles Deleuze, *Difference and Repetition*, 1.",
+      "bibliography": "Deleuze, Gilles. *Difference and Repetition*. New York: Columbia University Press, 1968."
+    },
+    "harvard": {
+      "inline": "(Deleuze 1968, p. 1)",
+      "bibliography": "Deleuze, G. (1968) *Difference and Repetition*. New York: Columbia University Press."
+    },
+    "asa": {
+      "inline": "(Deleuze 1968:1)",
+      "bibliography": "Deleuze, G. 1968. *Difference and Repetition*. New York: Columbia University Press."
+    },
+    "sage": {
+      "inline": "(Deleuze, 1968, p. 1)",
+      "bibliography": "Deleuze, G. (1968). *Difference and Repetition*. Columbia University Press."
+    }
+  },
+  "multi_author": {
+    "mla": {
+      "inline": "(Deleuze and Guattari 24)",
+      "bibliography": "Deleuze, Gilles, and Felix Guattari. *A Thousand Plateaus*. University of Minnesota Press, 1980."
+    },
+    "apa": {
+      "inline": "(Deleuze & Guattari, 1980, p. 24)",
+      "bibliography": "Deleuze, G., & Guattari, F. (1980). *A Thousand Plateaus*. University of Minnesota Press."
+    },
+    "chicago": {
+      "inline": "Gilles Deleuze and Felix Guattari, *A Thousand Plateaus*, 24.",
+      "bibliography": "Deleuze, Gilles, and Felix Guattari. *A Thousand Plateaus*. Minneapolis: University of Minnesota Press, 1980."
+    },
+    "harvard": {
+      "inline": "(Deleuze & Guattari 1980, p. 24)",
+      "bibliography": "Deleuze, G., & Guattari, F. (1980) *A Thousand Plateaus*. Minneapolis: University of Minnesota Press."
+    },
+    "asa": {
+      "inline": "(Deleuze and Guattari 1980:24)",
+      "bibliography": "Deleuze, G., & Guattari, F. 1980. *A Thousand Plateaus*. Minneapolis: University of Minnesota Press."
+    },
+    "sage": {
+      "inline": "(Deleuze and Guattari, 1980, p. 24)",
+      "bibliography": "Deleuze, G., & Guattari, F. (1980). *A Thousand Plateaus*. University of Minnesota Press."
+    }
+  },
+  "three_plus_authors": {
+    "mla": {
+      "inline": "(Deleuze et al. 15)",
+      "bibliography": "Deleuze, Gilles, et al.. *Dialogues*. Columbia University Press, 1987."
+    },
+    "apa": {
+      "inline": "(Deleuze et al., 1987, p. 15)",
+      "bibliography": "Deleuze, G., et al. (1987). *Dialogues*. Columbia University Press."
+    },
+    "chicago": {
+      "inline": "Gilles Deleuze et al., *Dialogues*, 15.",
+      "bibliography": "Deleuze, Gilles, et al.. *Dialogues*. New York: Columbia University Press, 1987."
+    },
+    "harvard": {
+      "inline": "(Deleuze et al. 1987, p. 15)",
+      "bibliography": "Deleuze, G., et al. (1987) *Dialogues*. New York: Columbia University Press."
+    },
+    "asa": {
+      "inline": "(Deleuze et al. 1987:15)",
+      "bibliography": "Deleuze, G., et al. 1987. *Dialogues*. New York: Columbia University Press."
+    },
+    "sage": {
+      "inline": "(Deleuze et al., 1987, p. 15)",
+      "bibliography": "Deleuze, G., et al. (1987). *Dialogues*. Columbia University Press."
+    }
+  },
+  "empty_author": {
+    "mla": {
+      "inline": "(Unknown 5)",
+      "bibliography": ". *Anonymous Work*. Unknown Press, 2000."
+    },
+    "apa": {
+      "inline": "(Unknown, 2000, p. 5)",
+      "bibliography": " (2000). *Anonymous Work*. Unknown Press."
+    },
+    "chicago": {
+      "inline": ", *Anonymous Work*, 5.",
+      "bibliography": ". *Anonymous Work*. Unknown Press, 2000."
+    },
+    "harvard": {
+      "inline": "(Unknown 2000, p. 5)",
+      "bibliography": " (2000) *Anonymous Work*. Unknown Press."
+    },
+    "asa": {
+      "inline": "( 2000:5)",
+      "bibliography": ". 2000. *Anonymous Work*. Unknown Press."
+    },
+    "sage": {
+      "inline": "(, 2000, p. 5)",
+      "bibliography": " (2000). *Anonymous Work*. Unknown Press."
+    }
+  },
+  "year_zero": {
+    "mla": {
+      "inline": "(Spinoza 42)",
+      "bibliography": "Spinoza, Baruch. *Ethics*. Penguin Classics, 0."
+    },
+    "apa": {
+      "inline": "(Spinoza, n.d., p. 42)",
+      "bibliography": "Spinoza, B. (0). *Ethics*. Penguin Classics."
+    },
+    "chicago": {
+      "inline": "Baruch Spinoza, *Ethics*, 42.",
+      "bibliography": "Spinoza, Baruch. *Ethics*. London: Penguin Classics, 0."
+    },
+    "harvard": {
+      "inline": "(Spinoza n.d., p. 42)",
+      "bibliography": "Spinoza, B. (0) *Ethics*. London: Penguin Classics."
+    },
+    "asa": {
+      "inline": "(Spinoza n.d.:42)",
+      "bibliography": "Spinoza, B. 0. *Ethics*. London: Penguin Classics."
+    },
+    "sage": {
+      "inline": "(Spinoza, n.d., p. 42)",
+      "bibliography": "Spinoza, B. (0). *Ethics*. Penguin Classics."
+    }
+  },
+  "page_string": {
+    "mla": {
+      "inline": "(Deleuze ch. 3)",
+      "bibliography": "Deleuze, Gilles. *The Logic of Sense*. Continuum, 1969."
+    },
+    "apa": {
+      "inline": "(Deleuze, 1969, p. ch. 3)",
+      "bibliography": "Deleuze, G. (1969). *The Logic of Sense*. Continuum."
+    },
+    "chicago": {
+      "inline": "Gilles Deleuze, *The Logic of Sense*, ch. 3.",
+      "bibliography": "Deleuze, Gilles. *The Logic of Sense*. London: Continuum, 1969."
+    },
+    "harvard": {
+      "inline": "(Deleuze 1969, p. ch. 3)",
+      "bibliography": "Deleuze, G. (1969) *The Logic of Sense*. London: Continuum."
+    },
+    "asa": {
+      "inline": "(Deleuze 1969:ch. 3)",
+      "bibliography": "Deleuze, G. 1969. *The Logic of Sense*. London: Continuum."
+    },
+    "sage": {
+      "inline": "(Deleuze, 1969, p. ch. 3)",
+      "bibliography": "Deleuze, G. (1969). *The Logic of Sense*. Continuum."
+    }
+  }
+}

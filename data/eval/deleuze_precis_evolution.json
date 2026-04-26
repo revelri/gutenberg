@@ -1,0 +1,379 @@
+[
+  {
+    "query": "Trace the evolution of the concept 'body without organs' from Anti-Oedipus (1972) through A Thousand Plateaus (1980), showing how its meaning shifts from a psychoanalytic critique to a practical ethics. Cite specific passages from each work.",
+    "concept": "body without organs",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "AO: anti-production, repulsion of organs, schizophrenic body",
+      "ATP: experimentation, caution, types of BwO, practical how-to"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 3,
+    "label": "BwO evolution AO→ATP",
+    "expected_entities": [
+      "anti_oedipus",
+      "body_without_organs",
+      "desiring_machines",
+      "felix_guattari",
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "baruch_spinoza",
+      "deterritorialization"
+    ],
+    "expected_concept_spans": [
+      "the body",
+      "a thousand plateaus",
+      "the form",
+      "the subject",
+      "a part",
+      "a process",
+      "félix guattari",
+      "i anti",
+      "the ego",
+      "the machine"
+    ],
+    "min_level_mix": {
+      "L0": 8,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show how Deleuze's treatment of 'repetition' develops from Difference and Repetition through to the cinema books. How does the concept change when applied to film? Provide cited passages demonstrating the shift.",
+    "concept": "repetition",
+    "works_required": [
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "DR: bare vs clothed repetition, difference in itself",
+      "C1: movement-image repetition",
+      "C2: time-image, crystal-image, direct time"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 3,
+    "label": "Repetition DR→Cinema",
+    "expected_entities": [
+      "difference_and_repetition",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "the concept",
+      "a concept",
+      "a difference",
+      "a repetition",
+      "the same",
+      "conceptual difference",
+      "nominal concepts",
+      "the contrary",
+      "the difference",
+      "the form"
+    ],
+    "min_level_mix": {
+      "L0": 9,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Trace how the concept of 'deterritorialization' shifts between Anti-Oedipus and A Thousand Plateaus. In AO it relates to capitalism's decoded flows; in ATP it becomes a general principle of transformation. Cite specific passages showing this drift.",
+    "concept": "deterritorialization",
+    "works_required": [
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "AO: capitalism decodes and deterritorializes flows",
+      "ATP: theorems of deterritorialization, relative vs absolute, reterritorialization"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 3,
+    "label": "Deterritorialization AO→ATP",
+    "expected_entities": [
+      "anti_oedipus",
+      "deterritorialization",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "gilles_deleuze",
+      "desiring_machines",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "the flows",
+      "the movement",
+      "brian massumi",
+      "minnesota press",
+      "the concept",
+      "the contrary",
+      "the discovery",
+      "the essence",
+      "the evolution"
+    ],
+    "min_level_mix": {
+      "L0": 10,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Document the evolution of Deleuze's concept of 'the virtual' from Bergsonism through Difference and Repetition to Cinema 2. Show with citations how the virtual moves from Bergsonian duration to ontological principle to cinematic time.",
+    "concept": "virtual",
+    "works_required": [
+      "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "Bergsonism: virtual as coexistent past, cone of memory",
+      "DR: virtual as differential, Idea, intensive",
+      "C2: crystal-image, virtual-actual circuit"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 3,
+    "label": "Virtual Berg→DR→C2",
+    "expected_entities": [
+      "difference_and_repetition",
+      "multiplicity",
+      "virtual_actual",
+      "gilles_deleuze"
+    ],
+    "expected_concept_spans": [
+      "the form",
+      "the reality",
+      "a multiplicity",
+      "the concept",
+      "the elements",
+      "the extent",
+      "the idea",
+      "the movement",
+      "the past",
+      "the philosophy"
+    ],
+    "min_level_mix": {
+      "L0": 9,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show how Deleuze's engagement with Nietzsche's 'will to power' in Nietzsche and Philosophy (1962) transforms into the concept of 'desire' in Anti-Oedipus (1972). Cite passages from both works demonstrating the conceptual lineage.",
+    "concept": "will to power / desire",
+    "works_required": [
+      "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "NP: will to power as affirmation, active/reactive forces",
+      "AO: desiring-production, desire as production not lack"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 3,
+    "label": "Will to power → Desire NP→AO",
+    "expected_entities": [
+      "gilles_deleuze",
+      "anti_oedipus",
+      "felix_guattari",
+      "becoming",
+      "a_thousand_plateaus"
+    ],
+    "expected_concept_spans": [
+      "the will",
+      "a will",
+      "the eternal return",
+      "the genealogy",
+      "destruction dichotomy",
+      "key works",
+      "nietzsche's philosophy",
+      "nietzsche's relationship",
+      "the creation",
+      "the importance"
+    ],
+    "min_level_mix": {
+      "L0": 7,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Trace the concept of 'the diagram' across Francis Bacon (1981), Foucault (1988), and A Thousand Plateaus (1980). Show how the same term operates differently in painting, power relations, and semiotics. Cite each usage.",
+    "concept": "diagram",
+    "works_required": [
+      "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "1988 Foucault - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "FB: diagram as catastrophe in painting, dismantling cliche",
+      "Foucault: diagram as abstract machine of power",
+      "ATP: diagrammatic component of pragmatics"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 3,
+    "label": "Diagram FB→Foucault→ATP",
+    "expected_entities": [
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "anti_oedipus"
+    ],
+    "expected_concept_spans": [
+      "the diagram",
+      "francis bacon",
+      "the figure",
+      "the painting",
+      "a thousand plateaus",
+      "such a way",
+      "the entire painting",
+      "the same time",
+      "the sensation",
+      "the way"
+    ],
+    "min_level_mix": {
+      "L0": 10,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Document how the concept of 'sense' (sens) develops from The Logic of Sense to What Is Philosophy?. In the former it operates at the surface between propositions and things; in the latter it becomes the event of the concept. Cite passages from both.",
+    "concept": "sense / event",
+    "works_required": [
+      "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "LS: sense as surface effect, incorporeal, event",
+      "WIP: concept as event, plane of immanence"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Sense LS→WIP",
+    "expected_entities": [],
+    "expected_concept_spans": [
+      "the concept",
+      "the event",
+      "the logic",
+      "the proposition",
+      "the surface",
+      "the object",
+      "the sense",
+      "a proposition",
+      "the attribute",
+      "the case"
+    ],
+    "min_level_mix": {
+      "L0": 9,
+      "L1+": 1
+    }
+  },
+  {
+    "query": "Show the evolution of Deleuze's concept of 'immanence' from Spinoza: Practical Philosophy through What Is Philosophy?. Trace how the plane of immanence shifts from an ethical ontology to a philosophical method. Cite both works.",
+    "concept": "immanence / plane of immanence",
+    "works_required": [
+      "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+      "1991 What Is Philosophy - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "Spinoza: immanence as Ethics vs morality, joyful affects",
+      "WIP: plane of immanence as pre-philosophical ground of thought"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Immanence Spinoza→WIP",
+    "expected_entities": [
+      "plane_of_immanence",
+      "baruch_spinoza",
+      "gilles_deleuze",
+      "becoming"
+    ],
+    "expected_concept_spans": [
+      "the plane",
+      "a plane",
+      "the concept",
+      "the contrary",
+      "a concept",
+      "this plane",
+      "a body",
+      "a form",
+      "a philosophy",
+      "a plan"
+    ],
+    "min_level_mix": {
+      "L0": 10,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Trace how 'the fold' operates across The Fold (1988) and the Foucault book (1988). In one it describes Leibnizian metaphysics; in the other it describes subjectivation. Show with citations how the same figure does different philosophical work.",
+    "concept": "fold",
+    "works_required": [
+      "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+      "1988 Foucault - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "Fold: infinite fold of matter and soul, monad, Baroque",
+      "Foucault: fold as subjectivation, inside of the outside"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Fold: Leibniz vs Foucault",
+    "expected_entities": [
+      "difference_and_repetition",
+      "multiplicity"
+    ],
+    "expected_concept_spans": [
+      "the fold",
+      "a result",
+      "an encounter",
+      "the baroque",
+      "the basis",
+      "the conditions",
+      "the importance",
+      "the limit",
+      "the outside",
+      "the problem"
+    ],
+    "min_level_mix": {
+      "L0": 10,
+      "L1+": 0
+    }
+  },
+  {
+    "query": "Document how Deleuze's concept of 'signs' changes from Proust and Signs (1964) to A Thousand Plateaus (1980). In the earlier work signs are objects of an apprenticeship; in the later they become components of regimes. Cite passages showing the transformation.",
+    "concept": "signs",
+    "works_required": [
+      "1964 Proust and Signs - Deleuze, Gilles.pdf",
+      "1980 A Thousand Plateaus - Deleuze, Gilles.pdf"
+    ],
+    "expected_stages": [
+      "PS: four types of signs, apprenticeship, involuntary memory",
+      "ATP: regimes of signs, signifying/post-signifying, pragmatics"
+    ],
+    "min_works_cited": 2,
+    "min_quotes": 2,
+    "label": "Signs PS→ATP",
+    "expected_entities": [
+      "gilles_deleuze",
+      "a_thousand_plateaus",
+      "felix_guattari",
+      "anti_oedipus",
+      "baruch_spinoza",
+      "rhizome"
+    ],
+    "expected_concept_spans": [
+      "a thousand plateaus",
+      "brian massumi",
+      "gilles deleuze",
+      "this book",
+      "felix guattari",
+      "new york",
+      "the world",
+      "maurice blanchot",
+      "minnesota press",
+      "richard howard"
+    ],
+    "min_level_mix": {
+      "L0": 9,
+      "L1+": 1
+    }
+  }
+]

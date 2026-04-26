@@ -1,0 +1,352 @@
+[
+  {
+    "query": "Find the exact passage in Nietzsche and Philosophy: \"Nietzsche creates the new concept of genealogy\"",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 10,
+    "ground_truth": "Nietzsche creates the new concept of genealogy. The philosopher is a genealogist rather than a Kantian tribunal judge or a utilitarian mechanic.",
+    "label": "np_genealogy_famous"
+  },
+  {
+    "query": "Find the exact passage in Nietzsche and Philosophy: \"We will never find the sense of something\"",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 10,
+    "ground_truth": "We will never find the sense of something (of a human, a biological or even a physical phenomenon) if we do not know the force which appropriates the thing, which exploits it, which takes possession of it or is expressed in it.",
+    "label": "np_sense_force_famous"
+  },
+  {
+    "query": "Find the exact passage in Nietzsche and Philosophy: \"Pluralism is the properly philosophical way of thinking\"",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 11,
+    "ground_truth": "Pluralism is the properly philosophical way of thinking, the one invented by philosophy; the only guarantor of freedom in the concrete spirit, the only principle of a violent atheism.",
+    "label": "np_pluralism_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Nietzsche and Philosophy: \"The will is called a complex thing\"",
+    "source": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 13,
+    "ground_truth": "The will is called a complex thing because insofar as it wills it wills obedience — but only a will can obey commands. Thus pluralism finds its immediate corroboration and its chosen ground in the philosophy of the will.",
+    "label": "np_will_complex_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Proust and Signs: \"Learning is essentially concerned with signs\"",
+    "source": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+    "pdf_page": 10,
+    "ground_truth": "Learning is essentially concerned with signs. Signs are the object of a temporal apprenticeship, not of an abstract knowledge. To learn is first of all to consider a substance, an object, a being as if it emitted signs to be deciphered, interpreted.",
+    "label": "ps_signs_learning_famous"
+  },
+  {
+    "query": "Find the exact passage in Proust and Signs: \"One becomes a carpenter only by becoming sensitive to the signs of wood\"",
+    "source": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+    "pdf_page": 10,
+    "ground_truth": "One becomes a carpenter only by becoming sensitive to the signs of wood, a physician by becoming sensitive to the signs of disease. Vocation is always predestination with regard to signs.",
+    "label": "ps_vocation_signs_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Proust and Signs: \"Disappointment is a fundamental moment of sea\"",
+    "source": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+    "pdf_page": 24,
+    "ground_truth": "Disappointment is a fundamental moment of search or of apprenticeship: in each realm of signs, we disappointed when the object does not give us the we were expecting.",
+    "label": "ps_art_convergence_thematic"
+  },
+  {
+    "query": "Find the exact passage in Bergsonism: \"Intuition as Method Duration, Memory, Elan Vital mark the major stages\"",
+    "source": "1966 Bergsonism - Deleuze, Gilles.pdf",
+    "pdf_page": 7,
+    "ground_truth": "Intuition as Method Duration, Memory, Elan Vital mark the major stages of Bergson's philosophy.",
+    "label": "berg_inhuman_famous"
+  },
+  {
+    "query": "Find the exact passage in Bergsonism: \"the discovery of genuine differences in kind\"",
+    "source": "1966 Bergsonism - Deleuze, Gilles.pdf",
+    "pdf_page": 13,
+    "ground_truth": "the discovery of genuine differences in kind; the third, the apprehension of real time.",
+    "label": "berg_perception_minus_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Bergsonism: \"How would a new present come about if the old present did not pass\"",
+    "source": "1966 Bergsonism - Deleuze, Gilles.pdf",
+    "pdf_page": 30,
+    "ground_truth": "How would a new present come about if the old present did not pass at the same time that it is present? How would any present whatsoever pass, if it were not past at the same time as present? The past would never be constituted if it had not been constituted first of all, at the same time that it was present.",
+    "label": "berg_contemporaneous_past_famous"
+  },
+  {
+    "query": "Find the exact passage in Difference and Repetition: \"Repetition is not generality\"",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 19,
+    "ground_truth": "Repetition is not generality. Repetition and generality must be distinguished in several ways. Every formula which implies their confusion is regrettable",
+    "label": "dr_opening_famous"
+  },
+  {
+    "query": "Find the exact passage in Difference and Repetition: \"If exchange is the criterion of generality\"",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 19,
+    "ground_truth": "If exchange is the criterion of generality, theft and gift are those of repetition. There is, therefore, an economic difference between the two.",
+    "label": "dr_theft_gift_famous"
+  },
+  {
+    "query": "Find the exact passage in Difference and Repetition: \"I do not repeat because I repress\"",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 36,
+    "ground_truth": "I do not repeat because I repress. I repress because I repeat, I forget because I repeat. I repress, because I can live certain things or certain experiences only in the mode of repetition.",
+    "label": "dr_repress_repeat_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Difference and Repetition: \"Individuation as such, as it operates beneath all forms\"",
+    "source": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+    "pdf_page": 170,
+    "ground_truth": "Individuation as such, as it operates beneath all forms, is inseparable from a pure ground that it brings to the surface and trails with it. It is difficult to describe this ground, or the terror and attraction it excites.",
+    "label": "dr_individuation_ground_niche"
+  },
+  {
+    "query": "Find the exact passage in The Logic of Sense: \"it is, to the contrary, always expressed by the verb\"",
+    "source": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+    "pdf_page": 10,
+    "ground_truth": "it is, to the contrary, always expressed by the verb, which means that it is not a being, but a way of being",
+    "label": "ls_incorporeal_events_famous"
+  },
+  {
+    "query": "Find the exact passage in The Logic of Sense: \"dissipate ourselves a little, that we be able\"",
+    "source": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+    "pdf_page": 194,
+    "ground_truth": "dissipate ourselves a little, that we be able to be at the surface, that we stretch our skin like a drum, in order that the \"great politics\" begin.",
+    "label": "ls_pure_becoming_conceptual"
+  },
+  {
+    "query": "Find the exact passage in The Logic of Sense: \"I have not produced a translation of Jabberwocky\"",
+    "source": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+    "pdf_page": 50,
+    "ground_truth": "I have not produced a translation of Jabberwocky. I tried to translate a fragment of it, but it bored me. I never liked this poem, which always struck me as an affected infantilism.",
+    "label": "ls_artaud_jabberwocky_niche"
+  },
+  {
+    "query": "Find the exact passage in Spinoza Practical Philosophy: \"In a world consumed by the negative\"",
+    "source": "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 11,
+    "ground_truth": "In a world consumed by the negative, he has enough confidence in life, in the power of life, to challenge death, the murderous appetite of men, the rules of good and evil, of the just and the unjust.",
+    "label": "sp_confidence_life_famous"
+  },
+  {
+    "query": "Find the exact passage in Spinoza Practical Philosophy: \"the passage to a greater perfection, or the increase of the power of acting\"",
+    "source": "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 30,
+    "ground_truth": "The passage to a greater perfection, or the increase of the power of acting, is called an affect, or feeling, of joy; the passage to a lesser perfection or the diminution of the power of acting is called sadness.",
+    "label": "sp_joy_sadness_famous"
+  },
+  {
+    "query": "Find the exact passage in Spinoza Practical Philosophy: \"Law, whether moral or social, does not provide us with any knowledge\"",
+    "source": "1970 Spinoza Practical Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 17,
+    "ground_truth": "Law, whether moral or social, does not provide us with any knowledge; it makes nothing known. At worst, it prevents the formation of knowledge (the law of the tyrant). At best, it prepares for knowledge and makes it possible (the law of Abraham or of Christ).",
+    "label": "sp_law_knowledge_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"It is at work everywhere, functioning smoothly at times\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 14,
+    "ground_truth": "It is at work everywhere, functioning smoothly at times, at other times in fits and starts. It breathes, it heats, it eats. It shits and fucks. What a mistake to have ever said the id. Everywhere it is machines-real ones, not figurative ones: machines driving other machines, machines being driven by other machines, with all the necessary couplings and connections.",
+    "label": "ao_opening_famous"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"A schizophrenic out for a walk is a better model\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 15,
+    "ground_truth": "A schizophrenic out for a walk is a better model than a neurotic lying on the analyst's couch. A breath of fresh air, a relationship with the outside world.",
+    "label": "ao_schizo_walk_famous"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"There is no such thing as either man or nature now\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 15,
+    "ground_truth": "There is no such thing as either man or nature now, only a process that produces the one within the other and couples the machines together. Producing-machines, desiring-machines everywhere, schizophrenic machines, all of species life: the self and the non-self, outside and inside, no longer have any meaning whatsoever.",
+    "label": "ao_man_nature_process_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Anti-Oedipus: \"the domain of free syntheses where everything is possible\"",
+    "source": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+    "pdf_page": 41,
+    "ground_truth": "For what Freud and the first analysts discover is the domain of free syntheses where everything is possible: endless connections, nonexclusive disjunctions, nonspecific conjunctions, partial objects and flows.",
+    "label": "ao_free_syntheses_niche"
+  },
+  {
+    "query": "Find the exact passage in Dialogues: \"Whether we are individuals or groups, we are made up of lines\"",
+    "source": "1977 Dialogues - Deleuze, Gilles.pdf",
+    "pdf_page": 70,
+    "ground_truth": "Whether we are individuals or groups, we are made up of lines and these lines are very varied in nature.",
+    "label": "dial_lines_famous"
+  },
+  {
+    "query": "Find the exact passage in Dialogues: \"We are deserts, but populated by tribes\"",
+    "source": "1977 Dialogues - Deleuze, Gilles.pdf",
+    "pdf_page": 13,
+    "ground_truth": "We are deserts, but populated by tribes, flora and fauna. We pass our time in ordering these tribes, in arranging them in new ways, getting rid of some and encouraging others to prosper.",
+    "label": "dial_deserts_tribes_famous"
+  },
+  {
+    "query": "Find the exact passage in Dialogues: \"In an animal-becoming a man and an animal combine,\"",
+    "source": "1977 Dialogues - Deleuze, Gilles.pdf",
+    "pdf_page": 33,
+    "ground_truth": "In an animal-becoming a man and an animal combine, neither of which resembles the other, neither of which imitates the other, each deterritorializing the other, pushing the line further.",
+    "label": "dial_minority_writing_conceptual"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"The two of us wrote Anti-Oedipus together\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 24,
+    "ground_truth": "The two of us wrote Anti-Oedipus together. Since each of us was several, there was already quite a crowd. Here we have made use of everything that came within range, what was closest as well as farthest away.",
+    "label": "atp_opening_famous"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"A book has neither object nor subject\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 24,
+    "ground_truth": "A book has neither object nor subject; it is made of variously formed matters, and very different dates and speeds. To attribute the book to a subject is to overlook this working of matters, and the exteriority of their relations.",
+    "label": "atp_book_no_subject_famous"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"You never reach the Body without Organs\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 171,
+    "ground_truth": "You never reach the Body without Organs, you can't reach it, you are forever attaining it, it is a limit. People ask, So what is this BwO?—But you're already on it, scurrying like a vermin, groping like a blind person, or running like a lunatic: desert traveler and nomad of the steppes.",
+    "label": "atp_bwo_famous"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"AXIOM I. The war machine is exterior to the State apparatus\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 373,
+    "ground_truth": "AXIOM I. The war machine is exterior to the State apparatus.",
+    "label": "atp_war_machine_axiom_famous"
+  },
+  {
+    "query": "Find the exact passage in A Thousand Plateaus: \"We will never ask what a book means\"",
+    "source": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+    "pdf_page": 25,
+    "ground_truth": "We will never ask what a book means, as signified or signifier; we will not look for anything to understand in it. We will ask what it functions with, in connection with what other things it does or does not transmit intensities, in which other multiplicities its own are inserted and metamorphosed.",
+    "label": "atp_book_functions_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Francis Bacon: \"Painting has to extract the Figure from the figurative\"",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "pdf_page": 25,
+    "ground_truth": "Painting has to extract the Figure from the figurative. But Bacon invokes two developments which seem to indicate that modern painting has a different relation to figuration or illustration than the painting of the past has.",
+    "label": "fb_figure_figurative_famous"
+  },
+  {
+    "query": "Find the exact passage in Francis Bacon: \"The diagram is thus the operative set of asignifying and nonrepresentative lines\"",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "pdf_page": 118,
+    "ground_truth": "The diagram is thus the operative set of asignifying and nonrepresentative lines and zones, line-strokes and color-patches. And the operation of the diagram, its function, says Bacon, is to be 'suggestive.'",
+    "label": "fb_diagram_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Francis Bacon: \"The entire body escapes through the screaming mouth\"",
+    "source": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+    "pdf_page": 45,
+    "ground_truth": "The entire body escapes through the screaming mouth. The body escapes through the round mouth of the Pope or the nurse, as if through an artery.",
+    "label": "fb_screaming_mouth_thematic"
+  },
+  {
+    "query": "Find the exact passage in Cinema 1: \"Cinema does not give us an image to which movement is added\"",
+    "source": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+    "pdf_page": 8,
+    "ground_truth": "Cinema does not give us an image to which movement is added, it immediately gives us a movement-image. It does give us a section, but a section which is mobile, not an immobile section + abstract movement.",
+    "label": "c1_movement_image_famous"
+  },
+  {
+    "query": "Find the exact passage in Cinema 1: \"Cinema seems to be the last descendant of this lineage\"",
+    "source": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+    "pdf_page": 9,
+    "ground_truth": "Cinema seems to be the last descendant of this lineage which Bergson traced. One might conceive of a series of means of translation (train, car aeroplane . . .) and, in parallel, a series of means of expression (diagram, photo, cinema).",
+    "label": "c1_cinema_bergson_lineage_niche"
+  },
+  {
+    "query": "Find the exact passage in Cinema 1: \"the modern scientific revolution has consisted in relating movement not to privileged instants\"",
+    "source": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+    "pdf_page": 9,
+    "ground_truth": "The modern scientific revolution has consisted in relating movement not to privileged instants, but to any-instant-whatever. Although movement was still recomposed, it was no longer recomposed from formal transcendental elements (poses), but from immanent material elements (sections).",
+    "label": "c1_any_instant_whatever_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Foucault: \"A new archivist has been appointed\"",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "pdf_page": 52,
+    "ground_truth": "A new archivist has been appointed. But has anyone actually appointed him? Is he not rather acting on his own instructions?",
+    "label": "fouc_new_archivist_famous"
+  },
+  {
+    "query": "Find the exact passage in Foucault: \"There is a disjunction between speaking and seeing\"",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "pdf_page": 115,
+    "ground_truth": "There is a disjunction between speaking and seeing, between the visible and the articulable: 'what we see never lies in what we say', and vice versa.",
+    "label": "fouc_disjunction_seeing_saying_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Foucault: \"Foucault has always considered confinement a secondary element\"",
+    "source": "1988 Foucault - Deleuze, Gilles.pdf",
+    "pdf_page": 93,
+    "ground_truth": "In fact, Foucault has always considered confinement a secondary element derived from a primary function that was very different in each case: there is no similarity between the way in which the general hospital or the asylum locked up madmen in the seventeenth century and the way prison locked up delinquents in the eighteenth and nineteenth centuries.",
+    "label": "fouc_confinement_secondary_niche"
+  },
+  {
+    "query": "Find the exact passage in The Fold: \"The Baroque refers not to an essence but rather to an operative function\"",
+    "source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+    "pdf_page": 4,
+    "ground_truth": "The Baroque refers not to an essence but rather to an operative function, to a trait. It endlessly produces folds.",
+    "label": "fold_baroque_function_famous"
+  },
+  {
+    "query": "Find the exact passage in The Fold: \"The condition of closure holds for the infinite opening of the finite\"",
+    "source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+    "pdf_page": 25,
+    "ground_truth": "The condition of closure holds for the infinite opening of the finite: it 'finitely represents infinity.' It gives the world the possibility of beginning over and again in each monad.",
+    "label": "fold_closure_finite_infinite_conceptual"
+  },
+  {
+    "query": "Find the exact passage in The Fold: \"Chaos does not exist; it is an abstraction\"",
+    "source": "1988 The Fold Leibniz and the Baroque - Deleuze, Gilles.pdf",
+    "pdf_page": 50,
+    "ground_truth": "Chaos does not exist; it is an abstraction because it is inseparable from a screen that makes something — something rather than nothing — emerge from it.",
+    "label": "fold_chaos_screen_niche"
+  },
+  {
+    "query": "Find the exact passage in Cinema 2: \"What defines neo-realism is this build-up of purely optical situations\"",
+    "source": "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+    "pdf_page": 11,
+    "ground_truth": "What defines neo-realism is this build-up of purely optical situations (and sound ones, although there was no synchronized sound at the start of neo-realism), which are fundamentally distinct from the sensory-motor situations of the action-image in the old realism.",
+    "label": "c2_neo_realism_optical_famous"
+  },
+  {
+    "query": "Find the exact passage in Cinema 2: \"3 The time-image and its subordination to the move\"",
+    "source": "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+    "pdf_page": 3,
+    "ground_truth": "3 The time-image and its subordination to the movement-image -- Montage as indirect representation of time -- Aberrations of movement -- The freeing of the time-image: its direct presentation.",
+    "label": "c2_character_viewer_conceptual"
+  },
+  {
+    "query": "Find the exact passage in Cinema 2: \"This is a cinema of the seer and no longer of the agent\"",
+    "source": "1989 Cinema 2 The Time-Image - Deleuze, Gilles.pdf",
+    "pdf_page": 11,
+    "ground_truth": "This is a cinema of the seer and no longer of the agent.",
+    "label": "c2_seer_not_agent_thematic"
+  },
+  {
+    "query": "Find the exact passage in What Is Philosophy?: \"philosophy is the art of forming, inventing, and fabricating concepts\"",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 7,
+    "ground_truth": "Philosophy is the art of forming, inventing, and fabricating concepts. But the answer not only had to take note of the question, it had to determine its moment, its occasion and circumstances, its landscapes and personae, its conditions and unknowns.",
+    "label": "wip_forming_concepts_famous"
+  },
+  {
+    "query": "Find the exact passage in What Is Philosophy?: \"Concepts are not waiting for us ready-made\"",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 7,
+    "ground_truth": "Concepts are not waiting for us ready-made, like heavenly bodies. There is no heaven for concepts. They must be invented, fabricated, or rather created and would be nothing without their creator's signature.",
+    "label": "wip_concepts_created_famous"
+  },
+  {
+    "query": "Find the exact passage in What Is Philosophy?: \"Chaos is defined not so much by its disorder\"",
+    "source": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+    "pdf_page": 65,
+    "ground_truth": "Chaos is defined not so much by its disorder as by the infinite speed with which every form taking shape in it vanishes. It is a void that is not a nothingness but a virtual, containing all possible particles and drawing out all possible forms, which spring up only to disappear immediately, without consistency or reference, without consequence.",
+    "label": "wip_chaos_speed_conceptual"
+  }
+]

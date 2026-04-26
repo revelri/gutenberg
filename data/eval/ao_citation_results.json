@@ -1,0 +1,2036 @@
+[
+  {
+    "query": "How do Deleuze and Guattari describe the fascism that exists within all of us, not just historical fascism?",
+    "status": "QUOTED",
+    "num_quotes": 18,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.571,
+      "grounded_pdf": 0.657,
+      "ground_truth": 0.04,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " state, thereby perpetuating systems of control.\n\n---\n\n### 2. **Repression as th",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.486,
+        "ground_truth_match": 0.04
+      },
+      {
+        "quote_preview": " but because repression **codes and channels** desire into socially acceptable f",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.04,
+        "grounded_in_pdf": 0.08,
+        "ground_truth_match": 0.025
+      },
+      {
+        "quote_preview": " and the Schizophrenic Process**  \n   - **Desire** is not a fixed entity but a *",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.046,
+        "grounded_in_pdf": 0.085,
+        "ground_truth_match": 0.02
+      },
+      {
+        "quote_preview": " and the Resistance to Fascism**  \n   - The **body without organs** (BwO) is a c",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.085,
+        "grounded_in_pdf": 0.149,
+        "ground_truth_match": 0.031
+      },
+      {
+        "quote_preview": " (i.e., a controlled, repressed subject). Resistance to this involves **reclaimi",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.048,
+        "grounded_in_pdf": 0.077,
+        "ground_truth_match": 0.002
+      },
+      {
+        "quote_preview": " and the Smell of Fascism**  \n   - They critique the **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.568,
+        "grounded_in_pdf": 0.614,
+        "ground_truth_match": 0.028
+      },
+      {
+        "quote_preview": "**\u2014individuals who internalize repression and accept the Oedipal structure as na",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.459,
+        "grounded_in_pdf": 0.481,
+        "ground_truth_match": 0.022
+      },
+      {
+        "quote_preview": "** (a Nietzschean reference) in the ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.571,
+        "grounded_in_pdf": 0.657,
+        "ground_truth_match": 0.006
+      },
+      {
+        "quote_preview": " of society, where repression and control operate covertly.  \n   - The solution ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.44,
+        "grounded_in_pdf": 0.571,
+        "ground_truth_match": 0.035
+      },
+      {
+        "quote_preview": "**\u2014a return to **deterritorialized desire** and **collective action** that resis",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.052,
+        "grounded_in_pdf": 0.072,
+        "ground_truth_match": 0.008
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 48%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 7%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 5%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 11%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 57%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 44%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 61%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.011
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus relate to ethics, and what does Foucault's preface say about living counter to fascism?",
+    "status": "QUOTED",
+    "num_quotes": 4,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.733,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.013,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "desiring-machine",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.625,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.005
+      },
+      {
+        "quote_preview": "lines of flight",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.733,
+        "grounded_in_pdf": 0.8,
+        "ground_truth_match": 0.0
+      },
+      {
+        "quote_preview": "desiring-machines",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.588,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.005
+      },
+      {
+        "quote_preview": "endless, eternal process",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.542,
+        "grounded_in_pdf": 0.792,
+        "ground_truth_match": 0.013
+      }
+    ]
+  },
+  {
+    "query": "How do Deleuze and Guattari use Beckett's Molloy to illustrate the Oedipal questioning of psychoanalysis?",
+    "status": "QUOTED",
+    "num_quotes": 28,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.522,
+      "grounded_pdf": 0.623,
+      "ground_truth": 0.078,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " that divides the subject into three roles: the father (authority), the mother (",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.071,
+        "grounded_in_pdf": 0.113,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": ") challenges the symbolic order\u2019s attempt to stabilize the subject. His narrativ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.1,
+        "grounded_in_pdf": 0.148,
+        "ground_truth_match": 0.029
+      },
+      {
+        "quote_preview": "**  \nIn *Anti-Oedipus*, Deleuze and Guattari introduce the concept of the ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.464,
+        "grounded_in_pdf": 0.623,
+        "ground_truth_match": 0.031
+      },
+      {
+        "quote_preview": " (or *machine d\u00e9sirante*), which represents desire as a dynamic, non-identical f",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.431,
+        "grounded_in_pdf": 0.463,
+        "ground_truth_match": 0.043
+      },
+      {
+        "quote_preview": " desire into the symbolic order, transforming it into a system of repression and",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.437,
+        "grounded_in_pdf": 0.481,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": " who denies fixed identity, rejecting the symbolic structures that psychoanalysi",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.413,
+        "grounded_in_pdf": 0.488,
+        "ground_truth_match": 0.029
+      },
+      {
+        "quote_preview": ") and his refusal to conform to social roles (e.g., his insistence on being a ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.442,
+        "grounded_in_pdf": 0.506,
+        "ground_truth_match": 0.023
+      },
+      {
+        "quote_preview": ") exemplify the desiring-machine\u2019s capacity to escape the Oedipal grid. His narr",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.522,
+        "grounded_in_pdf": 0.6,
+        "ground_truth_match": 0.039
+      },
+      {
+        "quote_preview": " of the self, breaking the hold of the symbolic order and revealing desire as a ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.075,
+        "grounded_in_pdf": 0.13,
+        "ground_truth_match": 0.078
+      },
+      {
+        "quote_preview": " that masks the real forces of desire and power. Molloy\u2019s absurdity\u2014his inabilit",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.058,
+        "grounded_in_pdf": 0.11,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " of the self, where the subject is not bound by the symbolic order but is instea",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.416,
+        "grounded_in_pdf": 0.477,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": " that liberates the subject from the constraints of the Oedipus complex.\n\n---\n\n#",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.098,
+        "grounded_in_pdf": 0.145,
+        "ground_truth_match": 0.031
+      },
+      {
+        "quote_preview": " that flattens the multiplicity of desire. In *Molloy*, the protagonist\u2019s fragme",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.413,
+        "grounded_in_pdf": 0.488,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " that shifts between different voices) challenge the idea of a unified subject. ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.418,
+        "grounded_in_pdf": 0.486,
+        "ground_truth_match": 0.023
+      },
+      {
+        "quote_preview": " that resists symbolic capture.  \n\nBy using *Molloy*, Deleuze and Guattari illus",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.106,
+        "grounded_in_pdf": 0.144,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " that escapes the symbolic order.\n\n---\n\n### Conclusion:  \nDeleuze and Guattari u",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.053,
+        "grounded_in_pdf": 0.111,
+        "ground_truth_match": 0.027
+      },
+      {
+        "quote_preview": " of the self, they challenge the symbolic order and advocate for a radical polit",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.077,
+        "grounded_in_pdf": 0.109,
+        "ground_truth_match": 0.046
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 46%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 39%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 44%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 43%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 47%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 12%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 9%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 41%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 18%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 45%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 42%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.021
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus describe the schizophrenic's relationship to codes and genealogical explanations?",
+    "status": "QUOTED",
+    "num_quotes": 20,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.571,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.063,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " (i.e., trapped within the Oedipal structure) but rather exists in a state of **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.08,
+        "grounded_in_pdf": 0.165,
+        "ground_truth_match": 0.006
+      },
+      {
+        "quote_preview": " that structure desire (e.g., capitalist, familial, or symbolic codes). The schi",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.108,
+        "grounded_in_pdf": 0.206,
+        "ground_truth_match": 0.045
+      },
+      {
+        "quote_preview": "a violence against syntax",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.52,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.005
+      },
+      {
+        "quote_preview": "the Real in itself, beyond or beneath the Symbolic",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.54,
+        "grounded_in_pdf": 0.7,
+        "ground_truth_match": 0.047
+      },
+      {
+        "quote_preview": " by biological factors or family history, arguing instead that such explanations",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.407,
+        "grounded_in_pdf": 0.473,
+        "ground_truth_match": 0.063
+      },
+      {
+        "quote_preview": " Metaphor**: They compare the ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.571,
+        "grounded_in_pdf": 0.643,
+        "ground_truth_match": 0.009
+      },
+      {
+        "quote_preview": " to a biological egg, noting that both have a ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.545,
+        "grounded_in_pdf": 0.614,
+        "ground_truth_match": 0.017
+      },
+      {
+        "quote_preview": " of development but reject the notion that the egg's destiny is determined by ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.487,
+        "grounded_in_pdf": 0.539,
+        "ground_truth_match": 0.02
+      },
+      {
+        "quote_preview": " (like genes). Instead, they emphasize the **fluidity** and **non-deterministic*",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.094,
+        "grounded_in_pdf": 0.128,
+        "ground_truth_match": 0.042
+      },
+      {
+        "quote_preview": " of prior causes but an **emergent phenomenon** within the flows of desiring-pro",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.091,
+        "grounded_in_pdf": 0.136,
+        "ground_truth_match": 0.027
+      },
+      {
+        "quote_preview": " (e.g., rejecting the analyst's ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.533,
+        "grounded_in_pdf": 0.7,
+        "ground_truth_match": 0.009
+      },
+      {
+        "quote_preview": ").  \n   - **Anti-Code Resistance**: The schizophrenic's flows are described as *",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.105,
+        "grounded_in_pdf": 0.12,
+        "ground_truth_match": 0.063
+      },
+      {
+        "quote_preview": " in response to Oedipal reterritorialization).\n\n### 4. **Conclusion**  \nIn *Anti",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.062,
+        "grounded_in_pdf": 0.112,
+        "ground_truth_match": 0.032
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 40%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 41%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 52%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 58%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 51%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 8%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 9%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.004
+      }
+    ]
+  },
+  {
+    "query": "What is Deleuze and Guattari's critique of the idea that fragments can be reassembled into an original unity?",
+    "status": "QUOTED",
+    "num_quotes": 3,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.069,
+      "grounded_pdf": 0.089,
+      "ground_truth": 0.013,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " (e.g., a primordial state or fixed origin) is an illusion. They argue that all ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.037,
+        "grounded_in_pdf": 0.044,
+        "ground_truth_match": 0.002
+      },
+      {
+        "quote_preview": " state of being) is tied to neurotic repression, which seeks to stabilize desire",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.069,
+        "grounded_in_pdf": 0.089,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": " (homo). They reject the notion of a fixed, autonomous subject and instead empha",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.04,
+        "grounded_in_pdf": 0.049,
+        "ground_truth_match": 0.011
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus describe the body without organs using Proust's concept of the Whole as a part alongside other parts?",
+    "status": "QUOTED",
+    "num_quotes": 6,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.449,
+      "grounded_pdf": 0.514,
+      "ground_truth": 0.028,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " (e.g., a desiring-machine) is both a self-contained entity and a node in a larg",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.449,
+        "grounded_in_pdf": 0.505,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " of a single story.\n\n2. **Partial Objects and the Whole**:  \n   Proust's work em",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.08,
+        "grounded_in_pdf": 0.096,
+        "ground_truth_match": 0.009
+      },
+      {
+        "quote_preview": " observes the world without being fully immersed in it, transcending familial an",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.103,
+        "grounded_in_pdf": 0.109,
+        "ground_truth_match": 0.028
+      },
+      {
+        "quote_preview": " a state of pure desiring-production unmediated by social codes. This resonates ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.05,
+        "grounded_in_pdf": 0.066,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 43%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.009
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 7%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.009
+      }
+    ]
+  },
+  {
+    "query": "What does Anti-Oedipus say about psychoanalysts being the carriers of Oedipus and agents of antiproduction?",
+    "status": "QUOTED",
+    "num_quotes": 13,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.443,
+      "grounded_pdf": 0.542,
+      "ground_truth": 0.121,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " the Oedipus complex but **reinforce it** through their practice. They operate w",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.443,
+        "grounded_in_pdf": 0.471,
+        "ground_truth_match": 0.092
+      },
+      {
+        "quote_preview": " (Source 9). By focusing on familial dynamics and internalized parental figures,",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.112,
+        "grounded_in_pdf": 0.138,
+        "ground_truth_match": 0.042
+      },
+      {
+        "quote_preview": " suggesting that the Oedipus complex is a universal, culturally ingrained struct",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.066,
+        "grounded_in_pdf": 0.083,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": "** that traps individuals in dependency, obscuring their **economic and social i",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.415,
+        "grounded_in_pdf": 0.542,
+        "ground_truth_match": 0.058
+      },
+      {
+        "quote_preview": " and the phallus, psychoanalysts **distract from the material conditions** of de",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.12,
+        "grounded_in_pdf": 0.149,
+        "ground_truth_match": 0.03
+      },
+      {
+        "quote_preview": " their economic dependencies, thereby **reinforcing bondage** rather than libera",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.133,
+        "grounded_in_pdf": 0.202,
+        "ground_truth_match": 0.121
+      },
+      {
+        "quote_preview": " (Source 9). They replace the **social field of libidinal investment** with a fo",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.078,
+        "grounded_in_pdf": 0.124,
+        "ground_truth_match": 0.053
+      },
+      {
+        "quote_preview": " (Source 10).  \n\n---\n\n### **3. Revolutionary Implications**  \n- **Schizoanalysis",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.025,
+        "grounded_in_pdf": 0.048,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 42%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 10%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 4%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 47%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 13%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.4,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.024
+      }
+    ]
+  },
+  {
+    "query": "What is the true difference in nature that Anti-Oedipus identifies, as opposed to the difference between the Symbolic and the Imaginary?",
+    "status": "QUOTED",
+    "num_quotes": 9,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.6,
+      "grounded_pdf": 0.8,
+      "ground_truth": 0.095,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " family, and societal norms). It organizes desire through repression and the pro",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.456,
+        "grounded_in_pdf": 0.473,
+        "ground_truth_match": 0.016
+      },
+      {
+        "quote_preview": "). It creates the illusion of a coherent identity through visual and symbolic re",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.406,
+        "grounded_in_pdf": 0.472,
+        "ground_truth_match": 0.032
+      },
+      {
+        "quote_preview": " of desire.\n\nLacan's distinction emphasizes how desire is structured through rep",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.053,
+        "grounded_in_pdf": 0.08,
+        "ground_truth_match": 0.037
+      },
+      {
+        "quote_preview": " of desire, flows of intensity).\n- **Reterritorializing Structures (Symbolic/Ima",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.117,
+        "grounded_in_pdf": 0.165,
+        "ground_truth_match": 0.045
+      },
+      {
+        "quote_preview": ").\n\nThis distinction is **ontological**:\n- **Desiring-production** is **non-repr",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.04,
+        "grounded_in_pdf": 0.094,
+        "ground_truth_match": 0.053
+      },
+      {
+        "quote_preview": "lines of flight",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.6,
+        "grounded_in_pdf": 0.8,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " of desire.\n\nLacan's distinction emphasizes how desire is structured through rep",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.457,
+        "grounded_in_pdf": 0.519,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " of desire, flows of intensity).\n- **Reterritorializing Structures (Symbolic/Ima",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.427,
+        "grounded_in_pdf": 0.524,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": ").\n\nThis distinction is **ontological**:\n- **Desiring-production** is **non-repr",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.568,
+        "grounded_in_pdf": 0.635,
+        "ground_truth_match": 0.095
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus define the question that desire poses, as opposed to questions of meaning?",
+    "status": "QUOTED",
+    "num_quotes": 4,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 1.0,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.021,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "What does this desire signify?",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.6,
+        "grounded_in_pdf": 0.667,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": "body without organs",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " as Oedipal desires (e.g., ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.56,
+        "grounded_in_pdf": 0.72,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": "death of the father",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.0
+      }
+    ]
+  },
+  {
+    "query": "What does Anti-Oedipus say about Artaud's relationship to literature and schizophrenia?",
+    "status": "QUOTED",
+    "num_quotes": 21,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 1.0,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.12,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "deterritorialized",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": "body without organs",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": "psychotic and revolutionary means of escape",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.0
+      },
+      {
+        "quote_preview": "desiring-machines",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.706,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.013
+      },
+      {
+        "quote_preview": "** who breaks grammar and syntax, transforming language into a **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.542,
+        "grounded_in_pdf": 0.559,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": "** (Source 7). His schizophrenia allows him to **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.605,
+        "grounded_in_pdf": 0.651,
+        "ground_truth_match": 0.111
+      },
+      {
+        "quote_preview": "** the Oedipal triangle with new, **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.633,
+        "grounded_in_pdf": 0.833,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": "** divine forms, destabilizing the family\u2019s control over desire.\n\n---\n\n### **4. ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.096,
+        "grounded_in_pdf": 0.11,
+        "ground_truth_match": 0.03
+      },
+      {
+        "quote_preview": "** (Source 10), nourishing a **revolutionary machine** that resists this commodi",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.515,
+        "grounded_in_pdf": 0.515,
+        "ground_truth_match": 0.03
+      },
+      {
+        "quote_preview": "**: Deleuze and Guattari contrast Artaud with figures like Goethe or Breton, who",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.436,
+        "grounded_in_pdf": 0.551,
+        "ground_truth_match": 0.016
+      },
+      {
+        "quote_preview": "** literature (Source 7). Artaud\u2019s schizophrenia rejects this, instead **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.537,
+        "grounded_in_pdf": 0.537,
+        "ground_truth_match": 0.12
+      },
+      {
+        "quote_preview": "** and creating **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.75,
+        "grounded_in_pdf": 0.917,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": "** beyond the family and capitalist systems.\n\n---\n\n### **Conclusion**\nIn **Anti-",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.056,
+        "grounded_in_pdf": 0.115,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": "** central to their critique of the status quo.\n---\n**Citation verification:** 1",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.378,
+        "grounded_in_pdf": 0.454,
+        "ground_truth_match": 0.014
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 64%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 76%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 8%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 54%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 42%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2248 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": "I don\u2019t believe in father / in mother, got no papamummy",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.473,
+        "grounded_in_pdf": 0.582,
+        "ground_truth_match": 0.017
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus describe the relationship between alliance, filiation, and primary homosexuality in primitive societies?",
+    "status": "NO_QUOTES",
+    "scores": {}
+  },
+  {
+    "query": "How does Anti-Oedipus describe the transformation of the magic triangle of territorial representation under the despotic machine?",
+    "status": "QUOTED",
+    "num_quotes": 4,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.441,
+      "grounded_pdf": 0.5,
+      "ground_truth": 0.023,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " of the territory.\n\n---\n\n### 2. **Despotic Machine and Deterritorialization**\nTh",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.067,
+        "grounded_in_pdf": 0.084,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": " that governs the system).\n\n---\n\n### 3. **Reconfiguration of the Magic Triangle*",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.105,
+        "grounded_in_pdf": 0.126,
+        "ground_truth_match": 0.023
+      },
+      {
+        "quote_preview": "), while graphism is transformed into a tool of **control and inscription**. Thi",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.019,
+        "grounded_in_pdf": 0.04,
+        "ground_truth_match": 0.007
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.018
+      }
+    ]
+  },
+  {
+    "query": "What does Anti-Oedipus say about capitalism's ability to produce lack where there is always too much?",
+    "status": "QUOTED",
+    "num_quotes": 3,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.733,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.01,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "inherent tendency",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.647,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": "Surplus Product",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.733,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.0
+      },
+      {
+        "quote_preview": "surplus product,",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.688,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.005
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus describe Freud's achievement as analogous to Luther and Adam Smith?",
+    "status": "QUOTED",
+    "num_quotes": 28,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 1.0,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.056,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " of Desire (Like Luther)**\n- **Luther's Revolution**: Luther challenged the Cath",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.081,
+        "grounded_in_pdf": 0.132,
+        "ground_truth_match": 0.021
+      },
+      {
+        "quote_preview": "**: Deleuze and Guattari argue that Freud's Oedipus complex similarly restructur",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.427,
+        "grounded_in_pdf": 0.48,
+        "ground_truth_match": 0.014
+      },
+      {
+        "quote_preview": " of desire, Freud redefined the subject's relationship to family, power, and soc",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.093,
+        "grounded_in_pdf": 0.128,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": " figure, which becomes a symbolic locus of authority and repression.\n\n- **Repres",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.057,
+        "grounded_in_pdf": 0.119,
+        "ground_truth_match": 0.017
+      },
+      {
+        "quote_preview": " (as noted in Source 10) that masks the true mechanisms of repression.\n\n---\n\n###",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.426,
+        "grounded_in_pdf": 0.511,
+        "ground_truth_match": 0.02
+      },
+      {
+        "quote_preview": " (Like Adam Smith)**\n- **Smith's Economic Revolution**: Adam Smith's *Wealth of ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.394,
+        "grounded_in_pdf": 0.449,
+        "ground_truth_match": 0.056
+      },
+      {
+        "quote_preview": " of the market, where individual self-interest inadvertently serves collective w",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.094,
+        "grounded_in_pdf": 0.131,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": "**: Deleuze and Guattari argue that Freud's psychoanalysis similarly restructure",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.45,
+        "grounded_in_pdf": 0.496,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " (Source 7). Like Smith's market, Freud's model of desire is governed by rules a",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.097,
+        "grounded_in_pdf": 0.157,
+        "ground_truth_match": 0.025
+      },
+      {
+        "quote_preview": " of desire, akin to the market's allocation of resources, where desire is channe",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.059,
+        "grounded_in_pdf": 0.084,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " (as in Source 10) becomes a tool of repression, enforcing symbolic order by fab",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.428,
+        "grounded_in_pdf": 0.465,
+        "ground_truth_match": 0.052
+      },
+      {
+        "quote_preview": " Role of Each Figure**\n- **Luther, Smith, and Freud as Founders of New Paradigms",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.067,
+        "grounded_in_pdf": 0.096,
+        "ground_truth_match": 0.014
+      },
+      {
+        "quote_preview": " (Source 9) that became the central organizing principle of their respective sys",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.076,
+        "grounded_in_pdf": 0.131,
+        "ground_truth_match": 0.022
+      },
+      {
+        "quote_preview": "Desiring-Production",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.009
+      },
+      {
+        "quote_preview": " (e.g., Luther's ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.6,
+        "grounded_in_pdf": 0.667,
+        "ground_truth_match": 0.014
+      },
+      {
+        "quote_preview": "rational self-interest",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.636,
+        "grounded_in_pdf": 0.727,
+        "ground_truth_match": 0.005
+      },
+      {
+        "quote_preview": "cause of the disorder",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.667,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.0
+      },
+      {
+        "quote_preview": " of Oedipus**\nIn *Anti-Oedipus*, the Oedipus complex is not a natural or inevita",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.047,
+        "grounded_in_pdf": 0.071,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 8%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.529,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 43%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.543,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 9%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.529,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 45%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.543,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 40%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.543,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 7%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.529,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 11%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.543,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.529,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 39%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.543,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.018
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 56%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.543,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.018
+      }
+    ]
+  },
+  {
+    "query": "What does Anti-Oedipus identify as the task of schizoanalysis in relation to the theater of representation?",
+    "status": "QUOTED",
+    "num_quotes": 4,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.8,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.066,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "private theater",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.8,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.04
+      },
+      {
+        "quote_preview": "primitive kingdom",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.529,
+        "grounded_in_pdf": 0.765,
+        "ground_truth_match": 0.035
+      },
+      {
+        "quote_preview": " of repression but a **field of lines of escape**. Schizoanalysis must **decode*",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.043,
+        "grounded_in_pdf": 0.074,
+        "ground_truth_match": 0.024
+      },
+      {
+        "quote_preview": " into a **field of productive, unbounded flows**.\n---\n**Citation verification:**",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.412,
+        "grounded_in_pdf": 0.471,
+        "ground_truth_match": 0.066
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus characterize the relationship between psychoanalysis, political economy, and the privatized family?",
+    "status": "QUOTED",
+    "num_quotes": 10,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.441,
+      "grounded_pdf": 0.514,
+      "ground_truth": 0.043,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " that must be filled, thereby reinforcing dependency on the capitalist system (e",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.033,
+        "grounded_in_pdf": 0.036,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": " essay) is critiqued for prioritizing psychic repression over social repression,",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.1,
+        "grounded_in_pdf": 0.164,
+        "ground_truth_match": 0.043
+      },
+      {
+        "quote_preview": " and Capitalist Production**\n- **Desire as a Product of Capitalism**:  \n  Deleuz",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.056,
+        "grounded_in_pdf": 0.089,
+        "ground_truth_match": 0.026
+      },
+      {
+        "quote_preview": " Motive**\n- **Rejecting Oedipus as the Source of Desire**:  \n  The authors rejec",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.107,
+        "grounded_in_pdf": 0.142,
+        "ground_truth_match": 0.037
+      },
+      {
+        "quote_preview": " is a myth perpetuated by psychoanalysis, which obscures the material conditions",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.433,
+        "grounded_in_pdf": 0.466,
+        "ground_truth_match": 0.043
+      },
+      {
+        "quote_preview": " It is always mediated by capitalist structures, making the privatized family an",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.038,
+        "grounded_in_pdf": 0.058,
+        "ground_truth_match": 0.003
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 2%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.016
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 13%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.016
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 3%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.016
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 8%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.016
+      }
+    ]
+  },
+  {
+    "query": "What does Anti-Oedipus say about the death instinct and its relationship to capitalism's absorption of surplus value?",
+    "status": "QUOTED",
+    "num_quotes": 18,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.645,
+      "grounded_pdf": 0.75,
+      "ground_truth": 0.058,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "**  \nDeleuze and Guattari reject Freud's notion of the death instinct as a real,",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.048,
+        "grounded_in_pdf": 0.088,
+        "ground_truth_match": 0.007
+      },
+      {
+        "quote_preview": " System**  \nCapitalism is framed as an **immanent axiomatic** system, distinct f",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.079,
+        "grounded_in_pdf": 0.11,
+        "ground_truth_match": 0.014
+      },
+      {
+        "quote_preview": " of capitalist immanence, introducing ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.556,
+        "grounded_in_pdf": 0.75,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " (e.g., systemic exploitation).  \n\n### 3. **The Death Instinct as a Mechanism of",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.103,
+        "grounded_in_pdf": 0.111,
+        "ground_truth_match": 0.008
+      },
+      {
+        "quote_preview": " antiproduction (e.g., destruction, regression) into its productive processes, u",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.09,
+        "grounded_in_pdf": 0.104,
+        "ground_truth_match": 0.009
+      },
+      {
+        "quote_preview": " but what is desired is already dead (images, commodities).  \n- **Death as a pri",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.114,
+        "grounded_in_pdf": 0.145,
+        "ground_truth_match": 0.017
+      },
+      {
+        "quote_preview": "\n\n### 4. **The ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.5,
+        "grounded_in_pdf": 0.583,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": " and Capitalist Absorption**  \nThe ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.645,
+        "grounded_in_pdf": 0.742,
+        "ground_truth_match": 0.052
+      },
+      {
+        "quote_preview": " (BwO) becomes a site where capitalism appropriates **desiring-production**. Cap",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.483,
+        "grounded_in_pdf": 0.543,
+        "ground_truth_match": 0.028
+      },
+      {
+        "quote_preview": " to the BwO, transforming it into a **recording surface** for surplus value. Thi",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.061,
+        "grounded_in_pdf": 0.074,
+        "ground_truth_match": 0.016
+      },
+      {
+        "quote_preview": " The death instinct, in this context, becomes a **mystified mechanism** that sus",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.198,
+        "grounded_in_pdf": 0.198,
+        "ground_truth_match": 0.058
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 13%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 10%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 5%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 9%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 58%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.019
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 43%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.019
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus describe the zombie as the only modern myth?",
+    "status": "QUOTED",
+    "num_quotes": 11,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 1.0,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.125,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "only modern myth",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.125
+      },
+      {
+        "quote_preview": "desiring-production",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.023
+      },
+      {
+        "quote_preview": "incurable inadequacy of being",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.517,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.015
+      },
+      {
+        "quote_preview": "** of capitalist and patriarchal systems. The zombie, like the Oedipal subject, ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.456,
+        "grounded_in_pdf": 0.544,
+        "ground_truth_match": 0.031
+      },
+      {
+        "quote_preview": "** (Source 10), as it represents the **internalization of power** and the **loss",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.442,
+        "grounded_in_pdf": 0.483,
+        "ground_truth_match": 0.039
+      },
+      {
+        "quote_preview": "** of modern life, where individuals are trapped in a state of **passivity and d",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.052,
+        "grounded_in_pdf": 0.08,
+        "ground_truth_match": 0.022
+      },
+      {
+        "quote_preview": "** (Source 6) that reflects the **internalization of power** in everyday life, w",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.031,
+        "grounded_in_pdf": 0.051,
+        "ground_truth_match": 0.008
+      },
+      {
+        "quote_preview": " reflects the **failure of the Oedipal structure** to liberate individuals, maki",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.103,
+        "grounded_in_pdf": 0.148,
+        "ground_truth_match": 0.027
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 45%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.043
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 49%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.429,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.043
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.441,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.044
+      }
+    ]
+  },
+  {
+    "query": "How does Anti-Oedipus describe the paranoiac investment and its relationship to social machines and the socius?",
+    "status": "QUOTED",
+    "num_quotes": 4,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 0.096,
+      "grounded_pdf": 0.116,
+      "ground_truth": 0.02,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": " figure in Freudian terms) to channel desire into productive and consumable form",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.096,
+        "grounded_in_pdf": 0.116,
+        "ground_truth_match": 0.015
+      },
+      {
+        "quote_preview": "\n\n---\n\n### **2. Relationship to Social Machines**\n- **Social Machines as Tools o",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.04,
+        "grounded_in_pdf": 0.061,
+        "ground_truth_match": 0.01
+      },
+      {
+        "quote_preview": ") that rationalize the system\u2019s control over desire. This delirium is **immediat",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.058,
+        "grounded_in_pdf": 0.055,
+        "ground_truth_match": 0.011
+      },
+      {
+        "quote_preview": " of the revolution).\n- **Schizoid Investment**: \n  - **Resists** the paranoiac\u2019s",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.059,
+        "grounded_in_pdf": 0.058,
+        "ground_truth_match": 0.02
+      }
+    ]
+  },
+  {
+    "query": "What does Anti-Oedipus say about there being no revolutionary or reactionary loves?",
+    "status": "QUOTED",
+    "num_quotes": 10,
+    "scores": {
+      "grounded_cited": 0.0,
+      "grounded_expected": 1.0,
+      "grounded_pdf": 1.0,
+      "ground_truth": 0.026,
+      "page_exact": false,
+      "page_near": false
+    },
+    "quotes": [
+      {
+        "quote_preview": "Desiring-production",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 1.0,
+        "grounded_in_pdf": 1.0,
+        "ground_truth_match": 0.008
+      },
+      {
+        "quote_preview": " of the mother or father) that sustains capitalist and patriarchal systems.\n- **",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.102,
+        "grounded_in_pdf": 0.145,
+        "ground_truth_match": 0.022
+      },
+      {
+        "quote_preview": " desires can be co-opted or neutralized by these systems.\n\n---\n\n### **3. Revolut",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.078,
+        "grounded_in_pdf": 0.106,
+        "ground_truth_match": 0.012
+      },
+      {
+        "quote_preview": " (a space of pure, unstructured desire).\n\n---\n\n### **4. Reactionary Loves and th",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.083,
+        "grounded_in_pdf": 0.131,
+        "ground_truth_match": 0.026
+      },
+      {
+        "quote_preview": " of capitalism by channeling desire into consumption, labor, and hierarchical re",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.073,
+        "grounded_in_pdf": 0.147,
+        "ground_truth_match": 0.022
+      },
+      {
+        "quote_preview": " and the Possibility of Revolution**\n- The **body without organs** (BwO) is a co",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.109,
+        "grounded_in_pdf": 0.17,
+        "ground_truth_match": 0.015
+      },
+      {
+        "quote_preview": ") that resist capitalist and patriarchal control.\n- **Revolutionary loves** are ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.05,
+        "grounded_in_pdf": 0.091,
+        "ground_truth_match": 0.014
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 12%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.457,
+        "grounded_in_pdf": 0.514,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 6%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.471,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.004
+      },
+      {
+        "quote_preview": " \u2014 unverified (similarity: 9%)\n- \u2717 ",
+        "cited_page": null,
+        "grounded_on_cited_page": 0.0,
+        "grounded_on_expected_page": 0.471,
+        "grounded_in_pdf": 0.5,
+        "ground_truth_match": 0.004
+      }
+    ]
+  }
+]

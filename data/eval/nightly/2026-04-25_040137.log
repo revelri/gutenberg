@@ -1,0 +1,9 @@
+=== gutenborg nightly eval @ 2026-04-25T04:01:37-04:00 ===
+project=/home/revelri/Dev/Pipeline/Building/gutenborg  collection=gutenberg-deleuze-corpus
+[1/4] docker compose up -d api worker
+ Container gutenborg-chromadb-1 Running 
+ Container gutenborg-api-1 Running 
+ Container gutenborg-worker-1 Starting 
+ Container gutenborg-worker-1 Started 
+[2/4] mine_eval_golds + augment-precis
+python: can't open file '/app/api/scripts/mine_eval_golds.py': [Errno 2] No such file or directory

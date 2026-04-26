@@ -1,0 +1,1358 @@
+{
+  "gold_path": "data/eval/donut_metadata_gold.json",
+  "extractors": [
+    "regex",
+    "spacy",
+    "ollama",
+    "donut"
+  ],
+  "pages": [
+    {
+      "doc": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Nietzsche and Philosophy",
+        "author": "Gilles Deleuze",
+        "translator": "Hugh Tomlinson",
+        "publisher": "Columbia University Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "Nietzsche and Philosophy",
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson",
+          "publisher": "Columbia University Press",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson",
+          "publisher": "Columbia University Press",
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "Nietzsche and Philosophy",
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson",
+          "publisher": "Columbia University Press",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "nietzsche and philosophiy",
+          "author": "new york",
+          "translator": "hugh tomlinson",
+          "publisher": "columbia university press",
+          "year": "nietzsche and philosophicgills deleuze",
+          "isbn": "columbia university press"
+        }
+      },
+      "latency_sec": {
+        "regex": 6.43660005152924e-05,
+        "spacy": 0.19248108500050876,
+        "ollama": 1.5044302409996817,
+        "donut": 10.540500950999558
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1962 Nietzsche and Philosophy - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Nietzsche and Philosophy",
+        "author": "Gilles Deleuze",
+        "translator": null,
+        "publisher": "Presses Universitaires de France",
+        "year": "1962",
+        "isbn": "0-231-05668-0"
+      },
+      "predictions": {
+        "regex": {
+          "title": "First Aspect of the Eternal Return: as cosmoligical and",
+          "author": "Gilles Deleuze",
+          "translator": null,
+          "publisher": "Columbia University Press",
+          "year": "1962",
+          "isbn": "0-231-05668-0 \n3"
+        },
+        "spacy": {
+          "title": null,
+          "author": "Deleuze",
+          "translator": null,
+          "publisher": "Columbia University Press",
+          "year": "1962",
+          "isbn": "0-231-05668-0 \n3"
+        },
+        "ollama": {
+          "title": "Nietzsche and Philosophy",
+          "author": "Gilles Deleuze",
+          "translator": null,
+          "publisher": "The Athlone Press",
+          "year": "1983",
+          "isbn": "0-231-05668-0"
+        },
+        "donut": {
+          "title": "clients",
+          "author": "nietzsche's terminal return",
+          "translator": "note",
+          "publisher": "the philosophy of the will",
+          "year": "1962",
+          "isbn": "0-231-05668-0"
+        }
+      },
+      "latency_sec": {
+        "regex": 7.43589998819516e-05,
+        "spacy": 0.03005958500034467,
+        "ollama": 1.6877843700003723,
+        "donut": 3.793145741999979
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Proust and Signs",
+        "author": "Gilles Deleuze",
+        "translator": "Richard Howard",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "TEEOBl Ol:'I OF ll Ot.: N DS",
+          "author": "Gilles Deleuze",
+          "translator": "Richard Howard THEORY OUT OF BOUNDS",
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Richard Howard",
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "Theory Out of Bounds, Volume I",
+          "author": null,
+          "translator": "Richard Howard",
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "theory out of bounds",
+          "author": "minneapolis",
+          "translator": "richard howard",
+          "publisher": "the complete text",
+          "year": "17",
+          "isbn": "university of minnesota press"
+        }
+      },
+      "latency_sec": {
+        "regex": 4.43560002167942e-05,
+        "spacy": 0.008396002000154112,
+        "ollama": 1.3869631090001349,
+        "donut": 3.7401020200004496
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1964 Proust and Signs - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Proust and Signs",
+        "author": "Gilles Deleuze",
+        "translator": "Richard Howard",
+        "publisher": "University of Minnesota Press",
+        "year": "2000",
+        "isbn": "0-8166-3257-X"
+      },
+      "predictions": {
+        "regex": {
+          "title": "All rights reserved. No part or this publication may be reproduced, stored in a",
+          "author": "Gilles Deleuze",
+          "translator": null,
+          "publisher": null,
+          "year": "2000",
+          "isbn": "0-8166-3257-X"
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Richard",
+          "publisher": "the University of J\\fumesot",
+          "year": "2000",
+          "isbn": "0-8166-3257-X"
+        },
+        "ollama": {
+          "title": "Proust and signs : the complete text",
+          "author": "Deleuze, Gilles",
+          "translator": "Richard Howard",
+          "publisher": "University of Minnesota Press",
+          "year": "2000",
+          "isbn": "0-8166-3257-X"
+        },
+        "donut": {
+          "title": "contents",
+          "author": "pat ii",
+          "translator": "note",
+          "publisher": "university of minnesota",
+          "year": "1964",
+          "isbn": "university of minnesota"
+        }
+      },
+      "latency_sec": {
+        "regex": 0.000142625000080443,
+        "spacy": 0.040025354999670526,
+        "ollama": 1.8255111110001963,
+        "donut": 3.754902235999907
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "page": 4,
+      "type": "title",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "Bergsonism",
+        "author": "Gilles Deleuze",
+        "translator": "Hugh Tomlinson and Barbara Habberjam",
+        "publisher": "Zone Books",
+        "year": "1991",
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson and Barbara Habberjam",
+          "publisher": "Zone Books",
+          "year": "1991",
+          "isbn": "0-942299-06-X"
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Bergson",
+          "publisher": "The MIT Press Cambridge",
+          "year": "1991",
+          "isbn": "0-942299-06-X"
+        },
+        "ollama": {
+          "title": "Bergsonism",
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson and Barbara Habberjam",
+          "publisher": "ZONE BOOKS",
+          "year": "1991",
+          "isbn": "0-942299-06-X"
+        },
+        "donut": {
+          "title": "translated by hugh tomlinson and barbara habberiam",
+          "author": "zone books",
+          "translator": "hugh tomlinson and barbara habberiam",
+          "publisher": "translated",
+          "year": "1991",
+          "isbn": "zONE books"
+        }
+      },
+      "latency_sec": {
+        "regex": 0.00011839000035251956,
+        "spacy": 0.06375450499945146,
+        "ollama": 2.088680374999967,
+        "donut": 4.099358444000245
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1966 Bergsonism - Deleuze, Gilles.pdf",
+      "page": 5,
+      "type": "copyright",
+      "scan_layout": "2up",
+      "gold": {
+        "title": null,
+        "author": null,
+        "translator": null,
+        "publisher": "Zone Books",
+        "year": "1988",
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson and Barbara Habberjam",
+          "publisher": "Zone Books",
+          "year": "1991",
+          "isbn": "0-942299-06-X"
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Bergson",
+          "publisher": "The MIT Press Cambridge",
+          "year": "1991",
+          "isbn": "0-942299-06-X"
+        },
+        "ollama": {
+          "title": "Bergsonism",
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson and Barbara Habberjam",
+          "publisher": "ZONE BOOKS",
+          "year": "1991",
+          "isbn": "0-942299-06-X"
+        },
+        "donut": {
+          "title": "contents",
+          "author": "1",
+          "translator": "introduction",
+          "publisher": "united states of america",
+          "year": "13",
+          "isbn": "all rights reserved"
+        }
+      },
+      "latency_sec": {
+        "regex": 9.322200003225589e-05,
+        "spacy": 0.05142034300024534,
+        "ollama": 1.826807127000393,
+        "donut": 3.98643081299997
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Difference and Repetition",
+        "author": "Gilles Deleuze",
+        "translator": "Paul Patton",
+        "publisher": "Columbia University Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "Difference and Repetition",
+          "author": "Gilles Deleuze",
+          "translator": "PauiPatton COLUMBIA UNIVERSITY PRESS",
+          "publisher": "Columbia University Press",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze \nDifference",
+          "translator": null,
+          "publisher": "COLUMBIA UNIVERSITY PRESS",
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "Difference and Repetition",
+          "author": "Gilles Deleuze",
+          "translator": "Paul Patton",
+          "publisher": "Columbia University Press",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "gilles deleuze",
+          "author": "columbia university press",
+          "translator": "paul patton",
+          "publisher": "columbia university press",
+          "year": "1978",
+          "isbn": "columbia university press"
+        }
+      },
+      "latency_sec": {
+        "regex": 3.100800040556351e-05,
+        "spacy": 0.005082334999315208,
+        "ollama": 1.4524240299997473,
+        "donut": 3.908174678999785
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1968 Difference and repetition - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Difference and Repetition",
+        "author": "Gilles Deleuze",
+        "translator": "Paul Patton",
+        "publisher": "Columbia University Press",
+        "year": "1994",
+        "isbn": "0-231-08158-8"
+      },
+      "predictions": {
+        "regex": {
+          "title": "the government of France through the French Ministry of Culture in the",
+          "author": "Gilles Deleuze",
+          "translator": "Paul Patton.",
+          "publisher": "Columbia University Press",
+          "year": "1994",
+          "isbn": "0-231-08158-8"
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "Paul Patton",
+          "publisher": "Columbia University Press \nNew York",
+          "year": "1994",
+          "isbn": "0-231-08158-8"
+        },
+        "ollama": {
+          "title": "Difference and repetition",
+          "author": "Gilles Deleuze",
+          "translator": "Paul Patton",
+          "publisher": "The Athlone Press Limited",
+          "year": "1994",
+          "isbn": "0-231-08158-8"
+        },
+        "donut": {
+          "title": "columbia university press",
+          "author": "cip",
+          "translator": "english",
+          "publisher": "the publishers wish to express their appreciation of assistance given by the government of france through the french ministry of culture in the preparation of this translation",
+          "year": "1968",
+          "isbn": "c10987654321"
+        }
+      },
+      "latency_sec": {
+        "regex": 5.661300019710325e-05,
+        "spacy": 0.021439779000502313,
+        "ollama": 1.600649875000272,
+        "donut": 4.021910754999226
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1969 The Logic of Sense - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "The Logic of Sense",
+        "author": "Gilles Deleuze",
+        "translator": "Mark Lester",
+        "publisher": "The Athlone Press",
+        "year": "1990",
+        "isbn": "0-485-30063-X"
+      },
+      "predictions": {
+        "regex": {
+          "title": "Platonic distinction between limited things and becoming-mad-Infinite i",
+          "author": "Gilles Deleuze",
+          "translator": null,
+          "publisher": "Columbia University Press",
+          "year": "1990",
+          "isbn": "0-485-30063-X"
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "Mark Lester",
+          "publisher": "Columbia University Press Originally",
+          "year": "1990",
+          "isbn": "0-485-30063-X"
+        },
+        "ollama": {
+          "title": "The Logic Of Sense",
+          "author": "Gilles Deleuze",
+          "translator": "Mark Lester, WITH Charles Stivale",
+          "publisher": "Columbia University Press, The Athlone Press",
+          "year": "1990",
+          "isbn": "0-485-30063-X"
+        },
+        "donut": {
+          "title": "contents",
+          "author": "professor lewis carroll to the stoics",
+          "translator": "deluxe, gilles, 1925",
+          "publisher": "great britain",
+          "year": "1990",
+          "isbn": "private: from lewis carroll to the stoics"
+        }
+      },
+      "latency_sec": {
+        "regex": 5.83159999223426e-05,
+        "spacy": 0.062074254999970435,
+        "ollama": 2.198530597000172,
+        "donut": 4.1016985050000585
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Anti-Oedipus: Capitalism and Schizophrenia",
+        "author": "Gilles Deleuze and Felix Guattari",
+        "translator": "Robert Hurley, Mark Seem, and Helen R. Lane",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "hy Gilles lleleuze and Felix Buattari",
+          "author": null,
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": null,
+          "publisher": "University of Minnesota Press\ns~ Minneapolis",
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "Capitalism and Schizophrenia",
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "anti- pedialsm and schizophrenia",
+          "author": "willes deleuze and felix guarti",
+          "translator": "gilles deleuze and felix guarti",
+          "publisher": "university of minnesota press",
+          "year": "1954",
+          "isbn": "university of minnesota press"
+        }
+      },
+      "latency_sec": {
+        "regex": 4.6471000132441986e-05,
+        "spacy": 0.008407326999986253,
+        "ollama": 1.5869186820000323,
+        "donut": 3.8629143539992583
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1972 Anti-Oedipus Capitalism and Schizophr - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Anti-Oedipus",
+        "author": "Gilles Deleuze",
+        "translator": null,
+        "publisher": "University of Minnesota Press",
+        "year": "1983",
+        "isbn": "0-8166-1225-0"
+      },
+      "predictions": {
+        "regex": {
+          "title": "Printed in the United States of America on acid-free paper",
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": "Richard Howard. Copyright",
+          "publisher": "University of Minnesota Press",
+          "year": "1972",
+          "isbn": "0-8166-1225-0"
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "Richard Howard",
+          "publisher": "the University of Minnesota Press",
+          "year": "1983",
+          "isbn": "0-8166-1225-0"
+        },
+        "ollama": {
+          "title": "Anti-Oedipus",
+          "author": "Deleuze, Gilles.",
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": "1983",
+          "isbn": "0-8166-1225-0"
+        },
+        "donut": {
+          "title": "contents",
+          "author": "e. r. leach",
+          "translator": "l'anti-ocide",
+          "publisher": "university of minnesota",
+          "year": "1983",
+          "isbn": "8166-1225-0(pk)"
+        }
+      },
+      "latency_sec": {
+        "regex": 6.795999979658518e-05,
+        "spacy": 0.03966834699986066,
+        "ollama": 1.7331526919997486,
+        "donut": 3.7535458569991533
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1977 Dialogues - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "title",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "Dialogues",
+        "author": "Gilles Deleuze and Claire Parnet",
+        "translator": "Hugh Tomlinson and Barbara Habberjam",
+        "publisher": null,
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": null,
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": "Hugh Tomlinson and Barbara Habberjam Gilles Deleuze",
+          "publisher": "Columbia University Press",
+          "year": "1977",
+          "isbn": "0-231-06601-5 2430"
+        },
+        "spacy": {
+          "title": null,
+          "author": "Barbara Habberjam Gilles Deleuze",
+          "translator": "Hugh Tomlinson",
+          "publisher": "The Athlone Press All",
+          "year": "1977",
+          "isbn": "0-231-06601-5 2430"
+        },
+        "ollama": {
+          "title": "Dialogues",
+          "author": "Gilles Deleuze and Claire Parnet",
+          "translator": "Hugh Tomlinson and Barbara Habberjam",
+          "publisher": "Columbia University Press/New York",
+          "year": "1977",
+          "isbn": "0-231-06601-5"
+        },
+        "donut": {
+          "title": "dialogues",
+          "author": "barbara habberjam",
+          "translator": "hugh tomlinson and barbara habberjam",
+          "publisher": "barbara habberjam",
+          "year": "1998",
+          "isbn": "barbara habberjam"
+        }
+      },
+      "latency_sec": {
+        "regex": 5.406600030255504e-05,
+        "spacy": 0.05779179700039094,
+        "ollama": 2.246094740999979,
+        "donut": 4.10431786800018
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "page": 4,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "A Thousand Plateaus: Capitalism and Schizophrenia",
+        "author": "Gilles Deleuze, Felix Guattari",
+        "translator": "Brian Massumi",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "Capitalism and",
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "A Thousand Plateaus",
+          "author": "Gilles Deleuze, Felix Guattari",
+          "translator": "Brian Massumi",
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "a thousand plateaus capitalism and schizophrenia",
+          "author": "brian massumi",
+          "translator": "brian massumi",
+          "publisher": "university of minnesota press",
+          "year": "1978",
+          "isbn": "university of minnesota press"
+        }
+      },
+      "latency_sec": {
+        "regex": 3.1304000003729016e-05,
+        "spacy": 0.003986651000559505,
+        "ollama": 1.5808755790003488,
+        "donut": 4.033800126000642
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1980 A Thousand Plateaus - Deleuze, Gilles.pdf",
+      "page": 5,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "A Thousand Plateaus",
+        "author": "Gilles Deleuze",
+        "translator": "Brian Massumi",
+        "publisher": "University of Minnesota Press",
+        "year": "1987",
+        "isbn": "0-8166-1401-6"
+      },
+      "predictions": {
+        "regex": {
+          "title": "reserved. No part of this publication may be reproduced, stored in a",
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": "1987",
+          "isbn": "0-8166-1401-6"
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": null,
+          "publisher": "The University of Minnesota Press",
+          "year": "1987",
+          "isbn": "0-8166-1401-6"
+        },
+        "ollama": {
+          "title": "A thousand plateaus: capitalism and schizophrenia",
+          "author": "Gilles Deleuze, Felix Guattari",
+          "translator": "Brian Massumi",
+          "publisher": "University of Minnesota Press",
+          "year": "1987",
+          "isbn": "0-8166-1401-6"
+        },
+        "donut": {
+          "title": "the university of minnesota press gratefully",
+          "author": "the university of minnesota press gratefully",
+          "translator": "mille plateaux",
+          "publisher": "the university of minnesota press",
+          "year": "1995",
+          "isbn": "0-8166-1401-6"
+        }
+      },
+      "latency_sec": {
+        "regex": 5.6568999752926175e-05,
+        "spacy": 0.024783951000244997,
+        "ollama": 2.120109023000623,
+        "donut": 3.967832582000483
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Francis Bacon: the logic of sensation",
+        "author": "Gilles Deleuze",
+        "translator": "Daniel W. Smith",
+        "publisher": "Continuum",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "the logic of sensation",
+          "author": null,
+          "translator": "Daniel W. Smith",
+          "publisher": "Continuum",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "Daniel W. Smith",
+          "publisher": null,
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "The Logic of Sensation",
+          "author": "GILLES DELEUZE",
+          "translator": "Daniel W. Smith",
+          "publisher": "Continuum",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "francis bacon: the logic of sensation",
+          "author": "daniel w. smith",
+          "translator": "the french by daniel w. smith",
+          "publisher": "gilles deleuze",
+          "year": "1996",
+          "isbn": "translated from the french by daniel w. smith"
+        }
+      },
+      "latency_sec": {
+        "regex": 6.44389992885408e-05,
+        "spacy": 0.014018974999999045,
+        "ollama": 1.499124748000213,
+        "donut": 4.004927202000545
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1981 Francis Bacon The Logic of Sensation - Deleuze, Gilles.pdf",
+      "page": 3,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Francis Bacon: Logique de la Sensation",
+        "author": null,
+        "translator": null,
+        "publisher": "Continuum",
+        "year": "2003",
+        "isbn": "0-8264-6647-8"
+      },
+      "predictions": {
+        "regex": {
+          "title": "This work is published with the support of the French Ministry of",
+          "author": null,
+          "translator": null,
+          "publisher": "Continuum",
+          "year": "2002",
+          "isbn": "0-8264-6647-8"
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": null,
+          "publisher": "MPG Books Ltd.",
+          "year": "1981",
+          "isbn": "0-8264-6647-8"
+        },
+        "ollama": {
+          "title": "Francis Bacon: Logique de la Sensation",
+          "author": null,
+          "translator": "Continuum",
+          "publisher": "Editions du Seuil",
+          "year": "2002",
+          "isbn": "0-8264-6647-8"
+        },
+        "donut": {
+          "title": "report of the french ministry of culture- centre national du livre.",
+          "author": "isbn 0-8264-6647-8",
+          "translator": "continuoum",
+          "publisher": "the support of the french ministry of culture",
+          "year": "1981",
+          "isbn": "0-8264-6647-8"
+        }
+      },
+      "latency_sec": {
+        "regex": 6.959100028325338e-05,
+        "spacy": 0.015543053999863332,
+        "ollama": 1.6715150999998514,
+        "donut": 4.001206703999742
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1986 Cinema 1 The Movement-Image - Deleuze, Gilles.pdf",
+      "page": 1,
+      "type": "title",
+      "scan_layout": "2up",
+      "gold": {
+        "title": "Cinema 1: The Movement-Image",
+        "author": "Gilles Deleuze",
+        "translator": "Hugh Tomlinson and Barbara Habberjam",
+        "publisher": "The Athlone Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "The Doctrine of the Faculties NIETZSCHE AND PHILOSOPHY",
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": "Hugh Tomlinson and Barbara Habberjam The Athlone Press LONDON First",
+          "publisher": "The Athlone Press",
+          "year": "1983",
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "Hugh Tomlinson",
+          "publisher": "The Athlone Press British Library Cataloguing",
+          "year": "1986",
+          "isbn": null
+        },
+        "ollama": {
+          "title": "Cinema 1: The Movement-Image",
+          "author": "Gilles Deleuze",
+          "translator": null,
+          "publisher": "The Athlone Press",
+          "year": "1986",
+          "isbn": "0-485-11281-7"
+        },
+        "donut": {
+          "title": "cinema 1 the movement-image",
+          "author": "the athlone press",
+          "translator": "hugh tomlinson",
+          "publisher": "the athlone press",
+          "year": "1",
+          "isbn": "the athlone press"
+        }
+      },
+      "latency_sec": {
+        "regex": 0.00010060400018119253,
+        "spacy": 0.059902034000515414,
+        "ollama": 1.903431587000341,
+        "donut": 3.8505332619997716
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1988 Foucault - Deleuze, Gilles.pdf",
+      "page": 4,
+      "type": "title",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Foucault",
+        "author": "Gilles Deleuze",
+        "translator": "Sean Hand",
+        "publisher": "University of Minnesota Press",
+        "year": null,
+        "isbn": null
+      },
+      "predictions": {
+        "regex": {
+          "title": "Foreword by",
+          "author": "Gilles Deleuze",
+          "translator": "SEAN HAND Foreword",
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "PAUL BOV£\nUniversity",
+          "publisher": "Minneapolis",
+          "year": null,
+          "isbn": null
+        },
+        "ollama": {
+          "title": "Foucault",
+          "author": "Gilles Deleuze",
+          "translator": null,
+          "publisher": "University of Minnesota Press",
+          "year": null,
+          "isbn": null
+        },
+        "donut": {
+          "title": "focusult",
+          "author": "paul bove",
+          "translator": "sean hand",
+          "publisher": "university of minnesota press",
+          "year": "1978",
+          "isbn": "university of minnesota press"
+        }
+      },
+      "latency_sec": {
+        "regex": 4.111500038561644e-05,
+        "spacy": 0.007151539000005869,
+        "ollama": 1.3673798170002556,
+        "donut": 3.8488678600006097
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1988 Foucault - Deleuze, Gilles.pdf",
+      "page": 5,
+      "type": "copyright",
+      "scan_layout": "single",
+      "gold": {
+        "title": "Foucault",
+        "author": "Gilles Deleuze",
+        "translator": "Sean Hand",
+        "publisher": "University of Minnesota Press",
+        "year": "1988",
+        "isbn": "0-8166-1674-4"
+      },
+      "predictions": {
+        "regex": {
+          "title": "reproduced, stored in a retrieval system, or transmitted, in",
+          "author": "Gilles Deleuze",
+          "translator": "Sean Hand.",
+          "publisher": "University of Minnesota Press",
+          "year": "1986",
+          "isbn": "0-8166-1674-4"
+        },
+        "spacy": {
+          "title": null,
+          "author": null,
+          "translator": "Sean Hand",
+          "publisher": "the University of Minnesota Press",
+          "year": "1986",
+          "isbn": "0-8166-1674-4"
+        },
+        "ollama": {
+          "title": "Foucault/Gilles Deleuze",
+          "author": "Gilles Deleuze",
+          "translator": "Sean Hand",
+          "publisher": "University of Minnesota Press",
+          "year": "1988",
+          "isbn": "0-8166-1674-4"
+        },
+        "donut": {
+          "title": "originally published in french 1986",
+          "author": "isbn 0-8166-1675-2",
+          "translator": "mean ii. title",
+          "publisher": "university of minnesota",
+          "year": "1986",
+          "isbn": "0-8166-1675-2"
+        }
+      },
+      "latency_sec": {
+        "regex": 5.6973000027937815e-05,
+        "spacy": 0.021459939000123995,
+        "ollama": 1.7276811170004294,
+        "donut": 3.920007790999989
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    },
+    {
+      "doc": "1991 What Is Philosophy - Deleuze, Gilles.pdf",
+      "page": 2,
+      "type": "combined",
+      "scan_layout": "single",
+      "gold": {
+        "title": "What Is Philosophy?",
+        "author": "Gilles Deleuze and Felix Guattari",
+        "translator": "Hugh Tomlinson and Graham Burchell",
+        "publisher": "Columbia University Press",
+        "year": "1994",
+        "isbn": "0-231-07988-5"
+      },
+      "predictions": {
+        "regex": {
+          "title": "aplnFeialio!J ojassistan,« .~it·('Ji fly tlu- /;Uj'I\"I//,'.'it\"lfl",
+          "author": "Gilles Deleuze and Felix Guattari",
+          "translator": "Hugh Tomlinson and Graham Burchell. P",
+          "publisher": "Columbia University Press",
+          "year": "1991",
+          "isbn": null
+        },
+        "spacy": {
+          "title": null,
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson",
+          "publisher": "COLUMBIA UNIVERSITY PRESS",
+          "year": "1991",
+          "isbn": null
+        },
+        "ollama": {
+          "title": "What is philosophy?",
+          "author": "Gilles Deleuze",
+          "translator": "Hugh Tomlinson and Graham Burchell",
+          "publisher": "Columbia University Press",
+          "year": "1994",
+          "isbn": "0-231-07988-5"
+        },
+        "donut": {
+          "title": "columbia university press",
+          "author": "notes",
+          "translator": "introduction",
+          "publisher": "lee editions de all rights reserved",
+          "year": "1994",
+          "isbn": "iSBno-231-07988-5"
+        }
+      },
+      "latency_sec": {
+        "regex": 5.9779999901365954e-05,
+        "spacy": 0.029892820999521064,
+        "ollama": 1.967303594000441,
+        "donut": 3.7446831379993455
+      },
+      "cuda_peak_mb": {
+        "regex": 0.0,
+        "spacy": 0.0,
+        "ollama": 0.0,
+        "donut": 3668.587008
+      }
+    }
+  ],
+  "ollama_available": true,
+  "aggregate": {
+    "regex": {
+      "title": {
+        "exact": 0.15,
+        "normalized": 0.25,
+        "n": 20
+      },
+      "author": {
+        "exact": 0.6,
+        "normalized": 0.75,
+        "n": 20
+      },
+      "translator": {
+        "exact": 0.25,
+        "normalized": 0.6,
+        "n": 20
+      },
+      "publisher": {
+        "exact": 0.8,
+        "normalized": 0.8,
+        "n": 20
+      },
+      "year": {
+        "exact": 0.65,
+        "normalized": 0.65,
+        "n": 20
+      },
+      "isbn": {
+        "exact": 0.75,
+        "normalized": 0.8,
+        "n": 20
+      },
+      "_overall_normalized": 0.6416666666666667,
+      "_latency_p50": 5.9047999911854276e-05,
+      "_latency_p95": 0.00011839000035251956,
+      "_cuda_peak_mb_max": 0.0
+    },
+    "spacy": {
+      "title": {
+        "exact": 0.05,
+        "normalized": 0.05,
+        "n": 20
+      },
+      "author": {
+        "exact": 0.25,
+        "normalized": 0.4,
+        "n": 20
+      },
+      "translator": {
+        "exact": 0.4,
+        "normalized": 0.6,
+        "n": 20
+      },
+      "publisher": {
+        "exact": 0.25,
+        "normalized": 0.55,
+        "n": 20
+      },
+      "year": {
+        "exact": 0.7,
+        "normalized": 0.7,
+        "n": 20
+      },
+      "isbn": {
+        "exact": 0.75,
+        "normalized": 0.8,
+        "n": 20
+      },
+      "_overall_normalized": 0.5166666666666667,
+      "_latency_p50": 0.02733838599988303,
+      "_latency_p95": 0.06375450499945146,
+      "_cuda_peak_mb_max": 0.0
+    },
+    "ollama": {
+      "title": {
+        "exact": 0.6,
+        "normalized": 0.9,
+        "n": 20
+      },
+      "author": {
+        "exact": 0.7,
+        "normalized": 0.8,
+        "n": 20
+      },
+      "translator": {
+        "exact": 0.7,
+        "normalized": 0.75,
+        "n": 20
+      },
+      "publisher": {
+        "exact": 0.75,
+        "normalized": 0.8,
+        "n": 20
+      },
+      "year": {
+        "exact": 0.75,
+        "normalized": 0.75,
+        "n": 20
+      },
+      "isbn": {
+        "exact": 0.8,
+        "normalized": 0.8,
+        "n": 20
+      },
+      "_overall_normalized": 0.7999999999999999,
+      "_latency_p50": 1.7077327435004008,
+      "_latency_p95": 2.198530597000172,
+      "_cuda_peak_mb_max": 0.0
+    },
+    "donut": {
+      "title": {
+        "exact": 0.1,
+        "normalized": 0.2,
+        "n": 20
+      },
+      "author": {
+        "exact": 0.0,
+        "normalized": 0.0,
+        "n": 20
+      },
+      "translator": {
+        "exact": 0.3,
+        "normalized": 0.4,
+        "n": 20
+      },
+      "publisher": {
+        "exact": 0.3,
+        "normalized": 0.5,
+        "n": 20
+      },
+      "year": {
+        "exact": 0.25,
+        "normalized": 0.25,
+        "n": 20
+      },
+      "isbn": {
+        "exact": 0.15,
+        "normalized": 0.15,
+        "n": 20
+      },
+      "_overall_normalized": 0.25,
+      "_latency_p50": 3.943920186500236,
+      "_latency_p95": 4.10431786800018,
+      "_cuda_peak_mb_max": 3668.587008
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "deepseek-r1": {
+    "exact": [],
+    "general": [],
+    "exhaustive": [
+      {
+        "label": "BwO exhaustive",
+        "quotes": 74,
+        "verified": 74,
+        "vrfy_rate": 1.0,
+        "hallucinated": 19,
+        "raw_quotes": 93,
+        "source_coverage": 1.0,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 5,
+        "pre_extracted": 105
+      },
+      {
+        "label": "Deterritorialization exhaustive",
+        "quotes": 200,
+        "verified": 200,
+        "vrfy_rate": 1.0,
+        "hallucinated": 8,
+        "raw_quotes": 208,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4,
+        "pre_extracted": 194
+      },
+      {
+        "label": "Multiplicity exhaustive",
+        "quotes": 153,
+        "verified": 153,
+        "vrfy_rate": 1.0,
+        "hallucinated": 15,
+        "raw_quotes": 168,
+        "source_coverage": 1.0,
+        "term_coverage": 0.667,
+        "meets_minimum": true,
+        "min_required": 4,
+        "pre_extracted": 170
+      },
+      {
+        "label": "Virtual/actual exhaustive",
+        "quotes": 167,
+        "verified": 167,
+        "vrfy_rate": 1.0,
+        "hallucinated": 11,
+        "raw_quotes": 178,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4,
+        "pre_extracted": 178
+      },
+      {
+        "label": "Rhizome exhaustive",
+        "quotes": 88,
+        "verified": 88,
+        "vrfy_rate": 1.0,
+        "hallucinated": 12,
+        "raw_quotes": 100,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3,
+        "pre_extracted": 124
+      },
+      {
+        "label": "Sensation exhaustive",
+        "quotes": 119,
+        "verified": 119,
+        "vrfy_rate": 1.0,
+        "hallucinated": 22,
+        "raw_quotes": 141,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3,
+        "pre_extracted": 151
+      },
+      {
+        "label": "Fold exhaustive",
+        "quotes": 131,
+        "verified": 131,
+        "vrfy_rate": 1.0,
+        "hallucinated": 39,
+        "raw_quotes": 170,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3,
+        "pre_extracted": 195
+      },
+      {
+        "label": "Eternal return exhaustive",
+        "quotes": 52,
+        "verified": 52,
+        "vrfy_rate": 1.0,
+        "hallucinated": 26,
+        "raw_quotes": 78,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3,
+        "pre_extracted": 165
+      },
+      {
+        "label": "Diagram exhaustive",
+        "quotes": 70,
+        "verified": 70,
+        "vrfy_rate": 1.0,
+        "hallucinated": 26,
+        "raw_quotes": 96,
+        "source_coverage": 1.0,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 3,
+        "pre_extracted": 146
+      },
+      {
+        "label": "Assemblage exhaustive",
+        "quotes": 153,
+        "verified": 153,
+        "vrfy_rate": 1.0,
+        "hallucinated": 23,
+        "raw_quotes": 176,
+        "source_coverage": 0.667,
+        "term_coverage": 1.0,
+        "meets_minimum": true,
+        "min_required": 4,
+        "pre_extracted": 225
+      }
+    ],
+    "precis": [],
+    "elapsed": 696.2,
+    "cost": 0.0328
+  }
+}

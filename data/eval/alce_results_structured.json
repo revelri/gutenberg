@@ -1,0 +1,242 @@
+{
+  "summary": {
+    "threshold": 0.5,
+    "total_sentences": 20,
+    "total_citations": 20,
+    "citation_recall": 0.85,
+    "citation_precision": 0.85,
+    "model": "cross-encoder/nli-deberta-v3-base"
+  },
+  "samples": [
+    {
+      "query": "Trace the evolution of the concept 'body without organs' from Anti-Oedipus (1972) through A Thousand Plateaus (1980), showing how its meaning shifts from a psychoanalytic critique to a practical ethics. Cite specific passages from each work.",
+      "sentences": [
+        {
+          "sentence": "[Source: Anti-Oedipus, p. 78] \u2014 This passage highlights the 'body without organs' as a site where desiring-production is reactivated, central to the psychoanalytic critique of Oedipus.\n- **A Thousand Plateaus:**",
+          "tags": [
+            [
+              "[Source: Anti-Oedipus, p. 78]",
+              0.9996283054351807
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: A Thousand Plateaus, p. 12] \u2014 This quote indicates a shift in *A Thousand Plateaus* from the critical stance of *Anti-Oedipus* to a more affirmative and practical 'nomad thought,' implying a different, more active role for concepts like the 'body without organs' in ethical practice.",
+          "tags": [
+            [
+              "[Source: A Thousand Plateaus, p. 12]",
+              0.9910297393798828
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Show how Deleuze's treatment of 'repetition' develops from Difference and Repetition through to the cinema books. How does the concept change when applied to film? Provide cited passages demonstrating the shift.",
+      "sentences": [
+        {
+          "sentence": "[Source: Difference and repetition, p. 41-42] \u2014 This passage defines repetition as inherently linked to difference, distinguishing between external and internal forms of difference within repetition, which is a core philosophical tenet of the book.\n- **Cinema 1",
+          "tags": [
+            [
+              "[Source: Difference and repetition, p. 41-42]",
+              0.9860856533050537
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: Cinema 2 The Time-Image, p. 1] \u2014 This quote indicates a shift in focus from the abstract philosophical concept of repetition to its concrete manifestation in film through the representation of time, memory, and thought, which can be seen as forms of cinematic repetition.",
+          "tags": [
+            [
+              "[Source: Cinema 2 The Time-Image, p. 1]",
+              0.9965315461158752
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Trace how the concept of 'deterritorialization' shifts between Anti-Oedipus and A Thousand Plateaus. In AO it relates to capitalism's decoded flows; in ATP it becomes a general principle of transformation. Cite specific passages showing this drift.",
+      "sentences": [
+        {
+          "sentence": "[Source: Anti-Oedipus, p. 173] \u2014 This passage shows deterritorialization as a process related to liberating schizoid movements and undoing reterritorializations that transform madness into mental illness.\n",
+          "tags": [
+            [
+              "[Source: Anti-Oedipus, p. 173]",
+              0.023193655535578728
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: A Thousand Plateaus, p. 474-475] \u2014 This quote illustrates deterritorialization as a general principle of transformation, specifically in the context of capitalism's formation and its impact on legal structures.",
+          "tags": [
+            [
+              "[Source: A Thousand Plateaus, p. 474-475]",
+              0.9513999819755554
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Document the evolution of Deleuze's concept of 'the virtual' from Bergsonism through Difference and Repetition to Cinema 2. Show with citations how the virtual moves from Bergsonian duration to ontological principle to cinematic time.",
+      "sentences": [
+        {
+          "sentence": "[Source: Bergsonism, p. 22] \u2014 This quote highlights the early Bergsonian understanding of the virtual as a qualitative, nonnumerical multiplicity, distinct from spatial extension.\n",
+          "tags": [
+            [
+              "[Source: Bergsonism, p. 22]",
+              0.8882612586021423
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: Difference and repetition, p. 230] \u2014 This passage establishes the virtual as a dynamic, problem-generating reality, distinct from the possible, and central to the process of actualization through difference.\n- **Cinema 2 The Time-Image:**",
+          "tags": [
+            [
+              "[Source: Difference and repetition, p. 230]",
+              0.981816291809082
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: Cinema 2 The Time-Image, p. 44] \u2014 This quote illustrates how the virtual is applied to cinematic theory, where it functions as a 'double' or 'reflection' of the actual image, contributing to the representation of time and memory in film.",
+          "tags": [
+            [
+              "[Source: Cinema 2 The Time-Image, p. 44]",
+              0.6588848233222961
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Show how Deleuze's engagement with Nietzsche's 'will to power' in Nietzsche and Philosophy (1962) transforms into the concept of 'desire' in Anti-Oedipus (1972). Cite passages from both works demonstrating the conceptual lineage.",
+      "sentences": [
+        {
+          "sentence": "[Source: Nietzsche and Philosophy, p. 47-48] \u2014 This passage defines the 'will to power' as the fundamental, critical, and genetic instance that underlies all human actions, feelings, and thoughts, establishing its role as a primary driving force.\n- **Anti-Oedipus Capitalism and Schizophr:**",
+          "tags": [
+            [
+              "[Source: Nietzsche and Philosophy, p. 47-48]",
+              0.9994603991508484
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: Anti-Oedipus Capitalism and Schizophr, p. 12] \u2014 This quote introduces 'desire' as a fundamental function of making connections, suggesting a conceptual evolution from the 'will to power' as a driving force to desire as a connective and productive process.",
+          "tags": [
+            [
+              "[Source: Anti-Oedipus Capitalism and Schizophr, p. 12]",
+              0.9867950081825256
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Trace the concept of 'the diagram' across Francis Bacon (1981), Foucault (1988), and A Thousand Plateaus (1980). Show how the same term operates differently in painting, power relations, and semiotics. Cite each usage.",
+      "sentences": [
+        {
+          "sentence": "[Source: 1981 Francis Bacon The Logic of Sensation, p. 154-155] \u2014 This passage explains the diagram in painting as a manual force that deforms the optical world and introduces a haptic dimension.\n",
+          "tags": [
+            [
+              "[Source: 1981 Francis Bacon The Logic of Sensation, p. 154-155]",
+              0.4883822798728943
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: 1980 A Thousand Plateaus, p. 154-155] \u2014 This quote, though from the *Francis Bacon* text, is attributed to *A Thousand Plateaus* in the context, and describes the diagram's role as a modulator and locus for colors in painting.",
+          "tags": [
+            [
+              "[Source: 1980 A Thousand Plateaus, p. 154-155]",
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Document how the concept of 'sense' (sens) develops from The Logic of Sense to What Is Philosophy?. In the former it operates at the surface between propositions and things; in the latter it becomes the event of the concept. Cite passages from both.",
+      "sentences": [
+        {
+          "sentence": "[Source: The Logic of Sense, p. 18] \u2014 This passage defines sense as that which is expressed, highlighting its historical philosophical roots and its distinction from other forms of meaning.\n- **What Is Philosophy:**",
+          "tags": [
+            [
+              "[Source: The Logic of Sense, p. 18]",
+              0.9981491565704346
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: What Is Philosophy, p. 17] \u2014 This quote clarifies that the concept, which embodies sense in this work, is fundamentally distinct from a proposition and is not merely an intension.",
+          "tags": [
+            [
+              "[Source: What Is Philosophy, p. 17]",
+              0.9759147763252258
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Show the evolution of Deleuze's concept of 'immanence' from Spinoza: Practical Philosophy through What Is Philosophy?. Trace how the plane of immanence shifts from an ethical ontology to a philosophical method. Cite both works.",
+      "sentences": [
+        {
+          "sentence": "[Source: Spinoza Practical Philosophy, p. 65-66] \u2014 This quote establishes the plane of immanence as a fundamental ontological concept in Spinoza's philosophy, where all existence is situated and defined.\n- **What Is Philosophy:**",
+          "tags": [
+            [
+              "[Source: Spinoza Practical Philosophy, p. 65-66]",
+              0.9964757561683655
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: What Is Philosophy, p. 23-24] \u2014 This passage clarifies the plane of immanence as distinct from concepts, serving as the milieu or horizon for their creation, thus framing it as a philosophical method rather than an ethical state.",
+          "tags": [
+            [
+              "[Source: What Is Philosophy, p. 23-24]",
+              0.99111008644104
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Trace how 'the fold' operates across The Fold (1988) and the Foucault book (1988). In one it describes Leibnizian metaphysics; in the other it describes subjectivation. Show with citations how the same figure does different philosophical work.",
+      "sentences": [
+        {
+          "sentence": "[Source: The Fold Leibniz and the Baroque, p. 14] \u2014 This quote illustrates how the fold in Leibnizian thought connects the pleats of matter with the folds in the soul, suggesting a continuous, interwoven structure of reality.\n- **Foucault:**",
+          "tags": [
+            [
+              "[Source: The Fold Leibniz and the Baroque, p. 14]",
+              0.9947102069854736
+            ]
+          ]
+        },
+        {
+          "sentence": "[Source: Foucault, p. 156-157] \u2014 This passage shows how the fold in Foucault's work is crucial for understanding subjectivity as an internalization of the outside, giving it a distinct and fundamental character.",
+          "tags": [
+            [
+              "[Source: Foucault, p. 156-157]",
+              0.9922419786453247
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Document how Deleuze's concept of 'signs' changes from Proust and Signs (1964) to A Thousand Plateaus (1980). In the earlier work signs are objects of an apprenticeship; in the later they become components of regimes. Cite passages showing the transformation.",
+      "sentences": [
+        {
+          "sentence": "[Source: A Thousand Plateaus, p. 14] \u2014 This passage indicates that 'A Thousand Plateaus' aims to create a dynamic and open conceptual framework, suggesting that 'signs' within this context would be components of a broader, more fluid system rather than fixed objects of study.",
+          "tags": [
+            [
+              "[Source: A Thousand Plateaus, p. 14]",
+              0.9973474740982056
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "claude-sonnet-4.6": {
+    "exact": [
+      {
+        "label": "Opening line",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Book no subject",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Rhizome connections",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Map not tracing",
+        "verbatim": true,
+        "match_len": 50,
+        "best_ratio": 0
+      },
+      {
+        "label": "Connection heterogeneity",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.56
+      },
+      {
+        "label": "Asignifying rupture",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Orchid wasp",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "BwO limit",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "BwO vs psychoanalysis",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.96
+      },
+      {
+        "label": "BwO remains",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      }
+    ],
+    "general": [
+      {
+        "label": "BwO explanation",
+        "quotes": 6,
+        "verified": 6,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.2,
+        "concept_cov": 0.5
+      },
+      {
+        "label": "Smooth vs striated",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.2,
+        "concept_cov": 1.0
+      },
+      {
+        "label": "Orchid and wasp",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.25,
+        "concept_cov": 0.833
+      },
+      {
+        "label": "War machine vs State",
+        "quotes": 6,
+        "verified": 6,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.25
+      },
+      {
+        "label": "Multiplicity principle",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.143
+      },
+      {
+        "label": "Nomad thought",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 1.0,
+        "concept_cov": 0.286
+      },
+      {
+        "label": "Refrain concept",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.25
+      },
+      {
+        "label": "Segmentarity",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.222
+      },
+      {
+        "label": "Pragmatics schizoanalysis",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.5,
+        "concept_cov": 0.857
+      },
+      {
+        "label": "How to read ATP",
+        "quotes": 3,
+        "verified": 3,
+        "vrfy_rate": 1.0,
+        "page_acc": 1.0,
+        "concept_cov": 0.429
+      }
+    ],
+    "elapsed": 135.1,
+    "cost": 0.3508
+  },
+  "deepseek-r1": {
+    "exact": [
+      {
+        "label": "Opening line",
+        "verbatim": true,
+        "match_len": 50,
+        "best_ratio": 0
+      },
+      {
+        "label": "Book no subject",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Rhizome connections",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Map not tracing",
+        "verbatim": true,
+        "match_len": 50,
+        "best_ratio": 0
+      },
+      {
+        "label": "Connection heterogeneity",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.56
+      },
+      {
+        "label": "Asignifying rupture",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "Orchid wasp",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "BwO limit",
+        "verbatim": true,
+        "match_len": 80,
+        "best_ratio": 0
+      },
+      {
+        "label": "BwO vs psychoanalysis",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.96
+      },
+      {
+        "label": "BwO remains",
+        "verbatim": true,
+        "match_len": 50,
+        "best_ratio": 0
+      }
+    ],
+    "general": [
+      {
+        "label": "BwO explanation",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.25,
+        "concept_cov": 0.375
+      },
+      {
+        "label": "Smooth vs striated",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.25,
+        "concept_cov": 0.75
+      },
+      {
+        "label": "Orchid and wasp",
+        "quotes": 7,
+        "verified": 7,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.167,
+        "concept_cov": 0.833
+      },
+      {
+        "label": "War machine vs State",
+        "quotes": 9,
+        "verified": 9,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.25
+      },
+      {
+        "label": "Multiplicity principle",
+        "quotes": 1,
+        "verified": 1,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.143
+      },
+      {
+        "label": "Nomad thought",
+        "quotes": 5,
+        "verified": 5,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.667,
+        "concept_cov": 0.286
+      },
+      {
+        "label": "Refrain concept",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.125
+      },
+      {
+        "label": "Segmentarity",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Pragmatics schizoanalysis",
+        "quotes": 2,
+        "verified": 2,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.5,
+        "concept_cov": 0.857
+      },
+      {
+        "label": "How to read ATP",
+        "quotes": 4,
+        "verified": 4,
+        "vrfy_rate": 1.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.571
+      }
+    ],
+    "elapsed": 471.5,
+    "cost": 0.0546
+  },
+  "gemma-4-27b": {
+    "exact": [
+      {
+        "label": "Opening line",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.26
+      },
+      {
+        "label": "Book no subject",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.26
+      },
+      {
+        "label": "Rhizome connections",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.32
+      },
+      {
+        "label": "Map not tracing",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.18
+      },
+      {
+        "label": "Connection heterogeneity",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.25
+      },
+      {
+        "label": "Asignifying rupture",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.25
+      },
+      {
+        "label": "Orchid wasp",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.31
+      },
+      {
+        "label": "BwO limit",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.22
+      },
+      {
+        "label": "BwO vs psychoanalysis",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.18
+      },
+      {
+        "label": "BwO remains",
+        "verbatim": false,
+        "match_len": 0,
+        "best_ratio": 0.27
+      }
+    ],
+    "general": [
+      {
+        "label": "BwO explanation",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Smooth vs striated",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Orchid and wasp",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "War machine vs State",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Multiplicity principle",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Nomad thought",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Refrain concept",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Segmentarity",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "Pragmatics schizoanalysis",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      },
+      {
+        "label": "How to read ATP",
+        "quotes": 0,
+        "verified": 0,
+        "vrfy_rate": 0.0,
+        "page_acc": 0.0,
+        "concept_cov": 0.0
+      }
+    ],
+    "elapsed": 3.5,
+    "cost": 0.0
+  }
+}

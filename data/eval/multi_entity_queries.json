@@ -1,0 +1,141 @@
+[
+  {
+    "query": "How does Deleuze relate Nietzsche and Spinoza on affect?",
+    "label": "nietzsche_spinoza_affect",
+    "expected_entities": [
+      "gilles_deleuze",
+      "baruch_spinoza"
+    ],
+    "expected_edges": [
+      [
+        "baruch_spinoza",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How does Deleuze read Spinoza through Leibniz on expression?",
+    "label": "spinoza_leibniz_expression",
+    "expected_entities": [
+      "gilles_deleuze",
+      "baruch_spinoza"
+    ],
+    "expected_edges": [
+      [
+        "baruch_spinoza",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How do Deleuze and Guattari read Freud and Lacan in Anti-Oedipus?",
+    "label": "freud_lacan_AO",
+    "expected_entities": [
+      "anti_oedipus",
+      "felix_guattari",
+      "gilles_deleuze"
+    ],
+    "expected_edges": [
+      [
+        "anti_oedipus",
+        "felix_guattari"
+      ],
+      [
+        "anti_oedipus",
+        "gilles_deleuze"
+      ],
+      [
+        "felix_guattari",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How does Deleuze connect Artaud's body without organs to Spinoza's affect?",
+    "label": "artaud_spinoza_bwo",
+    "expected_entities": [
+      "body_without_organs",
+      "gilles_deleuze",
+      "baruch_spinoza"
+    ],
+    "expected_edges": [
+      [
+        "body_without_organs",
+        "gilles_deleuze"
+      ],
+      [
+        "baruch_spinoza",
+        "body_without_organs"
+      ],
+      [
+        "baruch_spinoza",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How do Deleuze and Guattari deploy Marx and Nietzsche together?",
+    "label": "marx_nietzsche_DG",
+    "expected_entities": [
+      "felix_guattari",
+      "gilles_deleuze"
+    ],
+    "expected_edges": [
+      [
+        "felix_guattari",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How does Deleuze link Spinoza and Leibniz on the fold?",
+    "label": "spinoza_leibniz_fold",
+    "expected_entities": [
+      "gilles_deleuze",
+      "baruch_spinoza"
+    ],
+    "expected_edges": [
+      [
+        "baruch_spinoza",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How do Deleuze and Guattari read Freud and Marx on family?",
+    "label": "freud_marx_family",
+    "expected_entities": [
+      "felix_guattari",
+      "gilles_deleuze"
+    ],
+    "expected_edges": [
+      [
+        "felix_guattari",
+        "gilles_deleuze"
+      ]
+    ]
+  },
+  {
+    "query": "How does Deleuze weave Spinoza and Nietzsche into Difference and Repetition?",
+    "label": "spinoza_nietzsche_DR",
+    "expected_entities": [
+      "difference_and_repetition",
+      "gilles_deleuze",
+      "baruch_spinoza"
+    ],
+    "expected_edges": [
+      [
+        "difference_and_repetition",
+        "gilles_deleuze"
+      ],
+      [
+        "baruch_spinoza",
+        "gilles_deleuze"
+      ],
+      [
+        "baruch_spinoza",
+        "difference_and_repetition"
+      ]
+    ]
+  }
+]
